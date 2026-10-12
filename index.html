@@ -59,24 +59,24 @@
   <div class="fixed inset-0 stars-overlay opacity-40 pointer-events-none -z-10"></div>
 
   <!-- ================= TOP NOTICE BAR ================= -->
-  <aside class="bg-indigo-950/70 border-b border-indigo-800/40 text-indigo-200 text-xs py-2 px-4 no-print">
+  <aside class="bg-indigo-950/80 border-b border-indigo-800/40 text-indigo-200 text-xs py-2 px-4 no-print">
     <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2">
-      <div class="flex items-center space-x-2 text-center sm:text-left">
-        <span class="inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-bold bg-indigo-500/20 text-indigo-300 border border-indigo-500/30 uppercase tracking-wider">
-          <i data-lucide="sparkles" class="w-3 h-3 mr-1 inline"></i>
-          Zodiac Astrological Matrix
+      <div class="flex items-center space-x-2 text-center sm:text-left flex-wrap">
+        <span class="inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-bold bg-amber-500/20 text-amber-300 border border-amber-500/40 uppercase tracking-wider">
+          <i data-lucide="book-open" class="w-3 h-3 mr-1 inline"></i>
+          Linda Goodman Reference
         </span>
         <span class="text-[11px] sm:text-xs text-slate-300">
-          Tropical Western Sun Sign compatibility based on solar transits, elemental synergy, and planetary aspects.
+          Calibrated with <strong>Linda Goodman's Love Signs (1978)</strong> &amp; <strong>Sun Signs (1968)</strong> Seven Karmic Vibrations.
         </span>
       </div>
-      <div class="flex items-center space-x-3 text-xs">
-        <span class="text-slate-400">Created by <strong class="text-white">Anil Dutta</strong></span>
+      <div class="flex items-center space-x-3 text-xs flex-shrink-0">
+        <button onclick="openLindaVibrationsModal()" class="text-amber-300 hover:text-amber-200 underline font-bold flex items-center space-x-1 transition">
+          <i data-lucide="sparkles" class="w-3 h-3 text-amber-400"></i>
+          <span>Linda Goodman's 7 Vibrations Guide</span>
+        </button>
         <span class="text-slate-600">|</span>
-        <a href="../anil-portal/index.html" class="text-cosmic-400 hover:text-cosmic-300 underline font-medium flex items-center space-x-1">
-          <span>Apps Launchpad</span>
-          <i data-lucide="arrow-up-right" class="w-3 h-3"></i>
-        </a>
+        <span class="text-slate-400">Created by <strong class="text-white">Anil Dutta</strong></span>
       </div>
     </div>
   </aside>
@@ -369,12 +369,20 @@
             <!-- Left: Sign Pairing Overview -->
             <div class="space-y-4 text-center lg:text-left flex-1">
               
-              <!-- Compatibility Color Shade Pill -->
-              <div id="couple-shade-badge" class="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full text-xs font-black uppercase tracking-wider badge-green">
-                <span id="couple-shade-emoji">🟢</span>
-                <span id="couple-shade-title">Harmonious Union</span>
-                <span class="text-slate-400">|</span>
-                <span id="couple-shade-score-tag">97% Match</span>
+              <!-- Compatibility Color Shade Pill & Linda Goodman Vibration Badge -->
+              <div class="flex flex-wrap items-center gap-2 justify-center lg:justify-start">
+                <div id="couple-shade-badge" class="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full text-xs font-black uppercase tracking-wider badge-green">
+                  <span id="couple-shade-emoji">🟢</span>
+                  <span id="couple-shade-title">Harmonious Union</span>
+                  <span class="text-slate-400">|</span>
+                  <span id="couple-shade-score-tag">97% Match</span>
+                </div>
+                <button onclick="openLindaVibrationsModal()" id="couple-vibration-badge" 
+                        class="inline-flex items-center space-x-1.5 px-3 py-1.5 rounded-full text-xs font-bold bg-amber-500/15 text-amber-300 border border-amber-500/40 hover:bg-amber-500/25 transition shadow-sm">
+                  <i data-lucide="sparkles" class="w-3.5 h-3.5 text-amber-400"></i>
+                  <span id="couple-vibration-text">5-9 Vibration (Love Signs)</span>
+                  <i data-lucide="help-circle" class="w-3 h-3 text-amber-400"></i>
+                </button>
               </div>
 
               <!-- Signs Title -->
@@ -385,6 +393,17 @@
               <p id="couple-aspect-subtitle" class="text-sm font-semibold text-cosmic-300">
                 Trine Aspect • Double Fire Element Synergy
               </p>
+
+              <!-- Linda Goodman Karmic Soul Lesson Box -->
+              <div class="bg-amber-950/30 border border-amber-500/30 rounded-2xl p-3.5 text-xs text-amber-100 space-y-1 text-left">
+                <div class="flex items-center space-x-1.5 font-bold text-amber-300">
+                  <i data-lucide="book-open" class="w-3.5 h-3.5 text-amber-400"></i>
+                  <span>Linda Goodman's Karmic Lesson:</span>
+                </div>
+                <p id="couple-karmic-lesson" class="text-slate-300 text-xs leading-relaxed">
+                  Preserving sacred gratitude and avoiding taking your effortless soul harmony for granted.
+                </p>
+              </div>
 
               <p id="couple-summary-text" class="text-sm text-slate-300 leading-relaxed max-w-2xl">
                 Sharing the same fire element creates an instinctive, harmonious flow. You breathe the same spiritual air, understand each other's pacing, and feel deeply at home together.
@@ -497,11 +516,11 @@
               </p>
             </div>
 
-            <!-- Gender Specific Dynamic -->
+            <!-- Linda Goodman Gender Specific Dynamic -->
             <div class="space-y-2">
               <div class="flex items-center space-x-2 text-pink-300 text-sm font-bold">
-                <i data-lucide="users" class="w-4 h-4"></i>
-                <span>Partner Dynamic Insights</span>
+                <i data-lucide="heart-handshake" class="w-4 h-4 text-pink-400"></i>
+                <span id="couple-gender-title">Linda Goodman's Love Signs: Gender Dynamics</span>
               </div>
               <p id="couple-gender-advice" class="text-xs sm:text-sm text-slate-300 leading-relaxed bg-slate-900/60 p-3.5 rounded-xl border border-slate-800">
                 Balancing solar creative initiative with optimistic philosophical exploration creates an unbreakable bond.
@@ -810,6 +829,151 @@
       <div class="pt-4 border-t border-slate-800 flex justify-end">
         <button onclick="closeModal()" class="px-6 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-white text-xs font-bold border border-slate-700 transition">
           Close Window
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ========================================================================= -->
+  <!-- MODAL: LINDA GOODMAN'S 7 VIBRATIONS GUIDE                                  -->
+  <!-- ========================================================================= -->
+  <div id="linda-vibrations-modal" class="fixed inset-0 z-50 hidden bg-black/85 backdrop-blur-md flex items-center justify-center p-4 overflow-y-auto no-print">
+    <div class="glass-panel-elevated rounded-3xl max-w-4xl w-full p-6 sm:p-8 space-y-6 max-h-[90vh] overflow-y-auto relative border border-amber-500/40 shadow-2xl">
+      
+      <!-- Close Button -->
+      <button onclick="closeLindaVibrationsModal()" class="absolute top-5 right-5 w-8 h-8 rounded-full bg-slate-800 text-slate-400 hover:text-white flex items-center justify-center border border-slate-700 transition">
+        <i data-lucide="x" class="w-4 h-4"></i>
+      </button>
+
+      <!-- Header -->
+      <div class="border-b border-slate-800 pb-4">
+        <div class="flex items-center space-x-2 text-amber-400 text-xs font-bold uppercase tracking-wider mb-1">
+          <i data-lucide="book-open" class="w-4 h-4"></i>
+          <span>Classic Astrological Reference</span>
+        </div>
+        <h3 class="font-serif font-extrabold text-2xl text-white">
+          Linda Goodman's Seven Sun Sign Vibrations
+        </h3>
+        <p class="text-xs sm:text-sm text-slate-300 mt-1">
+          In her landmark masterwork <em>Love Signs (1978)</em>, Linda Goodman established that all 144 zodiac pairings are governed by seven universal karmic vibration patterns based on their distance around the zodiac wheel.
+        </p>
+      </div>
+
+      <!-- 7 Vibrations Cards Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs" id="linda-vibrations-container">
+        
+        <!-- 1-1 -->
+        <div class="bg-slate-900/80 border border-slate-800 rounded-2xl p-4 space-y-2">
+          <div class="flex items-center justify-between">
+            <span class="font-bold text-sm text-purple-300 font-serif">1-1 Vibration</span>
+            <span class="px-2 py-0.5 rounded-full text-[10px] font-bold bg-purple-500/20 text-purple-300 border border-purple-500/40">Same Sign (0°)</span>
+          </div>
+          <h4 class="font-bold text-white">The Cosmic Mirror Alignment</h4>
+          <p class="text-slate-300 leading-relaxed">
+            You see your own reflection in your partner. This creates telepathic empathy and instant mutual understanding, though both must guard against magnifying shared faults and ego stubbornness.
+          </p>
+          <p class="text-[11px] text-amber-300 pt-1">
+            <strong>Karmic Lesson:</strong> Cultivating humility through self-acceptance.
+          </p>
+        </div>
+
+        <!-- 2-12 -->
+        <div class="bg-slate-900/80 border border-slate-800 rounded-2xl p-4 space-y-2">
+          <div class="flex items-center justify-between">
+            <span class="font-bold text-sm text-amber-300 font-serif">2-12 Vibration</span>
+            <span class="px-2 py-0.5 rounded-full text-[10px] font-bold bg-amber-500/20 text-amber-300 border border-amber-500/40">Adjacent (30°)</span>
+          </div>
+          <h4 class="font-bold text-white">The Karmic Teacher &amp; Pupil</h4>
+          <p class="text-slate-300 leading-relaxed">
+            One sign has spiritually passed through the other's grade in the cosmic school. There is deep unspoken compassion, tolerance, and secret admiration. One partner gently tutors the other.
+          </p>
+          <p class="text-[11px] text-amber-300 pt-1">
+            <strong>Karmic Lesson:</strong> Bridging contrasting tempos through patient compassion.
+          </p>
+        </div>
+
+        <!-- 3-11 -->
+        <div class="bg-slate-900/80 border border-slate-800 rounded-2xl p-4 space-y-2">
+          <div class="flex items-center justify-between">
+            <span class="font-bold text-sm text-emerald-300 font-serif">3-11 Vibration</span>
+            <span class="px-2 py-0.5 rounded-full text-[10px] font-bold bg-emerald-500/20 text-emerald-300 border border-emerald-500/40">Sextile (60°)</span>
+          </div>
+          <h4 class="font-bold text-white">Karmic Friends &amp; Sympathetic Lovers</h4>
+          <p class="text-slate-300 leading-relaxed">
+            One of the happiest vibrations in the cosmos! Signs share natural camaraderie. Even through heated quarrels, 3-11 lovers remain steadfast allies who forgive quickly and laugh easily.
+          </p>
+          <p class="text-[11px] text-amber-300 pt-1">
+            <strong>Karmic Lesson:</strong> Nurturing lifelong loyalty and effortless mutual forgiveness.
+          </p>
+        </div>
+
+        <!-- 4-10 -->
+        <div class="bg-slate-900/80 border border-slate-800 rounded-2xl p-4 space-y-2">
+          <div class="flex items-center justify-between">
+            <span class="font-bold text-sm text-rose-300 font-serif">4-10 Vibration</span>
+            <span class="px-2 py-0.5 rounded-full text-[10px] font-bold bg-rose-500/20 text-rose-300 border border-rose-500/40">Square (90°)</span>
+          </div>
+          <h4 class="font-bold text-white">The Karmic Challenge &amp; Crucible</h4>
+          <p class="text-slate-300 leading-relaxed">
+            Sharing the same modality but differing elements produces magnetic attraction alongside sharp clashes of will. If ego yields to love, this crucible tempers diamond-strength devotion.
+          </p>
+          <p class="text-[11px] text-amber-300 pt-1">
+            <strong>Karmic Lesson:</strong> Transcending pride and mastering selfless compromise.
+          </p>
+        </div>
+
+        <!-- 5-9 -->
+        <div class="bg-slate-900/80 border border-slate-800 rounded-2xl p-4 space-y-2">
+          <div class="flex items-center justify-between">
+            <span class="font-bold text-sm text-emerald-300 font-serif">5-9 Vibration</span>
+            <span class="px-2 py-0.5 rounded-full text-[10px] font-bold bg-emerald-500/20 text-emerald-300 border border-emerald-500/40">Trine (120°)</span>
+          </div>
+          <h4 class="font-bold text-white">The Divine Cosmic Blessing</h4>
+          <p class="text-slate-300 leading-relaxed">
+            Linda Goodman's most celebrated synastry pattern! Sharing the same sacred element brings instant soul recognition, telepathic sympathy, and effortless encouragement of mutual dreams.
+          </p>
+          <p class="text-[11px] text-amber-300 pt-1">
+            <strong>Karmic Lesson:</strong> Preserving gratitude without taking harmony for granted.
+          </p>
+        </div>
+
+        <!-- 6-8 -->
+        <div class="bg-slate-900/80 border border-slate-800 rounded-2xl p-4 space-y-2">
+          <div class="flex items-center justify-between">
+            <span class="font-bold text-sm text-orange-300 font-serif">6-8 Vibration</span>
+            <span class="px-2 py-0.5 rounded-full text-[10px] font-bold bg-orange-500/20 text-orange-300 border border-orange-500/40">Quincunx (150°)</span>
+          </div>
+          <h4 class="font-bold text-white">Karmic Mystery &amp; Devoted Service</h4>
+          <p class="text-slate-300 leading-relaxed">
+            Cloaked in hypnotic fascination and karmic duty. One partner feels mysteriously compelled to serve, protect, or nurture the other, carrying deep emotional or physical magnetism.
+          </p>
+          <p class="text-[11px] text-amber-300 pt-1">
+            <strong>Karmic Lesson:</strong> Practicing unconditional love free from selfish demands.
+          </p>
+        </div>
+
+        <!-- 7-7 (Spanning 2 cols on md) -->
+        <div class="md:col-span-2 bg-slate-900/80 border border-slate-800 rounded-2xl p-4 space-y-2">
+          <div class="flex items-center justify-between">
+            <span class="font-bold text-sm text-indigo-300 font-serif">7-7 Vibration</span>
+            <span class="px-2 py-0.5 rounded-full text-[10px] font-bold bg-indigo-500/20 text-indigo-300 border border-indigo-500/40">Opposition (180°)</span>
+          </div>
+          <h4 class="font-bold text-white">Polar Magnetism &amp; Cosmic Complements</h4>
+          <p class="text-slate-300 leading-relaxed">
+            Two halves of a single soul sitting 180° opposite on the zodiac wheel. What one lacks, the other possesses in overflowing abundance. High electric voltage: either a magnificent lifelong union or an intense clash of wills.
+          </p>
+          <p class="text-[11px] text-amber-300 pt-1">
+            <strong>Karmic Lesson:</strong> Finding wholeness through merging opposite qualities into a unified yin-and-yang circle.
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Action -->
+      <div class="pt-3 border-t border-slate-800 flex justify-end">
+        <button onclick="closeLindaVibrationsModal()" class="px-6 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-white text-xs font-bold border border-slate-700 transition">
+          Close Guide
         </button>
       </div>
 

@@ -1,7 +1,7 @@
 /**
  * Zodiac Compatibility Engine & Knowledge Base
+ * Calibrated with Linda Goodman's 'Love Signs' (1978) & 'Sun Signs' (1968)
  * Built for Anil Dutta - ZodiacMatch AI
- * Tropical Sun Sign Calculation & Comprehensive 144-Pair Matrix
  */
 
 const ZODIAC_SIGNS = [
@@ -52,7 +52,10 @@ const ZODIAC_SIGNS = [
       "Sagittarius",
       "Gemini",
       "Aquarius"
-    ]
+    ],
+    "lindaGoodmanMale": "The Aries Man is the gallant knight in shining armor. He demands total devotion and romantic belief in his ideals. Never wound his proud masculine ego; support his crusades, and he will defend you against the whole world.",
+    "lindaGoodmanFemale": "The Aries Woman can run a corporation and fix a carburetor, but secretly longs to be swept off her feet by a partner strong enough to match her fiery spirit without ever trying to cage her wings.",
+    "lindaGoodmanSecret": "Never be sluggish, deceptive, or overly critical. Champion their dreams with genuine enthusiasm."
   },
   {
     "id": "taurus",
@@ -101,7 +104,10 @@ const ZODIAC_SIGNS = [
       "Capricorn",
       "Cancer",
       "Pisces"
-    ]
+    ],
+    "lindaGoodmanMale": "The Taurus Man is the steady oak tree in life's storm. Deliberate, quietly humorous, and devoted to family security. He will never abandon you for fickle thrills if you make his home a sanctuary of comfort and delicious meals.",
+    "lindaGoodmanFemale": "The Taurus Woman is the quintessential Earth Mother. She possesses immense emotional endurance, hates artificial pretense, and creates a cozy haven filled with fragrant flowers, soft linens, and unshakeable fidelity.",
+    "lindaGoodmanSecret": "Never push or rush them. Respect their need for contemplation and physical comfort."
   },
   {
     "id": "gemini",
@@ -150,7 +156,10 @@ const ZODIAC_SIGNS = [
       "Aquarius",
       "Aries",
       "Leo"
-    ]
+    ],
+    "lindaGoodmanMale": "The Gemini Man is Peter Pan with silver wings on his tongue. Forever youthful, versatile, and mentally agile. If you can change with his changing moods and engage his restless intellect, he will never leave your side.",
+    "lindaGoodmanFemale": "The Gemini Woman is a dozen fascinating women wrapped into one captivating bundle. She is a witty companion, an astute conversationalist, and a playful soul who needs intellectual air to breathe freely.",
+    "lindaGoodmanSecret": "Keep the conversation alive and interesting. Never smother them with monotonous routine."
   },
   {
     "id": "cancer",
@@ -199,7 +208,10 @@ const ZODIAC_SIGNS = [
       "Pisces",
       "Taurus",
       "Virgo"
-    ]
+    ],
+    "lindaGoodmanMale": "The Cancer Man hides a vulnerable poet's soul beneath a hard crustacean shell. Deeply devoted to his mother and family, financially prudent, and sentimental. He will hold onto love with unyielding lunar tenacity.",
+    "lindaGoodmanFemale": "The Cancer Woman is the Moon maiden: enchantingly gentle, deeply protective, and rich with empathetic intuition. Treat her tender heart with reverence, and her loyalty will outlast the stars themselves.",
+    "lindaGoodmanSecret": "Reassure them often of your love and security. Never mock their sensitivities or family treasures."
   },
   {
     "id": "leo",
@@ -231,7 +243,7 @@ const ZODIAC_SIGNS = [
       "Proud"
     ],
     "overview": "Leo is the radiant monarch and warm-hearted champion of the zodiac. Governed by the Sun itself, Leo radiates solar warmth, boundless generosity, theatrical flair, and unwavering loyalty.",
-    "inLove": "Grand, generous, and proud. Leo treats their partner like a king or queen, showering them with gifts, public admiration, and intense romantic devotion.",
+    "inLove": "Grand, generous, and proud. Leo treats their partner like royalty, showering them with gifts, public admiration, and intense romantic devotion.",
     "marriageStyle": "Chivalrous and supportive. Brings celebration, joy, social elegance, and steadfast protection to the family union.",
     "strengths": [
       "Tremendous generosity of spirit",
@@ -248,7 +260,10 @@ const ZODIAC_SIGNS = [
       "Sagittarius",
       "Gemini",
       "Libra"
-    ]
+    ],
+    "lindaGoodmanMale": "The Leo Man is the king of beasts: generous, noble, chivalrous, and proud. Stroke his magnificent mane with praise and respect, and he will pour the riches of his solar warmth at your feet.",
+    "lindaGoodmanFemale": "The Leo Woman is the golden queen: proud, radiant, and intensely loyal. She demands courting fit for royalty. Treat her with chivalry and dignity, and she will shine light upon your entire life.",
+    "lindaGoodmanSecret": "Praise them sincerely in public and private. Never diminish their dignity or wound their pride."
   },
   {
     "id": "virgo",
@@ -297,7 +312,10 @@ const ZODIAC_SIGNS = [
       "Capricorn",
       "Cancer",
       "Scorpio"
-    ]
+    ],
+    "lindaGoodmanMale": "The Virgo Man is the pragmatic gentleman. He may not shower you with dramatic theatrical poetry, but he will ensure your car is serviced, your health is protected, and your life is quietly and reliably anchored.",
+    "lindaGoodmanFemale": "The Virgo Woman possesses a pristine, clear-eyed intellect and gentle modesty. Her devotion is expressed through thoughtful care, immaculate integrity, and steadfast support through sickness and health.",
+    "lindaGoodmanSecret": "Value their quiet acts of service and keep your promises. Practice cleanliness and punctuality."
   },
   {
     "id": "libra",
@@ -346,7 +364,10 @@ const ZODIAC_SIGNS = [
       "Aquarius",
       "Leo",
       "Sagittarius"
-    ]
+    ],
+    "lindaGoodmanMale": "The Libra Man is Venus's charming strategist. He seeks complete harmony, fair play, and aesthetic partnership. He weighs every decision with careful deliberation and blossoms when his home is serene and elegant.",
+    "lindaGoodmanFemale": "The Libra Woman blends velvet softness with razor-sharp logic. She is a dedicated companion who looks magnificent by your side and provides brilliant counsel for your joint ambitions.",
+    "lindaGoodmanSecret": "Maintain peaceful surroundings and soft tones. Never yell or create harsh, vulgar disharmony."
   },
   {
     "id": "scorpio",
@@ -395,7 +416,10 @@ const ZODIAC_SIGNS = [
       "Pisces",
       "Virgo",
       "Capricorn"
-    ]
+    ],
+    "lindaGoodmanMale": "The Scorpio Man possesses piercing hypnotic eyes and an impenetrable inner fortress. His love is all-or-nothing, fierce, and transformative. Give him absolute honesty and unflinching loyalty, and he will love you beyond eternity.",
+    "lindaGoodmanFemale": "The Scorpio Woman is an enigmatic enchantress of unmatched depth. She sees straight through superficial facades. Her devotion is monumental; once committed, she is an invincible fortress beside her mate.",
+    "lindaGoodmanSecret": "Be entirely truthful and transparent. Never flirt with others to make them jealous."
   },
   {
     "id": "sagittarius",
@@ -444,7 +468,10 @@ const ZODIAC_SIGNS = [
       "Leo",
       "Libra",
       "Aquarius"
-    ]
+    ],
+    "lindaGoodmanMale": "The Sagittarius Man is Jupiter's joyful archer. Honest, generous, and endlessly idealistic. He speaks candidly without malice. Give him broad horizons and trust his integrity, and he will make life a grand adventure.",
+    "lindaGoodmanFemale": "The Sagittarius Woman is the spirited explorer: candid, fiercely honest, warm, and playful. She values intellectual camaraderie and open skies. Never smother her with possessiveness, and she will be your joyful companion forever.",
+    "lindaGoodmanSecret": "Allow them physical and mental freedom. Laugh with them and never cage their enthusiasm."
   },
   {
     "id": "capricorn",
@@ -493,7 +520,10 @@ const ZODIAC_SIGNS = [
       "Virgo",
       "Scorpio",
       "Pisces"
-    ]
+    ],
+    "lindaGoodmanMale": "The Capricorn Man is Saturn's master builder. Reserved on the outside, but deeply sentimental underneath. He ages in reverse, growing warmer and happier with each passing decade. He builds a dynasty of security for his family.",
+    "lindaGoodmanFemale": "The Capricorn Woman is a lady of substance, quiet dignity, and formidable competence. She seeks enduring family honor and security. Value her ambitions and treat her with gentle courtesy, and she will be an unyielding rock of devotion.",
+    "lindaGoodmanSecret": "Respect their family and long-term career ambitions. Provide quiet stability, not fickle drama."
   },
   {
     "id": "aquarius",
@@ -542,7 +572,10 @@ const ZODIAC_SIGNS = [
       "Libra",
       "Aries",
       "Sagittarius"
-    ]
+    ],
+    "lindaGoodmanMale": "The Aquarius Man is the lightning bolt of tomorrow. Free-spirited, unpredictable, and a friend to humanity. He cannot be forced into conventional molds, but if you love his mind and respect his space, he will be your devoted companion.",
+    "lindaGoodmanFemale": "The Aquarius Woman is an unconventional butterfly. Fascinating, open-minded, and authentic. She loves without possessive chains and needs a partner who is first and foremost her truest intellectual confidant.",
+    "lindaGoodmanSecret": "Never cage them with jealousy or petty suspicions. Appeal to their intellect and sense of fairness."
   },
   {
     "id": "pisces",
@@ -591,7 +624,10 @@ const ZODIAC_SIGNS = [
       "Scorpio",
       "Taurus",
       "Capricorn"
-    ]
+    ],
+    "lindaGoodmanMale": "The Pisces Man is Neptune's gentle poet. Highly intuitive, compassionate, and richly imaginative. He needs a partner who provides warm, grounding encouragement without crushing his delicate creative dreams.",
+    "lindaGoodmanFemale": "The Pisces Woman is the mystical mermaid. Soft, tender, and deeply sympathetic. She makes her mate feel cherished, understood, and protective. In her quiet presence, worldly troubles melt away.",
+    "lindaGoodmanSecret": "Treat their dreams with gentle care. Provide grounding support without cynicism or harsh rebukes."
   }
 ];
 
@@ -602,9 +638,17 @@ const ZODIAC_PAIRS = {
     "overallScore": 82,
     "colorCategory": "green",
     "shadeLabel": "Harmonious Union",
-    "aspectName": "Conjunction (Mirror Alignment)",
-    "headline": "Aries & Aries: Deep Mirror Empathy & Shared Instincts",
-    "summary": "Sharing the exact same sun sign gives you an instinctual understanding of each other's drives and vulnerabilities. You understand each other's moods intuitively, though you must guard against magnifying shared blind spots.",
+    "aspectName": "1-1 Sun Sign Pattern (The Cosmic Mirror)",
+    "vibrationCode": "1-1",
+    "lindaVibration": {
+      "code": "1-1",
+      "title": "1-1 Sun Sign Pattern (The Cosmic Mirror)",
+      "theme": "Mirror Empathy & Double Ego Reflection",
+      "summary": "In Linda Goodman's Love Signs, the 1-1 vibration is like gazing directly into an astrological mirror. You recognize each other's hidden virtues and deepest faults instantly. This creates profound telepathic empathy, but both partners must guard against magnifying identical blind spots.",
+      "karmicLesson": "Cultivating emotional humility and learning self-acceptance through observing your own nature reflected in your mate."
+    },
+    "headline": "Aries & Aries: Mirror Empathy & Double Ego Reflection",
+    "summary": "In Linda Goodman's Love Signs, the 1-1 vibration is like gazing directly into an astrological mirror. You recognize each other's hidden virtues and deepest faults instantly. This creates profound telepathic empathy, but both partners must guard against magnifying identical blind spots.",
     "parameters": {
       "emotional": 82,
       "communication": 82,
@@ -615,9 +659,9 @@ const ZODIAC_PAIRS = {
     },
     "elementSynergy": {
       "title": "Double Fire (Electric Blaze)",
-      "text": "Intense passion, shared ambition, and instant adrenaline. You fuel each other's dreams, but must ensure competitive sparks don't burn down emotional bridges."
+      "text": "As Linda Goodman observed, two Fire signs create immediate enthusiasm and dramatic warmth. You champion each other's boldness, but must take care that competitive sparks don't burn down tender feelings."
     },
-    "modalitySynergy": "Both Cardinal: Two visionary leaders who love initiating projects. Take turns steering to prevent power struggles.",
+    "modalitySynergy": "Both Cardinal (Initiators): Two natural leaders. Linda Goodman advised taking turns leading joint projects to eliminate power struggles.",
     "strengths": [
       "Natural understanding: Aries and Aries instinctively comprehend each other's core motivations.",
       "Complimentary emotional rhythms that make daily life and domestic partnership feel comforting and safe.",
@@ -634,31 +678,39 @@ const ZODIAC_PAIRS = {
     ],
     "celebrityCouples": "Celebrated Aries & Aries cosmic pairs",
     "genderAdvice": {
-      "male_female": "When a Aries man and a Aries woman unite, balancing his Mars/solar leadership with her emotional sanctuary fosters lasting harmony.",
-      "female_male": "When a Aries woman and a Aries man unite, celebrating her creative initiative while valuing his steadfast protection builds an unbreakable bond.",
-      "same_sex": "In a union between two souls with Aries and Aries energies, open communication and honoring personal autonomy keeps the romance deeply alive."
+      "male_female": "In Linda Goodman's Love Signs analysis of the Aries Man with the Aries Woman (1-1 Vibration): He expresses his masculine planetary energy through Mars, while she responds with Mars grace. Success blooms when he honors her emotional sanctuary and she champions his purposeful ambitions.",
+      "female_male": "In Linda Goodman's Love Signs analysis of the Aries Woman with the Aries Man (1-1 Vibration): She brings Aries's radiant initiative to the union, while he offers Aries's steadfast anchor. When she trusts his protective strength and he respects her autonomy, their bond becomes unbreakable.",
+      "same_sex": "In Linda Goodman's cosmic synastry (1-1 Vibration): Two souls united under Aries and Aries celestial energies find harmony when honoring personal autonomy, balancing giving with receiving, and allowing their elemental natures to enrich each other."
     }
   },
   "aries_taurus": {
     "sign1": "aries",
     "sign2": "taurus",
-    "overallScore": 62,
+    "overallScore": 64,
     "colorCategory": "amber",
     "shadeLabel": "Dynamic Potential",
-    "aspectName": "Semisextile (Neighboring Contrast)",
-    "headline": "Aries & Taurus: Complementary Growth & Mutual Learning",
-    "summary": "As neighboring signs, you operate from contrasting elemental perspectives. This match creates a learning journey where each partner expands the other's horizons if patience is practiced.",
+    "aspectName": "2-12 Sun Sign Pattern (The Karmic Teacher & Pupil)",
+    "vibrationCode": "2-12",
+    "lindaVibration": {
+      "code": "2-12",
+      "title": "2-12 Sun Sign Pattern (The Karmic Teacher & Pupil)",
+      "theme": "Karmic Learning, Compassion & Gentle Tutoring",
+      "summary": "According to Linda Goodman, the 2-12 vibration signifies that one sign has spiritually passed through the other's grade in the cosmic school. There is a deep, unspoken bond of patience, protection, and gentle tutoring. Tolerating different pacing unlocks profound mutual growth.",
+      "karmicLesson": "Bridging contrasting elemental perspectives through patient compassion and secret mutual admiration."
+    },
+    "headline": "Aries & Taurus: Karmic Learning, Compassion & Gentle Tutoring",
+    "summary": "According to Linda Goodman, the 2-12 vibration signifies that one sign has spiritually passed through the other's grade in the cosmic school. There is a deep, unspoken bond of patience, protection, and gentle tutoring. Tolerating different pacing unlocks profound mutual growth.",
     "parameters": {
-      "emotional": 60,
-      "communication": 62,
-      "romance": 59,
-      "trust": 62,
-      "stability": 64,
-      "lifestyle": 62
+      "emotional": 62,
+      "communication": 64,
+      "romance": 61,
+      "trust": 64,
+      "stability": 66,
+      "lifestyle": 64
     },
     "elementSynergy": {
       "title": "Fire & Earth (Hearthstone Fire)",
-      "text": "Fire provides creative energy and visionary boldness; Earth builds the practical structures to turn those visions into reality."
+      "text": "Fire provides creative courage and solar warmth; Earth builds the practical structures to turn those visions into lasting wealth and security."
     },
     "modalitySynergy": "Cardinal + Fixed: A balanced dynamic where one partner initiates, stabilizes, or provides adaptable perspective to the other.",
     "strengths": [
@@ -671,37 +723,45 @@ const ZODIAC_PAIRS = {
       "Occasional friction over lifestyle pacing or decision-making speed."
     ],
     "tips": [
-      "Adopt the 24-hour cooling off rule during heated arguments before revisiting sensitive topics.",
-      "Remember that Taurus communicates love in their own authentic dialect.",
-      "Celebrate your differences as unique strengths rather than flaws to be corrected."
+      "Adopt Linda Goodman's cooling-off principle during heated arguments before revisiting sensitive topics.",
+      "Remember that Taurus communicates love in their own authentic elemental dialect.",
+      "Celebrate your differences as complementary superpowers rather than personal flaws."
     ],
     "celebrityCouples": "Celebrated Aries & Taurus cosmic pairs",
     "genderAdvice": {
-      "male_female": "When a Aries man and a Taurus woman unite, balancing his Mars/solar leadership with her emotional sanctuary fosters lasting harmony.",
-      "female_male": "When a Aries woman and a Taurus man unite, celebrating her creative initiative while valuing his steadfast protection builds an unbreakable bond.",
-      "same_sex": "In a union between two souls with Aries and Taurus energies, open communication and honoring personal autonomy keeps the romance deeply alive."
+      "male_female": "In Linda Goodman's Love Signs analysis of the Aries Man with the Taurus Woman (2-12 Vibration): He expresses his masculine planetary energy through Mars, while she responds with Venus grace. Success blooms when he honors her emotional sanctuary and she champions his purposeful ambitions.",
+      "female_male": "In Linda Goodman's Love Signs analysis of the Aries Woman with the Taurus Man (2-12 Vibration): She brings Aries's radiant initiative to the union, while he offers Taurus's steadfast anchor. When she trusts his protective strength and he respects her autonomy, their bond becomes unbreakable.",
+      "same_sex": "In Linda Goodman's cosmic synastry (2-12 Vibration): Two souls united under Aries and Taurus celestial energies find harmony when honoring personal autonomy, balancing giving with receiving, and allowing their elemental natures to enrich each other."
     }
   },
   "aries_gemini": {
     "sign1": "aries",
     "sign2": "gemini",
-    "overallScore": 86,
+    "overallScore": 88,
     "colorCategory": "green",
     "shadeLabel": "Harmonious Union",
-    "aspectName": "Sextile (Harmonious Elemental Flow)",
-    "headline": "Aries & Gemini: Stimulating Synergy & Easy Friendship",
-    "summary": "Your elements naturally complement each other (Fire invigorates Air, or Water nourishes Earth). Communication flows effortlessly, laughter comes easily, and mutual respect flourishes.",
+    "aspectName": "3-11 Sun Sign Pattern (Karmic Friends & Sympathetic Lovers)",
+    "vibrationCode": "3-11",
+    "lindaVibration": {
+      "code": "3-11",
+      "title": "3-11 Sun Sign Pattern (Karmic Friends & Sympathetic Lovers)",
+      "theme": "Enduring Camaraderie, Easy Forgiveness & High Devotion",
+      "summary": "Linda Goodman considered the 3-11 vibration one of the happiest and most enduring in the cosmos. Your signs form a natural sextile of friendship. Even through intense misunderstandings, 3-11 lovers remain steadfast allies, quick to forgive and eager to laugh.",
+      "karmicLesson": "Nurturing lifelong loyalty, humanitarian generosity, and effortless mutual forgiveness."
+    },
+    "headline": "Aries & Gemini: Enduring Camaraderie, Easy Forgiveness & High Devotion",
+    "summary": "Linda Goodman considered the 3-11 vibration one of the happiest and most enduring in the cosmos. Your signs form a natural sextile of friendship. Even through intense misunderstandings, 3-11 lovers remain steadfast allies, quick to forgive and eager to laugh.",
     "parameters": {
-      "emotional": 84,
-      "communication": 90,
-      "romance": 92,
-      "trust": 86,
-      "stability": 85,
-      "lifestyle": 86
+      "emotional": 86,
+      "communication": 92,
+      "romance": 94,
+      "trust": 88,
+      "stability": 87,
+      "lifestyle": 88
     },
     "elementSynergy": {
-      "title": "Fire & Air (Inspirational Catalyst)",
-      "text": "Air fuels Fire's passion, while Fire brings warmth and bold action to Air's inventive ideas. An exciting, socially vibrant union."
+      "title": "Fire & Air (Inspirational Breeze)",
+      "text": "Air fans Fire's flames into glorious creative radiance, while Fire warms Air's visionary ideals into bold reality. An exciting, intellectually vibrant union."
     },
     "modalitySynergy": "Cardinal + Mutable: A balanced dynamic where one partner initiates, stabilizes, or provides adaptable perspective to the other.",
     "strengths": [
@@ -720,33 +780,41 @@ const ZODIAC_PAIRS = {
     ],
     "celebrityCouples": "Paul Rudd (Aries) & Julie Yaeger (Gemini)",
     "genderAdvice": {
-      "male_female": "When a Aries man and a Gemini woman unite, balancing his Mars/solar leadership with her emotional sanctuary fosters lasting harmony.",
-      "female_male": "When a Aries woman and a Gemini man unite, celebrating her creative initiative while valuing his steadfast protection builds an unbreakable bond.",
-      "same_sex": "In a union between two souls with Aries and Gemini energies, open communication and honoring personal autonomy keeps the romance deeply alive."
+      "male_female": "In Linda Goodman's Love Signs analysis of the Aries Man with the Gemini Woman (3-11 Vibration): He expresses his masculine planetary energy through Mars, while she responds with Mercury grace. Success blooms when he honors her emotional sanctuary and she champions his purposeful ambitions.",
+      "female_male": "In Linda Goodman's Love Signs analysis of the Aries Woman with the Gemini Man (3-11 Vibration): She brings Aries's radiant initiative to the union, while he offers Gemini's steadfast anchor. When she trusts his protective strength and he respects her autonomy, their bond becomes unbreakable.",
+      "same_sex": "In Linda Goodman's cosmic synastry (3-11 Vibration): Two souls united under Aries and Gemini celestial energies find harmony when honoring personal autonomy, balancing giving with receiving, and allowing their elemental natures to enrich each other."
     }
   },
   "aries_cancer": {
     "sign1": "aries",
     "sign2": "cancer",
-    "overallScore": 52,
+    "overallScore": 54,
     "colorCategory": "amber",
     "shadeLabel": "Dynamic Potential",
-    "aspectName": "Square (Passionate Friction & Dynamic Growth)",
-    "headline": "Aries & Cancer: Electrifying Spark with Creative Challenge",
-    "summary": "Signs at a 90\u00b0 square share the same modality but clash elementally. This generates high attraction, intense emotional chemistry, and spirited debates that demand conscious diplomacy and mutual compromise.",
+    "aspectName": "4-10 Sun Sign Pattern (The Karmic Challenge & Crucible)",
+    "vibrationCode": "4-10",
+    "lindaVibration": {
+      "code": "4-10",
+      "title": "4-10 Sun Sign Pattern (The Karmic Challenge & Crucible)",
+      "theme": "Passionate Friction, Dramatic Chemistry & Soul Crucible",
+      "summary": "Linda Goodman described the 4-10 square vibration as the classic crucible of soul growth. Sharing the same modality but differing elements produces magnetic physical attraction paired with clashes of will. If ego yields to love, this union builds invincible diamond strength.",
+      "karmicLesson": "Transcending stubborn pride and mastering the noble art of sacrificial compromise."
+    },
+    "headline": "Aries & Cancer: Passionate Friction, Dramatic Chemistry & Soul Crucible",
+    "summary": "Linda Goodman described the 4-10 square vibration as the classic crucible of soul growth. Sharing the same modality but differing elements produces magnetic physical attraction paired with clashes of will. If ego yields to love, this union builds invincible diamond strength.",
     "parameters": {
-      "emotional": 42,
-      "communication": 52,
-      "romance": 49,
-      "trust": 52,
-      "stability": 51,
-      "lifestyle": 44
+      "emotional": 44,
+      "communication": 54,
+      "romance": 51,
+      "trust": 54,
+      "stability": 53,
+      "lifestyle": 46
     },
     "elementSynergy": {
-      "title": "Fire & Water (Steam & Intense Chemistry)",
-      "text": "Extremely passionate and emotionally turbulent. Fire inspires Water to take bold leaps; Water teaches Fire the beauty of tender emotional depth."
+      "title": "Fire & Water (Steam & Intense Passion)",
+      "text": "Extremely passionate and emotionally turbulent. Fire inspires Water to take brave leaps; Water teaches Fire the beauty of quiet emotional vulnerability."
     },
-    "modalitySynergy": "Both Cardinal: Two visionary leaders who love initiating projects. Take turns steering to prevent power struggles.",
+    "modalitySynergy": "Both Cardinal (Initiators): Two natural leaders. Linda Goodman advised taking turns leading joint projects to eliminate power struggles.",
     "strengths": [
       "Dynamic growth: Aries introduces Cancer to new perspectives and vice versa.",
       "Engaging romantic chemistry where you never run out of intriguing things to discover about each other.",
@@ -757,37 +825,45 @@ const ZODIAC_PAIRS = {
       "Occasional friction over lifestyle pacing or decision-making speed."
     ],
     "tips": [
-      "Adopt the 24-hour cooling off rule during heated arguments before revisiting sensitive topics.",
-      "Remember that Cancer communicates love in their own authentic dialect.",
-      "Celebrate your differences as unique strengths rather than flaws to be corrected."
+      "Adopt Linda Goodman's cooling-off principle during heated arguments before revisiting sensitive topics.",
+      "Remember that Cancer communicates love in their own authentic elemental dialect.",
+      "Celebrate your differences as complementary superpowers rather than personal flaws."
     ],
     "celebrityCouples": "Celebrated Aries & Cancer cosmic pairs",
     "genderAdvice": {
-      "male_female": "When a Aries man and a Cancer woman unite, balancing his Mars/solar leadership with her emotional sanctuary fosters lasting harmony.",
-      "female_male": "When a Aries woman and a Cancer man unite, celebrating her creative initiative while valuing his steadfast protection builds an unbreakable bond.",
-      "same_sex": "In a union between two souls with Aries and Cancer energies, open communication and honoring personal autonomy keeps the romance deeply alive."
+      "male_female": "In Linda Goodman's Love Signs analysis of the Aries Man with the Cancer Woman (4-10 Vibration): He expresses his masculine planetary energy through Mars, while she responds with Moon grace. Success blooms when he honors her emotional sanctuary and she champions his purposeful ambitions.",
+      "female_male": "In Linda Goodman's Love Signs analysis of the Aries Woman with the Cancer Man (4-10 Vibration): She brings Aries's radiant initiative to the union, while he offers Cancer's steadfast anchor. When she trusts his protective strength and he respects her autonomy, their bond becomes unbreakable.",
+      "same_sex": "In Linda Goodman's cosmic synastry (4-10 Vibration): Two souls united under Aries and Cancer celestial energies find harmony when honoring personal autonomy, balancing giving with receiving, and allowing their elemental natures to enrich each other."
     }
   },
   "aries_leo": {
     "sign1": "aries",
     "sign2": "leo",
-    "overallScore": 96,
+    "overallScore": 97,
     "colorCategory": "green",
     "shadeLabel": "Harmonious Union",
-    "aspectName": "Trine (Divine Soulmate Element)",
-    "headline": "Aries & Leo: Effortless Harmony & Natural Soul Resonance",
-    "summary": "Sharing the same element (Fire-Fire, Earth-Earth, Air-Air, Water-Water) creates an instinctive, harmonious flow. You breathe the same spiritual air, understand each other's pacing, and feel deeply at home together.",
+    "aspectName": "5-9 Sun Sign Pattern (The Divine Cosmic Blessing)",
+    "vibrationCode": "5-9",
+    "lindaVibration": {
+      "code": "5-9",
+      "title": "5-9 Sun Sign Pattern (The Divine Cosmic Blessing)",
+      "theme": "Golden Trine, Soulmate Telepathy & Natural Sympathy",
+      "summary": "Linda Goodman's most celebrated synastry pattern! Sharing the same sacred element (Fire, Earth, Air, or Water) brings instant soul recognition. You forgive each other almost effortlessly, inspire each other's dreams, and enjoy an almost telepathic understanding.",
+      "karmicLesson": "Preserving sacred gratitude and avoiding taking your effortless soul harmony for granted."
+    },
+    "headline": "Aries & Leo: Golden Trine, Soulmate Telepathy & Natural Sympathy",
+    "summary": "Linda Goodman's most celebrated synastry pattern! Sharing the same sacred element (Fire, Earth, Air, or Water) brings instant soul recognition. You forgive each other almost effortlessly, inspire each other's dreams, and enjoy an almost telepathic understanding.",
     "parameters": {
-      "emotional": 96,
-      "communication": 96,
+      "emotional": 97,
+      "communication": 97,
       "romance": 98,
-      "trust": 96,
-      "stability": 91,
+      "trust": 97,
+      "stability": 92,
       "lifestyle": 96
     },
     "elementSynergy": {
       "title": "Double Fire (Electric Blaze)",
-      "text": "Intense passion, shared ambition, and instant adrenaline. You fuel each other's dreams, but must ensure competitive sparks don't burn down emotional bridges."
+      "text": "As Linda Goodman observed, two Fire signs create immediate enthusiasm and dramatic warmth. You champion each other's boldness, but must take care that competitive sparks don't burn down tender feelings."
     },
     "modalitySynergy": "Cardinal + Fixed: A balanced dynamic where one partner initiates, stabilizes, or provides adaptable perspective to the other.",
     "strengths": [
@@ -806,40 +882,48 @@ const ZODIAC_PAIRS = {
     ],
     "celebrityCouples": "Sarah Jessica Parker (Aries) & Matthew Broderick (Aries) / Kourtney Kardashian (Aries) & Travis Barker (Scorpio)",
     "genderAdvice": {
-      "male_female": "When a Aries man and a Leo woman unite, balancing his Mars/solar leadership with her emotional sanctuary fosters lasting harmony.",
-      "female_male": "When a Aries woman and a Leo man unite, celebrating her creative initiative while valuing his steadfast protection builds an unbreakable bond.",
-      "same_sex": "In a union between two souls with Aries and Leo energies, open communication and honoring personal autonomy keeps the romance deeply alive."
+      "male_female": "In Linda Goodman's Love Signs analysis of the Aries Man with the Leo Woman (5-9 Vibration): He expresses his masculine planetary energy through Mars, while she responds with Sun grace. Success blooms when he honors her emotional sanctuary and she champions his purposeful ambitions.",
+      "female_male": "In Linda Goodman's Love Signs analysis of the Aries Woman with the Leo Man (5-9 Vibration): She brings Aries's radiant initiative to the union, while he offers Leo's steadfast anchor. When she trusts his protective strength and he respects her autonomy, their bond becomes unbreakable.",
+      "same_sex": "In Linda Goodman's cosmic synastry (5-9 Vibration): Two souls united under Aries and Leo celestial energies find harmony when honoring personal autonomy, balancing giving with receiving, and allowing their elemental natures to enrich each other."
     }
   },
   "aries_virgo": {
     "sign1": "aries",
     "sign2": "virgo",
-    "overallScore": 46,
+    "overallScore": 48,
     "colorCategory": "red",
     "shadeLabel": "Growth Challenge",
-    "aspectName": "Quincunx (Mysterious Intrigue & Karmic Adjustment)",
-    "headline": "Aries & Virgo: Enigmatic Attraction Demanding Patience",
-    "summary": "Separated by five signs, you have little in common astrologically, which creates an intriguing magnetic mystery. Succeeding together requires appreciating your partner's entirely unique perspective on life.",
+    "aspectName": "6-8 Sun Sign Pattern (Karmic Mystery & Devoted Service)",
+    "vibrationCode": "6-8",
+    "lindaVibration": {
+      "code": "6-8",
+      "title": "6-8 Sun Sign Pattern (Karmic Mystery & Devoted Service)",
+      "theme": "Enigmatic Fascination, Hypnotic Pull & Karmic Duty",
+      "summary": "According to Linda Goodman, the 6-8 quincunx vibration is cloaked in hypnotic fascination and karmic debt. One partner feels drawn to serve, protect, or nurture the other, generating deep emotional or physical magnetism that requires profound patience to untangle.",
+      "karmicLesson": "Practicing unconditional love free from selfish demands, embracing differences that cannot be logically explained."
+    },
+    "headline": "Aries & Virgo: Enigmatic Fascination, Hypnotic Pull & Karmic Duty",
+    "summary": "According to Linda Goodman, the 6-8 quincunx vibration is cloaked in hypnotic fascination and karmic debt. One partner feels drawn to serve, protect, or nurture the other, generating deep emotional or physical magnetism that requires profound patience to untangle.",
     "parameters": {
-      "emotional": 44,
-      "communication": 49,
-      "romance": 43,
-      "trust": 46,
-      "stability": 45,
-      "lifestyle": 38
+      "emotional": 46,
+      "communication": 51,
+      "romance": 45,
+      "trust": 48,
+      "stability": 47,
+      "lifestyle": 40
     },
     "elementSynergy": {
       "title": "Fire & Earth (Hearthstone Fire)",
-      "text": "Fire provides creative energy and visionary boldness; Earth builds the practical structures to turn those visions into reality."
+      "text": "Fire provides creative courage and solar warmth; Earth builds the practical structures to turn those visions into lasting wealth and security."
     },
     "modalitySynergy": "Cardinal + Mutable: A balanced dynamic where one partner initiates, stabilizes, or provides adaptable perspective to the other.",
     "strengths": [
-      "Powerful karmic pull that pushes both individuals to mature emotionally.",
+      "Powerful karmic pull that pushes both souls to mature emotionally and spiritually.",
       "Unforgettable chemistry and passion born from sheer elemental contrast.",
       "Opportunity to develop immense patience, empathy, and unconditional love."
     ],
     "challenges": [
-      "Fundamental contrast in priorities: Aries's instinctual approach may confuse Virgo.",
+      "Fundamental contrast in priorities: Aries's instinctual approach may baffle Virgo.",
       "Tendency to misinterpret your partner's need for space or emotional expression."
     ],
     "tips": [
@@ -849,33 +933,41 @@ const ZODIAC_PAIRS = {
     ],
     "celebrityCouples": "Celebrated Aries & Virgo cosmic pairs",
     "genderAdvice": {
-      "male_female": "When a Aries man and a Virgo woman unite, balancing his Mars/solar leadership with her emotional sanctuary fosters lasting harmony.",
-      "female_male": "When a Aries woman and a Virgo man unite, celebrating her creative initiative while valuing his steadfast protection builds an unbreakable bond.",
-      "same_sex": "In a union between two souls with Aries and Virgo energies, open communication and honoring personal autonomy keeps the romance deeply alive."
+      "male_female": "In Linda Goodman's Love Signs analysis of the Aries Man with the Virgo Woman (6-8 Vibration): He expresses his masculine planetary energy through Mars, while she responds with Mercury grace. Success blooms when he honors her emotional sanctuary and she champions his purposeful ambitions.",
+      "female_male": "In Linda Goodman's Love Signs analysis of the Aries Woman with the Virgo Man (6-8 Vibration): She brings Aries's radiant initiative to the union, while he offers Virgo's steadfast anchor. When she trusts his protective strength and he respects her autonomy, their bond becomes unbreakable.",
+      "same_sex": "In Linda Goodman's cosmic synastry (6-8 Vibration): Two souls united under Aries and Virgo celestial energies find harmony when honoring personal autonomy, balancing giving with receiving, and allowing their elemental natures to enrich each other."
     }
   },
   "aries_libra": {
     "sign1": "aries",
     "sign2": "libra",
-    "overallScore": 80,
+    "overallScore": 82,
     "colorCategory": "green",
     "shadeLabel": "Harmonious Union",
-    "aspectName": "Opposition (Cosmic Magnetism & Polar Balance)",
-    "headline": "Aries & Libra: Magnetic Attraction & Yin-Yang Balance",
-    "summary": "Sitting 180\u00b0 across the zodiac wheel, you are polar opposites. What one lacks, the other possesses in abundance. The chemistry is electric, offering the potential to form an unbeatable yin-and-yang partnership.",
+    "aspectName": "7-7 Sun Sign Pattern (Polar Magnetism & Cosmic Complements)",
+    "vibrationCode": "7-7",
+    "lindaVibration": {
+      "code": "7-7",
+      "title": "7-7 Sun Sign Pattern (Polar Magnetism & Cosmic Complements)",
+      "theme": "Opposites Attract, Celestial Electricity & Yin-Yang Balance",
+      "summary": "Sitting 180\u00b0 opposite on the zodiac wheel, Linda Goodman saw the 7-7 vibration as two halves of a single soul. What one lacks, the other possesses in abundance. It generates high romantic voltage: either a magnificent lifelong union or an explosive standoff.",
+      "karmicLesson": "Finding wholeness through merging opposite qualities into a unified, harmonious whole."
+    },
+    "headline": "Aries & Libra: Opposites Attract, Celestial Electricity & Yin-Yang Balance",
+    "summary": "Sitting 180\u00b0 opposite on the zodiac wheel, Linda Goodman saw the 7-7 vibration as two halves of a single soul. What one lacks, the other possesses in abundance. It generates high romantic voltage: either a magnificent lifelong union or an explosive standoff.",
     "parameters": {
-      "emotional": 78,
-      "communication": 84,
-      "romance": 86,
-      "trust": 80,
-      "stability": 79,
-      "lifestyle": 80
+      "emotional": 80,
+      "communication": 86,
+      "romance": 88,
+      "trust": 82,
+      "stability": 81,
+      "lifestyle": 82
     },
     "elementSynergy": {
-      "title": "Fire & Air (Inspirational Catalyst)",
-      "text": "Air fuels Fire's passion, while Fire brings warmth and bold action to Air's inventive ideas. An exciting, socially vibrant union."
+      "title": "Fire & Air (Inspirational Breeze)",
+      "text": "Air fans Fire's flames into glorious creative radiance, while Fire warms Air's visionary ideals into bold reality. An exciting, intellectually vibrant union."
     },
-    "modalitySynergy": "Both Cardinal: Two visionary leaders who love initiating projects. Take turns steering to prevent power struggles.",
+    "modalitySynergy": "Both Cardinal (Initiators): Two natural leaders. Linda Goodman advised taking turns leading joint projects to eliminate power struggles.",
     "strengths": [
       "Natural understanding: Aries and Libra instinctively comprehend each other's core motivations.",
       "Complimentary emotional rhythms that make daily life and domestic partnership feel comforting and safe.",
@@ -892,31 +984,39 @@ const ZODIAC_PAIRS = {
     ],
     "celebrityCouples": "Michael Douglas (Libra) & Catherine Zeta-Jones (Libra)",
     "genderAdvice": {
-      "male_female": "When a Aries man and a Libra woman unite, balancing his Mars/solar leadership with her emotional sanctuary fosters lasting harmony.",
-      "female_male": "When a Aries woman and a Libra man unite, celebrating her creative initiative while valuing his steadfast protection builds an unbreakable bond.",
-      "same_sex": "In a union between two souls with Aries and Libra energies, open communication and honoring personal autonomy keeps the romance deeply alive."
+      "male_female": "In Linda Goodman's Love Signs analysis of the Aries Man with the Libra Woman (7-7 Vibration): He expresses his masculine planetary energy through Mars, while she responds with Venus grace. Success blooms when he honors her emotional sanctuary and she champions his purposeful ambitions.",
+      "female_male": "In Linda Goodman's Love Signs analysis of the Aries Woman with the Libra Man (7-7 Vibration): She brings Aries's radiant initiative to the union, while he offers Libra's steadfast anchor. When she trusts his protective strength and he respects her autonomy, their bond becomes unbreakable.",
+      "same_sex": "In Linda Goodman's cosmic synastry (7-7 Vibration): Two souls united under Aries and Libra celestial energies find harmony when honoring personal autonomy, balancing giving with receiving, and allowing their elemental natures to enrich each other."
     }
   },
   "aries_scorpio": {
     "sign1": "aries",
     "sign2": "scorpio",
-    "overallScore": 50,
+    "overallScore": 51,
     "colorCategory": "amber",
     "shadeLabel": "Dynamic Potential",
-    "aspectName": "Quincunx (Mysterious Intrigue & Karmic Adjustment)",
-    "headline": "Aries & Scorpio: Enigmatic Attraction Demanding Patience",
-    "summary": "Separated by five signs, you have little in common astrologically, which creates an intriguing magnetic mystery. Succeeding together requires appreciating your partner's entirely unique perspective on life.",
+    "aspectName": "6-8 Sun Sign Pattern (Karmic Mystery & Devoted Service)",
+    "vibrationCode": "6-8",
+    "lindaVibration": {
+      "code": "6-8",
+      "title": "6-8 Sun Sign Pattern (Karmic Mystery & Devoted Service)",
+      "theme": "Enigmatic Fascination, Hypnotic Pull & Karmic Duty",
+      "summary": "According to Linda Goodman, the 6-8 quincunx vibration is cloaked in hypnotic fascination and karmic debt. One partner feels drawn to serve, protect, or nurture the other, generating deep emotional or physical magnetism that requires profound patience to untangle.",
+      "karmicLesson": "Practicing unconditional love free from selfish demands, embracing differences that cannot be logically explained."
+    },
+    "headline": "Aries & Scorpio: Enigmatic Fascination, Hypnotic Pull & Karmic Duty",
+    "summary": "According to Linda Goodman, the 6-8 quincunx vibration is cloaked in hypnotic fascination and karmic debt. One partner feels drawn to serve, protect, or nurture the other, generating deep emotional or physical magnetism that requires profound patience to untangle.",
     "parameters": {
-      "emotional": 40,
-      "communication": 50,
-      "romance": 47,
-      "trust": 50,
-      "stability": 52,
-      "lifestyle": 42
+      "emotional": 41,
+      "communication": 51,
+      "romance": 48,
+      "trust": 51,
+      "stability": 53,
+      "lifestyle": 43
     },
     "elementSynergy": {
-      "title": "Fire & Water (Steam & Intense Chemistry)",
-      "text": "Extremely passionate and emotionally turbulent. Fire inspires Water to take bold leaps; Water teaches Fire the beauty of tender emotional depth."
+      "title": "Fire & Water (Steam & Intense Passion)",
+      "text": "Extremely passionate and emotionally turbulent. Fire inspires Water to take brave leaps; Water teaches Fire the beauty of quiet emotional vulnerability."
     },
     "modalitySynergy": "Cardinal + Fixed: A balanced dynamic where one partner initiates, stabilizes, or provides adaptable perspective to the other.",
     "strengths": [
@@ -929,37 +1029,45 @@ const ZODIAC_PAIRS = {
       "Occasional friction over lifestyle pacing or decision-making speed."
     ],
     "tips": [
-      "Adopt the 24-hour cooling off rule during heated arguments before revisiting sensitive topics.",
-      "Remember that Scorpio communicates love in their own authentic dialect.",
-      "Celebrate your differences as unique strengths rather than flaws to be corrected."
+      "Adopt Linda Goodman's cooling-off principle during heated arguments before revisiting sensitive topics.",
+      "Remember that Scorpio communicates love in their own authentic elemental dialect.",
+      "Celebrate your differences as complementary superpowers rather than personal flaws."
     ],
     "celebrityCouples": "Celebrated Aries & Scorpio cosmic pairs",
     "genderAdvice": {
-      "male_female": "When a Aries man and a Scorpio woman unite, balancing his Mars/solar leadership with her emotional sanctuary fosters lasting harmony.",
-      "female_male": "When a Aries woman and a Scorpio man unite, celebrating her creative initiative while valuing his steadfast protection builds an unbreakable bond.",
-      "same_sex": "In a union between two souls with Aries and Scorpio energies, open communication and honoring personal autonomy keeps the romance deeply alive."
+      "male_female": "In Linda Goodman's Love Signs analysis of the Aries Man with the Scorpio Woman (6-8 Vibration): He expresses his masculine planetary energy through Mars, while she responds with Pluto & Mars grace. Success blooms when he honors her emotional sanctuary and she champions his purposeful ambitions.",
+      "female_male": "In Linda Goodman's Love Signs analysis of the Aries Woman with the Scorpio Man (6-8 Vibration): She brings Aries's radiant initiative to the union, while he offers Scorpio's steadfast anchor. When she trusts his protective strength and he respects her autonomy, their bond becomes unbreakable.",
+      "same_sex": "In Linda Goodman's cosmic synastry (6-8 Vibration): Two souls united under Aries and Scorpio celestial energies find harmony when honoring personal autonomy, balancing giving with receiving, and allowing their elemental natures to enrich each other."
     }
   },
   "aries_sagittarius": {
     "sign1": "aries",
     "sign2": "sagittarius",
-    "overallScore": 97,
+    "overallScore": 98,
     "colorCategory": "green",
     "shadeLabel": "Harmonious Union",
-    "aspectName": "Trine (Divine Soulmate Element)",
-    "headline": "Aries & Sagittarius: Effortless Harmony & Natural Soul Resonance",
-    "summary": "Sharing the same element (Fire-Fire, Earth-Earth, Air-Air, Water-Water) creates an instinctive, harmonious flow. You breathe the same spiritual air, understand each other's pacing, and feel deeply at home together.",
+    "aspectName": "5-9 Sun Sign Pattern (The Divine Cosmic Blessing)",
+    "vibrationCode": "5-9",
+    "lindaVibration": {
+      "code": "5-9",
+      "title": "5-9 Sun Sign Pattern (The Divine Cosmic Blessing)",
+      "theme": "Golden Trine, Soulmate Telepathy & Natural Sympathy",
+      "summary": "Linda Goodman's most celebrated synastry pattern! Sharing the same sacred element (Fire, Earth, Air, or Water) brings instant soul recognition. You forgive each other almost effortlessly, inspire each other's dreams, and enjoy an almost telepathic understanding.",
+      "karmicLesson": "Preserving sacred gratitude and avoiding taking your effortless soul harmony for granted."
+    },
+    "headline": "Aries & Sagittarius: Golden Trine, Soulmate Telepathy & Natural Sympathy",
+    "summary": "Linda Goodman's most celebrated synastry pattern! Sharing the same sacred element (Fire, Earth, Air, or Water) brings instant soul recognition. You forgive each other almost effortlessly, inspire each other's dreams, and enjoy an almost telepathic understanding.",
     "parameters": {
-      "emotional": 97,
-      "communication": 97,
+      "emotional": 98,
+      "communication": 98,
       "romance": 98,
-      "trust": 97,
-      "stability": 92,
+      "trust": 98,
+      "stability": 93,
       "lifestyle": 96
     },
     "elementSynergy": {
       "title": "Double Fire (Electric Blaze)",
-      "text": "Intense passion, shared ambition, and instant adrenaline. You fuel each other's dreams, but must ensure competitive sparks don't burn down emotional bridges."
+      "text": "As Linda Goodman observed, two Fire signs create immediate enthusiasm and dramatic warmth. You champion each other's boldness, but must take care that competitive sparks don't burn down tender feelings."
     },
     "modalitySynergy": "Cardinal + Mutable: A balanced dynamic where one partner initiates, stabilizes, or provides adaptable perspective to the other.",
     "strengths": [
@@ -978,33 +1086,41 @@ const ZODIAC_PAIRS = {
     ],
     "celebrityCouples": "Celebrated Aries & Sagittarius cosmic pairs",
     "genderAdvice": {
-      "male_female": "When a Aries man and a Sagittarius woman unite, balancing his Mars/solar leadership with her emotional sanctuary fosters lasting harmony.",
-      "female_male": "When a Aries woman and a Sagittarius man unite, celebrating her creative initiative while valuing his steadfast protection builds an unbreakable bond.",
-      "same_sex": "In a union between two souls with Aries and Sagittarius energies, open communication and honoring personal autonomy keeps the romance deeply alive."
+      "male_female": "In Linda Goodman's Love Signs analysis of the Aries Man with the Sagittarius Woman (5-9 Vibration): He expresses his masculine planetary energy through Mars, while she responds with Jupiter grace. Success blooms when he honors her emotional sanctuary and she champions his purposeful ambitions.",
+      "female_male": "In Linda Goodman's Love Signs analysis of the Aries Woman with the Sagittarius Man (5-9 Vibration): She brings Aries's radiant initiative to the union, while he offers Sagittarius's steadfast anchor. When she trusts his protective strength and he respects her autonomy, their bond becomes unbreakable.",
+      "same_sex": "In Linda Goodman's cosmic synastry (5-9 Vibration): Two souls united under Aries and Sagittarius celestial energies find harmony when honoring personal autonomy, balancing giving with receiving, and allowing their elemental natures to enrich each other."
     }
   },
   "aries_capricorn": {
     "sign1": "aries",
     "sign2": "capricorn",
-    "overallScore": 52,
+    "overallScore": 54,
     "colorCategory": "amber",
     "shadeLabel": "Dynamic Potential",
-    "aspectName": "Square (Passionate Friction & Dynamic Growth)",
-    "headline": "Aries & Capricorn: Electrifying Spark with Creative Challenge",
-    "summary": "Signs at a 90\u00b0 square share the same modality but clash elementally. This generates high attraction, intense emotional chemistry, and spirited debates that demand conscious diplomacy and mutual compromise.",
+    "aspectName": "4-10 Sun Sign Pattern (The Karmic Challenge & Crucible)",
+    "vibrationCode": "4-10",
+    "lindaVibration": {
+      "code": "4-10",
+      "title": "4-10 Sun Sign Pattern (The Karmic Challenge & Crucible)",
+      "theme": "Passionate Friction, Dramatic Chemistry & Soul Crucible",
+      "summary": "Linda Goodman described the 4-10 square vibration as the classic crucible of soul growth. Sharing the same modality but differing elements produces magnetic physical attraction paired with clashes of will. If ego yields to love, this union builds invincible diamond strength.",
+      "karmicLesson": "Transcending stubborn pride and mastering the noble art of sacrificial compromise."
+    },
+    "headline": "Aries & Capricorn: Passionate Friction, Dramatic Chemistry & Soul Crucible",
+    "summary": "Linda Goodman described the 4-10 square vibration as the classic crucible of soul growth. Sharing the same modality but differing elements produces magnetic physical attraction paired with clashes of will. If ego yields to love, this union builds invincible diamond strength.",
     "parameters": {
-      "emotional": 50,
-      "communication": 52,
-      "romance": 49,
-      "trust": 52,
-      "stability": 51,
-      "lifestyle": 44
+      "emotional": 52,
+      "communication": 54,
+      "romance": 51,
+      "trust": 54,
+      "stability": 53,
+      "lifestyle": 46
     },
     "elementSynergy": {
       "title": "Fire & Earth (Hearthstone Fire)",
-      "text": "Fire provides creative energy and visionary boldness; Earth builds the practical structures to turn those visions into reality."
+      "text": "Fire provides creative courage and solar warmth; Earth builds the practical structures to turn those visions into lasting wealth and security."
     },
-    "modalitySynergy": "Both Cardinal: Two visionary leaders who love initiating projects. Take turns steering to prevent power struggles.",
+    "modalitySynergy": "Both Cardinal (Initiators): Two natural leaders. Linda Goodman advised taking turns leading joint projects to eliminate power struggles.",
     "strengths": [
       "Dynamic growth: Aries introduces Capricorn to new perspectives and vice versa.",
       "Engaging romantic chemistry where you never run out of intriguing things to discover about each other.",
@@ -1015,37 +1131,45 @@ const ZODIAC_PAIRS = {
       "Occasional friction over lifestyle pacing or decision-making speed."
     ],
     "tips": [
-      "Adopt the 24-hour cooling off rule during heated arguments before revisiting sensitive topics.",
-      "Remember that Capricorn communicates love in their own authentic dialect.",
-      "Celebrate your differences as unique strengths rather than flaws to be corrected."
+      "Adopt Linda Goodman's cooling-off principle during heated arguments before revisiting sensitive topics.",
+      "Remember that Capricorn communicates love in their own authentic elemental dialect.",
+      "Celebrate your differences as complementary superpowers rather than personal flaws."
     ],
     "celebrityCouples": "Celebrated Aries & Capricorn cosmic pairs",
     "genderAdvice": {
-      "male_female": "When a Aries man and a Capricorn woman unite, balancing his Mars/solar leadership with her emotional sanctuary fosters lasting harmony.",
-      "female_male": "When a Aries woman and a Capricorn man unite, celebrating her creative initiative while valuing his steadfast protection builds an unbreakable bond.",
-      "same_sex": "In a union between two souls with Aries and Capricorn energies, open communication and honoring personal autonomy keeps the romance deeply alive."
+      "male_female": "In Linda Goodman's Love Signs analysis of the Aries Man with the Capricorn Woman (4-10 Vibration): He expresses his masculine planetary energy through Mars, while she responds with Saturn grace. Success blooms when he honors her emotional sanctuary and she champions his purposeful ambitions.",
+      "female_male": "In Linda Goodman's Love Signs analysis of the Aries Woman with the Capricorn Man (4-10 Vibration): She brings Aries's radiant initiative to the union, while he offers Capricorn's steadfast anchor. When she trusts his protective strength and he respects her autonomy, their bond becomes unbreakable.",
+      "same_sex": "In Linda Goodman's cosmic synastry (4-10 Vibration): Two souls united under Aries and Capricorn celestial energies find harmony when honoring personal autonomy, balancing giving with receiving, and allowing their elemental natures to enrich each other."
     }
   },
   "aries_aquarius": {
     "sign1": "aries",
     "sign2": "aquarius",
-    "overallScore": 86,
+    "overallScore": 88,
     "colorCategory": "green",
     "shadeLabel": "Harmonious Union",
-    "aspectName": "Sextile (Harmonious Elemental Flow)",
-    "headline": "Aries & Aquarius: Stimulating Synergy & Easy Friendship",
-    "summary": "Your elements naturally complement each other (Fire invigorates Air, or Water nourishes Earth). Communication flows effortlessly, laughter comes easily, and mutual respect flourishes.",
+    "aspectName": "3-11 Sun Sign Pattern (Karmic Friends & Sympathetic Lovers)",
+    "vibrationCode": "3-11",
+    "lindaVibration": {
+      "code": "3-11",
+      "title": "3-11 Sun Sign Pattern (Karmic Friends & Sympathetic Lovers)",
+      "theme": "Enduring Camaraderie, Easy Forgiveness & High Devotion",
+      "summary": "Linda Goodman considered the 3-11 vibration one of the happiest and most enduring in the cosmos. Your signs form a natural sextile of friendship. Even through intense misunderstandings, 3-11 lovers remain steadfast allies, quick to forgive and eager to laugh.",
+      "karmicLesson": "Nurturing lifelong loyalty, humanitarian generosity, and effortless mutual forgiveness."
+    },
+    "headline": "Aries & Aquarius: Enduring Camaraderie, Easy Forgiveness & High Devotion",
+    "summary": "Linda Goodman considered the 3-11 vibration one of the happiest and most enduring in the cosmos. Your signs form a natural sextile of friendship. Even through intense misunderstandings, 3-11 lovers remain steadfast allies, quick to forgive and eager to laugh.",
     "parameters": {
-      "emotional": 84,
-      "communication": 90,
-      "romance": 92,
-      "trust": 86,
-      "stability": 88,
-      "lifestyle": 86
+      "emotional": 86,
+      "communication": 92,
+      "romance": 94,
+      "trust": 88,
+      "stability": 90,
+      "lifestyle": 88
     },
     "elementSynergy": {
-      "title": "Fire & Air (Inspirational Catalyst)",
-      "text": "Air fuels Fire's passion, while Fire brings warmth and bold action to Air's inventive ideas. An exciting, socially vibrant union."
+      "title": "Fire & Air (Inspirational Breeze)",
+      "text": "Air fans Fire's flames into glorious creative radiance, while Fire warms Air's visionary ideals into bold reality. An exciting, intellectually vibrant union."
     },
     "modalitySynergy": "Cardinal + Fixed: A balanced dynamic where one partner initiates, stabilizes, or provides adaptable perspective to the other.",
     "strengths": [
@@ -1064,31 +1188,39 @@ const ZODIAC_PAIRS = {
     ],
     "celebrityCouples": "Celebrated Aries & Aquarius cosmic pairs",
     "genderAdvice": {
-      "male_female": "When a Aries man and a Aquarius woman unite, balancing his Mars/solar leadership with her emotional sanctuary fosters lasting harmony.",
-      "female_male": "When a Aries woman and a Aquarius man unite, celebrating her creative initiative while valuing his steadfast protection builds an unbreakable bond.",
-      "same_sex": "In a union between two souls with Aries and Aquarius energies, open communication and honoring personal autonomy keeps the romance deeply alive."
+      "male_female": "In Linda Goodman's Love Signs analysis of the Aries Man with the Aquarius Woman (3-11 Vibration): He expresses his masculine planetary energy through Mars, while she responds with Uranus & Saturn grace. Success blooms when he honors her emotional sanctuary and she champions his purposeful ambitions.",
+      "female_male": "In Linda Goodman's Love Signs analysis of the Aries Woman with the Aquarius Man (3-11 Vibration): She brings Aries's radiant initiative to the union, while he offers Aquarius's steadfast anchor. When she trusts his protective strength and he respects her autonomy, their bond becomes unbreakable.",
+      "same_sex": "In Linda Goodman's cosmic synastry (3-11 Vibration): Two souls united under Aries and Aquarius celestial energies find harmony when honoring personal autonomy, balancing giving with receiving, and allowing their elemental natures to enrich each other."
     }
   },
   "aries_pisces": {
     "sign1": "aries",
     "sign2": "pisces",
-    "overallScore": 62,
+    "overallScore": 64,
     "colorCategory": "amber",
     "shadeLabel": "Dynamic Potential",
-    "aspectName": "Semisextile (Neighboring Contrast)",
-    "headline": "Aries & Pisces: Complementary Growth & Mutual Learning",
-    "summary": "As neighboring signs, you operate from contrasting elemental perspectives. This match creates a learning journey where each partner expands the other's horizons if patience is practiced.",
+    "aspectName": "2-12 Sun Sign Pattern (The Karmic Teacher & Pupil)",
+    "vibrationCode": "2-12",
+    "lindaVibration": {
+      "code": "2-12",
+      "title": "2-12 Sun Sign Pattern (The Karmic Teacher & Pupil)",
+      "theme": "Karmic Learning, Compassion & Gentle Tutoring",
+      "summary": "According to Linda Goodman, the 2-12 vibration signifies that one sign has spiritually passed through the other's grade in the cosmic school. There is a deep, unspoken bond of patience, protection, and gentle tutoring. Tolerating different pacing unlocks profound mutual growth.",
+      "karmicLesson": "Bridging contrasting elemental perspectives through patient compassion and secret mutual admiration."
+    },
+    "headline": "Aries & Pisces: Karmic Learning, Compassion & Gentle Tutoring",
+    "summary": "According to Linda Goodman, the 2-12 vibration signifies that one sign has spiritually passed through the other's grade in the cosmic school. There is a deep, unspoken bond of patience, protection, and gentle tutoring. Tolerating different pacing unlocks profound mutual growth.",
     "parameters": {
-      "emotional": 52,
-      "communication": 62,
-      "romance": 59,
-      "trust": 62,
-      "stability": 61,
-      "lifestyle": 62
+      "emotional": 54,
+      "communication": 64,
+      "romance": 61,
+      "trust": 64,
+      "stability": 63,
+      "lifestyle": 64
     },
     "elementSynergy": {
-      "title": "Fire & Water (Steam & Intense Chemistry)",
-      "text": "Extremely passionate and emotionally turbulent. Fire inspires Water to take bold leaps; Water teaches Fire the beauty of tender emotional depth."
+      "title": "Fire & Water (Steam & Intense Passion)",
+      "text": "Extremely passionate and emotionally turbulent. Fire inspires Water to take brave leaps; Water teaches Fire the beauty of quiet emotional vulnerability."
     },
     "modalitySynergy": "Cardinal + Mutable: A balanced dynamic where one partner initiates, stabilizes, or provides adaptable perspective to the other.",
     "strengths": [
@@ -1101,37 +1233,45 @@ const ZODIAC_PAIRS = {
       "Occasional friction over lifestyle pacing or decision-making speed."
     ],
     "tips": [
-      "Adopt the 24-hour cooling off rule during heated arguments before revisiting sensitive topics.",
-      "Remember that Pisces communicates love in their own authentic dialect.",
-      "Celebrate your differences as unique strengths rather than flaws to be corrected."
+      "Adopt Linda Goodman's cooling-off principle during heated arguments before revisiting sensitive topics.",
+      "Remember that Pisces communicates love in their own authentic elemental dialect.",
+      "Celebrate your differences as complementary superpowers rather than personal flaws."
     ],
     "celebrityCouples": "Celebrated Aries & Pisces cosmic pairs",
     "genderAdvice": {
-      "male_female": "When a Aries man and a Pisces woman unite, balancing his Mars/solar leadership with her emotional sanctuary fosters lasting harmony.",
-      "female_male": "When a Aries woman and a Pisces man unite, celebrating her creative initiative while valuing his steadfast protection builds an unbreakable bond.",
-      "same_sex": "In a union between two souls with Aries and Pisces energies, open communication and honoring personal autonomy keeps the romance deeply alive."
+      "male_female": "In Linda Goodman's Love Signs analysis of the Aries Man with the Pisces Woman (2-12 Vibration): He expresses his masculine planetary energy through Mars, while she responds with Neptune & Jupiter grace. Success blooms when he honors her emotional sanctuary and she champions his purposeful ambitions.",
+      "female_male": "In Linda Goodman's Love Signs analysis of the Aries Woman with the Pisces Man (2-12 Vibration): She brings Aries's radiant initiative to the union, while he offers Pisces's steadfast anchor. When she trusts his protective strength and he respects her autonomy, their bond becomes unbreakable.",
+      "same_sex": "In Linda Goodman's cosmic synastry (2-12 Vibration): Two souls united under Aries and Pisces celestial energies find harmony when honoring personal autonomy, balancing giving with receiving, and allowing their elemental natures to enrich each other."
     }
   },
   "taurus_aries": {
     "sign1": "taurus",
     "sign2": "aries",
-    "overallScore": 62,
+    "overallScore": 64,
     "colorCategory": "amber",
     "shadeLabel": "Dynamic Potential",
-    "aspectName": "Semisextile (Neighboring Contrast)",
-    "headline": "Taurus & Aries: Complementary Growth & Mutual Learning",
-    "summary": "As neighboring signs, you operate from contrasting elemental perspectives. This match creates a learning journey where each partner expands the other's horizons if patience is practiced.",
+    "aspectName": "2-12 Sun Sign Pattern (The Karmic Teacher & Pupil)",
+    "vibrationCode": "2-12",
+    "lindaVibration": {
+      "code": "2-12",
+      "title": "2-12 Sun Sign Pattern (The Karmic Teacher & Pupil)",
+      "theme": "Karmic Learning, Compassion & Gentle Tutoring",
+      "summary": "According to Linda Goodman, the 2-12 vibration signifies that one sign has spiritually passed through the other's grade in the cosmic school. There is a deep, unspoken bond of patience, protection, and gentle tutoring. Tolerating different pacing unlocks profound mutual growth.",
+      "karmicLesson": "Bridging contrasting elemental perspectives through patient compassion and secret mutual admiration."
+    },
+    "headline": "Taurus & Aries: Karmic Learning, Compassion & Gentle Tutoring",
+    "summary": "According to Linda Goodman, the 2-12 vibration signifies that one sign has spiritually passed through the other's grade in the cosmic school. There is a deep, unspoken bond of patience, protection, and gentle tutoring. Tolerating different pacing unlocks profound mutual growth.",
     "parameters": {
-      "emotional": 60,
-      "communication": 62,
-      "romance": 59,
-      "trust": 62,
-      "stability": 64,
-      "lifestyle": 62
+      "emotional": 62,
+      "communication": 64,
+      "romance": 61,
+      "trust": 64,
+      "stability": 66,
+      "lifestyle": 64
     },
     "elementSynergy": {
       "title": "Fire & Earth (Hearthstone Fire)",
-      "text": "Fire provides creative energy and visionary boldness; Earth builds the practical structures to turn those visions into reality."
+      "text": "Fire provides creative courage and solar warmth; Earth builds the practical structures to turn those visions into lasting wealth and security."
     },
     "modalitySynergy": "Fixed + Cardinal: A balanced dynamic where one partner initiates, stabilizes, or provides adaptable perspective to the other.",
     "strengths": [
@@ -1144,15 +1284,15 @@ const ZODIAC_PAIRS = {
       "Occasional friction over lifestyle pacing or decision-making speed."
     ],
     "tips": [
-      "Adopt the 24-hour cooling off rule during heated arguments before revisiting sensitive topics.",
-      "Remember that Aries communicates love in their own authentic dialect.",
-      "Celebrate your differences as unique strengths rather than flaws to be corrected."
+      "Adopt Linda Goodman's cooling-off principle during heated arguments before revisiting sensitive topics.",
+      "Remember that Aries communicates love in their own authentic elemental dialect.",
+      "Celebrate your differences as complementary superpowers rather than personal flaws."
     ],
     "celebrityCouples": "Celebrated Taurus & Aries cosmic pairs",
     "genderAdvice": {
-      "male_female": "When a Taurus man and a Aries woman unite, balancing his Mars/solar leadership with her emotional sanctuary fosters lasting harmony.",
-      "female_male": "When a Taurus woman and a Aries man unite, celebrating her creative initiative while valuing his steadfast protection builds an unbreakable bond.",
-      "same_sex": "In a union between two souls with Taurus and Aries energies, open communication and honoring personal autonomy keeps the romance deeply alive."
+      "male_female": "In Linda Goodman's Love Signs analysis of the Taurus Man with the Aries Woman (2-12 Vibration): He expresses his masculine planetary energy through Venus, while she responds with Mars grace. Success blooms when he honors her emotional sanctuary and she champions his purposeful ambitions.",
+      "female_male": "In Linda Goodman's Love Signs analysis of the Taurus Woman with the Aries Man (2-12 Vibration): She brings Taurus's radiant initiative to the union, while he offers Aries's steadfast anchor. When she trusts his protective strength and he respects her autonomy, their bond becomes unbreakable.",
+      "same_sex": "In Linda Goodman's cosmic synastry (2-12 Vibration): Two souls united under Taurus and Aries celestial energies find harmony when honoring personal autonomy, balancing giving with receiving, and allowing their elemental natures to enrich each other."
     }
   },
   "taurus_taurus": {
@@ -1161,9 +1301,17 @@ const ZODIAC_PAIRS = {
     "overallScore": 82,
     "colorCategory": "green",
     "shadeLabel": "Harmonious Union",
-    "aspectName": "Conjunction (Mirror Alignment)",
-    "headline": "Taurus & Taurus: Deep Mirror Empathy & Shared Instincts",
-    "summary": "Sharing the exact same sun sign gives you an instinctual understanding of each other's drives and vulnerabilities. You understand each other's moods intuitively, though you must guard against magnifying shared blind spots.",
+    "aspectName": "1-1 Sun Sign Pattern (The Cosmic Mirror)",
+    "vibrationCode": "1-1",
+    "lindaVibration": {
+      "code": "1-1",
+      "title": "1-1 Sun Sign Pattern (The Cosmic Mirror)",
+      "theme": "Mirror Empathy & Double Ego Reflection",
+      "summary": "In Linda Goodman's Love Signs, the 1-1 vibration is like gazing directly into an astrological mirror. You recognize each other's hidden virtues and deepest faults instantly. This creates profound telepathic empathy, but both partners must guard against magnifying identical blind spots.",
+      "karmicLesson": "Cultivating emotional humility and learning self-acceptance through observing your own nature reflected in your mate."
+    },
+    "headline": "Taurus & Taurus: Mirror Empathy & Double Ego Reflection",
+    "summary": "In Linda Goodman's Love Signs, the 1-1 vibration is like gazing directly into an astrological mirror. You recognize each other's hidden virtues and deepest faults instantly. This creates profound telepathic empathy, but both partners must guard against magnifying identical blind spots.",
     "parameters": {
       "emotional": 82,
       "communication": 82,
@@ -1173,10 +1321,10 @@ const ZODIAC_PAIRS = {
       "lifestyle": 85
     },
     "elementSynergy": {
-      "title": "Double Earth (Unshakeable Foundation)",
-      "text": "Deep practical grounding, financial prudence, and rock-solid loyalty. You build lasting wealth and a cozy empire together."
+      "title": "Double Earth (Unshakeable Bedrock)",
+      "text": "Linda Goodman praised double Earth as the rock of domestic security. You share common respect for practical honesty, financial prudence, and building a cozy, enduring haven."
     },
-    "modalitySynergy": "Both Fixed: Unshakable loyalty and steadfast commitment. Practice active compromise to prevent stubborn standoffs.",
+    "modalitySynergy": "Both Fixed (Stabilizers): Unshakeable loyalty and rock-solid fidelity. Linda Goodman urged practicing gentle flexibility to resolve stubborn standoffs.",
     "strengths": [
       "Natural understanding: Taurus and Taurus instinctively comprehend each other's core motivations.",
       "Complimentary emotional rhythms that make daily life and domestic partnership feel comforting and safe.",
@@ -1193,31 +1341,39 @@ const ZODIAC_PAIRS = {
     ],
     "celebrityCouples": "Celebrated Taurus & Taurus cosmic pairs",
     "genderAdvice": {
-      "male_female": "When a Taurus man and a Taurus woman unite, balancing his Mars/solar leadership with her emotional sanctuary fosters lasting harmony.",
-      "female_male": "When a Taurus woman and a Taurus man unite, celebrating her creative initiative while valuing his steadfast protection builds an unbreakable bond.",
-      "same_sex": "In a union between two souls with Taurus and Taurus energies, open communication and honoring personal autonomy keeps the romance deeply alive."
+      "male_female": "In Linda Goodman's Love Signs analysis of the Taurus Man with the Taurus Woman (1-1 Vibration): He expresses his masculine planetary energy through Venus, while she responds with Venus grace. Success blooms when he honors her emotional sanctuary and she champions his purposeful ambitions.",
+      "female_male": "In Linda Goodman's Love Signs analysis of the Taurus Woman with the Taurus Man (1-1 Vibration): She brings Taurus's radiant initiative to the union, while he offers Taurus's steadfast anchor. When she trusts his protective strength and he respects her autonomy, their bond becomes unbreakable.",
+      "same_sex": "In Linda Goodman's cosmic synastry (1-1 Vibration): Two souls united under Taurus and Taurus celestial energies find harmony when honoring personal autonomy, balancing giving with receiving, and allowing their elemental natures to enrich each other."
     }
   },
   "taurus_gemini": {
     "sign1": "taurus",
     "sign2": "gemini",
-    "overallScore": 62,
+    "overallScore": 64,
     "colorCategory": "amber",
     "shadeLabel": "Dynamic Potential",
-    "aspectName": "Semisextile (Neighboring Contrast)",
-    "headline": "Taurus & Gemini: Complementary Growth & Mutual Learning",
-    "summary": "As neighboring signs, you operate from contrasting elemental perspectives. This match creates a learning journey where each partner expands the other's horizons if patience is practiced.",
+    "aspectName": "2-12 Sun Sign Pattern (The Karmic Teacher & Pupil)",
+    "vibrationCode": "2-12",
+    "lindaVibration": {
+      "code": "2-12",
+      "title": "2-12 Sun Sign Pattern (The Karmic Teacher & Pupil)",
+      "theme": "Karmic Learning, Compassion & Gentle Tutoring",
+      "summary": "According to Linda Goodman, the 2-12 vibration signifies that one sign has spiritually passed through the other's grade in the cosmic school. There is a deep, unspoken bond of patience, protection, and gentle tutoring. Tolerating different pacing unlocks profound mutual growth.",
+      "karmicLesson": "Bridging contrasting elemental perspectives through patient compassion and secret mutual admiration."
+    },
+    "headline": "Taurus & Gemini: Karmic Learning, Compassion & Gentle Tutoring",
+    "summary": "According to Linda Goodman, the 2-12 vibration signifies that one sign has spiritually passed through the other's grade in the cosmic school. There is a deep, unspoken bond of patience, protection, and gentle tutoring. Tolerating different pacing unlocks profound mutual growth.",
     "parameters": {
-      "emotional": 60,
-      "communication": 57,
-      "romance": 59,
-      "trust": 62,
-      "stability": 64,
-      "lifestyle": 62
+      "emotional": 62,
+      "communication": 59,
+      "romance": 61,
+      "trust": 64,
+      "stability": 66,
+      "lifestyle": 64
     },
     "elementSynergy": {
       "title": "Earth & Air (Pragmatic Strategy)",
-      "text": "Earth brings tangible discipline and organization; Air brings innovative ideas and sparkling conversational agility."
+      "text": "Earth brings tangible structure and sensible order; Air introduces inventive concepts and conversational sparkle. Mutual appreciation bridges different tempos."
     },
     "modalitySynergy": "Fixed + Mutable: A balanced dynamic where one partner initiates, stabilizes, or provides adaptable perspective to the other.",
     "strengths": [
@@ -1230,37 +1386,45 @@ const ZODIAC_PAIRS = {
       "Occasional friction over lifestyle pacing or decision-making speed."
     ],
     "tips": [
-      "Adopt the 24-hour cooling off rule during heated arguments before revisiting sensitive topics.",
-      "Remember that Gemini communicates love in their own authentic dialect.",
-      "Celebrate your differences as unique strengths rather than flaws to be corrected."
+      "Adopt Linda Goodman's cooling-off principle during heated arguments before revisiting sensitive topics.",
+      "Remember that Gemini communicates love in their own authentic elemental dialect.",
+      "Celebrate your differences as complementary superpowers rather than personal flaws."
     ],
     "celebrityCouples": "Celebrated Taurus & Gemini cosmic pairs",
     "genderAdvice": {
-      "male_female": "When a Taurus man and a Gemini woman unite, balancing his Mars/solar leadership with her emotional sanctuary fosters lasting harmony.",
-      "female_male": "When a Taurus woman and a Gemini man unite, celebrating her creative initiative while valuing his steadfast protection builds an unbreakable bond.",
-      "same_sex": "In a union between two souls with Taurus and Gemini energies, open communication and honoring personal autonomy keeps the romance deeply alive."
+      "male_female": "In Linda Goodman's Love Signs analysis of the Taurus Man with the Gemini Woman (2-12 Vibration): He expresses his masculine planetary energy through Venus, while she responds with Mercury grace. Success blooms when he honors her emotional sanctuary and she champions his purposeful ambitions.",
+      "female_male": "In Linda Goodman's Love Signs analysis of the Taurus Woman with the Gemini Man (2-12 Vibration): She brings Taurus's radiant initiative to the union, while he offers Gemini's steadfast anchor. When she trusts his protective strength and he respects her autonomy, their bond becomes unbreakable.",
+      "same_sex": "In Linda Goodman's cosmic synastry (2-12 Vibration): Two souls united under Taurus and Gemini celestial energies find harmony when honoring personal autonomy, balancing giving with receiving, and allowing their elemental natures to enrich each other."
     }
   },
   "taurus_cancer": {
     "sign1": "taurus",
     "sign2": "cancer",
-    "overallScore": 86,
+    "overallScore": 88,
     "colorCategory": "green",
     "shadeLabel": "Harmonious Union",
-    "aspectName": "Sextile (Harmonious Elemental Flow)",
-    "headline": "Taurus & Cancer: Stimulating Synergy & Easy Friendship",
-    "summary": "Your elements naturally complement each other (Fire invigorates Air, or Water nourishes Earth). Communication flows effortlessly, laughter comes easily, and mutual respect flourishes.",
+    "aspectName": "3-11 Sun Sign Pattern (Karmic Friends & Sympathetic Lovers)",
+    "vibrationCode": "3-11",
+    "lindaVibration": {
+      "code": "3-11",
+      "title": "3-11 Sun Sign Pattern (Karmic Friends & Sympathetic Lovers)",
+      "theme": "Enduring Camaraderie, Easy Forgiveness & High Devotion",
+      "summary": "Linda Goodman considered the 3-11 vibration one of the happiest and most enduring in the cosmos. Your signs form a natural sextile of friendship. Even through intense misunderstandings, 3-11 lovers remain steadfast allies, quick to forgive and eager to laugh.",
+      "karmicLesson": "Nurturing lifelong loyalty, humanitarian generosity, and effortless mutual forgiveness."
+    },
+    "headline": "Taurus & Cancer: Enduring Camaraderie, Easy Forgiveness & High Devotion",
+    "summary": "Linda Goodman considered the 3-11 vibration one of the happiest and most enduring in the cosmos. Your signs form a natural sextile of friendship. Even through intense misunderstandings, 3-11 lovers remain steadfast allies, quick to forgive and eager to laugh.",
     "parameters": {
-      "emotional": 88,
-      "communication": 86,
-      "romance": 88,
-      "trust": 91,
-      "stability": 92,
-      "lifestyle": 86
+      "emotional": 90,
+      "communication": 88,
+      "romance": 90,
+      "trust": 93,
+      "stability": 94,
+      "lifestyle": 88
     },
     "elementSynergy": {
       "title": "Earth & Water (Fertile Nurturing)",
-      "text": "Water softens Earth with empathy and emotion; Earth provides Water with steady shores of stability. A classic recipe for enduring married happiness."
+      "text": "Water softens Earth with tender emotional empathy; Earth provides Water with comforting shores of physical stability. A classic recipe for a thriving, enduring marriage."
     },
     "modalitySynergy": "Fixed + Cardinal: A balanced dynamic where one partner initiates, stabilizes, or provides adaptable perspective to the other.",
     "strengths": [
@@ -1279,33 +1443,41 @@ const ZODIAC_PAIRS = {
     ],
     "celebrityCouples": "George Clooney (Taurus) & Amal Clooney (Aquarius)",
     "genderAdvice": {
-      "male_female": "When a Taurus man and a Cancer woman unite, balancing his Mars/solar leadership with her emotional sanctuary fosters lasting harmony.",
-      "female_male": "When a Taurus woman and a Cancer man unite, celebrating her creative initiative while valuing his steadfast protection builds an unbreakable bond.",
-      "same_sex": "In a union between two souls with Taurus and Cancer energies, open communication and honoring personal autonomy keeps the romance deeply alive."
+      "male_female": "In Linda Goodman's Love Signs analysis of the Taurus Man with the Cancer Woman (3-11 Vibration): He expresses his masculine planetary energy through Venus, while she responds with Moon grace. Success blooms when he honors her emotional sanctuary and she champions his purposeful ambitions.",
+      "female_male": "In Linda Goodman's Love Signs analysis of the Taurus Woman with the Cancer Man (3-11 Vibration): She brings Taurus's radiant initiative to the union, while he offers Cancer's steadfast anchor. When she trusts his protective strength and he respects her autonomy, their bond becomes unbreakable.",
+      "same_sex": "In Linda Goodman's cosmic synastry (3-11 Vibration): Two souls united under Taurus and Cancer celestial energies find harmony when honoring personal autonomy, balancing giving with receiving, and allowing their elemental natures to enrich each other."
     }
   },
   "taurus_leo": {
     "sign1": "taurus",
     "sign2": "leo",
-    "overallScore": 52,
+    "overallScore": 54,
     "colorCategory": "amber",
     "shadeLabel": "Dynamic Potential",
-    "aspectName": "Square (Passionate Friction & Dynamic Growth)",
-    "headline": "Taurus & Leo: Electrifying Spark with Creative Challenge",
-    "summary": "Signs at a 90\u00b0 square share the same modality but clash elementally. This generates high attraction, intense emotional chemistry, and spirited debates that demand conscious diplomacy and mutual compromise.",
+    "aspectName": "4-10 Sun Sign Pattern (The Karmic Challenge & Crucible)",
+    "vibrationCode": "4-10",
+    "lindaVibration": {
+      "code": "4-10",
+      "title": "4-10 Sun Sign Pattern (The Karmic Challenge & Crucible)",
+      "theme": "Passionate Friction, Dramatic Chemistry & Soul Crucible",
+      "summary": "Linda Goodman described the 4-10 square vibration as the classic crucible of soul growth. Sharing the same modality but differing elements produces magnetic physical attraction paired with clashes of will. If ego yields to love, this union builds invincible diamond strength.",
+      "karmicLesson": "Transcending stubborn pride and mastering the noble art of sacrificial compromise."
+    },
+    "headline": "Taurus & Leo: Passionate Friction, Dramatic Chemistry & Soul Crucible",
+    "summary": "Linda Goodman described the 4-10 square vibration as the classic crucible of soul growth. Sharing the same modality but differing elements produces magnetic physical attraction paired with clashes of will. If ego yields to love, this union builds invincible diamond strength.",
     "parameters": {
-      "emotional": 50,
-      "communication": 52,
-      "romance": 49,
-      "trust": 56,
-      "stability": 54,
-      "lifestyle": 44
+      "emotional": 52,
+      "communication": 54,
+      "romance": 51,
+      "trust": 58,
+      "stability": 56,
+      "lifestyle": 46
     },
     "elementSynergy": {
       "title": "Fire & Earth (Hearthstone Fire)",
-      "text": "Fire provides creative energy and visionary boldness; Earth builds the practical structures to turn those visions into reality."
+      "text": "Fire provides creative courage and solar warmth; Earth builds the practical structures to turn those visions into lasting wealth and security."
     },
-    "modalitySynergy": "Both Fixed: Unshakable loyalty and steadfast commitment. Practice active compromise to prevent stubborn standoffs.",
+    "modalitySynergy": "Both Fixed (Stabilizers): Unshakeable loyalty and rock-solid fidelity. Linda Goodman urged practicing gentle flexibility to resolve stubborn standoffs.",
     "strengths": [
       "Dynamic growth: Taurus introduces Leo to new perspectives and vice versa.",
       "Engaging romantic chemistry where you never run out of intriguing things to discover about each other.",
@@ -1316,37 +1488,45 @@ const ZODIAC_PAIRS = {
       "Occasional friction over lifestyle pacing or decision-making speed."
     ],
     "tips": [
-      "Adopt the 24-hour cooling off rule during heated arguments before revisiting sensitive topics.",
-      "Remember that Leo communicates love in their own authentic dialect.",
-      "Celebrate your differences as unique strengths rather than flaws to be corrected."
+      "Adopt Linda Goodman's cooling-off principle during heated arguments before revisiting sensitive topics.",
+      "Remember that Leo communicates love in their own authentic elemental dialect.",
+      "Celebrate your differences as complementary superpowers rather than personal flaws."
     ],
     "celebrityCouples": "Celebrated Taurus & Leo cosmic pairs",
     "genderAdvice": {
-      "male_female": "When a Taurus man and a Leo woman unite, balancing his Mars/solar leadership with her emotional sanctuary fosters lasting harmony.",
-      "female_male": "When a Taurus woman and a Leo man unite, celebrating her creative initiative while valuing his steadfast protection builds an unbreakable bond.",
-      "same_sex": "In a union between two souls with Taurus and Leo energies, open communication and honoring personal autonomy keeps the romance deeply alive."
+      "male_female": "In Linda Goodman's Love Signs analysis of the Taurus Man with the Leo Woman (4-10 Vibration): He expresses his masculine planetary energy through Venus, while she responds with Sun grace. Success blooms when he honors her emotional sanctuary and she champions his purposeful ambitions.",
+      "female_male": "In Linda Goodman's Love Signs analysis of the Taurus Woman with the Leo Man (4-10 Vibration): She brings Taurus's radiant initiative to the union, while he offers Leo's steadfast anchor. When she trusts his protective strength and he respects her autonomy, their bond becomes unbreakable.",
+      "same_sex": "In Linda Goodman's cosmic synastry (4-10 Vibration): Two souls united under Taurus and Leo celestial energies find harmony when honoring personal autonomy, balancing giving with receiving, and allowing their elemental natures to enrich each other."
     }
   },
   "taurus_virgo": {
     "sign1": "taurus",
     "sign2": "virgo",
-    "overallScore": 96,
+    "overallScore": 97,
     "colorCategory": "green",
     "shadeLabel": "Harmonious Union",
-    "aspectName": "Trine (Divine Soulmate Element)",
-    "headline": "Taurus & Virgo: Effortless Harmony & Natural Soul Resonance",
-    "summary": "Sharing the same element (Fire-Fire, Earth-Earth, Air-Air, Water-Water) creates an instinctive, harmonious flow. You breathe the same spiritual air, understand each other's pacing, and feel deeply at home together.",
+    "aspectName": "5-9 Sun Sign Pattern (The Divine Cosmic Blessing)",
+    "vibrationCode": "5-9",
+    "lindaVibration": {
+      "code": "5-9",
+      "title": "5-9 Sun Sign Pattern (The Divine Cosmic Blessing)",
+      "theme": "Golden Trine, Soulmate Telepathy & Natural Sympathy",
+      "summary": "Linda Goodman's most celebrated synastry pattern! Sharing the same sacred element (Fire, Earth, Air, or Water) brings instant soul recognition. You forgive each other almost effortlessly, inspire each other's dreams, and enjoy an almost telepathic understanding.",
+      "karmicLesson": "Preserving sacred gratitude and avoiding taking your effortless soul harmony for granted."
+    },
+    "headline": "Taurus & Virgo: Golden Trine, Soulmate Telepathy & Natural Sympathy",
+    "summary": "Linda Goodman's most celebrated synastry pattern! Sharing the same sacred element (Fire, Earth, Air, or Water) brings instant soul recognition. You forgive each other almost effortlessly, inspire each other's dreams, and enjoy an almost telepathic understanding.",
     "parameters": {
-      "emotional": 96,
+      "emotional": 97,
       "communication": 94,
-      "romance": 93,
+      "romance": 94,
       "trust": 98,
       "stability": 98,
       "lifestyle": 96
     },
     "elementSynergy": {
-      "title": "Double Earth (Unshakeable Foundation)",
-      "text": "Deep practical grounding, financial prudence, and rock-solid loyalty. You build lasting wealth and a cozy empire together."
+      "title": "Double Earth (Unshakeable Bedrock)",
+      "text": "Linda Goodman praised double Earth as the rock of domestic security. You share common respect for practical honesty, financial prudence, and building a cozy, enduring haven."
     },
     "modalitySynergy": "Fixed + Mutable: A balanced dynamic where one partner initiates, stabilizes, or provides adaptable perspective to the other.",
     "strengths": [
@@ -1365,40 +1545,48 @@ const ZODIAC_PAIRS = {
     ],
     "celebrityCouples": "Celebrated Taurus & Virgo cosmic pairs",
     "genderAdvice": {
-      "male_female": "When a Taurus man and a Virgo woman unite, balancing his Mars/solar leadership with her emotional sanctuary fosters lasting harmony.",
-      "female_male": "When a Taurus woman and a Virgo man unite, celebrating her creative initiative while valuing his steadfast protection builds an unbreakable bond.",
-      "same_sex": "In a union between two souls with Taurus and Virgo energies, open communication and honoring personal autonomy keeps the romance deeply alive."
+      "male_female": "In Linda Goodman's Love Signs analysis of the Taurus Man with the Virgo Woman (5-9 Vibration): He expresses his masculine planetary energy through Venus, while she responds with Mercury grace. Success blooms when he honors her emotional sanctuary and she champions his purposeful ambitions.",
+      "female_male": "In Linda Goodman's Love Signs analysis of the Taurus Woman with the Virgo Man (5-9 Vibration): She brings Taurus's radiant initiative to the union, while he offers Virgo's steadfast anchor. When she trusts his protective strength and he respects her autonomy, their bond becomes unbreakable.",
+      "same_sex": "In Linda Goodman's cosmic synastry (5-9 Vibration): Two souls united under Taurus and Virgo celestial energies find harmony when honoring personal autonomy, balancing giving with receiving, and allowing their elemental natures to enrich each other."
     }
   },
   "taurus_libra": {
     "sign1": "taurus",
     "sign2": "libra",
-    "overallScore": 46,
+    "overallScore": 48,
     "colorCategory": "red",
     "shadeLabel": "Growth Challenge",
-    "aspectName": "Quincunx (Mysterious Intrigue & Karmic Adjustment)",
-    "headline": "Taurus & Libra: Enigmatic Attraction Demanding Patience",
-    "summary": "Separated by five signs, you have little in common astrologically, which creates an intriguing magnetic mystery. Succeeding together requires appreciating your partner's entirely unique perspective on life.",
+    "aspectName": "6-8 Sun Sign Pattern (Karmic Mystery & Devoted Service)",
+    "vibrationCode": "6-8",
+    "lindaVibration": {
+      "code": "6-8",
+      "title": "6-8 Sun Sign Pattern (Karmic Mystery & Devoted Service)",
+      "theme": "Enigmatic Fascination, Hypnotic Pull & Karmic Duty",
+      "summary": "According to Linda Goodman, the 6-8 quincunx vibration is cloaked in hypnotic fascination and karmic debt. One partner feels drawn to serve, protect, or nurture the other, generating deep emotional or physical magnetism that requires profound patience to untangle.",
+      "karmicLesson": "Practicing unconditional love free from selfish demands, embracing differences that cannot be logically explained."
+    },
+    "headline": "Taurus & Libra: Enigmatic Fascination, Hypnotic Pull & Karmic Duty",
+    "summary": "According to Linda Goodman, the 6-8 quincunx vibration is cloaked in hypnotic fascination and karmic debt. One partner feels drawn to serve, protect, or nurture the other, generating deep emotional or physical magnetism that requires profound patience to untangle.",
     "parameters": {
-      "emotional": 44,
+      "emotional": 46,
       "communication": 45,
-      "romance": 43,
-      "trust": 46,
-      "stability": 48,
-      "lifestyle": 38
+      "romance": 45,
+      "trust": 48,
+      "stability": 50,
+      "lifestyle": 40
     },
     "elementSynergy": {
       "title": "Earth & Air (Pragmatic Strategy)",
-      "text": "Earth brings tangible discipline and organization; Air brings innovative ideas and sparkling conversational agility."
+      "text": "Earth brings tangible structure and sensible order; Air introduces inventive concepts and conversational sparkle. Mutual appreciation bridges different tempos."
     },
     "modalitySynergy": "Fixed + Cardinal: A balanced dynamic where one partner initiates, stabilizes, or provides adaptable perspective to the other.",
     "strengths": [
-      "Powerful karmic pull that pushes both individuals to mature emotionally.",
+      "Powerful karmic pull that pushes both souls to mature emotionally and spiritually.",
       "Unforgettable chemistry and passion born from sheer elemental contrast.",
       "Opportunity to develop immense patience, empathy, and unconditional love."
     ],
     "challenges": [
-      "Fundamental contrast in priorities: Taurus's instinctual approach may confuse Libra.",
+      "Fundamental contrast in priorities: Taurus's instinctual approach may baffle Libra.",
       "Tendency to misinterpret your partner's need for space or emotional expression."
     ],
     "tips": [
@@ -1408,33 +1596,41 @@ const ZODIAC_PAIRS = {
     ],
     "celebrityCouples": "Celebrated Taurus & Libra cosmic pairs",
     "genderAdvice": {
-      "male_female": "When a Taurus man and a Libra woman unite, balancing his Mars/solar leadership with her emotional sanctuary fosters lasting harmony.",
-      "female_male": "When a Taurus woman and a Libra man unite, celebrating her creative initiative while valuing his steadfast protection builds an unbreakable bond.",
-      "same_sex": "In a union between two souls with Taurus and Libra energies, open communication and honoring personal autonomy keeps the romance deeply alive."
+      "male_female": "In Linda Goodman's Love Signs analysis of the Taurus Man with the Libra Woman (6-8 Vibration): He expresses his masculine planetary energy through Venus, while she responds with Venus grace. Success blooms when he honors her emotional sanctuary and she champions his purposeful ambitions.",
+      "female_male": "In Linda Goodman's Love Signs analysis of the Taurus Woman with the Libra Man (6-8 Vibration): She brings Taurus's radiant initiative to the union, while he offers Libra's steadfast anchor. When she trusts his protective strength and he respects her autonomy, their bond becomes unbreakable.",
+      "same_sex": "In Linda Goodman's cosmic synastry (6-8 Vibration): Two souls united under Taurus and Libra celestial energies find harmony when honoring personal autonomy, balancing giving with receiving, and allowing their elemental natures to enrich each other."
     }
   },
   "taurus_scorpio": {
     "sign1": "taurus",
     "sign2": "scorpio",
-    "overallScore": 83,
+    "overallScore": 85,
     "colorCategory": "green",
     "shadeLabel": "Harmonious Union",
-    "aspectName": "Opposition (Cosmic Magnetism & Polar Balance)",
-    "headline": "Taurus & Scorpio: Magnetic Attraction & Yin-Yang Balance",
-    "summary": "Sitting 180\u00b0 across the zodiac wheel, you are polar opposites. What one lacks, the other possesses in abundance. The chemistry is electric, offering the potential to form an unbeatable yin-and-yang partnership.",
+    "aspectName": "7-7 Sun Sign Pattern (Polar Magnetism & Cosmic Complements)",
+    "vibrationCode": "7-7",
+    "lindaVibration": {
+      "code": "7-7",
+      "title": "7-7 Sun Sign Pattern (Polar Magnetism & Cosmic Complements)",
+      "theme": "Opposites Attract, Celestial Electricity & Yin-Yang Balance",
+      "summary": "Sitting 180\u00b0 opposite on the zodiac wheel, Linda Goodman saw the 7-7 vibration as two halves of a single soul. What one lacks, the other possesses in abundance. It generates high romantic voltage: either a magnificent lifelong union or an explosive standoff.",
+      "karmicLesson": "Finding wholeness through merging opposite qualities into a unified, harmonious whole."
+    },
+    "headline": "Taurus & Scorpio: Opposites Attract, Celestial Electricity & Yin-Yang Balance",
+    "summary": "Sitting 180\u00b0 opposite on the zodiac wheel, Linda Goodman saw the 7-7 vibration as two halves of a single soul. What one lacks, the other possesses in abundance. It generates high romantic voltage: either a magnificent lifelong union or an explosive standoff.",
     "parameters": {
-      "emotional": 85,
-      "communication": 83,
-      "romance": 91,
-      "trust": 88,
-      "stability": 89,
-      "lifestyle": 83
+      "emotional": 87,
+      "communication": 85,
+      "romance": 93,
+      "trust": 90,
+      "stability": 91,
+      "lifestyle": 85
     },
     "elementSynergy": {
       "title": "Earth & Water (Fertile Nurturing)",
-      "text": "Water softens Earth with empathy and emotion; Earth provides Water with steady shores of stability. A classic recipe for enduring married happiness."
+      "text": "Water softens Earth with tender emotional empathy; Earth provides Water with comforting shores of physical stability. A classic recipe for a thriving, enduring marriage."
     },
-    "modalitySynergy": "Both Fixed: Unshakable loyalty and steadfast commitment. Practice active compromise to prevent stubborn standoffs.",
+    "modalitySynergy": "Both Fixed (Stabilizers): Unshakeable loyalty and rock-solid fidelity. Linda Goodman urged practicing gentle flexibility to resolve stubborn standoffs.",
     "strengths": [
       "Natural understanding: Taurus and Scorpio instinctively comprehend each other's core motivations.",
       "Complimentary emotional rhythms that make daily life and domestic partnership feel comforting and safe.",
@@ -1451,40 +1647,48 @@ const ZODIAC_PAIRS = {
     ],
     "celebrityCouples": "Celebrated Taurus & Scorpio cosmic pairs",
     "genderAdvice": {
-      "male_female": "When a Taurus man and a Scorpio woman unite, balancing his Mars/solar leadership with her emotional sanctuary fosters lasting harmony.",
-      "female_male": "When a Taurus woman and a Scorpio man unite, celebrating her creative initiative while valuing his steadfast protection builds an unbreakable bond.",
-      "same_sex": "In a union between two souls with Taurus and Scorpio energies, open communication and honoring personal autonomy keeps the romance deeply alive."
+      "male_female": "In Linda Goodman's Love Signs analysis of the Taurus Man with the Scorpio Woman (7-7 Vibration): He expresses his masculine planetary energy through Venus, while she responds with Pluto & Mars grace. Success blooms when he honors her emotional sanctuary and she champions his purposeful ambitions.",
+      "female_male": "In Linda Goodman's Love Signs analysis of the Taurus Woman with the Scorpio Man (7-7 Vibration): She brings Taurus's radiant initiative to the union, while he offers Scorpio's steadfast anchor. When she trusts his protective strength and he respects her autonomy, their bond becomes unbreakable.",
+      "same_sex": "In Linda Goodman's cosmic synastry (7-7 Vibration): Two souls united under Taurus and Scorpio celestial energies find harmony when honoring personal autonomy, balancing giving with receiving, and allowing their elemental natures to enrich each other."
     }
   },
   "taurus_sagittarius": {
     "sign1": "taurus",
     "sign2": "sagittarius",
-    "overallScore": 46,
+    "overallScore": 48,
     "colorCategory": "red",
     "shadeLabel": "Growth Challenge",
-    "aspectName": "Quincunx (Mysterious Intrigue & Karmic Adjustment)",
-    "headline": "Taurus & Sagittarius: Enigmatic Attraction Demanding Patience",
-    "summary": "Separated by five signs, you have little in common astrologically, which creates an intriguing magnetic mystery. Succeeding together requires appreciating your partner's entirely unique perspective on life.",
+    "aspectName": "6-8 Sun Sign Pattern (Karmic Mystery & Devoted Service)",
+    "vibrationCode": "6-8",
+    "lindaVibration": {
+      "code": "6-8",
+      "title": "6-8 Sun Sign Pattern (Karmic Mystery & Devoted Service)",
+      "theme": "Enigmatic Fascination, Hypnotic Pull & Karmic Duty",
+      "summary": "According to Linda Goodman, the 6-8 quincunx vibration is cloaked in hypnotic fascination and karmic debt. One partner feels drawn to serve, protect, or nurture the other, generating deep emotional or physical magnetism that requires profound patience to untangle.",
+      "karmicLesson": "Practicing unconditional love free from selfish demands, embracing differences that cannot be logically explained."
+    },
+    "headline": "Taurus & Sagittarius: Enigmatic Fascination, Hypnotic Pull & Karmic Duty",
+    "summary": "According to Linda Goodman, the 6-8 quincunx vibration is cloaked in hypnotic fascination and karmic debt. One partner feels drawn to serve, protect, or nurture the other, generating deep emotional or physical magnetism that requires profound patience to untangle.",
     "parameters": {
-      "emotional": 44,
-      "communication": 46,
-      "romance": 43,
-      "trust": 46,
-      "stability": 48,
-      "lifestyle": 38
+      "emotional": 46,
+      "communication": 48,
+      "romance": 45,
+      "trust": 48,
+      "stability": 50,
+      "lifestyle": 40
     },
     "elementSynergy": {
       "title": "Fire & Earth (Hearthstone Fire)",
-      "text": "Fire provides creative energy and visionary boldness; Earth builds the practical structures to turn those visions into reality."
+      "text": "Fire provides creative courage and solar warmth; Earth builds the practical structures to turn those visions into lasting wealth and security."
     },
     "modalitySynergy": "Fixed + Mutable: A balanced dynamic where one partner initiates, stabilizes, or provides adaptable perspective to the other.",
     "strengths": [
-      "Powerful karmic pull that pushes both individuals to mature emotionally.",
+      "Powerful karmic pull that pushes both souls to mature emotionally and spiritually.",
       "Unforgettable chemistry and passion born from sheer elemental contrast.",
       "Opportunity to develop immense patience, empathy, and unconditional love."
     ],
     "challenges": [
-      "Fundamental contrast in priorities: Taurus's instinctual approach may confuse Sagittarius.",
+      "Fundamental contrast in priorities: Taurus's instinctual approach may baffle Sagittarius.",
       "Tendency to misinterpret your partner's need for space or emotional expression."
     ],
     "tips": [
@@ -1494,31 +1698,39 @@ const ZODIAC_PAIRS = {
     ],
     "celebrityCouples": "Celebrated Taurus & Sagittarius cosmic pairs",
     "genderAdvice": {
-      "male_female": "When a Taurus man and a Sagittarius woman unite, balancing his Mars/solar leadership with her emotional sanctuary fosters lasting harmony.",
-      "female_male": "When a Taurus woman and a Sagittarius man unite, celebrating her creative initiative while valuing his steadfast protection builds an unbreakable bond.",
-      "same_sex": "In a union between two souls with Taurus and Sagittarius energies, open communication and honoring personal autonomy keeps the romance deeply alive."
+      "male_female": "In Linda Goodman's Love Signs analysis of the Taurus Man with the Sagittarius Woman (6-8 Vibration): He expresses his masculine planetary energy through Venus, while she responds with Jupiter grace. Success blooms when he honors her emotional sanctuary and she champions his purposeful ambitions.",
+      "female_male": "In Linda Goodman's Love Signs analysis of the Taurus Woman with the Sagittarius Man (6-8 Vibration): She brings Taurus's radiant initiative to the union, while he offers Sagittarius's steadfast anchor. When she trusts his protective strength and he respects her autonomy, their bond becomes unbreakable.",
+      "same_sex": "In Linda Goodman's cosmic synastry (6-8 Vibration): Two souls united under Taurus and Sagittarius celestial energies find harmony when honoring personal autonomy, balancing giving with receiving, and allowing their elemental natures to enrich each other."
     }
   },
   "taurus_capricorn": {
     "sign1": "taurus",
     "sign2": "capricorn",
-    "overallScore": 94,
+    "overallScore": 95,
     "colorCategory": "green",
     "shadeLabel": "Harmonious Union",
-    "aspectName": "Trine (Divine Soulmate Element)",
-    "headline": "Taurus & Capricorn: Effortless Harmony & Natural Soul Resonance",
-    "summary": "Sharing the same element (Fire-Fire, Earth-Earth, Air-Air, Water-Water) creates an instinctive, harmonious flow. You breathe the same spiritual air, understand each other's pacing, and feel deeply at home together.",
+    "aspectName": "5-9 Sun Sign Pattern (The Divine Cosmic Blessing)",
+    "vibrationCode": "5-9",
+    "lindaVibration": {
+      "code": "5-9",
+      "title": "5-9 Sun Sign Pattern (The Divine Cosmic Blessing)",
+      "theme": "Golden Trine, Soulmate Telepathy & Natural Sympathy",
+      "summary": "Linda Goodman's most celebrated synastry pattern! Sharing the same sacred element (Fire, Earth, Air, or Water) brings instant soul recognition. You forgive each other almost effortlessly, inspire each other's dreams, and enjoy an almost telepathic understanding.",
+      "karmicLesson": "Preserving sacred gratitude and avoiding taking your effortless soul harmony for granted."
+    },
+    "headline": "Taurus & Capricorn: Golden Trine, Soulmate Telepathy & Natural Sympathy",
+    "summary": "Linda Goodman's most celebrated synastry pattern! Sharing the same sacred element (Fire, Earth, Air, or Water) brings instant soul recognition. You forgive each other almost effortlessly, inspire each other's dreams, and enjoy an almost telepathic understanding.",
     "parameters": {
-      "emotional": 94,
-      "communication": 94,
-      "romance": 91,
+      "emotional": 95,
+      "communication": 95,
+      "romance": 92,
       "trust": 98,
       "stability": 98,
       "lifestyle": 96
     },
     "elementSynergy": {
-      "title": "Double Earth (Unshakeable Foundation)",
-      "text": "Deep practical grounding, financial prudence, and rock-solid loyalty. You build lasting wealth and a cozy empire together."
+      "title": "Double Earth (Unshakeable Bedrock)",
+      "text": "Linda Goodman praised double Earth as the rock of domestic security. You share common respect for practical honesty, financial prudence, and building a cozy, enduring haven."
     },
     "modalitySynergy": "Fixed + Cardinal: A balanced dynamic where one partner initiates, stabilizes, or provides adaptable perspective to the other.",
     "strengths": [
@@ -1537,33 +1749,41 @@ const ZODIAC_PAIRS = {
     ],
     "celebrityCouples": "David Beckham (Taurus) & Victoria Beckham (Aries/Taurus)",
     "genderAdvice": {
-      "male_female": "When a Taurus man and a Capricorn woman unite, balancing his Mars/solar leadership with her emotional sanctuary fosters lasting harmony.",
-      "female_male": "When a Taurus woman and a Capricorn man unite, celebrating her creative initiative while valuing his steadfast protection builds an unbreakable bond.",
-      "same_sex": "In a union between two souls with Taurus and Capricorn energies, open communication and honoring personal autonomy keeps the romance deeply alive."
+      "male_female": "In Linda Goodman's Love Signs analysis of the Taurus Man with the Capricorn Woman (5-9 Vibration): He expresses his masculine planetary energy through Venus, while she responds with Saturn grace. Success blooms when he honors her emotional sanctuary and she champions his purposeful ambitions.",
+      "female_male": "In Linda Goodman's Love Signs analysis of the Taurus Woman with the Capricorn Man (5-9 Vibration): She brings Taurus's radiant initiative to the union, while he offers Capricorn's steadfast anchor. When she trusts his protective strength and he respects her autonomy, their bond becomes unbreakable.",
+      "same_sex": "In Linda Goodman's cosmic synastry (5-9 Vibration): Two souls united under Taurus and Capricorn celestial energies find harmony when honoring personal autonomy, balancing giving with receiving, and allowing their elemental natures to enrich each other."
     }
   },
   "taurus_aquarius": {
     "sign1": "taurus",
     "sign2": "aquarius",
-    "overallScore": 52,
+    "overallScore": 54,
     "colorCategory": "amber",
     "shadeLabel": "Dynamic Potential",
-    "aspectName": "Square (Passionate Friction & Dynamic Growth)",
-    "headline": "Taurus & Aquarius: Electrifying Spark with Creative Challenge",
-    "summary": "Signs at a 90\u00b0 square share the same modality but clash elementally. This generates high attraction, intense emotional chemistry, and spirited debates that demand conscious diplomacy and mutual compromise.",
+    "aspectName": "4-10 Sun Sign Pattern (The Karmic Challenge & Crucible)",
+    "vibrationCode": "4-10",
+    "lindaVibration": {
+      "code": "4-10",
+      "title": "4-10 Sun Sign Pattern (The Karmic Challenge & Crucible)",
+      "theme": "Passionate Friction, Dramatic Chemistry & Soul Crucible",
+      "summary": "Linda Goodman described the 4-10 square vibration as the classic crucible of soul growth. Sharing the same modality but differing elements produces magnetic physical attraction paired with clashes of will. If ego yields to love, this union builds invincible diamond strength.",
+      "karmicLesson": "Transcending stubborn pride and mastering the noble art of sacrificial compromise."
+    },
+    "headline": "Taurus & Aquarius: Passionate Friction, Dramatic Chemistry & Soul Crucible",
+    "summary": "Linda Goodman described the 4-10 square vibration as the classic crucible of soul growth. Sharing the same modality but differing elements produces magnetic physical attraction paired with clashes of will. If ego yields to love, this union builds invincible diamond strength.",
     "parameters": {
-      "emotional": 50,
-      "communication": 47,
-      "romance": 49,
-      "trust": 56,
-      "stability": 54,
-      "lifestyle": 44
+      "emotional": 52,
+      "communication": 49,
+      "romance": 51,
+      "trust": 58,
+      "stability": 56,
+      "lifestyle": 46
     },
     "elementSynergy": {
       "title": "Earth & Air (Pragmatic Strategy)",
-      "text": "Earth brings tangible discipline and organization; Air brings innovative ideas and sparkling conversational agility."
+      "text": "Earth brings tangible structure and sensible order; Air introduces inventive concepts and conversational sparkle. Mutual appreciation bridges different tempos."
     },
-    "modalitySynergy": "Both Fixed: Unshakable loyalty and steadfast commitment. Practice active compromise to prevent stubborn standoffs.",
+    "modalitySynergy": "Both Fixed (Stabilizers): Unshakeable loyalty and rock-solid fidelity. Linda Goodman urged practicing gentle flexibility to resolve stubborn standoffs.",
     "strengths": [
       "Dynamic growth: Taurus introduces Aquarius to new perspectives and vice versa.",
       "Engaging romantic chemistry where you never run out of intriguing things to discover about each other.",
@@ -1574,37 +1794,45 @@ const ZODIAC_PAIRS = {
       "Occasional friction over lifestyle pacing or decision-making speed."
     ],
     "tips": [
-      "Adopt the 24-hour cooling off rule during heated arguments before revisiting sensitive topics.",
-      "Remember that Aquarius communicates love in their own authentic dialect.",
-      "Celebrate your differences as unique strengths rather than flaws to be corrected."
+      "Adopt Linda Goodman's cooling-off principle during heated arguments before revisiting sensitive topics.",
+      "Remember that Aquarius communicates love in their own authentic elemental dialect.",
+      "Celebrate your differences as complementary superpowers rather than personal flaws."
     ],
     "celebrityCouples": "Celebrated Taurus & Aquarius cosmic pairs",
     "genderAdvice": {
-      "male_female": "When a Taurus man and a Aquarius woman unite, balancing his Mars/solar leadership with her emotional sanctuary fosters lasting harmony.",
-      "female_male": "When a Taurus woman and a Aquarius man unite, celebrating her creative initiative while valuing his steadfast protection builds an unbreakable bond.",
-      "same_sex": "In a union between two souls with Taurus and Aquarius energies, open communication and honoring personal autonomy keeps the romance deeply alive."
+      "male_female": "In Linda Goodman's Love Signs analysis of the Taurus Man with the Aquarius Woman (4-10 Vibration): He expresses his masculine planetary energy through Venus, while she responds with Uranus & Saturn grace. Success blooms when he honors her emotional sanctuary and she champions his purposeful ambitions.",
+      "female_male": "In Linda Goodman's Love Signs analysis of the Taurus Woman with the Aquarius Man (4-10 Vibration): She brings Taurus's radiant initiative to the union, while he offers Aquarius's steadfast anchor. When she trusts his protective strength and he respects her autonomy, their bond becomes unbreakable.",
+      "same_sex": "In Linda Goodman's cosmic synastry (4-10 Vibration): Two souls united under Taurus and Aquarius celestial energies find harmony when honoring personal autonomy, balancing giving with receiving, and allowing their elemental natures to enrich each other."
     }
   },
   "taurus_pisces": {
     "sign1": "taurus",
     "sign2": "pisces",
-    "overallScore": 86,
+    "overallScore": 88,
     "colorCategory": "green",
     "shadeLabel": "Harmonious Union",
-    "aspectName": "Sextile (Harmonious Elemental Flow)",
-    "headline": "Taurus & Pisces: Stimulating Synergy & Easy Friendship",
-    "summary": "Your elements naturally complement each other (Fire invigorates Air, or Water nourishes Earth). Communication flows effortlessly, laughter comes easily, and mutual respect flourishes.",
+    "aspectName": "3-11 Sun Sign Pattern (Karmic Friends & Sympathetic Lovers)",
+    "vibrationCode": "3-11",
+    "lindaVibration": {
+      "code": "3-11",
+      "title": "3-11 Sun Sign Pattern (Karmic Friends & Sympathetic Lovers)",
+      "theme": "Enduring Camaraderie, Easy Forgiveness & High Devotion",
+      "summary": "Linda Goodman considered the 3-11 vibration one of the happiest and most enduring in the cosmos. Your signs form a natural sextile of friendship. Even through intense misunderstandings, 3-11 lovers remain steadfast allies, quick to forgive and eager to laugh.",
+      "karmicLesson": "Nurturing lifelong loyalty, humanitarian generosity, and effortless mutual forgiveness."
+    },
+    "headline": "Taurus & Pisces: Enduring Camaraderie, Easy Forgiveness & High Devotion",
+    "summary": "Linda Goodman considered the 3-11 vibration one of the happiest and most enduring in the cosmos. Your signs form a natural sextile of friendship. Even through intense misunderstandings, 3-11 lovers remain steadfast allies, quick to forgive and eager to laugh.",
     "parameters": {
-      "emotional": 88,
-      "communication": 86,
-      "romance": 88,
-      "trust": 91,
-      "stability": 92,
-      "lifestyle": 86
+      "emotional": 90,
+      "communication": 88,
+      "romance": 90,
+      "trust": 93,
+      "stability": 94,
+      "lifestyle": 88
     },
     "elementSynergy": {
       "title": "Earth & Water (Fertile Nurturing)",
-      "text": "Water softens Earth with empathy and emotion; Earth provides Water with steady shores of stability. A classic recipe for enduring married happiness."
+      "text": "Water softens Earth with tender emotional empathy; Earth provides Water with comforting shores of physical stability. A classic recipe for a thriving, enduring marriage."
     },
     "modalitySynergy": "Fixed + Mutable: A balanced dynamic where one partner initiates, stabilizes, or provides adaptable perspective to the other.",
     "strengths": [
@@ -1623,31 +1851,39 @@ const ZODIAC_PAIRS = {
     ],
     "celebrityCouples": "Celebrated Taurus & Pisces cosmic pairs",
     "genderAdvice": {
-      "male_female": "When a Taurus man and a Pisces woman unite, balancing his Mars/solar leadership with her emotional sanctuary fosters lasting harmony.",
-      "female_male": "When a Taurus woman and a Pisces man unite, celebrating her creative initiative while valuing his steadfast protection builds an unbreakable bond.",
-      "same_sex": "In a union between two souls with Taurus and Pisces energies, open communication and honoring personal autonomy keeps the romance deeply alive."
+      "male_female": "In Linda Goodman's Love Signs analysis of the Taurus Man with the Pisces Woman (3-11 Vibration): He expresses his masculine planetary energy through Venus, while she responds with Neptune & Jupiter grace. Success blooms when he honors her emotional sanctuary and she champions his purposeful ambitions.",
+      "female_male": "In Linda Goodman's Love Signs analysis of the Taurus Woman with the Pisces Man (3-11 Vibration): She brings Taurus's radiant initiative to the union, while he offers Pisces's steadfast anchor. When she trusts his protective strength and he respects her autonomy, their bond becomes unbreakable.",
+      "same_sex": "In Linda Goodman's cosmic synastry (3-11 Vibration): Two souls united under Taurus and Pisces celestial energies find harmony when honoring personal autonomy, balancing giving with receiving, and allowing their elemental natures to enrich each other."
     }
   },
   "gemini_aries": {
     "sign1": "gemini",
     "sign2": "aries",
-    "overallScore": 86,
+    "overallScore": 88,
     "colorCategory": "green",
     "shadeLabel": "Harmonious Union",
-    "aspectName": "Sextile (Harmonious Elemental Flow)",
-    "headline": "Gemini & Aries: Stimulating Synergy & Easy Friendship",
-    "summary": "Your elements naturally complement each other (Fire invigorates Air, or Water nourishes Earth). Communication flows effortlessly, laughter comes easily, and mutual respect flourishes.",
+    "aspectName": "3-11 Sun Sign Pattern (Karmic Friends & Sympathetic Lovers)",
+    "vibrationCode": "3-11",
+    "lindaVibration": {
+      "code": "3-11",
+      "title": "3-11 Sun Sign Pattern (Karmic Friends & Sympathetic Lovers)",
+      "theme": "Enduring Camaraderie, Easy Forgiveness & High Devotion",
+      "summary": "Linda Goodman considered the 3-11 vibration one of the happiest and most enduring in the cosmos. Your signs form a natural sextile of friendship. Even through intense misunderstandings, 3-11 lovers remain steadfast allies, quick to forgive and eager to laugh.",
+      "karmicLesson": "Nurturing lifelong loyalty, humanitarian generosity, and effortless mutual forgiveness."
+    },
+    "headline": "Gemini & Aries: Enduring Camaraderie, Easy Forgiveness & High Devotion",
+    "summary": "Linda Goodman considered the 3-11 vibration one of the happiest and most enduring in the cosmos. Your signs form a natural sextile of friendship. Even through intense misunderstandings, 3-11 lovers remain steadfast allies, quick to forgive and eager to laugh.",
     "parameters": {
-      "emotional": 84,
-      "communication": 90,
-      "romance": 92,
-      "trust": 86,
-      "stability": 85,
-      "lifestyle": 86
+      "emotional": 86,
+      "communication": 92,
+      "romance": 94,
+      "trust": 88,
+      "stability": 87,
+      "lifestyle": 88
     },
     "elementSynergy": {
-      "title": "Fire & Air (Inspirational Catalyst)",
-      "text": "Air fuels Fire's passion, while Fire brings warmth and bold action to Air's inventive ideas. An exciting, socially vibrant union."
+      "title": "Fire & Air (Inspirational Breeze)",
+      "text": "Air fans Fire's flames into glorious creative radiance, while Fire warms Air's visionary ideals into bold reality. An exciting, intellectually vibrant union."
     },
     "modalitySynergy": "Mutable + Cardinal: A balanced dynamic where one partner initiates, stabilizes, or provides adaptable perspective to the other.",
     "strengths": [
@@ -1666,31 +1902,39 @@ const ZODIAC_PAIRS = {
     ],
     "celebrityCouples": "Paul Rudd (Aries) & Julie Yaeger (Gemini)",
     "genderAdvice": {
-      "male_female": "When a Gemini man and a Aries woman unite, balancing his Mars/solar leadership with her emotional sanctuary fosters lasting harmony.",
-      "female_male": "When a Gemini woman and a Aries man unite, celebrating her creative initiative while valuing his steadfast protection builds an unbreakable bond.",
-      "same_sex": "In a union between two souls with Gemini and Aries energies, open communication and honoring personal autonomy keeps the romance deeply alive."
+      "male_female": "In Linda Goodman's Love Signs analysis of the Gemini Man with the Aries Woman (3-11 Vibration): He expresses his masculine planetary energy through Mercury, while she responds with Mars grace. Success blooms when he honors her emotional sanctuary and she champions his purposeful ambitions.",
+      "female_male": "In Linda Goodman's Love Signs analysis of the Gemini Woman with the Aries Man (3-11 Vibration): She brings Gemini's radiant initiative to the union, while he offers Aries's steadfast anchor. When she trusts his protective strength and he respects her autonomy, their bond becomes unbreakable.",
+      "same_sex": "In Linda Goodman's cosmic synastry (3-11 Vibration): Two souls united under Gemini and Aries celestial energies find harmony when honoring personal autonomy, balancing giving with receiving, and allowing their elemental natures to enrich each other."
     }
   },
   "gemini_taurus": {
     "sign1": "gemini",
     "sign2": "taurus",
-    "overallScore": 62,
+    "overallScore": 64,
     "colorCategory": "amber",
     "shadeLabel": "Dynamic Potential",
-    "aspectName": "Semisextile (Neighboring Contrast)",
-    "headline": "Gemini & Taurus: Complementary Growth & Mutual Learning",
-    "summary": "As neighboring signs, you operate from contrasting elemental perspectives. This match creates a learning journey where each partner expands the other's horizons if patience is practiced.",
+    "aspectName": "2-12 Sun Sign Pattern (The Karmic Teacher & Pupil)",
+    "vibrationCode": "2-12",
+    "lindaVibration": {
+      "code": "2-12",
+      "title": "2-12 Sun Sign Pattern (The Karmic Teacher & Pupil)",
+      "theme": "Karmic Learning, Compassion & Gentle Tutoring",
+      "summary": "According to Linda Goodman, the 2-12 vibration signifies that one sign has spiritually passed through the other's grade in the cosmic school. There is a deep, unspoken bond of patience, protection, and gentle tutoring. Tolerating different pacing unlocks profound mutual growth.",
+      "karmicLesson": "Bridging contrasting elemental perspectives through patient compassion and secret mutual admiration."
+    },
+    "headline": "Gemini & Taurus: Karmic Learning, Compassion & Gentle Tutoring",
+    "summary": "According to Linda Goodman, the 2-12 vibration signifies that one sign has spiritually passed through the other's grade in the cosmic school. There is a deep, unspoken bond of patience, protection, and gentle tutoring. Tolerating different pacing unlocks profound mutual growth.",
     "parameters": {
-      "emotional": 60,
-      "communication": 57,
-      "romance": 59,
-      "trust": 62,
-      "stability": 64,
-      "lifestyle": 62
+      "emotional": 62,
+      "communication": 59,
+      "romance": 61,
+      "trust": 64,
+      "stability": 66,
+      "lifestyle": 64
     },
     "elementSynergy": {
       "title": "Earth & Air (Pragmatic Strategy)",
-      "text": "Earth brings tangible discipline and organization; Air brings innovative ideas and sparkling conversational agility."
+      "text": "Earth brings tangible structure and sensible order; Air introduces inventive concepts and conversational sparkle. Mutual appreciation bridges different tempos."
     },
     "modalitySynergy": "Mutable + Fixed: A balanced dynamic where one partner initiates, stabilizes, or provides adaptable perspective to the other.",
     "strengths": [
@@ -1703,15 +1947,15 @@ const ZODIAC_PAIRS = {
       "Occasional friction over lifestyle pacing or decision-making speed."
     ],
     "tips": [
-      "Adopt the 24-hour cooling off rule during heated arguments before revisiting sensitive topics.",
-      "Remember that Taurus communicates love in their own authentic dialect.",
-      "Celebrate your differences as unique strengths rather than flaws to be corrected."
+      "Adopt Linda Goodman's cooling-off principle during heated arguments before revisiting sensitive topics.",
+      "Remember that Taurus communicates love in their own authentic elemental dialect.",
+      "Celebrate your differences as complementary superpowers rather than personal flaws."
     ],
     "celebrityCouples": "Celebrated Gemini & Taurus cosmic pairs",
     "genderAdvice": {
-      "male_female": "When a Gemini man and a Taurus woman unite, balancing his Mars/solar leadership with her emotional sanctuary fosters lasting harmony.",
-      "female_male": "When a Gemini woman and a Taurus man unite, celebrating her creative initiative while valuing his steadfast protection builds an unbreakable bond.",
-      "same_sex": "In a union between two souls with Gemini and Taurus energies, open communication and honoring personal autonomy keeps the romance deeply alive."
+      "male_female": "In Linda Goodman's Love Signs analysis of the Gemini Man with the Taurus Woman (2-12 Vibration): He expresses his masculine planetary energy through Mercury, while she responds with Venus grace. Success blooms when he honors her emotional sanctuary and she champions his purposeful ambitions.",
+      "female_male": "In Linda Goodman's Love Signs analysis of the Gemini Woman with the Taurus Man (2-12 Vibration): She brings Gemini's radiant initiative to the union, while he offers Taurus's steadfast anchor. When she trusts his protective strength and he respects her autonomy, their bond becomes unbreakable.",
+      "same_sex": "In Linda Goodman's cosmic synastry (2-12 Vibration): Two souls united under Gemini and Taurus celestial energies find harmony when honoring personal autonomy, balancing giving with receiving, and allowing their elemental natures to enrich each other."
     }
   },
   "gemini_gemini": {
@@ -1720,9 +1964,17 @@ const ZODIAC_PAIRS = {
     "overallScore": 82,
     "colorCategory": "green",
     "shadeLabel": "Harmonious Union",
-    "aspectName": "Conjunction (Mirror Alignment)",
-    "headline": "Gemini & Gemini: Deep Mirror Empathy & Shared Instincts",
-    "summary": "Sharing the exact same sun sign gives you an instinctual understanding of each other's drives and vulnerabilities. You understand each other's moods intuitively, though you must guard against magnifying shared blind spots.",
+    "aspectName": "1-1 Sun Sign Pattern (The Cosmic Mirror)",
+    "vibrationCode": "1-1",
+    "lindaVibration": {
+      "code": "1-1",
+      "title": "1-1 Sun Sign Pattern (The Cosmic Mirror)",
+      "theme": "Mirror Empathy & Double Ego Reflection",
+      "summary": "In Linda Goodman's Love Signs, the 1-1 vibration is like gazing directly into an astrological mirror. You recognize each other's hidden virtues and deepest faults instantly. This creates profound telepathic empathy, but both partners must guard against magnifying identical blind spots.",
+      "karmicLesson": "Cultivating emotional humility and learning self-acceptance through observing your own nature reflected in your mate."
+    },
+    "headline": "Gemini & Gemini: Mirror Empathy & Double Ego Reflection",
+    "summary": "In Linda Goodman's Love Signs, the 1-1 vibration is like gazing directly into an astrological mirror. You recognize each other's hidden virtues and deepest faults instantly. This creates profound telepathic empathy, but both partners must guard against magnifying identical blind spots.",
     "parameters": {
       "emotional": 82,
       "communication": 87,
@@ -1733,9 +1985,9 @@ const ZODIAC_PAIRS = {
     },
     "elementSynergy": {
       "title": "Double Air (Mental Telepathy)",
-      "text": "Incredible intellectual banter, endless laughter, and shared curiosity. A partnership where minds connect on a sparkling wavelength."
+      "text": "In Love Signs, two Air signs generate brilliant conversational agility and intellectual freedom. Your minds connect on a sparkling frequency filled with books, ideas, and laughter."
     },
-    "modalitySynergy": "Both Mutable: High flexibility, continuous laughter, and easy adaptability. Anchor your connection with structured routines.",
+    "modalitySynergy": "Both Mutable (Adaptable): Continuous mental agility, laughter, and easy flexibility. Anchor your connection with grounding domestic routines.",
     "strengths": [
       "Natural understanding: Gemini and Gemini instinctively comprehend each other's core motivations.",
       "Complimentary emotional rhythms that make daily life and domestic partnership feel comforting and safe.",
@@ -1752,31 +2004,39 @@ const ZODIAC_PAIRS = {
     ],
     "celebrityCouples": "Celebrated Gemini & Gemini cosmic pairs",
     "genderAdvice": {
-      "male_female": "When a Gemini man and a Gemini woman unite, balancing his Mars/solar leadership with her emotional sanctuary fosters lasting harmony.",
-      "female_male": "When a Gemini woman and a Gemini man unite, celebrating her creative initiative while valuing his steadfast protection builds an unbreakable bond.",
-      "same_sex": "In a union between two souls with Gemini and Gemini energies, open communication and honoring personal autonomy keeps the romance deeply alive."
+      "male_female": "In Linda Goodman's Love Signs analysis of the Gemini Man with the Gemini Woman (1-1 Vibration): He expresses his masculine planetary energy through Mercury, while she responds with Mercury grace. Success blooms when he honors her emotional sanctuary and she champions his purposeful ambitions.",
+      "female_male": "In Linda Goodman's Love Signs analysis of the Gemini Woman with the Gemini Man (1-1 Vibration): She brings Gemini's radiant initiative to the union, while he offers Gemini's steadfast anchor. When she trusts his protective strength and he respects her autonomy, their bond becomes unbreakable.",
+      "same_sex": "In Linda Goodman's cosmic synastry (1-1 Vibration): Two souls united under Gemini and Gemini celestial energies find harmony when honoring personal autonomy, balancing giving with receiving, and allowing their elemental natures to enrich each other."
     }
   },
   "gemini_cancer": {
     "sign1": "gemini",
     "sign2": "cancer",
-    "overallScore": 62,
+    "overallScore": 64,
     "colorCategory": "amber",
     "shadeLabel": "Dynamic Potential",
-    "aspectName": "Semisextile (Neighboring Contrast)",
-    "headline": "Gemini & Cancer: Complementary Growth & Mutual Learning",
-    "summary": "As neighboring signs, you operate from contrasting elemental perspectives. This match creates a learning journey where each partner expands the other's horizons if patience is practiced.",
+    "aspectName": "2-12 Sun Sign Pattern (The Karmic Teacher & Pupil)",
+    "vibrationCode": "2-12",
+    "lindaVibration": {
+      "code": "2-12",
+      "title": "2-12 Sun Sign Pattern (The Karmic Teacher & Pupil)",
+      "theme": "Karmic Learning, Compassion & Gentle Tutoring",
+      "summary": "According to Linda Goodman, the 2-12 vibration signifies that one sign has spiritually passed through the other's grade in the cosmic school. There is a deep, unspoken bond of patience, protection, and gentle tutoring. Tolerating different pacing unlocks profound mutual growth.",
+      "karmicLesson": "Bridging contrasting elemental perspectives through patient compassion and secret mutual admiration."
+    },
+    "headline": "Gemini & Cancer: Karmic Learning, Compassion & Gentle Tutoring",
+    "summary": "According to Linda Goodman, the 2-12 vibration signifies that one sign has spiritually passed through the other's grade in the cosmic school. There is a deep, unspoken bond of patience, protection, and gentle tutoring. Tolerating different pacing unlocks profound mutual growth.",
     "parameters": {
-      "emotional": 54,
-      "communication": 57,
-      "romance": 59,
-      "trust": 62,
-      "stability": 61,
-      "lifestyle": 62
+      "emotional": 56,
+      "communication": 59,
+      "romance": 61,
+      "trust": 64,
+      "stability": 63,
+      "lifestyle": 64
     },
     "elementSynergy": {
       "title": "Air & Water (Wind & Waves)",
-      "text": "Air analyzes experiences intellectually while Water experiences them through deep emotion. Finding balance creates profound holistic insight."
+      "text": "Air analyzes experiences intellectually while Water perceives them through psychic emotion. Honoring each other's distinct perception creates rich spiritual growth."
     },
     "modalitySynergy": "Mutable + Cardinal: A balanced dynamic where one partner initiates, stabilizes, or provides adaptable perspective to the other.",
     "strengths": [
@@ -1789,37 +2049,45 @@ const ZODIAC_PAIRS = {
       "Occasional friction over lifestyle pacing or decision-making speed."
     ],
     "tips": [
-      "Adopt the 24-hour cooling off rule during heated arguments before revisiting sensitive topics.",
-      "Remember that Cancer communicates love in their own authentic dialect.",
-      "Celebrate your differences as unique strengths rather than flaws to be corrected."
+      "Adopt Linda Goodman's cooling-off principle during heated arguments before revisiting sensitive topics.",
+      "Remember that Cancer communicates love in their own authentic elemental dialect.",
+      "Celebrate your differences as complementary superpowers rather than personal flaws."
     ],
     "celebrityCouples": "Celebrated Gemini & Cancer cosmic pairs",
     "genderAdvice": {
-      "male_female": "When a Gemini man and a Cancer woman unite, balancing his Mars/solar leadership with her emotional sanctuary fosters lasting harmony.",
-      "female_male": "When a Gemini woman and a Cancer man unite, celebrating her creative initiative while valuing his steadfast protection builds an unbreakable bond.",
-      "same_sex": "In a union between two souls with Gemini and Cancer energies, open communication and honoring personal autonomy keeps the romance deeply alive."
+      "male_female": "In Linda Goodman's Love Signs analysis of the Gemini Man with the Cancer Woman (2-12 Vibration): He expresses his masculine planetary energy through Mercury, while she responds with Moon grace. Success blooms when he honors her emotional sanctuary and she champions his purposeful ambitions.",
+      "female_male": "In Linda Goodman's Love Signs analysis of the Gemini Woman with the Cancer Man (2-12 Vibration): She brings Gemini's radiant initiative to the union, while he offers Cancer's steadfast anchor. When she trusts his protective strength and he respects her autonomy, their bond becomes unbreakable.",
+      "same_sex": "In Linda Goodman's cosmic synastry (2-12 Vibration): Two souls united under Gemini and Cancer celestial energies find harmony when honoring personal autonomy, balancing giving with receiving, and allowing their elemental natures to enrich each other."
     }
   },
   "gemini_leo": {
     "sign1": "gemini",
     "sign2": "leo",
-    "overallScore": 86,
+    "overallScore": 88,
     "colorCategory": "green",
     "shadeLabel": "Harmonious Union",
-    "aspectName": "Sextile (Harmonious Elemental Flow)",
-    "headline": "Gemini & Leo: Stimulating Synergy & Easy Friendship",
-    "summary": "Your elements naturally complement each other (Fire invigorates Air, or Water nourishes Earth). Communication flows effortlessly, laughter comes easily, and mutual respect flourishes.",
+    "aspectName": "3-11 Sun Sign Pattern (Karmic Friends & Sympathetic Lovers)",
+    "vibrationCode": "3-11",
+    "lindaVibration": {
+      "code": "3-11",
+      "title": "3-11 Sun Sign Pattern (Karmic Friends & Sympathetic Lovers)",
+      "theme": "Enduring Camaraderie, Easy Forgiveness & High Devotion",
+      "summary": "Linda Goodman considered the 3-11 vibration one of the happiest and most enduring in the cosmos. Your signs form a natural sextile of friendship. Even through intense misunderstandings, 3-11 lovers remain steadfast allies, quick to forgive and eager to laugh.",
+      "karmicLesson": "Nurturing lifelong loyalty, humanitarian generosity, and effortless mutual forgiveness."
+    },
+    "headline": "Gemini & Leo: Enduring Camaraderie, Easy Forgiveness & High Devotion",
+    "summary": "Linda Goodman considered the 3-11 vibration one of the happiest and most enduring in the cosmos. Your signs form a natural sextile of friendship. Even through intense misunderstandings, 3-11 lovers remain steadfast allies, quick to forgive and eager to laugh.",
     "parameters": {
-      "emotional": 84,
-      "communication": 90,
-      "romance": 92,
-      "trust": 86,
-      "stability": 88,
-      "lifestyle": 86
+      "emotional": 86,
+      "communication": 92,
+      "romance": 94,
+      "trust": 88,
+      "stability": 90,
+      "lifestyle": 88
     },
     "elementSynergy": {
-      "title": "Fire & Air (Inspirational Catalyst)",
-      "text": "Air fuels Fire's passion, while Fire brings warmth and bold action to Air's inventive ideas. An exciting, socially vibrant union."
+      "title": "Fire & Air (Inspirational Breeze)",
+      "text": "Air fans Fire's flames into glorious creative radiance, while Fire warms Air's visionary ideals into bold reality. An exciting, intellectually vibrant union."
     },
     "modalitySynergy": "Mutable + Fixed: A balanced dynamic where one partner initiates, stabilizes, or provides adaptable perspective to the other.",
     "strengths": [
@@ -1838,33 +2106,41 @@ const ZODIAC_PAIRS = {
     ],
     "celebrityCouples": "Celebrated Gemini & Leo cosmic pairs",
     "genderAdvice": {
-      "male_female": "When a Gemini man and a Leo woman unite, balancing his Mars/solar leadership with her emotional sanctuary fosters lasting harmony.",
-      "female_male": "When a Gemini woman and a Leo man unite, celebrating her creative initiative while valuing his steadfast protection builds an unbreakable bond.",
-      "same_sex": "In a union between two souls with Gemini and Leo energies, open communication and honoring personal autonomy keeps the romance deeply alive."
+      "male_female": "In Linda Goodman's Love Signs analysis of the Gemini Man with the Leo Woman (3-11 Vibration): He expresses his masculine planetary energy through Mercury, while she responds with Sun grace. Success blooms when he honors her emotional sanctuary and she champions his purposeful ambitions.",
+      "female_male": "In Linda Goodman's Love Signs analysis of the Gemini Woman with the Leo Man (3-11 Vibration): She brings Gemini's radiant initiative to the union, while he offers Leo's steadfast anchor. When she trusts his protective strength and he respects her autonomy, their bond becomes unbreakable.",
+      "same_sex": "In Linda Goodman's cosmic synastry (3-11 Vibration): Two souls united under Gemini and Leo celestial energies find harmony when honoring personal autonomy, balancing giving with receiving, and allowing their elemental natures to enrich each other."
     }
   },
   "gemini_virgo": {
     "sign1": "gemini",
     "sign2": "virgo",
-    "overallScore": 52,
+    "overallScore": 54,
     "colorCategory": "amber",
     "shadeLabel": "Dynamic Potential",
-    "aspectName": "Square (Passionate Friction & Dynamic Growth)",
-    "headline": "Gemini & Virgo: Electrifying Spark with Creative Challenge",
-    "summary": "Signs at a 90\u00b0 square share the same modality but clash elementally. This generates high attraction, intense emotional chemistry, and spirited debates that demand conscious diplomacy and mutual compromise.",
+    "aspectName": "4-10 Sun Sign Pattern (The Karmic Challenge & Crucible)",
+    "vibrationCode": "4-10",
+    "lindaVibration": {
+      "code": "4-10",
+      "title": "4-10 Sun Sign Pattern (The Karmic Challenge & Crucible)",
+      "theme": "Passionate Friction, Dramatic Chemistry & Soul Crucible",
+      "summary": "Linda Goodman described the 4-10 square vibration as the classic crucible of soul growth. Sharing the same modality but differing elements produces magnetic physical attraction paired with clashes of will. If ego yields to love, this union builds invincible diamond strength.",
+      "karmicLesson": "Transcending stubborn pride and mastering the noble art of sacrificial compromise."
+    },
+    "headline": "Gemini & Virgo: Passionate Friction, Dramatic Chemistry & Soul Crucible",
+    "summary": "Linda Goodman described the 4-10 square vibration as the classic crucible of soul growth. Sharing the same modality but differing elements produces magnetic physical attraction paired with clashes of will. If ego yields to love, this union builds invincible diamond strength.",
     "parameters": {
-      "emotional": 50,
-      "communication": 47,
-      "romance": 49,
-      "trust": 46,
-      "stability": 51,
-      "lifestyle": 44
+      "emotional": 52,
+      "communication": 49,
+      "romance": 51,
+      "trust": 48,
+      "stability": 53,
+      "lifestyle": 46
     },
     "elementSynergy": {
       "title": "Earth & Air (Pragmatic Strategy)",
-      "text": "Earth brings tangible discipline and organization; Air brings innovative ideas and sparkling conversational agility."
+      "text": "Earth brings tangible structure and sensible order; Air introduces inventive concepts and conversational sparkle. Mutual appreciation bridges different tempos."
     },
-    "modalitySynergy": "Both Mutable: High flexibility, continuous laughter, and easy adaptability. Anchor your connection with structured routines.",
+    "modalitySynergy": "Both Mutable (Adaptable): Continuous mental agility, laughter, and easy flexibility. Anchor your connection with grounding domestic routines.",
     "strengths": [
       "Dynamic growth: Gemini introduces Virgo to new perspectives and vice versa.",
       "Engaging romantic chemistry where you never run out of intriguing things to discover about each other.",
@@ -1875,37 +2151,45 @@ const ZODIAC_PAIRS = {
       "Occasional friction over lifestyle pacing or decision-making speed."
     ],
     "tips": [
-      "Adopt the 24-hour cooling off rule during heated arguments before revisiting sensitive topics.",
-      "Remember that Virgo communicates love in their own authentic dialect.",
-      "Celebrate your differences as unique strengths rather than flaws to be corrected."
+      "Adopt Linda Goodman's cooling-off principle during heated arguments before revisiting sensitive topics.",
+      "Remember that Virgo communicates love in their own authentic elemental dialect.",
+      "Celebrate your differences as complementary superpowers rather than personal flaws."
     ],
     "celebrityCouples": "Celebrated Gemini & Virgo cosmic pairs",
     "genderAdvice": {
-      "male_female": "When a Gemini man and a Virgo woman unite, balancing his Mars/solar leadership with her emotional sanctuary fosters lasting harmony.",
-      "female_male": "When a Gemini woman and a Virgo man unite, celebrating her creative initiative while valuing his steadfast protection builds an unbreakable bond.",
-      "same_sex": "In a union between two souls with Gemini and Virgo energies, open communication and honoring personal autonomy keeps the romance deeply alive."
+      "male_female": "In Linda Goodman's Love Signs analysis of the Gemini Man with the Virgo Woman (4-10 Vibration): He expresses his masculine planetary energy through Mercury, while she responds with Mercury grace. Success blooms when he honors her emotional sanctuary and she champions his purposeful ambitions.",
+      "female_male": "In Linda Goodman's Love Signs analysis of the Gemini Woman with the Virgo Man (4-10 Vibration): She brings Gemini's radiant initiative to the union, while he offers Virgo's steadfast anchor. When she trusts his protective strength and he respects her autonomy, their bond becomes unbreakable.",
+      "same_sex": "In Linda Goodman's cosmic synastry (4-10 Vibration): Two souls united under Gemini and Virgo celestial energies find harmony when honoring personal autonomy, balancing giving with receiving, and allowing their elemental natures to enrich each other."
     }
   },
   "gemini_libra": {
     "sign1": "gemini",
     "sign2": "libra",
-    "overallScore": 96,
+    "overallScore": 97,
     "colorCategory": "green",
     "shadeLabel": "Harmonious Union",
-    "aspectName": "Trine (Divine Soulmate Element)",
-    "headline": "Gemini & Libra: Effortless Harmony & Natural Soul Resonance",
-    "summary": "Sharing the same element (Fire-Fire, Earth-Earth, Air-Air, Water-Water) creates an instinctive, harmonious flow. You breathe the same spiritual air, understand each other's pacing, and feel deeply at home together.",
+    "aspectName": "5-9 Sun Sign Pattern (The Divine Cosmic Blessing)",
+    "vibrationCode": "5-9",
+    "lindaVibration": {
+      "code": "5-9",
+      "title": "5-9 Sun Sign Pattern (The Divine Cosmic Blessing)",
+      "theme": "Golden Trine, Soulmate Telepathy & Natural Sympathy",
+      "summary": "Linda Goodman's most celebrated synastry pattern! Sharing the same sacred element (Fire, Earth, Air, or Water) brings instant soul recognition. You forgive each other almost effortlessly, inspire each other's dreams, and enjoy an almost telepathic understanding.",
+      "karmicLesson": "Preserving sacred gratitude and avoiding taking your effortless soul harmony for granted."
+    },
+    "headline": "Gemini & Libra: Golden Trine, Soulmate Telepathy & Natural Sympathy",
+    "summary": "Linda Goodman's most celebrated synastry pattern! Sharing the same sacred element (Fire, Earth, Air, or Water) brings instant soul recognition. You forgive each other almost effortlessly, inspire each other's dreams, and enjoy an almost telepathic understanding.",
     "parameters": {
-      "emotional": 96,
+      "emotional": 97,
       "communication": 98,
-      "romance": 93,
-      "trust": 96,
-      "stability": 91,
+      "romance": 94,
+      "trust": 97,
+      "stability": 92,
       "lifestyle": 96
     },
     "elementSynergy": {
       "title": "Double Air (Mental Telepathy)",
-      "text": "Incredible intellectual banter, endless laughter, and shared curiosity. A partnership where minds connect on a sparkling wavelength."
+      "text": "In Love Signs, two Air signs generate brilliant conversational agility and intellectual freedom. Your minds connect on a sparkling frequency filled with books, ideas, and laughter."
     },
     "modalitySynergy": "Mutable + Cardinal: A balanced dynamic where one partner initiates, stabilizes, or provides adaptable perspective to the other.",
     "strengths": [
@@ -1924,40 +2208,48 @@ const ZODIAC_PAIRS = {
     ],
     "celebrityCouples": "Will Smith (Libra) & Jada Pinkett Smith (Virgo)",
     "genderAdvice": {
-      "male_female": "When a Gemini man and a Libra woman unite, balancing his Mars/solar leadership with her emotional sanctuary fosters lasting harmony.",
-      "female_male": "When a Gemini woman and a Libra man unite, celebrating her creative initiative while valuing his steadfast protection builds an unbreakable bond.",
-      "same_sex": "In a union between two souls with Gemini and Libra energies, open communication and honoring personal autonomy keeps the romance deeply alive."
+      "male_female": "In Linda Goodman's Love Signs analysis of the Gemini Man with the Libra Woman (5-9 Vibration): He expresses his masculine planetary energy through Mercury, while she responds with Venus grace. Success blooms when he honors her emotional sanctuary and she champions his purposeful ambitions.",
+      "female_male": "In Linda Goodman's Love Signs analysis of the Gemini Woman with the Libra Man (5-9 Vibration): She brings Gemini's radiant initiative to the union, while he offers Libra's steadfast anchor. When she trusts his protective strength and he respects her autonomy, their bond becomes unbreakable.",
+      "same_sex": "In Linda Goodman's cosmic synastry (5-9 Vibration): Two souls united under Gemini and Libra celestial energies find harmony when honoring personal autonomy, balancing giving with receiving, and allowing their elemental natures to enrich each other."
     }
   },
   "gemini_scorpio": {
     "sign1": "gemini",
     "sign2": "scorpio",
-    "overallScore": 46,
+    "overallScore": 48,
     "colorCategory": "red",
     "shadeLabel": "Growth Challenge",
-    "aspectName": "Quincunx (Mysterious Intrigue & Karmic Adjustment)",
-    "headline": "Gemini & Scorpio: Enigmatic Attraction Demanding Patience",
-    "summary": "Separated by five signs, you have little in common astrologically, which creates an intriguing magnetic mystery. Succeeding together requires appreciating your partner's entirely unique perspective on life.",
+    "aspectName": "6-8 Sun Sign Pattern (Karmic Mystery & Devoted Service)",
+    "vibrationCode": "6-8",
+    "lindaVibration": {
+      "code": "6-8",
+      "title": "6-8 Sun Sign Pattern (Karmic Mystery & Devoted Service)",
+      "theme": "Enigmatic Fascination, Hypnotic Pull & Karmic Duty",
+      "summary": "According to Linda Goodman, the 6-8 quincunx vibration is cloaked in hypnotic fascination and karmic debt. One partner feels drawn to serve, protect, or nurture the other, generating deep emotional or physical magnetism that requires profound patience to untangle.",
+      "karmicLesson": "Practicing unconditional love free from selfish demands, embracing differences that cannot be logically explained."
+    },
+    "headline": "Gemini & Scorpio: Enigmatic Fascination, Hypnotic Pull & Karmic Duty",
+    "summary": "According to Linda Goodman, the 6-8 quincunx vibration is cloaked in hypnotic fascination and karmic debt. One partner feels drawn to serve, protect, or nurture the other, generating deep emotional or physical magnetism that requires profound patience to untangle.",
     "parameters": {
       "emotional": 42,
       "communication": 45,
-      "romance": 43,
-      "trust": 46,
-      "stability": 48,
-      "lifestyle": 38
+      "romance": 45,
+      "trust": 48,
+      "stability": 50,
+      "lifestyle": 40
     },
     "elementSynergy": {
       "title": "Air & Water (Wind & Waves)",
-      "text": "Air analyzes experiences intellectually while Water experiences them through deep emotion. Finding balance creates profound holistic insight."
+      "text": "Air analyzes experiences intellectually while Water perceives them through psychic emotion. Honoring each other's distinct perception creates rich spiritual growth."
     },
     "modalitySynergy": "Mutable + Fixed: A balanced dynamic where one partner initiates, stabilizes, or provides adaptable perspective to the other.",
     "strengths": [
-      "Powerful karmic pull that pushes both individuals to mature emotionally.",
+      "Powerful karmic pull that pushes both souls to mature emotionally and spiritually.",
       "Unforgettable chemistry and passion born from sheer elemental contrast.",
       "Opportunity to develop immense patience, empathy, and unconditional love."
     ],
     "challenges": [
-      "Fundamental contrast in priorities: Gemini's instinctual approach may confuse Scorpio.",
+      "Fundamental contrast in priorities: Gemini's instinctual approach may baffle Scorpio.",
       "Tendency to misinterpret your partner's need for space or emotional expression."
     ],
     "tips": [
@@ -1967,33 +2259,41 @@ const ZODIAC_PAIRS = {
     ],
     "celebrityCouples": "Celebrated Gemini & Scorpio cosmic pairs",
     "genderAdvice": {
-      "male_female": "When a Gemini man and a Scorpio woman unite, balancing his Mars/solar leadership with her emotional sanctuary fosters lasting harmony.",
-      "female_male": "When a Gemini woman and a Scorpio man unite, celebrating her creative initiative while valuing his steadfast protection builds an unbreakable bond.",
-      "same_sex": "In a union between two souls with Gemini and Scorpio energies, open communication and honoring personal autonomy keeps the romance deeply alive."
+      "male_female": "In Linda Goodman's Love Signs analysis of the Gemini Man with the Scorpio Woman (6-8 Vibration): He expresses his masculine planetary energy through Mercury, while she responds with Pluto & Mars grace. Success blooms when he honors her emotional sanctuary and she champions his purposeful ambitions.",
+      "female_male": "In Linda Goodman's Love Signs analysis of the Gemini Woman with the Scorpio Man (6-8 Vibration): She brings Gemini's radiant initiative to the union, while he offers Scorpio's steadfast anchor. When she trusts his protective strength and he respects her autonomy, their bond becomes unbreakable.",
+      "same_sex": "In Linda Goodman's cosmic synastry (6-8 Vibration): Two souls united under Gemini and Scorpio celestial energies find harmony when honoring personal autonomy, balancing giving with receiving, and allowing their elemental natures to enrich each other."
     }
   },
   "gemini_sagittarius": {
     "sign1": "gemini",
     "sign2": "sagittarius",
-    "overallScore": 80,
+    "overallScore": 82,
     "colorCategory": "green",
     "shadeLabel": "Harmonious Union",
-    "aspectName": "Opposition (Cosmic Magnetism & Polar Balance)",
-    "headline": "Gemini & Sagittarius: Magnetic Attraction & Yin-Yang Balance",
-    "summary": "Sitting 180\u00b0 across the zodiac wheel, you are polar opposites. What one lacks, the other possesses in abundance. The chemistry is electric, offering the potential to form an unbeatable yin-and-yang partnership.",
+    "aspectName": "7-7 Sun Sign Pattern (Polar Magnetism & Cosmic Complements)",
+    "vibrationCode": "7-7",
+    "lindaVibration": {
+      "code": "7-7",
+      "title": "7-7 Sun Sign Pattern (Polar Magnetism & Cosmic Complements)",
+      "theme": "Opposites Attract, Celestial Electricity & Yin-Yang Balance",
+      "summary": "Sitting 180\u00b0 opposite on the zodiac wheel, Linda Goodman saw the 7-7 vibration as two halves of a single soul. What one lacks, the other possesses in abundance. It generates high romantic voltage: either a magnificent lifelong union or an explosive standoff.",
+      "karmicLesson": "Finding wholeness through merging opposite qualities into a unified, harmonious whole."
+    },
+    "headline": "Gemini & Sagittarius: Opposites Attract, Celestial Electricity & Yin-Yang Balance",
+    "summary": "Sitting 180\u00b0 opposite on the zodiac wheel, Linda Goodman saw the 7-7 vibration as two halves of a single soul. What one lacks, the other possesses in abundance. It generates high romantic voltage: either a magnificent lifelong union or an explosive standoff.",
     "parameters": {
-      "emotional": 78,
-      "communication": 84,
-      "romance": 86,
-      "trust": 74,
-      "stability": 79,
-      "lifestyle": 80
+      "emotional": 80,
+      "communication": 86,
+      "romance": 88,
+      "trust": 76,
+      "stability": 81,
+      "lifestyle": 82
     },
     "elementSynergy": {
-      "title": "Fire & Air (Inspirational Catalyst)",
-      "text": "Air fuels Fire's passion, while Fire brings warmth and bold action to Air's inventive ideas. An exciting, socially vibrant union."
+      "title": "Fire & Air (Inspirational Breeze)",
+      "text": "Air fans Fire's flames into glorious creative radiance, while Fire warms Air's visionary ideals into bold reality. An exciting, intellectually vibrant union."
     },
-    "modalitySynergy": "Both Mutable: High flexibility, continuous laughter, and easy adaptability. Anchor your connection with structured routines.",
+    "modalitySynergy": "Both Mutable (Adaptable): Continuous mental agility, laughter, and easy flexibility. Anchor your connection with grounding domestic routines.",
     "strengths": [
       "Natural understanding: Gemini and Sagittarius instinctively comprehend each other's core motivations.",
       "Complimentary emotional rhythms that make daily life and domestic partnership feel comforting and safe.",
@@ -2010,40 +2310,48 @@ const ZODIAC_PAIRS = {
     ],
     "celebrityCouples": "Celebrated Gemini & Sagittarius cosmic pairs",
     "genderAdvice": {
-      "male_female": "When a Gemini man and a Sagittarius woman unite, balancing his Mars/solar leadership with her emotional sanctuary fosters lasting harmony.",
-      "female_male": "When a Gemini woman and a Sagittarius man unite, celebrating her creative initiative while valuing his steadfast protection builds an unbreakable bond.",
-      "same_sex": "In a union between two souls with Gemini and Sagittarius energies, open communication and honoring personal autonomy keeps the romance deeply alive."
+      "male_female": "In Linda Goodman's Love Signs analysis of the Gemini Man with the Sagittarius Woman (7-7 Vibration): He expresses his masculine planetary energy through Mercury, while she responds with Jupiter grace. Success blooms when he honors her emotional sanctuary and she champions his purposeful ambitions.",
+      "female_male": "In Linda Goodman's Love Signs analysis of the Gemini Woman with the Sagittarius Man (7-7 Vibration): She brings Gemini's radiant initiative to the union, while he offers Sagittarius's steadfast anchor. When she trusts his protective strength and he respects her autonomy, their bond becomes unbreakable.",
+      "same_sex": "In Linda Goodman's cosmic synastry (7-7 Vibration): Two souls united under Gemini and Sagittarius celestial energies find harmony when honoring personal autonomy, balancing giving with receiving, and allowing their elemental natures to enrich each other."
     }
   },
   "gemini_capricorn": {
     "sign1": "gemini",
     "sign2": "capricorn",
-    "overallScore": 46,
+    "overallScore": 48,
     "colorCategory": "red",
     "shadeLabel": "Growth Challenge",
-    "aspectName": "Quincunx (Mysterious Intrigue & Karmic Adjustment)",
-    "headline": "Gemini & Capricorn: Enigmatic Attraction Demanding Patience",
-    "summary": "Separated by five signs, you have little in common astrologically, which creates an intriguing magnetic mystery. Succeeding together requires appreciating your partner's entirely unique perspective on life.",
+    "aspectName": "6-8 Sun Sign Pattern (Karmic Mystery & Devoted Service)",
+    "vibrationCode": "6-8",
+    "lindaVibration": {
+      "code": "6-8",
+      "title": "6-8 Sun Sign Pattern (Karmic Mystery & Devoted Service)",
+      "theme": "Enigmatic Fascination, Hypnotic Pull & Karmic Duty",
+      "summary": "According to Linda Goodman, the 6-8 quincunx vibration is cloaked in hypnotic fascination and karmic debt. One partner feels drawn to serve, protect, or nurture the other, generating deep emotional or physical magnetism that requires profound patience to untangle.",
+      "karmicLesson": "Practicing unconditional love free from selfish demands, embracing differences that cannot be logically explained."
+    },
+    "headline": "Gemini & Capricorn: Enigmatic Fascination, Hypnotic Pull & Karmic Duty",
+    "summary": "According to Linda Goodman, the 6-8 quincunx vibration is cloaked in hypnotic fascination and karmic debt. One partner feels drawn to serve, protect, or nurture the other, generating deep emotional or physical magnetism that requires profound patience to untangle.",
     "parameters": {
-      "emotional": 44,
+      "emotional": 46,
       "communication": 45,
-      "romance": 43,
-      "trust": 46,
-      "stability": 45,
-      "lifestyle": 38
+      "romance": 45,
+      "trust": 48,
+      "stability": 47,
+      "lifestyle": 40
     },
     "elementSynergy": {
       "title": "Earth & Air (Pragmatic Strategy)",
-      "text": "Earth brings tangible discipline and organization; Air brings innovative ideas and sparkling conversational agility."
+      "text": "Earth brings tangible structure and sensible order; Air introduces inventive concepts and conversational sparkle. Mutual appreciation bridges different tempos."
     },
     "modalitySynergy": "Mutable + Cardinal: A balanced dynamic where one partner initiates, stabilizes, or provides adaptable perspective to the other.",
     "strengths": [
-      "Powerful karmic pull that pushes both individuals to mature emotionally.",
+      "Powerful karmic pull that pushes both souls to mature emotionally and spiritually.",
       "Unforgettable chemistry and passion born from sheer elemental contrast.",
       "Opportunity to develop immense patience, empathy, and unconditional love."
     ],
     "challenges": [
-      "Fundamental contrast in priorities: Gemini's instinctual approach may confuse Capricorn.",
+      "Fundamental contrast in priorities: Gemini's instinctual approach may baffle Capricorn.",
       "Tendency to misinterpret your partner's need for space or emotional expression."
     ],
     "tips": [
@@ -2053,31 +2361,39 @@ const ZODIAC_PAIRS = {
     ],
     "celebrityCouples": "Celebrated Gemini & Capricorn cosmic pairs",
     "genderAdvice": {
-      "male_female": "When a Gemini man and a Capricorn woman unite, balancing his Mars/solar leadership with her emotional sanctuary fosters lasting harmony.",
-      "female_male": "When a Gemini woman and a Capricorn man unite, celebrating her creative initiative while valuing his steadfast protection builds an unbreakable bond.",
-      "same_sex": "In a union between two souls with Gemini and Capricorn energies, open communication and honoring personal autonomy keeps the romance deeply alive."
+      "male_female": "In Linda Goodman's Love Signs analysis of the Gemini Man with the Capricorn Woman (6-8 Vibration): He expresses his masculine planetary energy through Mercury, while she responds with Saturn grace. Success blooms when he honors her emotional sanctuary and she champions his purposeful ambitions.",
+      "female_male": "In Linda Goodman's Love Signs analysis of the Gemini Woman with the Capricorn Man (6-8 Vibration): She brings Gemini's radiant initiative to the union, while he offers Capricorn's steadfast anchor. When she trusts his protective strength and he respects her autonomy, their bond becomes unbreakable.",
+      "same_sex": "In Linda Goodman's cosmic synastry (6-8 Vibration): Two souls united under Gemini and Capricorn celestial energies find harmony when honoring personal autonomy, balancing giving with receiving, and allowing their elemental natures to enrich each other."
     }
   },
   "gemini_aquarius": {
     "sign1": "gemini",
     "sign2": "aquarius",
-    "overallScore": 94,
+    "overallScore": 95,
     "colorCategory": "green",
     "shadeLabel": "Harmonious Union",
-    "aspectName": "Trine (Divine Soulmate Element)",
-    "headline": "Gemini & Aquarius: Effortless Harmony & Natural Soul Resonance",
-    "summary": "Sharing the same element (Fire-Fire, Earth-Earth, Air-Air, Water-Water) creates an instinctive, harmonious flow. You breathe the same spiritual air, understand each other's pacing, and feel deeply at home together.",
+    "aspectName": "5-9 Sun Sign Pattern (The Divine Cosmic Blessing)",
+    "vibrationCode": "5-9",
+    "lindaVibration": {
+      "code": "5-9",
+      "title": "5-9 Sun Sign Pattern (The Divine Cosmic Blessing)",
+      "theme": "Golden Trine, Soulmate Telepathy & Natural Sympathy",
+      "summary": "Linda Goodman's most celebrated synastry pattern! Sharing the same sacred element (Fire, Earth, Air, or Water) brings instant soul recognition. You forgive each other almost effortlessly, inspire each other's dreams, and enjoy an almost telepathic understanding.",
+      "karmicLesson": "Preserving sacred gratitude and avoiding taking your effortless soul harmony for granted."
+    },
+    "headline": "Gemini & Aquarius: Golden Trine, Soulmate Telepathy & Natural Sympathy",
+    "summary": "Linda Goodman's most celebrated synastry pattern! Sharing the same sacred element (Fire, Earth, Air, or Water) brings instant soul recognition. You forgive each other almost effortlessly, inspire each other's dreams, and enjoy an almost telepathic understanding.",
     "parameters": {
-      "emotional": 94,
+      "emotional": 95,
       "communication": 98,
-      "romance": 91,
-      "trust": 94,
-      "stability": 89,
+      "romance": 92,
+      "trust": 95,
+      "stability": 90,
       "lifestyle": 96
     },
     "elementSynergy": {
       "title": "Double Air (Mental Telepathy)",
-      "text": "Incredible intellectual banter, endless laughter, and shared curiosity. A partnership where minds connect on a sparkling wavelength."
+      "text": "In Love Signs, two Air signs generate brilliant conversational agility and intellectual freedom. Your minds connect on a sparkling frequency filled with books, ideas, and laughter."
     },
     "modalitySynergy": "Mutable + Fixed: A balanced dynamic where one partner initiates, stabilizes, or provides adaptable perspective to the other.",
     "strengths": [
@@ -2096,33 +2412,41 @@ const ZODIAC_PAIRS = {
     ],
     "celebrityCouples": "Kanye West (Gemini) & Kim Kardashian (Libra/Aquarius dynamics)",
     "genderAdvice": {
-      "male_female": "When a Gemini man and a Aquarius woman unite, balancing his Mars/solar leadership with her emotional sanctuary fosters lasting harmony.",
-      "female_male": "When a Gemini woman and a Aquarius man unite, celebrating her creative initiative while valuing his steadfast protection builds an unbreakable bond.",
-      "same_sex": "In a union between two souls with Gemini and Aquarius energies, open communication and honoring personal autonomy keeps the romance deeply alive."
+      "male_female": "In Linda Goodman's Love Signs analysis of the Gemini Man with the Aquarius Woman (5-9 Vibration): He expresses his masculine planetary energy through Mercury, while she responds with Uranus & Saturn grace. Success blooms when he honors her emotional sanctuary and she champions his purposeful ambitions.",
+      "female_male": "In Linda Goodman's Love Signs analysis of the Gemini Woman with the Aquarius Man (5-9 Vibration): She brings Gemini's radiant initiative to the union, while he offers Aquarius's steadfast anchor. When she trusts his protective strength and he respects her autonomy, their bond becomes unbreakable.",
+      "same_sex": "In Linda Goodman's cosmic synastry (5-9 Vibration): Two souls united under Gemini and Aquarius celestial energies find harmony when honoring personal autonomy, balancing giving with receiving, and allowing their elemental natures to enrich each other."
     }
   },
   "gemini_pisces": {
     "sign1": "gemini",
     "sign2": "pisces",
-    "overallScore": 52,
+    "overallScore": 54,
     "colorCategory": "amber",
     "shadeLabel": "Dynamic Potential",
-    "aspectName": "Square (Passionate Friction & Dynamic Growth)",
-    "headline": "Gemini & Pisces: Electrifying Spark with Creative Challenge",
-    "summary": "Signs at a 90\u00b0 square share the same modality but clash elementally. This generates high attraction, intense emotional chemistry, and spirited debates that demand conscious diplomacy and mutual compromise.",
+    "aspectName": "4-10 Sun Sign Pattern (The Karmic Challenge & Crucible)",
+    "vibrationCode": "4-10",
+    "lindaVibration": {
+      "code": "4-10",
+      "title": "4-10 Sun Sign Pattern (The Karmic Challenge & Crucible)",
+      "theme": "Passionate Friction, Dramatic Chemistry & Soul Crucible",
+      "summary": "Linda Goodman described the 4-10 square vibration as the classic crucible of soul growth. Sharing the same modality but differing elements produces magnetic physical attraction paired with clashes of will. If ego yields to love, this union builds invincible diamond strength.",
+      "karmicLesson": "Transcending stubborn pride and mastering the noble art of sacrificial compromise."
+    },
+    "headline": "Gemini & Pisces: Passionate Friction, Dramatic Chemistry & Soul Crucible",
+    "summary": "Linda Goodman described the 4-10 square vibration as the classic crucible of soul growth. Sharing the same modality but differing elements produces magnetic physical attraction paired with clashes of will. If ego yields to love, this union builds invincible diamond strength.",
     "parameters": {
-      "emotional": 44,
-      "communication": 47,
-      "romance": 49,
-      "trust": 46,
-      "stability": 51,
-      "lifestyle": 44
+      "emotional": 46,
+      "communication": 49,
+      "romance": 51,
+      "trust": 48,
+      "stability": 53,
+      "lifestyle": 46
     },
     "elementSynergy": {
       "title": "Air & Water (Wind & Waves)",
-      "text": "Air analyzes experiences intellectually while Water experiences them through deep emotion. Finding balance creates profound holistic insight."
+      "text": "Air analyzes experiences intellectually while Water perceives them through psychic emotion. Honoring each other's distinct perception creates rich spiritual growth."
     },
-    "modalitySynergy": "Both Mutable: High flexibility, continuous laughter, and easy adaptability. Anchor your connection with structured routines.",
+    "modalitySynergy": "Both Mutable (Adaptable): Continuous mental agility, laughter, and easy flexibility. Anchor your connection with grounding domestic routines.",
     "strengths": [
       "Dynamic growth: Gemini introduces Pisces to new perspectives and vice versa.",
       "Engaging romantic chemistry where you never run out of intriguing things to discover about each other.",
@@ -2133,39 +2457,47 @@ const ZODIAC_PAIRS = {
       "Occasional friction over lifestyle pacing or decision-making speed."
     ],
     "tips": [
-      "Adopt the 24-hour cooling off rule during heated arguments before revisiting sensitive topics.",
-      "Remember that Pisces communicates love in their own authentic dialect.",
-      "Celebrate your differences as unique strengths rather than flaws to be corrected."
+      "Adopt Linda Goodman's cooling-off principle during heated arguments before revisiting sensitive topics.",
+      "Remember that Pisces communicates love in their own authentic elemental dialect.",
+      "Celebrate your differences as complementary superpowers rather than personal flaws."
     ],
     "celebrityCouples": "Celebrated Gemini & Pisces cosmic pairs",
     "genderAdvice": {
-      "male_female": "When a Gemini man and a Pisces woman unite, balancing his Mars/solar leadership with her emotional sanctuary fosters lasting harmony.",
-      "female_male": "When a Gemini woman and a Pisces man unite, celebrating her creative initiative while valuing his steadfast protection builds an unbreakable bond.",
-      "same_sex": "In a union between two souls with Gemini and Pisces energies, open communication and honoring personal autonomy keeps the romance deeply alive."
+      "male_female": "In Linda Goodman's Love Signs analysis of the Gemini Man with the Pisces Woman (4-10 Vibration): He expresses his masculine planetary energy through Mercury, while she responds with Neptune & Jupiter grace. Success blooms when he honors her emotional sanctuary and she champions his purposeful ambitions.",
+      "female_male": "In Linda Goodman's Love Signs analysis of the Gemini Woman with the Pisces Man (4-10 Vibration): She brings Gemini's radiant initiative to the union, while he offers Pisces's steadfast anchor. When she trusts his protective strength and he respects her autonomy, their bond becomes unbreakable.",
+      "same_sex": "In Linda Goodman's cosmic synastry (4-10 Vibration): Two souls united under Gemini and Pisces celestial energies find harmony when honoring personal autonomy, balancing giving with receiving, and allowing their elemental natures to enrich each other."
     }
   },
   "cancer_aries": {
     "sign1": "cancer",
     "sign2": "aries",
-    "overallScore": 52,
+    "overallScore": 54,
     "colorCategory": "amber",
     "shadeLabel": "Dynamic Potential",
-    "aspectName": "Square (Passionate Friction & Dynamic Growth)",
-    "headline": "Cancer & Aries: Electrifying Spark with Creative Challenge",
-    "summary": "Signs at a 90\u00b0 square share the same modality but clash elementally. This generates high attraction, intense emotional chemistry, and spirited debates that demand conscious diplomacy and mutual compromise.",
+    "aspectName": "4-10 Sun Sign Pattern (The Karmic Challenge & Crucible)",
+    "vibrationCode": "4-10",
+    "lindaVibration": {
+      "code": "4-10",
+      "title": "4-10 Sun Sign Pattern (The Karmic Challenge & Crucible)",
+      "theme": "Passionate Friction, Dramatic Chemistry & Soul Crucible",
+      "summary": "Linda Goodman described the 4-10 square vibration as the classic crucible of soul growth. Sharing the same modality but differing elements produces magnetic physical attraction paired with clashes of will. If ego yields to love, this union builds invincible diamond strength.",
+      "karmicLesson": "Transcending stubborn pride and mastering the noble art of sacrificial compromise."
+    },
+    "headline": "Cancer & Aries: Passionate Friction, Dramatic Chemistry & Soul Crucible",
+    "summary": "Linda Goodman described the 4-10 square vibration as the classic crucible of soul growth. Sharing the same modality but differing elements produces magnetic physical attraction paired with clashes of will. If ego yields to love, this union builds invincible diamond strength.",
     "parameters": {
-      "emotional": 42,
-      "communication": 52,
-      "romance": 49,
-      "trust": 52,
-      "stability": 51,
-      "lifestyle": 44
+      "emotional": 44,
+      "communication": 54,
+      "romance": 51,
+      "trust": 54,
+      "stability": 53,
+      "lifestyle": 46
     },
     "elementSynergy": {
-      "title": "Fire & Water (Steam & Intense Chemistry)",
-      "text": "Extremely passionate and emotionally turbulent. Fire inspires Water to take bold leaps; Water teaches Fire the beauty of tender emotional depth."
+      "title": "Fire & Water (Steam & Intense Passion)",
+      "text": "Extremely passionate and emotionally turbulent. Fire inspires Water to take brave leaps; Water teaches Fire the beauty of quiet emotional vulnerability."
     },
-    "modalitySynergy": "Both Cardinal: Two visionary leaders who love initiating projects. Take turns steering to prevent power struggles.",
+    "modalitySynergy": "Both Cardinal (Initiators): Two natural leaders. Linda Goodman advised taking turns leading joint projects to eliminate power struggles.",
     "strengths": [
       "Dynamic growth: Cancer introduces Aries to new perspectives and vice versa.",
       "Engaging romantic chemistry where you never run out of intriguing things to discover about each other.",
@@ -2176,37 +2508,45 @@ const ZODIAC_PAIRS = {
       "Occasional friction over lifestyle pacing or decision-making speed."
     ],
     "tips": [
-      "Adopt the 24-hour cooling off rule during heated arguments before revisiting sensitive topics.",
-      "Remember that Aries communicates love in their own authentic dialect.",
-      "Celebrate your differences as unique strengths rather than flaws to be corrected."
+      "Adopt Linda Goodman's cooling-off principle during heated arguments before revisiting sensitive topics.",
+      "Remember that Aries communicates love in their own authentic elemental dialect.",
+      "Celebrate your differences as complementary superpowers rather than personal flaws."
     ],
     "celebrityCouples": "Celebrated Cancer & Aries cosmic pairs",
     "genderAdvice": {
-      "male_female": "When a Cancer man and a Aries woman unite, balancing his Mars/solar leadership with her emotional sanctuary fosters lasting harmony.",
-      "female_male": "When a Cancer woman and a Aries man unite, celebrating her creative initiative while valuing his steadfast protection builds an unbreakable bond.",
-      "same_sex": "In a union between two souls with Cancer and Aries energies, open communication and honoring personal autonomy keeps the romance deeply alive."
+      "male_female": "In Linda Goodman's Love Signs analysis of the Cancer Man with the Aries Woman (4-10 Vibration): He expresses his masculine planetary energy through Moon, while she responds with Mars grace. Success blooms when he honors her emotional sanctuary and she champions his purposeful ambitions.",
+      "female_male": "In Linda Goodman's Love Signs analysis of the Cancer Woman with the Aries Man (4-10 Vibration): She brings Cancer's radiant initiative to the union, while he offers Aries's steadfast anchor. When she trusts his protective strength and he respects her autonomy, their bond becomes unbreakable.",
+      "same_sex": "In Linda Goodman's cosmic synastry (4-10 Vibration): Two souls united under Cancer and Aries celestial energies find harmony when honoring personal autonomy, balancing giving with receiving, and allowing their elemental natures to enrich each other."
     }
   },
   "cancer_taurus": {
     "sign1": "cancer",
     "sign2": "taurus",
-    "overallScore": 86,
+    "overallScore": 88,
     "colorCategory": "green",
     "shadeLabel": "Harmonious Union",
-    "aspectName": "Sextile (Harmonious Elemental Flow)",
-    "headline": "Cancer & Taurus: Stimulating Synergy & Easy Friendship",
-    "summary": "Your elements naturally complement each other (Fire invigorates Air, or Water nourishes Earth). Communication flows effortlessly, laughter comes easily, and mutual respect flourishes.",
+    "aspectName": "3-11 Sun Sign Pattern (Karmic Friends & Sympathetic Lovers)",
+    "vibrationCode": "3-11",
+    "lindaVibration": {
+      "code": "3-11",
+      "title": "3-11 Sun Sign Pattern (Karmic Friends & Sympathetic Lovers)",
+      "theme": "Enduring Camaraderie, Easy Forgiveness & High Devotion",
+      "summary": "Linda Goodman considered the 3-11 vibration one of the happiest and most enduring in the cosmos. Your signs form a natural sextile of friendship. Even through intense misunderstandings, 3-11 lovers remain steadfast allies, quick to forgive and eager to laugh.",
+      "karmicLesson": "Nurturing lifelong loyalty, humanitarian generosity, and effortless mutual forgiveness."
+    },
+    "headline": "Cancer & Taurus: Enduring Camaraderie, Easy Forgiveness & High Devotion",
+    "summary": "Linda Goodman considered the 3-11 vibration one of the happiest and most enduring in the cosmos. Your signs form a natural sextile of friendship. Even through intense misunderstandings, 3-11 lovers remain steadfast allies, quick to forgive and eager to laugh.",
     "parameters": {
-      "emotional": 88,
-      "communication": 86,
-      "romance": 88,
-      "trust": 91,
-      "stability": 92,
-      "lifestyle": 86
+      "emotional": 90,
+      "communication": 88,
+      "romance": 90,
+      "trust": 93,
+      "stability": 94,
+      "lifestyle": 88
     },
     "elementSynergy": {
       "title": "Earth & Water (Fertile Nurturing)",
-      "text": "Water softens Earth with empathy and emotion; Earth provides Water with steady shores of stability. A classic recipe for enduring married happiness."
+      "text": "Water softens Earth with tender emotional empathy; Earth provides Water with comforting shores of physical stability. A classic recipe for a thriving, enduring marriage."
     },
     "modalitySynergy": "Cardinal + Fixed: A balanced dynamic where one partner initiates, stabilizes, or provides adaptable perspective to the other.",
     "strengths": [
@@ -2225,31 +2565,39 @@ const ZODIAC_PAIRS = {
     ],
     "celebrityCouples": "George Clooney (Taurus) & Amal Clooney (Aquarius)",
     "genderAdvice": {
-      "male_female": "When a Cancer man and a Taurus woman unite, balancing his Mars/solar leadership with her emotional sanctuary fosters lasting harmony.",
-      "female_male": "When a Cancer woman and a Taurus man unite, celebrating her creative initiative while valuing his steadfast protection builds an unbreakable bond.",
-      "same_sex": "In a union between two souls with Cancer and Taurus energies, open communication and honoring personal autonomy keeps the romance deeply alive."
+      "male_female": "In Linda Goodman's Love Signs analysis of the Cancer Man with the Taurus Woman (3-11 Vibration): He expresses his masculine planetary energy through Moon, while she responds with Venus grace. Success blooms when he honors her emotional sanctuary and she champions his purposeful ambitions.",
+      "female_male": "In Linda Goodman's Love Signs analysis of the Cancer Woman with the Taurus Man (3-11 Vibration): She brings Cancer's radiant initiative to the union, while he offers Taurus's steadfast anchor. When she trusts his protective strength and he respects her autonomy, their bond becomes unbreakable.",
+      "same_sex": "In Linda Goodman's cosmic synastry (3-11 Vibration): Two souls united under Cancer and Taurus celestial energies find harmony when honoring personal autonomy, balancing giving with receiving, and allowing their elemental natures to enrich each other."
     }
   },
   "cancer_gemini": {
     "sign1": "cancer",
     "sign2": "gemini",
-    "overallScore": 62,
+    "overallScore": 64,
     "colorCategory": "amber",
     "shadeLabel": "Dynamic Potential",
-    "aspectName": "Semisextile (Neighboring Contrast)",
-    "headline": "Cancer & Gemini: Complementary Growth & Mutual Learning",
-    "summary": "As neighboring signs, you operate from contrasting elemental perspectives. This match creates a learning journey where each partner expands the other's horizons if patience is practiced.",
+    "aspectName": "2-12 Sun Sign Pattern (The Karmic Teacher & Pupil)",
+    "vibrationCode": "2-12",
+    "lindaVibration": {
+      "code": "2-12",
+      "title": "2-12 Sun Sign Pattern (The Karmic Teacher & Pupil)",
+      "theme": "Karmic Learning, Compassion & Gentle Tutoring",
+      "summary": "According to Linda Goodman, the 2-12 vibration signifies that one sign has spiritually passed through the other's grade in the cosmic school. There is a deep, unspoken bond of patience, protection, and gentle tutoring. Tolerating different pacing unlocks profound mutual growth.",
+      "karmicLesson": "Bridging contrasting elemental perspectives through patient compassion and secret mutual admiration."
+    },
+    "headline": "Cancer & Gemini: Karmic Learning, Compassion & Gentle Tutoring",
+    "summary": "According to Linda Goodman, the 2-12 vibration signifies that one sign has spiritually passed through the other's grade in the cosmic school. There is a deep, unspoken bond of patience, protection, and gentle tutoring. Tolerating different pacing unlocks profound mutual growth.",
     "parameters": {
-      "emotional": 54,
-      "communication": 57,
-      "romance": 59,
-      "trust": 62,
-      "stability": 61,
-      "lifestyle": 62
+      "emotional": 56,
+      "communication": 59,
+      "romance": 61,
+      "trust": 64,
+      "stability": 63,
+      "lifestyle": 64
     },
     "elementSynergy": {
       "title": "Air & Water (Wind & Waves)",
-      "text": "Air analyzes experiences intellectually while Water experiences them through deep emotion. Finding balance creates profound holistic insight."
+      "text": "Air analyzes experiences intellectually while Water perceives them through psychic emotion. Honoring each other's distinct perception creates rich spiritual growth."
     },
     "modalitySynergy": "Cardinal + Mutable: A balanced dynamic where one partner initiates, stabilizes, or provides adaptable perspective to the other.",
     "strengths": [
@@ -2262,15 +2610,15 @@ const ZODIAC_PAIRS = {
       "Occasional friction over lifestyle pacing or decision-making speed."
     ],
     "tips": [
-      "Adopt the 24-hour cooling off rule during heated arguments before revisiting sensitive topics.",
-      "Remember that Gemini communicates love in their own authentic dialect.",
-      "Celebrate your differences as unique strengths rather than flaws to be corrected."
+      "Adopt Linda Goodman's cooling-off principle during heated arguments before revisiting sensitive topics.",
+      "Remember that Gemini communicates love in their own authentic elemental dialect.",
+      "Celebrate your differences as complementary superpowers rather than personal flaws."
     ],
     "celebrityCouples": "Celebrated Cancer & Gemini cosmic pairs",
     "genderAdvice": {
-      "male_female": "When a Cancer man and a Gemini woman unite, balancing his Mars/solar leadership with her emotional sanctuary fosters lasting harmony.",
-      "female_male": "When a Cancer woman and a Gemini man unite, celebrating her creative initiative while valuing his steadfast protection builds an unbreakable bond.",
-      "same_sex": "In a union between two souls with Cancer and Gemini energies, open communication and honoring personal autonomy keeps the romance deeply alive."
+      "male_female": "In Linda Goodman's Love Signs analysis of the Cancer Man with the Gemini Woman (2-12 Vibration): He expresses his masculine planetary energy through Moon, while she responds with Mercury grace. Success blooms when he honors her emotional sanctuary and she champions his purposeful ambitions.",
+      "female_male": "In Linda Goodman's Love Signs analysis of the Cancer Woman with the Gemini Man (2-12 Vibration): She brings Cancer's radiant initiative to the union, while he offers Gemini's steadfast anchor. When she trusts his protective strength and he respects her autonomy, their bond becomes unbreakable.",
+      "same_sex": "In Linda Goodman's cosmic synastry (2-12 Vibration): Two souls united under Cancer and Gemini celestial energies find harmony when honoring personal autonomy, balancing giving with receiving, and allowing their elemental natures to enrich each other."
     }
   },
   "cancer_cancer": {
@@ -2279,9 +2627,17 @@ const ZODIAC_PAIRS = {
     "overallScore": 82,
     "colorCategory": "green",
     "shadeLabel": "Harmonious Union",
-    "aspectName": "Conjunction (Mirror Alignment)",
-    "headline": "Cancer & Cancer: Deep Mirror Empathy & Shared Instincts",
-    "summary": "Sharing the exact same sun sign gives you an instinctual understanding of each other's drives and vulnerabilities. You understand each other's moods intuitively, though you must guard against magnifying shared blind spots.",
+    "aspectName": "1-1 Sun Sign Pattern (The Cosmic Mirror)",
+    "vibrationCode": "1-1",
+    "lindaVibration": {
+      "code": "1-1",
+      "title": "1-1 Sun Sign Pattern (The Cosmic Mirror)",
+      "theme": "Mirror Empathy & Double Ego Reflection",
+      "summary": "In Linda Goodman's Love Signs, the 1-1 vibration is like gazing directly into an astrological mirror. You recognize each other's hidden virtues and deepest faults instantly. This creates profound telepathic empathy, but both partners must guard against magnifying identical blind spots.",
+      "karmicLesson": "Cultivating emotional humility and learning self-acceptance through observing your own nature reflected in your mate."
+    },
+    "headline": "Cancer & Cancer: Mirror Empathy & Double Ego Reflection",
+    "summary": "In Linda Goodman's Love Signs, the 1-1 vibration is like gazing directly into an astrological mirror. You recognize each other's hidden virtues and deepest faults instantly. This creates profound telepathic empathy, but both partners must guard against magnifying identical blind spots.",
     "parameters": {
       "emotional": 86,
       "communication": 82,
@@ -2291,10 +2647,10 @@ const ZODIAC_PAIRS = {
       "lifestyle": 85
     },
     "elementSynergy": {
-      "title": "Double Water (Oceanic Soul Bond)",
-      "text": "Intuitive, deeply emotional, and almost telepathic understanding. You hold space for each other's deepest vulnerabilities and dreams."
+      "title": "Double Water (Oceanic Soul Resonance)",
+      "text": "Linda Goodman described two Water signs as deep telepathic soulmates. You sense each other's moods intuitively without words, creating a sacred emotional sanctuary."
     },
-    "modalitySynergy": "Both Cardinal: Two visionary leaders who love initiating projects. Take turns steering to prevent power struggles.",
+    "modalitySynergy": "Both Cardinal (Initiators): Two natural leaders. Linda Goodman advised taking turns leading joint projects to eliminate power struggles.",
     "strengths": [
       "Natural understanding: Cancer and Cancer instinctively comprehend each other's core motivations.",
       "Complimentary emotional rhythms that make daily life and domestic partnership feel comforting and safe.",
@@ -2311,31 +2667,39 @@ const ZODIAC_PAIRS = {
     ],
     "celebrityCouples": "Celebrated Cancer & Cancer cosmic pairs",
     "genderAdvice": {
-      "male_female": "When a Cancer man and a Cancer woman unite, balancing his Mars/solar leadership with her emotional sanctuary fosters lasting harmony.",
-      "female_male": "When a Cancer woman and a Cancer man unite, celebrating her creative initiative while valuing his steadfast protection builds an unbreakable bond.",
-      "same_sex": "In a union between two souls with Cancer and Cancer energies, open communication and honoring personal autonomy keeps the romance deeply alive."
+      "male_female": "In Linda Goodman's Love Signs analysis of the Cancer Man with the Cancer Woman (1-1 Vibration): He expresses his masculine planetary energy through Moon, while she responds with Moon grace. Success blooms when he honors her emotional sanctuary and she champions his purposeful ambitions.",
+      "female_male": "In Linda Goodman's Love Signs analysis of the Cancer Woman with the Cancer Man (1-1 Vibration): She brings Cancer's radiant initiative to the union, while he offers Cancer's steadfast anchor. When she trusts his protective strength and he respects her autonomy, their bond becomes unbreakable.",
+      "same_sex": "In Linda Goodman's cosmic synastry (1-1 Vibration): Two souls united under Cancer and Cancer celestial energies find harmony when honoring personal autonomy, balancing giving with receiving, and allowing their elemental natures to enrich each other."
     }
   },
   "cancer_leo": {
     "sign1": "cancer",
     "sign2": "leo",
-    "overallScore": 62,
+    "overallScore": 64,
     "colorCategory": "amber",
     "shadeLabel": "Dynamic Potential",
-    "aspectName": "Semisextile (Neighboring Contrast)",
-    "headline": "Cancer & Leo: Complementary Growth & Mutual Learning",
-    "summary": "As neighboring signs, you operate from contrasting elemental perspectives. This match creates a learning journey where each partner expands the other's horizons if patience is practiced.",
+    "aspectName": "2-12 Sun Sign Pattern (The Karmic Teacher & Pupil)",
+    "vibrationCode": "2-12",
+    "lindaVibration": {
+      "code": "2-12",
+      "title": "2-12 Sun Sign Pattern (The Karmic Teacher & Pupil)",
+      "theme": "Karmic Learning, Compassion & Gentle Tutoring",
+      "summary": "According to Linda Goodman, the 2-12 vibration signifies that one sign has spiritually passed through the other's grade in the cosmic school. There is a deep, unspoken bond of patience, protection, and gentle tutoring. Tolerating different pacing unlocks profound mutual growth.",
+      "karmicLesson": "Bridging contrasting elemental perspectives through patient compassion and secret mutual admiration."
+    },
+    "headline": "Cancer & Leo: Karmic Learning, Compassion & Gentle Tutoring",
+    "summary": "According to Linda Goodman, the 2-12 vibration signifies that one sign has spiritually passed through the other's grade in the cosmic school. There is a deep, unspoken bond of patience, protection, and gentle tutoring. Tolerating different pacing unlocks profound mutual growth.",
     "parameters": {
-      "emotional": 52,
-      "communication": 62,
-      "romance": 59,
-      "trust": 62,
-      "stability": 64,
-      "lifestyle": 62
+      "emotional": 54,
+      "communication": 64,
+      "romance": 61,
+      "trust": 64,
+      "stability": 66,
+      "lifestyle": 64
     },
     "elementSynergy": {
-      "title": "Fire & Water (Steam & Intense Chemistry)",
-      "text": "Extremely passionate and emotionally turbulent. Fire inspires Water to take bold leaps; Water teaches Fire the beauty of tender emotional depth."
+      "title": "Fire & Water (Steam & Intense Passion)",
+      "text": "Extremely passionate and emotionally turbulent. Fire inspires Water to take brave leaps; Water teaches Fire the beauty of quiet emotional vulnerability."
     },
     "modalitySynergy": "Cardinal + Fixed: A balanced dynamic where one partner initiates, stabilizes, or provides adaptable perspective to the other.",
     "strengths": [
@@ -2348,37 +2712,45 @@ const ZODIAC_PAIRS = {
       "Occasional friction over lifestyle pacing or decision-making speed."
     ],
     "tips": [
-      "Adopt the 24-hour cooling off rule during heated arguments before revisiting sensitive topics.",
-      "Remember that Leo communicates love in their own authentic dialect.",
-      "Celebrate your differences as unique strengths rather than flaws to be corrected."
+      "Adopt Linda Goodman's cooling-off principle during heated arguments before revisiting sensitive topics.",
+      "Remember that Leo communicates love in their own authentic elemental dialect.",
+      "Celebrate your differences as complementary superpowers rather than personal flaws."
     ],
     "celebrityCouples": "Celebrated Cancer & Leo cosmic pairs",
     "genderAdvice": {
-      "male_female": "When a Cancer man and a Leo woman unite, balancing his Mars/solar leadership with her emotional sanctuary fosters lasting harmony.",
-      "female_male": "When a Cancer woman and a Leo man unite, celebrating her creative initiative while valuing his steadfast protection builds an unbreakable bond.",
-      "same_sex": "In a union between two souls with Cancer and Leo energies, open communication and honoring personal autonomy keeps the romance deeply alive."
+      "male_female": "In Linda Goodman's Love Signs analysis of the Cancer Man with the Leo Woman (2-12 Vibration): He expresses his masculine planetary energy through Moon, while she responds with Sun grace. Success blooms when he honors her emotional sanctuary and she champions his purposeful ambitions.",
+      "female_male": "In Linda Goodman's Love Signs analysis of the Cancer Woman with the Leo Man (2-12 Vibration): She brings Cancer's radiant initiative to the union, while he offers Leo's steadfast anchor. When she trusts his protective strength and he respects her autonomy, their bond becomes unbreakable.",
+      "same_sex": "In Linda Goodman's cosmic synastry (2-12 Vibration): Two souls united under Cancer and Leo celestial energies find harmony when honoring personal autonomy, balancing giving with receiving, and allowing their elemental natures to enrich each other."
     }
   },
   "cancer_virgo": {
     "sign1": "cancer",
     "sign2": "virgo",
-    "overallScore": 86,
+    "overallScore": 88,
     "colorCategory": "green",
     "shadeLabel": "Harmonious Union",
-    "aspectName": "Sextile (Harmonious Elemental Flow)",
-    "headline": "Cancer & Virgo: Stimulating Synergy & Easy Friendship",
-    "summary": "Your elements naturally complement each other (Fire invigorates Air, or Water nourishes Earth). Communication flows effortlessly, laughter comes easily, and mutual respect flourishes.",
+    "aspectName": "3-11 Sun Sign Pattern (Karmic Friends & Sympathetic Lovers)",
+    "vibrationCode": "3-11",
+    "lindaVibration": {
+      "code": "3-11",
+      "title": "3-11 Sun Sign Pattern (Karmic Friends & Sympathetic Lovers)",
+      "theme": "Enduring Camaraderie, Easy Forgiveness & High Devotion",
+      "summary": "Linda Goodman considered the 3-11 vibration one of the happiest and most enduring in the cosmos. Your signs form a natural sextile of friendship. Even through intense misunderstandings, 3-11 lovers remain steadfast allies, quick to forgive and eager to laugh.",
+      "karmicLesson": "Nurturing lifelong loyalty, humanitarian generosity, and effortless mutual forgiveness."
+    },
+    "headline": "Cancer & Virgo: Enduring Camaraderie, Easy Forgiveness & High Devotion",
+    "summary": "Linda Goodman considered the 3-11 vibration one of the happiest and most enduring in the cosmos. Your signs form a natural sextile of friendship. Even through intense misunderstandings, 3-11 lovers remain steadfast allies, quick to forgive and eager to laugh.",
     "parameters": {
-      "emotional": 88,
-      "communication": 89,
-      "romance": 88,
-      "trust": 91,
-      "stability": 92,
-      "lifestyle": 86
+      "emotional": 90,
+      "communication": 91,
+      "romance": 90,
+      "trust": 93,
+      "stability": 94,
+      "lifestyle": 88
     },
     "elementSynergy": {
       "title": "Earth & Water (Fertile Nurturing)",
-      "text": "Water softens Earth with empathy and emotion; Earth provides Water with steady shores of stability. A classic recipe for enduring married happiness."
+      "text": "Water softens Earth with tender emotional empathy; Earth provides Water with comforting shores of physical stability. A classic recipe for a thriving, enduring marriage."
     },
     "modalitySynergy": "Cardinal + Mutable: A balanced dynamic where one partner initiates, stabilizes, or provides adaptable perspective to the other.",
     "strengths": [
@@ -2397,33 +2769,41 @@ const ZODIAC_PAIRS = {
     ],
     "celebrityCouples": "Celebrated Cancer & Virgo cosmic pairs",
     "genderAdvice": {
-      "male_female": "When a Cancer man and a Virgo woman unite, balancing his Mars/solar leadership with her emotional sanctuary fosters lasting harmony.",
-      "female_male": "When a Cancer woman and a Virgo man unite, celebrating her creative initiative while valuing his steadfast protection builds an unbreakable bond.",
-      "same_sex": "In a union between two souls with Cancer and Virgo energies, open communication and honoring personal autonomy keeps the romance deeply alive."
+      "male_female": "In Linda Goodman's Love Signs analysis of the Cancer Man with the Virgo Woman (3-11 Vibration): He expresses his masculine planetary energy through Moon, while she responds with Mercury grace. Success blooms when he honors her emotional sanctuary and she champions his purposeful ambitions.",
+      "female_male": "In Linda Goodman's Love Signs analysis of the Cancer Woman with the Virgo Man (3-11 Vibration): She brings Cancer's radiant initiative to the union, while he offers Virgo's steadfast anchor. When she trusts his protective strength and he respects her autonomy, their bond becomes unbreakable.",
+      "same_sex": "In Linda Goodman's cosmic synastry (3-11 Vibration): Two souls united under Cancer and Virgo celestial energies find harmony when honoring personal autonomy, balancing giving with receiving, and allowing their elemental natures to enrich each other."
     }
   },
   "cancer_libra": {
     "sign1": "cancer",
     "sign2": "libra",
-    "overallScore": 52,
+    "overallScore": 54,
     "colorCategory": "amber",
     "shadeLabel": "Dynamic Potential",
-    "aspectName": "Square (Passionate Friction & Dynamic Growth)",
-    "headline": "Cancer & Libra: Electrifying Spark with Creative Challenge",
-    "summary": "Signs at a 90\u00b0 square share the same modality but clash elementally. This generates high attraction, intense emotional chemistry, and spirited debates that demand conscious diplomacy and mutual compromise.",
+    "aspectName": "4-10 Sun Sign Pattern (The Karmic Challenge & Crucible)",
+    "vibrationCode": "4-10",
+    "lindaVibration": {
+      "code": "4-10",
+      "title": "4-10 Sun Sign Pattern (The Karmic Challenge & Crucible)",
+      "theme": "Passionate Friction, Dramatic Chemistry & Soul Crucible",
+      "summary": "Linda Goodman described the 4-10 square vibration as the classic crucible of soul growth. Sharing the same modality but differing elements produces magnetic physical attraction paired with clashes of will. If ego yields to love, this union builds invincible diamond strength.",
+      "karmicLesson": "Transcending stubborn pride and mastering the noble art of sacrificial compromise."
+    },
+    "headline": "Cancer & Libra: Passionate Friction, Dramatic Chemistry & Soul Crucible",
+    "summary": "Linda Goodman described the 4-10 square vibration as the classic crucible of soul growth. Sharing the same modality but differing elements produces magnetic physical attraction paired with clashes of will. If ego yields to love, this union builds invincible diamond strength.",
     "parameters": {
-      "emotional": 44,
-      "communication": 47,
-      "romance": 49,
-      "trust": 52,
-      "stability": 51,
-      "lifestyle": 44
+      "emotional": 46,
+      "communication": 49,
+      "romance": 51,
+      "trust": 54,
+      "stability": 53,
+      "lifestyle": 46
     },
     "elementSynergy": {
       "title": "Air & Water (Wind & Waves)",
-      "text": "Air analyzes experiences intellectually while Water experiences them through deep emotion. Finding balance creates profound holistic insight."
+      "text": "Air analyzes experiences intellectually while Water perceives them through psychic emotion. Honoring each other's distinct perception creates rich spiritual growth."
     },
-    "modalitySynergy": "Both Cardinal: Two visionary leaders who love initiating projects. Take turns steering to prevent power struggles.",
+    "modalitySynergy": "Both Cardinal (Initiators): Two natural leaders. Linda Goodman advised taking turns leading joint projects to eliminate power struggles.",
     "strengths": [
       "Dynamic growth: Cancer introduces Libra to new perspectives and vice versa.",
       "Engaging romantic chemistry where you never run out of intriguing things to discover about each other.",
@@ -2434,37 +2814,45 @@ const ZODIAC_PAIRS = {
       "Occasional friction over lifestyle pacing or decision-making speed."
     ],
     "tips": [
-      "Adopt the 24-hour cooling off rule during heated arguments before revisiting sensitive topics.",
-      "Remember that Libra communicates love in their own authentic dialect.",
-      "Celebrate your differences as unique strengths rather than flaws to be corrected."
+      "Adopt Linda Goodman's cooling-off principle during heated arguments before revisiting sensitive topics.",
+      "Remember that Libra communicates love in their own authentic elemental dialect.",
+      "Celebrate your differences as complementary superpowers rather than personal flaws."
     ],
     "celebrityCouples": "Celebrated Cancer & Libra cosmic pairs",
     "genderAdvice": {
-      "male_female": "When a Cancer man and a Libra woman unite, balancing his Mars/solar leadership with her emotional sanctuary fosters lasting harmony.",
-      "female_male": "When a Cancer woman and a Libra man unite, celebrating her creative initiative while valuing his steadfast protection builds an unbreakable bond.",
-      "same_sex": "In a union between two souls with Cancer and Libra energies, open communication and honoring personal autonomy keeps the romance deeply alive."
+      "male_female": "In Linda Goodman's Love Signs analysis of the Cancer Man with the Libra Woman (4-10 Vibration): He expresses his masculine planetary energy through Moon, while she responds with Venus grace. Success blooms when he honors her emotional sanctuary and she champions his purposeful ambitions.",
+      "female_male": "In Linda Goodman's Love Signs analysis of the Cancer Woman with the Libra Man (4-10 Vibration): She brings Cancer's radiant initiative to the union, while he offers Libra's steadfast anchor. When she trusts his protective strength and he respects her autonomy, their bond becomes unbreakable.",
+      "same_sex": "In Linda Goodman's cosmic synastry (4-10 Vibration): Two souls united under Cancer and Libra celestial energies find harmony when honoring personal autonomy, balancing giving with receiving, and allowing their elemental natures to enrich each other."
     }
   },
   "cancer_scorpio": {
     "sign1": "cancer",
     "sign2": "scorpio",
-    "overallScore": 97,
+    "overallScore": 98,
     "colorCategory": "green",
     "shadeLabel": "Harmonious Union",
-    "aspectName": "Trine (Divine Soulmate Element)",
-    "headline": "Cancer & Scorpio: Effortless Harmony & Natural Soul Resonance",
-    "summary": "Sharing the same element (Fire-Fire, Earth-Earth, Air-Air, Water-Water) creates an instinctive, harmonious flow. You breathe the same spiritual air, understand each other's pacing, and feel deeply at home together.",
+    "aspectName": "5-9 Sun Sign Pattern (The Divine Cosmic Blessing)",
+    "vibrationCode": "5-9",
+    "lindaVibration": {
+      "code": "5-9",
+      "title": "5-9 Sun Sign Pattern (The Divine Cosmic Blessing)",
+      "theme": "Golden Trine, Soulmate Telepathy & Natural Sympathy",
+      "summary": "Linda Goodman's most celebrated synastry pattern! Sharing the same sacred element (Fire, Earth, Air, or Water) brings instant soul recognition. You forgive each other almost effortlessly, inspire each other's dreams, and enjoy an almost telepathic understanding.",
+      "karmicLesson": "Preserving sacred gratitude and avoiding taking your effortless soul harmony for granted."
+    },
+    "headline": "Cancer & Scorpio: Golden Trine, Soulmate Telepathy & Natural Sympathy",
+    "summary": "Linda Goodman's most celebrated synastry pattern! Sharing the same sacred element (Fire, Earth, Air, or Water) brings instant soul recognition. You forgive each other almost effortlessly, inspire each other's dreams, and enjoy an almost telepathic understanding.",
     "parameters": {
       "emotional": 98,
-      "communication": 97,
-      "romance": 94,
-      "trust": 97,
+      "communication": 98,
+      "romance": 95,
+      "trust": 98,
       "stability": 94,
       "lifestyle": 96
     },
     "elementSynergy": {
-      "title": "Double Water (Oceanic Soul Bond)",
-      "text": "Intuitive, deeply emotional, and almost telepathic understanding. You hold space for each other's deepest vulnerabilities and dreams."
+      "title": "Double Water (Oceanic Soul Resonance)",
+      "text": "Linda Goodman described two Water signs as deep telepathic soulmates. You sense each other's moods intuitively without words, creating a sacred emotional sanctuary."
     },
     "modalitySynergy": "Cardinal + Fixed: A balanced dynamic where one partner initiates, stabilizes, or provides adaptable perspective to the other.",
     "strengths": [
@@ -2483,40 +2871,48 @@ const ZODIAC_PAIRS = {
     ],
     "celebrityCouples": "Celebrated Cancer & Scorpio cosmic pairs",
     "genderAdvice": {
-      "male_female": "When a Cancer man and a Scorpio woman unite, balancing his Mars/solar leadership with her emotional sanctuary fosters lasting harmony.",
-      "female_male": "When a Cancer woman and a Scorpio man unite, celebrating her creative initiative while valuing his steadfast protection builds an unbreakable bond.",
-      "same_sex": "In a union between two souls with Cancer and Scorpio energies, open communication and honoring personal autonomy keeps the romance deeply alive."
+      "male_female": "In Linda Goodman's Love Signs analysis of the Cancer Man with the Scorpio Woman (5-9 Vibration): He expresses his masculine planetary energy through Moon, while she responds with Pluto & Mars grace. Success blooms when he honors her emotional sanctuary and she champions his purposeful ambitions.",
+      "female_male": "In Linda Goodman's Love Signs analysis of the Cancer Woman with the Scorpio Man (5-9 Vibration): She brings Cancer's radiant initiative to the union, while he offers Scorpio's steadfast anchor. When she trusts his protective strength and he respects her autonomy, their bond becomes unbreakable.",
+      "same_sex": "In Linda Goodman's cosmic synastry (5-9 Vibration): Two souls united under Cancer and Scorpio celestial energies find harmony when honoring personal autonomy, balancing giving with receiving, and allowing their elemental natures to enrich each other."
     }
   },
   "cancer_sagittarius": {
     "sign1": "cancer",
     "sign2": "sagittarius",
-    "overallScore": 46,
+    "overallScore": 48,
     "colorCategory": "red",
     "shadeLabel": "Growth Challenge",
-    "aspectName": "Quincunx (Mysterious Intrigue & Karmic Adjustment)",
-    "headline": "Cancer & Sagittarius: Enigmatic Attraction Demanding Patience",
-    "summary": "Separated by five signs, you have little in common astrologically, which creates an intriguing magnetic mystery. Succeeding together requires appreciating your partner's entirely unique perspective on life.",
+    "aspectName": "6-8 Sun Sign Pattern (Karmic Mystery & Devoted Service)",
+    "vibrationCode": "6-8",
+    "lindaVibration": {
+      "code": "6-8",
+      "title": "6-8 Sun Sign Pattern (Karmic Mystery & Devoted Service)",
+      "theme": "Enigmatic Fascination, Hypnotic Pull & Karmic Duty",
+      "summary": "According to Linda Goodman, the 6-8 quincunx vibration is cloaked in hypnotic fascination and karmic debt. One partner feels drawn to serve, protect, or nurture the other, generating deep emotional or physical magnetism that requires profound patience to untangle.",
+      "karmicLesson": "Practicing unconditional love free from selfish demands, embracing differences that cannot be logically explained."
+    },
+    "headline": "Cancer & Sagittarius: Enigmatic Fascination, Hypnotic Pull & Karmic Duty",
+    "summary": "According to Linda Goodman, the 6-8 quincunx vibration is cloaked in hypnotic fascination and karmic debt. One partner feels drawn to serve, protect, or nurture the other, generating deep emotional or physical magnetism that requires profound patience to untangle.",
     "parameters": {
       "emotional": 40,
-      "communication": 46,
-      "romance": 43,
-      "trust": 46,
-      "stability": 45,
-      "lifestyle": 38
+      "communication": 48,
+      "romance": 45,
+      "trust": 48,
+      "stability": 47,
+      "lifestyle": 40
     },
     "elementSynergy": {
-      "title": "Fire & Water (Steam & Intense Chemistry)",
-      "text": "Extremely passionate and emotionally turbulent. Fire inspires Water to take bold leaps; Water teaches Fire the beauty of tender emotional depth."
+      "title": "Fire & Water (Steam & Intense Passion)",
+      "text": "Extremely passionate and emotionally turbulent. Fire inspires Water to take brave leaps; Water teaches Fire the beauty of quiet emotional vulnerability."
     },
     "modalitySynergy": "Cardinal + Mutable: A balanced dynamic where one partner initiates, stabilizes, or provides adaptable perspective to the other.",
     "strengths": [
-      "Powerful karmic pull that pushes both individuals to mature emotionally.",
+      "Powerful karmic pull that pushes both souls to mature emotionally and spiritually.",
       "Unforgettable chemistry and passion born from sheer elemental contrast.",
       "Opportunity to develop immense patience, empathy, and unconditional love."
     ],
     "challenges": [
-      "Fundamental contrast in priorities: Cancer's instinctual approach may confuse Sagittarius.",
+      "Fundamental contrast in priorities: Cancer's instinctual approach may baffle Sagittarius.",
       "Tendency to misinterpret your partner's need for space or emotional expression."
     ],
     "tips": [
@@ -2526,33 +2922,41 @@ const ZODIAC_PAIRS = {
     ],
     "celebrityCouples": "Celebrated Cancer & Sagittarius cosmic pairs",
     "genderAdvice": {
-      "male_female": "When a Cancer man and a Sagittarius woman unite, balancing his Mars/solar leadership with her emotional sanctuary fosters lasting harmony.",
-      "female_male": "When a Cancer woman and a Sagittarius man unite, celebrating her creative initiative while valuing his steadfast protection builds an unbreakable bond.",
-      "same_sex": "In a union between two souls with Cancer and Sagittarius energies, open communication and honoring personal autonomy keeps the romance deeply alive."
+      "male_female": "In Linda Goodman's Love Signs analysis of the Cancer Man with the Sagittarius Woman (6-8 Vibration): He expresses his masculine planetary energy through Moon, while she responds with Jupiter grace. Success blooms when he honors her emotional sanctuary and she champions his purposeful ambitions.",
+      "female_male": "In Linda Goodman's Love Signs analysis of the Cancer Woman with the Sagittarius Man (6-8 Vibration): She brings Cancer's radiant initiative to the union, while he offers Sagittarius's steadfast anchor. When she trusts his protective strength and he respects her autonomy, their bond becomes unbreakable.",
+      "same_sex": "In Linda Goodman's cosmic synastry (6-8 Vibration): Two souls united under Cancer and Sagittarius celestial energies find harmony when honoring personal autonomy, balancing giving with receiving, and allowing their elemental natures to enrich each other."
     }
   },
   "cancer_capricorn": {
     "sign1": "cancer",
     "sign2": "capricorn",
-    "overallScore": 84,
+    "overallScore": 86,
     "colorCategory": "green",
     "shadeLabel": "Harmonious Union",
-    "aspectName": "Opposition (Cosmic Magnetism & Polar Balance)",
-    "headline": "Cancer & Capricorn: Magnetic Attraction & Yin-Yang Balance",
-    "summary": "Sitting 180\u00b0 across the zodiac wheel, you are polar opposites. What one lacks, the other possesses in abundance. The chemistry is electric, offering the potential to form an unbeatable yin-and-yang partnership.",
+    "aspectName": "7-7 Sun Sign Pattern (Polar Magnetism & Cosmic Complements)",
+    "vibrationCode": "7-7",
+    "lindaVibration": {
+      "code": "7-7",
+      "title": "7-7 Sun Sign Pattern (Polar Magnetism & Cosmic Complements)",
+      "theme": "Opposites Attract, Celestial Electricity & Yin-Yang Balance",
+      "summary": "Sitting 180\u00b0 opposite on the zodiac wheel, Linda Goodman saw the 7-7 vibration as two halves of a single soul. What one lacks, the other possesses in abundance. It generates high romantic voltage: either a magnificent lifelong union or an explosive standoff.",
+      "karmicLesson": "Finding wholeness through merging opposite qualities into a unified, harmonious whole."
+    },
+    "headline": "Cancer & Capricorn: Opposites Attract, Celestial Electricity & Yin-Yang Balance",
+    "summary": "Sitting 180\u00b0 opposite on the zodiac wheel, Linda Goodman saw the 7-7 vibration as two halves of a single soul. What one lacks, the other possesses in abundance. It generates high romantic voltage: either a magnificent lifelong union or an explosive standoff.",
     "parameters": {
-      "emotional": 86,
-      "communication": 84,
-      "romance": 92,
-      "trust": 89,
-      "stability": 90,
-      "lifestyle": 84
+      "emotional": 88,
+      "communication": 86,
+      "romance": 94,
+      "trust": 91,
+      "stability": 92,
+      "lifestyle": 86
     },
     "elementSynergy": {
       "title": "Earth & Water (Fertile Nurturing)",
-      "text": "Water softens Earth with empathy and emotion; Earth provides Water with steady shores of stability. A classic recipe for enduring married happiness."
+      "text": "Water softens Earth with tender emotional empathy; Earth provides Water with comforting shores of physical stability. A classic recipe for a thriving, enduring marriage."
     },
-    "modalitySynergy": "Both Cardinal: Two visionary leaders who love initiating projects. Take turns steering to prevent power struggles.",
+    "modalitySynergy": "Both Cardinal (Initiators): Two natural leaders. Linda Goodman advised taking turns leading joint projects to eliminate power struggles.",
     "strengths": [
       "Natural understanding: Cancer and Capricorn instinctively comprehend each other's core motivations.",
       "Complimentary emotional rhythms that make daily life and domestic partnership feel comforting and safe.",
@@ -2569,40 +2973,48 @@ const ZODIAC_PAIRS = {
     ],
     "celebrityCouples": "Prince William (Cancer) & Kate Middleton (Capricorn)",
     "genderAdvice": {
-      "male_female": "When a Cancer man and a Capricorn woman unite, balancing his Mars/solar leadership with her emotional sanctuary fosters lasting harmony.",
-      "female_male": "When a Cancer woman and a Capricorn man unite, celebrating her creative initiative while valuing his steadfast protection builds an unbreakable bond.",
-      "same_sex": "In a union between two souls with Cancer and Capricorn energies, open communication and honoring personal autonomy keeps the romance deeply alive."
+      "male_female": "In Linda Goodman's Love Signs analysis of the Cancer Man with the Capricorn Woman (7-7 Vibration): He expresses his masculine planetary energy through Moon, while she responds with Saturn grace. Success blooms when he honors her emotional sanctuary and she champions his purposeful ambitions.",
+      "female_male": "In Linda Goodman's Love Signs analysis of the Cancer Woman with the Capricorn Man (7-7 Vibration): She brings Cancer's radiant initiative to the union, while he offers Capricorn's steadfast anchor. When she trusts his protective strength and he respects her autonomy, their bond becomes unbreakable.",
+      "same_sex": "In Linda Goodman's cosmic synastry (7-7 Vibration): Two souls united under Cancer and Capricorn celestial energies find harmony when honoring personal autonomy, balancing giving with receiving, and allowing their elemental natures to enrich each other."
     }
   },
   "cancer_aquarius": {
     "sign1": "cancer",
     "sign2": "aquarius",
-    "overallScore": 46,
+    "overallScore": 48,
     "colorCategory": "red",
     "shadeLabel": "Growth Challenge",
-    "aspectName": "Quincunx (Mysterious Intrigue & Karmic Adjustment)",
-    "headline": "Cancer & Aquarius: Enigmatic Attraction Demanding Patience",
-    "summary": "Separated by five signs, you have little in common astrologically, which creates an intriguing magnetic mystery. Succeeding together requires appreciating your partner's entirely unique perspective on life.",
+    "aspectName": "6-8 Sun Sign Pattern (Karmic Mystery & Devoted Service)",
+    "vibrationCode": "6-8",
+    "lindaVibration": {
+      "code": "6-8",
+      "title": "6-8 Sun Sign Pattern (Karmic Mystery & Devoted Service)",
+      "theme": "Enigmatic Fascination, Hypnotic Pull & Karmic Duty",
+      "summary": "According to Linda Goodman, the 6-8 quincunx vibration is cloaked in hypnotic fascination and karmic debt. One partner feels drawn to serve, protect, or nurture the other, generating deep emotional or physical magnetism that requires profound patience to untangle.",
+      "karmicLesson": "Practicing unconditional love free from selfish demands, embracing differences that cannot be logically explained."
+    },
+    "headline": "Cancer & Aquarius: Enigmatic Fascination, Hypnotic Pull & Karmic Duty",
+    "summary": "According to Linda Goodman, the 6-8 quincunx vibration is cloaked in hypnotic fascination and karmic debt. One partner feels drawn to serve, protect, or nurture the other, generating deep emotional or physical magnetism that requires profound patience to untangle.",
     "parameters": {
       "emotional": 42,
       "communication": 45,
-      "romance": 43,
-      "trust": 46,
-      "stability": 48,
-      "lifestyle": 38
+      "romance": 45,
+      "trust": 48,
+      "stability": 50,
+      "lifestyle": 40
     },
     "elementSynergy": {
       "title": "Air & Water (Wind & Waves)",
-      "text": "Air analyzes experiences intellectually while Water experiences them through deep emotion. Finding balance creates profound holistic insight."
+      "text": "Air analyzes experiences intellectually while Water perceives them through psychic emotion. Honoring each other's distinct perception creates rich spiritual growth."
     },
     "modalitySynergy": "Cardinal + Fixed: A balanced dynamic where one partner initiates, stabilizes, or provides adaptable perspective to the other.",
     "strengths": [
-      "Powerful karmic pull that pushes both individuals to mature emotionally.",
+      "Powerful karmic pull that pushes both souls to mature emotionally and spiritually.",
       "Unforgettable chemistry and passion born from sheer elemental contrast.",
       "Opportunity to develop immense patience, empathy, and unconditional love."
     ],
     "challenges": [
-      "Fundamental contrast in priorities: Cancer's instinctual approach may confuse Aquarius.",
+      "Fundamental contrast in priorities: Cancer's instinctual approach may baffle Aquarius.",
       "Tendency to misinterpret your partner's need for space or emotional expression."
     ],
     "tips": [
@@ -2612,31 +3024,39 @@ const ZODIAC_PAIRS = {
     ],
     "celebrityCouples": "Celebrated Cancer & Aquarius cosmic pairs",
     "genderAdvice": {
-      "male_female": "When a Cancer man and a Aquarius woman unite, balancing his Mars/solar leadership with her emotional sanctuary fosters lasting harmony.",
-      "female_male": "When a Cancer woman and a Aquarius man unite, celebrating her creative initiative while valuing his steadfast protection builds an unbreakable bond.",
-      "same_sex": "In a union between two souls with Cancer and Aquarius energies, open communication and honoring personal autonomy keeps the romance deeply alive."
+      "male_female": "In Linda Goodman's Love Signs analysis of the Cancer Man with the Aquarius Woman (6-8 Vibration): He expresses his masculine planetary energy through Moon, while she responds with Uranus & Saturn grace. Success blooms when he honors her emotional sanctuary and she champions his purposeful ambitions.",
+      "female_male": "In Linda Goodman's Love Signs analysis of the Cancer Woman with the Aquarius Man (6-8 Vibration): She brings Cancer's radiant initiative to the union, while he offers Aquarius's steadfast anchor. When she trusts his protective strength and he respects her autonomy, their bond becomes unbreakable.",
+      "same_sex": "In Linda Goodman's cosmic synastry (6-8 Vibration): Two souls united under Cancer and Aquarius celestial energies find harmony when honoring personal autonomy, balancing giving with receiving, and allowing their elemental natures to enrich each other."
     }
   },
   "cancer_pisces": {
     "sign1": "cancer",
     "sign2": "pisces",
-    "overallScore": 94,
+    "overallScore": 95,
     "colorCategory": "green",
     "shadeLabel": "Harmonious Union",
-    "aspectName": "Trine (Divine Soulmate Element)",
-    "headline": "Cancer & Pisces: Effortless Harmony & Natural Soul Resonance",
-    "summary": "Sharing the same element (Fire-Fire, Earth-Earth, Air-Air, Water-Water) creates an instinctive, harmonious flow. You breathe the same spiritual air, understand each other's pacing, and feel deeply at home together.",
+    "aspectName": "5-9 Sun Sign Pattern (The Divine Cosmic Blessing)",
+    "vibrationCode": "5-9",
+    "lindaVibration": {
+      "code": "5-9",
+      "title": "5-9 Sun Sign Pattern (The Divine Cosmic Blessing)",
+      "theme": "Golden Trine, Soulmate Telepathy & Natural Sympathy",
+      "summary": "Linda Goodman's most celebrated synastry pattern! Sharing the same sacred element (Fire, Earth, Air, or Water) brings instant soul recognition. You forgive each other almost effortlessly, inspire each other's dreams, and enjoy an almost telepathic understanding.",
+      "karmicLesson": "Preserving sacred gratitude and avoiding taking your effortless soul harmony for granted."
+    },
+    "headline": "Cancer & Pisces: Golden Trine, Soulmate Telepathy & Natural Sympathy",
+    "summary": "Linda Goodman's most celebrated synastry pattern! Sharing the same sacred element (Fire, Earth, Air, or Water) brings instant soul recognition. You forgive each other almost effortlessly, inspire each other's dreams, and enjoy an almost telepathic understanding.",
     "parameters": {
       "emotional": 98,
-      "communication": 94,
-      "romance": 91,
-      "trust": 94,
-      "stability": 93,
+      "communication": 95,
+      "romance": 92,
+      "trust": 95,
+      "stability": 94,
       "lifestyle": 96
     },
     "elementSynergy": {
-      "title": "Double Water (Oceanic Soul Bond)",
-      "text": "Intuitive, deeply emotional, and almost telepathic understanding. You hold space for each other's deepest vulnerabilities and dreams."
+      "title": "Double Water (Oceanic Soul Resonance)",
+      "text": "Linda Goodman described two Water signs as deep telepathic soulmates. You sense each other's moods intuitively without words, creating a sacred emotional sanctuary."
     },
     "modalitySynergy": "Cardinal + Mutable: A balanced dynamic where one partner initiates, stabilizes, or provides adaptable perspective to the other.",
     "strengths": [
@@ -2655,31 +3075,39 @@ const ZODIAC_PAIRS = {
     ],
     "celebrityCouples": "Celebrated Cancer & Pisces cosmic pairs",
     "genderAdvice": {
-      "male_female": "When a Cancer man and a Pisces woman unite, balancing his Mars/solar leadership with her emotional sanctuary fosters lasting harmony.",
-      "female_male": "When a Cancer woman and a Pisces man unite, celebrating her creative initiative while valuing his steadfast protection builds an unbreakable bond.",
-      "same_sex": "In a union between two souls with Cancer and Pisces energies, open communication and honoring personal autonomy keeps the romance deeply alive."
+      "male_female": "In Linda Goodman's Love Signs analysis of the Cancer Man with the Pisces Woman (5-9 Vibration): He expresses his masculine planetary energy through Moon, while she responds with Neptune & Jupiter grace. Success blooms when he honors her emotional sanctuary and she champions his purposeful ambitions.",
+      "female_male": "In Linda Goodman's Love Signs analysis of the Cancer Woman with the Pisces Man (5-9 Vibration): She brings Cancer's radiant initiative to the union, while he offers Pisces's steadfast anchor. When she trusts his protective strength and he respects her autonomy, their bond becomes unbreakable.",
+      "same_sex": "In Linda Goodman's cosmic synastry (5-9 Vibration): Two souls united under Cancer and Pisces celestial energies find harmony when honoring personal autonomy, balancing giving with receiving, and allowing their elemental natures to enrich each other."
     }
   },
   "leo_aries": {
     "sign1": "leo",
     "sign2": "aries",
-    "overallScore": 96,
+    "overallScore": 97,
     "colorCategory": "green",
     "shadeLabel": "Harmonious Union",
-    "aspectName": "Trine (Divine Soulmate Element)",
-    "headline": "Leo & Aries: Effortless Harmony & Natural Soul Resonance",
-    "summary": "Sharing the same element (Fire-Fire, Earth-Earth, Air-Air, Water-Water) creates an instinctive, harmonious flow. You breathe the same spiritual air, understand each other's pacing, and feel deeply at home together.",
+    "aspectName": "5-9 Sun Sign Pattern (The Divine Cosmic Blessing)",
+    "vibrationCode": "5-9",
+    "lindaVibration": {
+      "code": "5-9",
+      "title": "5-9 Sun Sign Pattern (The Divine Cosmic Blessing)",
+      "theme": "Golden Trine, Soulmate Telepathy & Natural Sympathy",
+      "summary": "Linda Goodman's most celebrated synastry pattern! Sharing the same sacred element (Fire, Earth, Air, or Water) brings instant soul recognition. You forgive each other almost effortlessly, inspire each other's dreams, and enjoy an almost telepathic understanding.",
+      "karmicLesson": "Preserving sacred gratitude and avoiding taking your effortless soul harmony for granted."
+    },
+    "headline": "Leo & Aries: Golden Trine, Soulmate Telepathy & Natural Sympathy",
+    "summary": "Linda Goodman's most celebrated synastry pattern! Sharing the same sacred element (Fire, Earth, Air, or Water) brings instant soul recognition. You forgive each other almost effortlessly, inspire each other's dreams, and enjoy an almost telepathic understanding.",
     "parameters": {
-      "emotional": 96,
-      "communication": 96,
+      "emotional": 97,
+      "communication": 97,
       "romance": 98,
-      "trust": 96,
-      "stability": 91,
+      "trust": 97,
+      "stability": 92,
       "lifestyle": 96
     },
     "elementSynergy": {
       "title": "Double Fire (Electric Blaze)",
-      "text": "Intense passion, shared ambition, and instant adrenaline. You fuel each other's dreams, but must ensure competitive sparks don't burn down emotional bridges."
+      "text": "As Linda Goodman observed, two Fire signs create immediate enthusiasm and dramatic warmth. You champion each other's boldness, but must take care that competitive sparks don't burn down tender feelings."
     },
     "modalitySynergy": "Fixed + Cardinal: A balanced dynamic where one partner initiates, stabilizes, or provides adaptable perspective to the other.",
     "strengths": [
@@ -2698,33 +3126,41 @@ const ZODIAC_PAIRS = {
     ],
     "celebrityCouples": "Sarah Jessica Parker (Aries) & Matthew Broderick (Aries) / Kourtney Kardashian (Aries) & Travis Barker (Scorpio)",
     "genderAdvice": {
-      "male_female": "When a Leo man and a Aries woman unite, balancing his Mars/solar leadership with her emotional sanctuary fosters lasting harmony.",
-      "female_male": "When a Leo woman and a Aries man unite, celebrating her creative initiative while valuing his steadfast protection builds an unbreakable bond.",
-      "same_sex": "In a union between two souls with Leo and Aries energies, open communication and honoring personal autonomy keeps the romance deeply alive."
+      "male_female": "In Linda Goodman's Love Signs analysis of the Leo Man with the Aries Woman (5-9 Vibration): He expresses his masculine planetary energy through Sun, while she responds with Mars grace. Success blooms when he honors her emotional sanctuary and she champions his purposeful ambitions.",
+      "female_male": "In Linda Goodman's Love Signs analysis of the Leo Woman with the Aries Man (5-9 Vibration): She brings Leo's radiant initiative to the union, while he offers Aries's steadfast anchor. When she trusts his protective strength and he respects her autonomy, their bond becomes unbreakable.",
+      "same_sex": "In Linda Goodman's cosmic synastry (5-9 Vibration): Two souls united under Leo and Aries celestial energies find harmony when honoring personal autonomy, balancing giving with receiving, and allowing their elemental natures to enrich each other."
     }
   },
   "leo_taurus": {
     "sign1": "leo",
     "sign2": "taurus",
-    "overallScore": 52,
+    "overallScore": 54,
     "colorCategory": "amber",
     "shadeLabel": "Dynamic Potential",
-    "aspectName": "Square (Passionate Friction & Dynamic Growth)",
-    "headline": "Leo & Taurus: Electrifying Spark with Creative Challenge",
-    "summary": "Signs at a 90\u00b0 square share the same modality but clash elementally. This generates high attraction, intense emotional chemistry, and spirited debates that demand conscious diplomacy and mutual compromise.",
+    "aspectName": "4-10 Sun Sign Pattern (The Karmic Challenge & Crucible)",
+    "vibrationCode": "4-10",
+    "lindaVibration": {
+      "code": "4-10",
+      "title": "4-10 Sun Sign Pattern (The Karmic Challenge & Crucible)",
+      "theme": "Passionate Friction, Dramatic Chemistry & Soul Crucible",
+      "summary": "Linda Goodman described the 4-10 square vibration as the classic crucible of soul growth. Sharing the same modality but differing elements produces magnetic physical attraction paired with clashes of will. If ego yields to love, this union builds invincible diamond strength.",
+      "karmicLesson": "Transcending stubborn pride and mastering the noble art of sacrificial compromise."
+    },
+    "headline": "Leo & Taurus: Passionate Friction, Dramatic Chemistry & Soul Crucible",
+    "summary": "Linda Goodman described the 4-10 square vibration as the classic crucible of soul growth. Sharing the same modality but differing elements produces magnetic physical attraction paired with clashes of will. If ego yields to love, this union builds invincible diamond strength.",
     "parameters": {
-      "emotional": 50,
-      "communication": 52,
-      "romance": 49,
-      "trust": 56,
-      "stability": 54,
-      "lifestyle": 44
+      "emotional": 52,
+      "communication": 54,
+      "romance": 51,
+      "trust": 58,
+      "stability": 56,
+      "lifestyle": 46
     },
     "elementSynergy": {
       "title": "Fire & Earth (Hearthstone Fire)",
-      "text": "Fire provides creative energy and visionary boldness; Earth builds the practical structures to turn those visions into reality."
+      "text": "Fire provides creative courage and solar warmth; Earth builds the practical structures to turn those visions into lasting wealth and security."
     },
-    "modalitySynergy": "Both Fixed: Unshakable loyalty and steadfast commitment. Practice active compromise to prevent stubborn standoffs.",
+    "modalitySynergy": "Both Fixed (Stabilizers): Unshakeable loyalty and rock-solid fidelity. Linda Goodman urged practicing gentle flexibility to resolve stubborn standoffs.",
     "strengths": [
       "Dynamic growth: Leo introduces Taurus to new perspectives and vice versa.",
       "Engaging romantic chemistry where you never run out of intriguing things to discover about each other.",
@@ -2735,37 +3171,45 @@ const ZODIAC_PAIRS = {
       "Occasional friction over lifestyle pacing or decision-making speed."
     ],
     "tips": [
-      "Adopt the 24-hour cooling off rule during heated arguments before revisiting sensitive topics.",
-      "Remember that Taurus communicates love in their own authentic dialect.",
-      "Celebrate your differences as unique strengths rather than flaws to be corrected."
+      "Adopt Linda Goodman's cooling-off principle during heated arguments before revisiting sensitive topics.",
+      "Remember that Taurus communicates love in their own authentic elemental dialect.",
+      "Celebrate your differences as complementary superpowers rather than personal flaws."
     ],
     "celebrityCouples": "Celebrated Leo & Taurus cosmic pairs",
     "genderAdvice": {
-      "male_female": "When a Leo man and a Taurus woman unite, balancing his Mars/solar leadership with her emotional sanctuary fosters lasting harmony.",
-      "female_male": "When a Leo woman and a Taurus man unite, celebrating her creative initiative while valuing his steadfast protection builds an unbreakable bond.",
-      "same_sex": "In a union between two souls with Leo and Taurus energies, open communication and honoring personal autonomy keeps the romance deeply alive."
+      "male_female": "In Linda Goodman's Love Signs analysis of the Leo Man with the Taurus Woman (4-10 Vibration): He expresses his masculine planetary energy through Sun, while she responds with Venus grace. Success blooms when he honors her emotional sanctuary and she champions his purposeful ambitions.",
+      "female_male": "In Linda Goodman's Love Signs analysis of the Leo Woman with the Taurus Man (4-10 Vibration): She brings Leo's radiant initiative to the union, while he offers Taurus's steadfast anchor. When she trusts his protective strength and he respects her autonomy, their bond becomes unbreakable.",
+      "same_sex": "In Linda Goodman's cosmic synastry (4-10 Vibration): Two souls united under Leo and Taurus celestial energies find harmony when honoring personal autonomy, balancing giving with receiving, and allowing their elemental natures to enrich each other."
     }
   },
   "leo_gemini": {
     "sign1": "leo",
     "sign2": "gemini",
-    "overallScore": 86,
+    "overallScore": 88,
     "colorCategory": "green",
     "shadeLabel": "Harmonious Union",
-    "aspectName": "Sextile (Harmonious Elemental Flow)",
-    "headline": "Leo & Gemini: Stimulating Synergy & Easy Friendship",
-    "summary": "Your elements naturally complement each other (Fire invigorates Air, or Water nourishes Earth). Communication flows effortlessly, laughter comes easily, and mutual respect flourishes.",
+    "aspectName": "3-11 Sun Sign Pattern (Karmic Friends & Sympathetic Lovers)",
+    "vibrationCode": "3-11",
+    "lindaVibration": {
+      "code": "3-11",
+      "title": "3-11 Sun Sign Pattern (Karmic Friends & Sympathetic Lovers)",
+      "theme": "Enduring Camaraderie, Easy Forgiveness & High Devotion",
+      "summary": "Linda Goodman considered the 3-11 vibration one of the happiest and most enduring in the cosmos. Your signs form a natural sextile of friendship. Even through intense misunderstandings, 3-11 lovers remain steadfast allies, quick to forgive and eager to laugh.",
+      "karmicLesson": "Nurturing lifelong loyalty, humanitarian generosity, and effortless mutual forgiveness."
+    },
+    "headline": "Leo & Gemini: Enduring Camaraderie, Easy Forgiveness & High Devotion",
+    "summary": "Linda Goodman considered the 3-11 vibration one of the happiest and most enduring in the cosmos. Your signs form a natural sextile of friendship. Even through intense misunderstandings, 3-11 lovers remain steadfast allies, quick to forgive and eager to laugh.",
     "parameters": {
-      "emotional": 84,
-      "communication": 90,
-      "romance": 92,
-      "trust": 86,
-      "stability": 88,
-      "lifestyle": 86
+      "emotional": 86,
+      "communication": 92,
+      "romance": 94,
+      "trust": 88,
+      "stability": 90,
+      "lifestyle": 88
     },
     "elementSynergy": {
-      "title": "Fire & Air (Inspirational Catalyst)",
-      "text": "Air fuels Fire's passion, while Fire brings warmth and bold action to Air's inventive ideas. An exciting, socially vibrant union."
+      "title": "Fire & Air (Inspirational Breeze)",
+      "text": "Air fans Fire's flames into glorious creative radiance, while Fire warms Air's visionary ideals into bold reality. An exciting, intellectually vibrant union."
     },
     "modalitySynergy": "Fixed + Mutable: A balanced dynamic where one partner initiates, stabilizes, or provides adaptable perspective to the other.",
     "strengths": [
@@ -2784,31 +3228,39 @@ const ZODIAC_PAIRS = {
     ],
     "celebrityCouples": "Celebrated Leo & Gemini cosmic pairs",
     "genderAdvice": {
-      "male_female": "When a Leo man and a Gemini woman unite, balancing his Mars/solar leadership with her emotional sanctuary fosters lasting harmony.",
-      "female_male": "When a Leo woman and a Gemini man unite, celebrating her creative initiative while valuing his steadfast protection builds an unbreakable bond.",
-      "same_sex": "In a union between two souls with Leo and Gemini energies, open communication and honoring personal autonomy keeps the romance deeply alive."
+      "male_female": "In Linda Goodman's Love Signs analysis of the Leo Man with the Gemini Woman (3-11 Vibration): He expresses his masculine planetary energy through Sun, while she responds with Mercury grace. Success blooms when he honors her emotional sanctuary and she champions his purposeful ambitions.",
+      "female_male": "In Linda Goodman's Love Signs analysis of the Leo Woman with the Gemini Man (3-11 Vibration): She brings Leo's radiant initiative to the union, while he offers Gemini's steadfast anchor. When she trusts his protective strength and he respects her autonomy, their bond becomes unbreakable.",
+      "same_sex": "In Linda Goodman's cosmic synastry (3-11 Vibration): Two souls united under Leo and Gemini celestial energies find harmony when honoring personal autonomy, balancing giving with receiving, and allowing their elemental natures to enrich each other."
     }
   },
   "leo_cancer": {
     "sign1": "leo",
     "sign2": "cancer",
-    "overallScore": 62,
+    "overallScore": 64,
     "colorCategory": "amber",
     "shadeLabel": "Dynamic Potential",
-    "aspectName": "Semisextile (Neighboring Contrast)",
-    "headline": "Leo & Cancer: Complementary Growth & Mutual Learning",
-    "summary": "As neighboring signs, you operate from contrasting elemental perspectives. This match creates a learning journey where each partner expands the other's horizons if patience is practiced.",
+    "aspectName": "2-12 Sun Sign Pattern (The Karmic Teacher & Pupil)",
+    "vibrationCode": "2-12",
+    "lindaVibration": {
+      "code": "2-12",
+      "title": "2-12 Sun Sign Pattern (The Karmic Teacher & Pupil)",
+      "theme": "Karmic Learning, Compassion & Gentle Tutoring",
+      "summary": "According to Linda Goodman, the 2-12 vibration signifies that one sign has spiritually passed through the other's grade in the cosmic school. There is a deep, unspoken bond of patience, protection, and gentle tutoring. Tolerating different pacing unlocks profound mutual growth.",
+      "karmicLesson": "Bridging contrasting elemental perspectives through patient compassion and secret mutual admiration."
+    },
+    "headline": "Leo & Cancer: Karmic Learning, Compassion & Gentle Tutoring",
+    "summary": "According to Linda Goodman, the 2-12 vibration signifies that one sign has spiritually passed through the other's grade in the cosmic school. There is a deep, unspoken bond of patience, protection, and gentle tutoring. Tolerating different pacing unlocks profound mutual growth.",
     "parameters": {
-      "emotional": 52,
-      "communication": 62,
-      "romance": 59,
-      "trust": 62,
-      "stability": 64,
-      "lifestyle": 62
+      "emotional": 54,
+      "communication": 64,
+      "romance": 61,
+      "trust": 64,
+      "stability": 66,
+      "lifestyle": 64
     },
     "elementSynergy": {
-      "title": "Fire & Water (Steam & Intense Chemistry)",
-      "text": "Extremely passionate and emotionally turbulent. Fire inspires Water to take bold leaps; Water teaches Fire the beauty of tender emotional depth."
+      "title": "Fire & Water (Steam & Intense Passion)",
+      "text": "Extremely passionate and emotionally turbulent. Fire inspires Water to take brave leaps; Water teaches Fire the beauty of quiet emotional vulnerability."
     },
     "modalitySynergy": "Fixed + Cardinal: A balanced dynamic where one partner initiates, stabilizes, or provides adaptable perspective to the other.",
     "strengths": [
@@ -2821,15 +3273,15 @@ const ZODIAC_PAIRS = {
       "Occasional friction over lifestyle pacing or decision-making speed."
     ],
     "tips": [
-      "Adopt the 24-hour cooling off rule during heated arguments before revisiting sensitive topics.",
-      "Remember that Cancer communicates love in their own authentic dialect.",
-      "Celebrate your differences as unique strengths rather than flaws to be corrected."
+      "Adopt Linda Goodman's cooling-off principle during heated arguments before revisiting sensitive topics.",
+      "Remember that Cancer communicates love in their own authentic elemental dialect.",
+      "Celebrate your differences as complementary superpowers rather than personal flaws."
     ],
     "celebrityCouples": "Celebrated Leo & Cancer cosmic pairs",
     "genderAdvice": {
-      "male_female": "When a Leo man and a Cancer woman unite, balancing his Mars/solar leadership with her emotional sanctuary fosters lasting harmony.",
-      "female_male": "When a Leo woman and a Cancer man unite, celebrating her creative initiative while valuing his steadfast protection builds an unbreakable bond.",
-      "same_sex": "In a union between two souls with Leo and Cancer energies, open communication and honoring personal autonomy keeps the romance deeply alive."
+      "male_female": "In Linda Goodman's Love Signs analysis of the Leo Man with the Cancer Woman (2-12 Vibration): He expresses his masculine planetary energy through Sun, while she responds with Moon grace. Success blooms when he honors her emotional sanctuary and she champions his purposeful ambitions.",
+      "female_male": "In Linda Goodman's Love Signs analysis of the Leo Woman with the Cancer Man (2-12 Vibration): She brings Leo's radiant initiative to the union, while he offers Cancer's steadfast anchor. When she trusts his protective strength and he respects her autonomy, their bond becomes unbreakable.",
+      "same_sex": "In Linda Goodman's cosmic synastry (2-12 Vibration): Two souls united under Leo and Cancer celestial energies find harmony when honoring personal autonomy, balancing giving with receiving, and allowing their elemental natures to enrich each other."
     }
   },
   "leo_leo": {
@@ -2838,9 +3290,17 @@ const ZODIAC_PAIRS = {
     "overallScore": 82,
     "colorCategory": "green",
     "shadeLabel": "Harmonious Union",
-    "aspectName": "Conjunction (Mirror Alignment)",
-    "headline": "Leo & Leo: Deep Mirror Empathy & Shared Instincts",
-    "summary": "Sharing the exact same sun sign gives you an instinctual understanding of each other's drives and vulnerabilities. You understand each other's moods intuitively, though you must guard against magnifying shared blind spots.",
+    "aspectName": "1-1 Sun Sign Pattern (The Cosmic Mirror)",
+    "vibrationCode": "1-1",
+    "lindaVibration": {
+      "code": "1-1",
+      "title": "1-1 Sun Sign Pattern (The Cosmic Mirror)",
+      "theme": "Mirror Empathy & Double Ego Reflection",
+      "summary": "In Linda Goodman's Love Signs, the 1-1 vibration is like gazing directly into an astrological mirror. You recognize each other's hidden virtues and deepest faults instantly. This creates profound telepathic empathy, but both partners must guard against magnifying identical blind spots.",
+      "karmicLesson": "Cultivating emotional humility and learning self-acceptance through observing your own nature reflected in your mate."
+    },
+    "headline": "Leo & Leo: Mirror Empathy & Double Ego Reflection",
+    "summary": "In Linda Goodman's Love Signs, the 1-1 vibration is like gazing directly into an astrological mirror. You recognize each other's hidden virtues and deepest faults instantly. This creates profound telepathic empathy, but both partners must guard against magnifying identical blind spots.",
     "parameters": {
       "emotional": 82,
       "communication": 82,
@@ -2851,9 +3311,9 @@ const ZODIAC_PAIRS = {
     },
     "elementSynergy": {
       "title": "Double Fire (Electric Blaze)",
-      "text": "Intense passion, shared ambition, and instant adrenaline. You fuel each other's dreams, but must ensure competitive sparks don't burn down emotional bridges."
+      "text": "As Linda Goodman observed, two Fire signs create immediate enthusiasm and dramatic warmth. You champion each other's boldness, but must take care that competitive sparks don't burn down tender feelings."
     },
-    "modalitySynergy": "Both Fixed: Unshakable loyalty and steadfast commitment. Practice active compromise to prevent stubborn standoffs.",
+    "modalitySynergy": "Both Fixed (Stabilizers): Unshakeable loyalty and rock-solid fidelity. Linda Goodman urged practicing gentle flexibility to resolve stubborn standoffs.",
     "strengths": [
       "Natural understanding: Leo and Leo instinctively comprehend each other's core motivations.",
       "Complimentary emotional rhythms that make daily life and domestic partnership feel comforting and safe.",
@@ -2870,31 +3330,39 @@ const ZODIAC_PAIRS = {
     ],
     "celebrityCouples": "Celebrated Leo & Leo cosmic pairs",
     "genderAdvice": {
-      "male_female": "When a Leo man and a Leo woman unite, balancing his Mars/solar leadership with her emotional sanctuary fosters lasting harmony.",
-      "female_male": "When a Leo woman and a Leo man unite, celebrating her creative initiative while valuing his steadfast protection builds an unbreakable bond.",
-      "same_sex": "In a union between two souls with Leo and Leo energies, open communication and honoring personal autonomy keeps the romance deeply alive."
+      "male_female": "In Linda Goodman's Love Signs analysis of the Leo Man with the Leo Woman (1-1 Vibration): He expresses his masculine planetary energy through Sun, while she responds with Sun grace. Success blooms when he honors her emotional sanctuary and she champions his purposeful ambitions.",
+      "female_male": "In Linda Goodman's Love Signs analysis of the Leo Woman with the Leo Man (1-1 Vibration): She brings Leo's radiant initiative to the union, while he offers Leo's steadfast anchor. When she trusts his protective strength and he respects her autonomy, their bond becomes unbreakable.",
+      "same_sex": "In Linda Goodman's cosmic synastry (1-1 Vibration): Two souls united under Leo and Leo celestial energies find harmony when honoring personal autonomy, balancing giving with receiving, and allowing their elemental natures to enrich each other."
     }
   },
   "leo_virgo": {
     "sign1": "leo",
     "sign2": "virgo",
-    "overallScore": 62,
+    "overallScore": 64,
     "colorCategory": "amber",
     "shadeLabel": "Dynamic Potential",
-    "aspectName": "Semisextile (Neighboring Contrast)",
-    "headline": "Leo & Virgo: Complementary Growth & Mutual Learning",
-    "summary": "As neighboring signs, you operate from contrasting elemental perspectives. This match creates a learning journey where each partner expands the other's horizons if patience is practiced.",
+    "aspectName": "2-12 Sun Sign Pattern (The Karmic Teacher & Pupil)",
+    "vibrationCode": "2-12",
+    "lindaVibration": {
+      "code": "2-12",
+      "title": "2-12 Sun Sign Pattern (The Karmic Teacher & Pupil)",
+      "theme": "Karmic Learning, Compassion & Gentle Tutoring",
+      "summary": "According to Linda Goodman, the 2-12 vibration signifies that one sign has spiritually passed through the other's grade in the cosmic school. There is a deep, unspoken bond of patience, protection, and gentle tutoring. Tolerating different pacing unlocks profound mutual growth.",
+      "karmicLesson": "Bridging contrasting elemental perspectives through patient compassion and secret mutual admiration."
+    },
+    "headline": "Leo & Virgo: Karmic Learning, Compassion & Gentle Tutoring",
+    "summary": "According to Linda Goodman, the 2-12 vibration signifies that one sign has spiritually passed through the other's grade in the cosmic school. There is a deep, unspoken bond of patience, protection, and gentle tutoring. Tolerating different pacing unlocks profound mutual growth.",
     "parameters": {
-      "emotional": 60,
-      "communication": 65,
-      "romance": 59,
-      "trust": 62,
-      "stability": 64,
-      "lifestyle": 62
+      "emotional": 62,
+      "communication": 67,
+      "romance": 61,
+      "trust": 64,
+      "stability": 66,
+      "lifestyle": 64
     },
     "elementSynergy": {
       "title": "Fire & Earth (Hearthstone Fire)",
-      "text": "Fire provides creative energy and visionary boldness; Earth builds the practical structures to turn those visions into reality."
+      "text": "Fire provides creative courage and solar warmth; Earth builds the practical structures to turn those visions into lasting wealth and security."
     },
     "modalitySynergy": "Fixed + Mutable: A balanced dynamic where one partner initiates, stabilizes, or provides adaptable perspective to the other.",
     "strengths": [
@@ -2907,37 +3375,45 @@ const ZODIAC_PAIRS = {
       "Occasional friction over lifestyle pacing or decision-making speed."
     ],
     "tips": [
-      "Adopt the 24-hour cooling off rule during heated arguments before revisiting sensitive topics.",
-      "Remember that Virgo communicates love in their own authentic dialect.",
-      "Celebrate your differences as unique strengths rather than flaws to be corrected."
+      "Adopt Linda Goodman's cooling-off principle during heated arguments before revisiting sensitive topics.",
+      "Remember that Virgo communicates love in their own authentic elemental dialect.",
+      "Celebrate your differences as complementary superpowers rather than personal flaws."
     ],
     "celebrityCouples": "Celebrated Leo & Virgo cosmic pairs",
     "genderAdvice": {
-      "male_female": "When a Leo man and a Virgo woman unite, balancing his Mars/solar leadership with her emotional sanctuary fosters lasting harmony.",
-      "female_male": "When a Leo woman and a Virgo man unite, celebrating her creative initiative while valuing his steadfast protection builds an unbreakable bond.",
-      "same_sex": "In a union between two souls with Leo and Virgo energies, open communication and honoring personal autonomy keeps the romance deeply alive."
+      "male_female": "In Linda Goodman's Love Signs analysis of the Leo Man with the Virgo Woman (2-12 Vibration): He expresses his masculine planetary energy through Sun, while she responds with Mercury grace. Success blooms when he honors her emotional sanctuary and she champions his purposeful ambitions.",
+      "female_male": "In Linda Goodman's Love Signs analysis of the Leo Woman with the Virgo Man (2-12 Vibration): She brings Leo's radiant initiative to the union, while he offers Virgo's steadfast anchor. When she trusts his protective strength and he respects her autonomy, their bond becomes unbreakable.",
+      "same_sex": "In Linda Goodman's cosmic synastry (2-12 Vibration): Two souls united under Leo and Virgo celestial energies find harmony when honoring personal autonomy, balancing giving with receiving, and allowing their elemental natures to enrich each other."
     }
   },
   "leo_libra": {
     "sign1": "leo",
     "sign2": "libra",
-    "overallScore": 86,
+    "overallScore": 88,
     "colorCategory": "green",
     "shadeLabel": "Harmonious Union",
-    "aspectName": "Sextile (Harmonious Elemental Flow)",
-    "headline": "Leo & Libra: Stimulating Synergy & Easy Friendship",
-    "summary": "Your elements naturally complement each other (Fire invigorates Air, or Water nourishes Earth). Communication flows effortlessly, laughter comes easily, and mutual respect flourishes.",
+    "aspectName": "3-11 Sun Sign Pattern (Karmic Friends & Sympathetic Lovers)",
+    "vibrationCode": "3-11",
+    "lindaVibration": {
+      "code": "3-11",
+      "title": "3-11 Sun Sign Pattern (Karmic Friends & Sympathetic Lovers)",
+      "theme": "Enduring Camaraderie, Easy Forgiveness & High Devotion",
+      "summary": "Linda Goodman considered the 3-11 vibration one of the happiest and most enduring in the cosmos. Your signs form a natural sextile of friendship. Even through intense misunderstandings, 3-11 lovers remain steadfast allies, quick to forgive and eager to laugh.",
+      "karmicLesson": "Nurturing lifelong loyalty, humanitarian generosity, and effortless mutual forgiveness."
+    },
+    "headline": "Leo & Libra: Enduring Camaraderie, Easy Forgiveness & High Devotion",
+    "summary": "Linda Goodman considered the 3-11 vibration one of the happiest and most enduring in the cosmos. Your signs form a natural sextile of friendship. Even through intense misunderstandings, 3-11 lovers remain steadfast allies, quick to forgive and eager to laugh.",
     "parameters": {
-      "emotional": 84,
-      "communication": 90,
-      "romance": 92,
-      "trust": 86,
-      "stability": 88,
-      "lifestyle": 86
+      "emotional": 86,
+      "communication": 92,
+      "romance": 94,
+      "trust": 88,
+      "stability": 90,
+      "lifestyle": 88
     },
     "elementSynergy": {
-      "title": "Fire & Air (Inspirational Catalyst)",
-      "text": "Air fuels Fire's passion, while Fire brings warmth and bold action to Air's inventive ideas. An exciting, socially vibrant union."
+      "title": "Fire & Air (Inspirational Breeze)",
+      "text": "Air fans Fire's flames into glorious creative radiance, while Fire warms Air's visionary ideals into bold reality. An exciting, intellectually vibrant union."
     },
     "modalitySynergy": "Fixed + Cardinal: A balanced dynamic where one partner initiates, stabilizes, or provides adaptable perspective to the other.",
     "strengths": [
@@ -2956,33 +3432,41 @@ const ZODIAC_PAIRS = {
     ],
     "celebrityCouples": "Celebrated Leo & Libra cosmic pairs",
     "genderAdvice": {
-      "male_female": "When a Leo man and a Libra woman unite, balancing his Mars/solar leadership with her emotional sanctuary fosters lasting harmony.",
-      "female_male": "When a Leo woman and a Libra man unite, celebrating her creative initiative while valuing his steadfast protection builds an unbreakable bond.",
-      "same_sex": "In a union between two souls with Leo and Libra energies, open communication and honoring personal autonomy keeps the romance deeply alive."
+      "male_female": "In Linda Goodman's Love Signs analysis of the Leo Man with the Libra Woman (3-11 Vibration): He expresses his masculine planetary energy through Sun, while she responds with Venus grace. Success blooms when he honors her emotional sanctuary and she champions his purposeful ambitions.",
+      "female_male": "In Linda Goodman's Love Signs analysis of the Leo Woman with the Libra Man (3-11 Vibration): She brings Leo's radiant initiative to the union, while he offers Libra's steadfast anchor. When she trusts his protective strength and he respects her autonomy, their bond becomes unbreakable.",
+      "same_sex": "In Linda Goodman's cosmic synastry (3-11 Vibration): Two souls united under Leo and Libra celestial energies find harmony when honoring personal autonomy, balancing giving with receiving, and allowing their elemental natures to enrich each other."
     }
   },
   "leo_scorpio": {
     "sign1": "leo",
     "sign2": "scorpio",
-    "overallScore": 52,
+    "overallScore": 54,
     "colorCategory": "amber",
     "shadeLabel": "Dynamic Potential",
-    "aspectName": "Square (Passionate Friction & Dynamic Growth)",
-    "headline": "Leo & Scorpio: Electrifying Spark with Creative Challenge",
-    "summary": "Signs at a 90\u00b0 square share the same modality but clash elementally. This generates high attraction, intense emotional chemistry, and spirited debates that demand conscious diplomacy and mutual compromise.",
+    "aspectName": "4-10 Sun Sign Pattern (The Karmic Challenge & Crucible)",
+    "vibrationCode": "4-10",
+    "lindaVibration": {
+      "code": "4-10",
+      "title": "4-10 Sun Sign Pattern (The Karmic Challenge & Crucible)",
+      "theme": "Passionate Friction, Dramatic Chemistry & Soul Crucible",
+      "summary": "Linda Goodman described the 4-10 square vibration as the classic crucible of soul growth. Sharing the same modality but differing elements produces magnetic physical attraction paired with clashes of will. If ego yields to love, this union builds invincible diamond strength.",
+      "karmicLesson": "Transcending stubborn pride and mastering the noble art of sacrificial compromise."
+    },
+    "headline": "Leo & Scorpio: Passionate Friction, Dramatic Chemistry & Soul Crucible",
+    "summary": "Linda Goodman described the 4-10 square vibration as the classic crucible of soul growth. Sharing the same modality but differing elements produces magnetic physical attraction paired with clashes of will. If ego yields to love, this union builds invincible diamond strength.",
     "parameters": {
-      "emotional": 42,
-      "communication": 52,
-      "romance": 49,
-      "trust": 56,
-      "stability": 54,
-      "lifestyle": 44
+      "emotional": 44,
+      "communication": 54,
+      "romance": 51,
+      "trust": 58,
+      "stability": 56,
+      "lifestyle": 46
     },
     "elementSynergy": {
-      "title": "Fire & Water (Steam & Intense Chemistry)",
-      "text": "Extremely passionate and emotionally turbulent. Fire inspires Water to take bold leaps; Water teaches Fire the beauty of tender emotional depth."
+      "title": "Fire & Water (Steam & Intense Passion)",
+      "text": "Extremely passionate and emotionally turbulent. Fire inspires Water to take brave leaps; Water teaches Fire the beauty of quiet emotional vulnerability."
     },
-    "modalitySynergy": "Both Fixed: Unshakable loyalty and steadfast commitment. Practice active compromise to prevent stubborn standoffs.",
+    "modalitySynergy": "Both Fixed (Stabilizers): Unshakeable loyalty and rock-solid fidelity. Linda Goodman urged practicing gentle flexibility to resolve stubborn standoffs.",
     "strengths": [
       "Dynamic growth: Leo introduces Scorpio to new perspectives and vice versa.",
       "Engaging romantic chemistry where you never run out of intriguing things to discover about each other.",
@@ -2993,37 +3477,45 @@ const ZODIAC_PAIRS = {
       "Occasional friction over lifestyle pacing or decision-making speed."
     ],
     "tips": [
-      "Adopt the 24-hour cooling off rule during heated arguments before revisiting sensitive topics.",
-      "Remember that Scorpio communicates love in their own authentic dialect.",
-      "Celebrate your differences as unique strengths rather than flaws to be corrected."
+      "Adopt Linda Goodman's cooling-off principle during heated arguments before revisiting sensitive topics.",
+      "Remember that Scorpio communicates love in their own authentic elemental dialect.",
+      "Celebrate your differences as complementary superpowers rather than personal flaws."
     ],
     "celebrityCouples": "Celebrated Leo & Scorpio cosmic pairs",
     "genderAdvice": {
-      "male_female": "When a Leo man and a Scorpio woman unite, balancing his Mars/solar leadership with her emotional sanctuary fosters lasting harmony.",
-      "female_male": "When a Leo woman and a Scorpio man unite, celebrating her creative initiative while valuing his steadfast protection builds an unbreakable bond.",
-      "same_sex": "In a union between two souls with Leo and Scorpio energies, open communication and honoring personal autonomy keeps the romance deeply alive."
+      "male_female": "In Linda Goodman's Love Signs analysis of the Leo Man with the Scorpio Woman (4-10 Vibration): He expresses his masculine planetary energy through Sun, while she responds with Pluto & Mars grace. Success blooms when he honors her emotional sanctuary and she champions his purposeful ambitions.",
+      "female_male": "In Linda Goodman's Love Signs analysis of the Leo Woman with the Scorpio Man (4-10 Vibration): She brings Leo's radiant initiative to the union, while he offers Scorpio's steadfast anchor. When she trusts his protective strength and he respects her autonomy, their bond becomes unbreakable.",
+      "same_sex": "In Linda Goodman's cosmic synastry (4-10 Vibration): Two souls united under Leo and Scorpio celestial energies find harmony when honoring personal autonomy, balancing giving with receiving, and allowing their elemental natures to enrich each other."
     }
   },
   "leo_sagittarius": {
     "sign1": "leo",
     "sign2": "sagittarius",
-    "overallScore": 94,
+    "overallScore": 95,
     "colorCategory": "green",
     "shadeLabel": "Harmonious Union",
-    "aspectName": "Trine (Divine Soulmate Element)",
-    "headline": "Leo & Sagittarius: Effortless Harmony & Natural Soul Resonance",
-    "summary": "Sharing the same element (Fire-Fire, Earth-Earth, Air-Air, Water-Water) creates an instinctive, harmonious flow. You breathe the same spiritual air, understand each other's pacing, and feel deeply at home together.",
+    "aspectName": "5-9 Sun Sign Pattern (The Divine Cosmic Blessing)",
+    "vibrationCode": "5-9",
+    "lindaVibration": {
+      "code": "5-9",
+      "title": "5-9 Sun Sign Pattern (The Divine Cosmic Blessing)",
+      "theme": "Golden Trine, Soulmate Telepathy & Natural Sympathy",
+      "summary": "Linda Goodman's most celebrated synastry pattern! Sharing the same sacred element (Fire, Earth, Air, or Water) brings instant soul recognition. You forgive each other almost effortlessly, inspire each other's dreams, and enjoy an almost telepathic understanding.",
+      "karmicLesson": "Preserving sacred gratitude and avoiding taking your effortless soul harmony for granted."
+    },
+    "headline": "Leo & Sagittarius: Golden Trine, Soulmate Telepathy & Natural Sympathy",
+    "summary": "Linda Goodman's most celebrated synastry pattern! Sharing the same sacred element (Fire, Earth, Air, or Water) brings instant soul recognition. You forgive each other almost effortlessly, inspire each other's dreams, and enjoy an almost telepathic understanding.",
     "parameters": {
-      "emotional": 94,
-      "communication": 94,
+      "emotional": 95,
+      "communication": 95,
       "romance": 98,
-      "trust": 94,
-      "stability": 89,
+      "trust": 95,
+      "stability": 90,
       "lifestyle": 96
     },
     "elementSynergy": {
       "title": "Double Fire (Electric Blaze)",
-      "text": "Intense passion, shared ambition, and instant adrenaline. You fuel each other's dreams, but must ensure competitive sparks don't burn down emotional bridges."
+      "text": "As Linda Goodman observed, two Fire signs create immediate enthusiasm and dramatic warmth. You champion each other's boldness, but must take care that competitive sparks don't burn down tender feelings."
     },
     "modalitySynergy": "Fixed + Mutable: A balanced dynamic where one partner initiates, stabilizes, or provides adaptable perspective to the other.",
     "strengths": [
@@ -3042,40 +3534,48 @@ const ZODIAC_PAIRS = {
     ],
     "celebrityCouples": "Barack Obama (Leo) & Michelle Obama (Capricorn/Sagittarius cusp) / Jennifer Lopez & Ben Affleck",
     "genderAdvice": {
-      "male_female": "When a Leo man and a Sagittarius woman unite, balancing his Mars/solar leadership with her emotional sanctuary fosters lasting harmony.",
-      "female_male": "When a Leo woman and a Sagittarius man unite, celebrating her creative initiative while valuing his steadfast protection builds an unbreakable bond.",
-      "same_sex": "In a union between two souls with Leo and Sagittarius energies, open communication and honoring personal autonomy keeps the romance deeply alive."
+      "male_female": "In Linda Goodman's Love Signs analysis of the Leo Man with the Sagittarius Woman (5-9 Vibration): He expresses his masculine planetary energy through Sun, while she responds with Jupiter grace. Success blooms when he honors her emotional sanctuary and she champions his purposeful ambitions.",
+      "female_male": "In Linda Goodman's Love Signs analysis of the Leo Woman with the Sagittarius Man (5-9 Vibration): She brings Leo's radiant initiative to the union, while he offers Sagittarius's steadfast anchor. When she trusts his protective strength and he respects her autonomy, their bond becomes unbreakable.",
+      "same_sex": "In Linda Goodman's cosmic synastry (5-9 Vibration): Two souls united under Leo and Sagittarius celestial energies find harmony when honoring personal autonomy, balancing giving with receiving, and allowing their elemental natures to enrich each other."
     }
   },
   "leo_capricorn": {
     "sign1": "leo",
     "sign2": "capricorn",
-    "overallScore": 46,
+    "overallScore": 48,
     "colorCategory": "red",
     "shadeLabel": "Growth Challenge",
-    "aspectName": "Quincunx (Mysterious Intrigue & Karmic Adjustment)",
-    "headline": "Leo & Capricorn: Enigmatic Attraction Demanding Patience",
-    "summary": "Separated by five signs, you have little in common astrologically, which creates an intriguing magnetic mystery. Succeeding together requires appreciating your partner's entirely unique perspective on life.",
+    "aspectName": "6-8 Sun Sign Pattern (Karmic Mystery & Devoted Service)",
+    "vibrationCode": "6-8",
+    "lindaVibration": {
+      "code": "6-8",
+      "title": "6-8 Sun Sign Pattern (Karmic Mystery & Devoted Service)",
+      "theme": "Enigmatic Fascination, Hypnotic Pull & Karmic Duty",
+      "summary": "According to Linda Goodman, the 6-8 quincunx vibration is cloaked in hypnotic fascination and karmic debt. One partner feels drawn to serve, protect, or nurture the other, generating deep emotional or physical magnetism that requires profound patience to untangle.",
+      "karmicLesson": "Practicing unconditional love free from selfish demands, embracing differences that cannot be logically explained."
+    },
+    "headline": "Leo & Capricorn: Enigmatic Fascination, Hypnotic Pull & Karmic Duty",
+    "summary": "According to Linda Goodman, the 6-8 quincunx vibration is cloaked in hypnotic fascination and karmic debt. One partner feels drawn to serve, protect, or nurture the other, generating deep emotional or physical magnetism that requires profound patience to untangle.",
     "parameters": {
-      "emotional": 44,
-      "communication": 46,
-      "romance": 43,
-      "trust": 46,
-      "stability": 48,
-      "lifestyle": 38
+      "emotional": 46,
+      "communication": 48,
+      "romance": 45,
+      "trust": 48,
+      "stability": 50,
+      "lifestyle": 40
     },
     "elementSynergy": {
       "title": "Fire & Earth (Hearthstone Fire)",
-      "text": "Fire provides creative energy and visionary boldness; Earth builds the practical structures to turn those visions into reality."
+      "text": "Fire provides creative courage and solar warmth; Earth builds the practical structures to turn those visions into lasting wealth and security."
     },
     "modalitySynergy": "Fixed + Cardinal: A balanced dynamic where one partner initiates, stabilizes, or provides adaptable perspective to the other.",
     "strengths": [
-      "Powerful karmic pull that pushes both individuals to mature emotionally.",
+      "Powerful karmic pull that pushes both souls to mature emotionally and spiritually.",
       "Unforgettable chemistry and passion born from sheer elemental contrast.",
       "Opportunity to develop immense patience, empathy, and unconditional love."
     ],
     "challenges": [
-      "Fundamental contrast in priorities: Leo's instinctual approach may confuse Capricorn.",
+      "Fundamental contrast in priorities: Leo's instinctual approach may baffle Capricorn.",
       "Tendency to misinterpret your partner's need for space or emotional expression."
     ],
     "tips": [
@@ -3085,33 +3585,41 @@ const ZODIAC_PAIRS = {
     ],
     "celebrityCouples": "Celebrated Leo & Capricorn cosmic pairs",
     "genderAdvice": {
-      "male_female": "When a Leo man and a Capricorn woman unite, balancing his Mars/solar leadership with her emotional sanctuary fosters lasting harmony.",
-      "female_male": "When a Leo woman and a Capricorn man unite, celebrating her creative initiative while valuing his steadfast protection builds an unbreakable bond.",
-      "same_sex": "In a union between two souls with Leo and Capricorn energies, open communication and honoring personal autonomy keeps the romance deeply alive."
+      "male_female": "In Linda Goodman's Love Signs analysis of the Leo Man with the Capricorn Woman (6-8 Vibration): He expresses his masculine planetary energy through Sun, while she responds with Saturn grace. Success blooms when he honors her emotional sanctuary and she champions his purposeful ambitions.",
+      "female_male": "In Linda Goodman's Love Signs analysis of the Leo Woman with the Capricorn Man (6-8 Vibration): She brings Leo's radiant initiative to the union, while he offers Capricorn's steadfast anchor. When she trusts his protective strength and he respects her autonomy, their bond becomes unbreakable.",
+      "same_sex": "In Linda Goodman's cosmic synastry (6-8 Vibration): Two souls united under Leo and Capricorn celestial energies find harmony when honoring personal autonomy, balancing giving with receiving, and allowing their elemental natures to enrich each other."
     }
   },
   "leo_aquarius": {
     "sign1": "leo",
     "sign2": "aquarius",
-    "overallScore": 80,
+    "overallScore": 82,
     "colorCategory": "green",
     "shadeLabel": "Harmonious Union",
-    "aspectName": "Opposition (Cosmic Magnetism & Polar Balance)",
-    "headline": "Leo & Aquarius: Magnetic Attraction & Yin-Yang Balance",
-    "summary": "Sitting 180\u00b0 across the zodiac wheel, you are polar opposites. What one lacks, the other possesses in abundance. The chemistry is electric, offering the potential to form an unbeatable yin-and-yang partnership.",
+    "aspectName": "7-7 Sun Sign Pattern (Polar Magnetism & Cosmic Complements)",
+    "vibrationCode": "7-7",
+    "lindaVibration": {
+      "code": "7-7",
+      "title": "7-7 Sun Sign Pattern (Polar Magnetism & Cosmic Complements)",
+      "theme": "Opposites Attract, Celestial Electricity & Yin-Yang Balance",
+      "summary": "Sitting 180\u00b0 opposite on the zodiac wheel, Linda Goodman saw the 7-7 vibration as two halves of a single soul. What one lacks, the other possesses in abundance. It generates high romantic voltage: either a magnificent lifelong union or an explosive standoff.",
+      "karmicLesson": "Finding wholeness through merging opposite qualities into a unified, harmonious whole."
+    },
+    "headline": "Leo & Aquarius: Opposites Attract, Celestial Electricity & Yin-Yang Balance",
+    "summary": "Sitting 180\u00b0 opposite on the zodiac wheel, Linda Goodman saw the 7-7 vibration as two halves of a single soul. What one lacks, the other possesses in abundance. It generates high romantic voltage: either a magnificent lifelong union or an explosive standoff.",
     "parameters": {
-      "emotional": 78,
-      "communication": 84,
-      "romance": 86,
-      "trust": 84,
-      "stability": 82,
-      "lifestyle": 80
+      "emotional": 80,
+      "communication": 86,
+      "romance": 88,
+      "trust": 86,
+      "stability": 84,
+      "lifestyle": 82
     },
     "elementSynergy": {
-      "title": "Fire & Air (Inspirational Catalyst)",
-      "text": "Air fuels Fire's passion, while Fire brings warmth and bold action to Air's inventive ideas. An exciting, socially vibrant union."
+      "title": "Fire & Air (Inspirational Breeze)",
+      "text": "Air fans Fire's flames into glorious creative radiance, while Fire warms Air's visionary ideals into bold reality. An exciting, intellectually vibrant union."
     },
-    "modalitySynergy": "Both Fixed: Unshakable loyalty and steadfast commitment. Practice active compromise to prevent stubborn standoffs.",
+    "modalitySynergy": "Both Fixed (Stabilizers): Unshakeable loyalty and rock-solid fidelity. Linda Goodman urged practicing gentle flexibility to resolve stubborn standoffs.",
     "strengths": [
       "Natural understanding: Leo and Aquarius instinctively comprehend each other's core motivations.",
       "Complimentary emotional rhythms that make daily life and domestic partnership feel comforting and safe.",
@@ -3128,40 +3636,48 @@ const ZODIAC_PAIRS = {
     ],
     "celebrityCouples": "Ashton Kutcher (Aquarius) & Mila Kunis (Leo)",
     "genderAdvice": {
-      "male_female": "When a Leo man and a Aquarius woman unite, balancing his Mars/solar leadership with her emotional sanctuary fosters lasting harmony.",
-      "female_male": "When a Leo woman and a Aquarius man unite, celebrating her creative initiative while valuing his steadfast protection builds an unbreakable bond.",
-      "same_sex": "In a union between two souls with Leo and Aquarius energies, open communication and honoring personal autonomy keeps the romance deeply alive."
+      "male_female": "In Linda Goodman's Love Signs analysis of the Leo Man with the Aquarius Woman (7-7 Vibration): He expresses his masculine planetary energy through Sun, while she responds with Uranus & Saturn grace. Success blooms when he honors her emotional sanctuary and she champions his purposeful ambitions.",
+      "female_male": "In Linda Goodman's Love Signs analysis of the Leo Woman with the Aquarius Man (7-7 Vibration): She brings Leo's radiant initiative to the union, while he offers Aquarius's steadfast anchor. When she trusts his protective strength and he respects her autonomy, their bond becomes unbreakable.",
+      "same_sex": "In Linda Goodman's cosmic synastry (7-7 Vibration): Two souls united under Leo and Aquarius celestial energies find harmony when honoring personal autonomy, balancing giving with receiving, and allowing their elemental natures to enrich each other."
     }
   },
   "leo_pisces": {
     "sign1": "leo",
     "sign2": "pisces",
-    "overallScore": 46,
+    "overallScore": 48,
     "colorCategory": "red",
     "shadeLabel": "Growth Challenge",
-    "aspectName": "Quincunx (Mysterious Intrigue & Karmic Adjustment)",
-    "headline": "Leo & Pisces: Enigmatic Attraction Demanding Patience",
-    "summary": "Separated by five signs, you have little in common astrologically, which creates an intriguing magnetic mystery. Succeeding together requires appreciating your partner's entirely unique perspective on life.",
+    "aspectName": "6-8 Sun Sign Pattern (Karmic Mystery & Devoted Service)",
+    "vibrationCode": "6-8",
+    "lindaVibration": {
+      "code": "6-8",
+      "title": "6-8 Sun Sign Pattern (Karmic Mystery & Devoted Service)",
+      "theme": "Enigmatic Fascination, Hypnotic Pull & Karmic Duty",
+      "summary": "According to Linda Goodman, the 6-8 quincunx vibration is cloaked in hypnotic fascination and karmic debt. One partner feels drawn to serve, protect, or nurture the other, generating deep emotional or physical magnetism that requires profound patience to untangle.",
+      "karmicLesson": "Practicing unconditional love free from selfish demands, embracing differences that cannot be logically explained."
+    },
+    "headline": "Leo & Pisces: Enigmatic Fascination, Hypnotic Pull & Karmic Duty",
+    "summary": "According to Linda Goodman, the 6-8 quincunx vibration is cloaked in hypnotic fascination and karmic debt. One partner feels drawn to serve, protect, or nurture the other, generating deep emotional or physical magnetism that requires profound patience to untangle.",
     "parameters": {
       "emotional": 40,
-      "communication": 46,
-      "romance": 43,
-      "trust": 46,
-      "stability": 48,
-      "lifestyle": 38
+      "communication": 48,
+      "romance": 45,
+      "trust": 48,
+      "stability": 50,
+      "lifestyle": 40
     },
     "elementSynergy": {
-      "title": "Fire & Water (Steam & Intense Chemistry)",
-      "text": "Extremely passionate and emotionally turbulent. Fire inspires Water to take bold leaps; Water teaches Fire the beauty of tender emotional depth."
+      "title": "Fire & Water (Steam & Intense Passion)",
+      "text": "Extremely passionate and emotionally turbulent. Fire inspires Water to take brave leaps; Water teaches Fire the beauty of quiet emotional vulnerability."
     },
     "modalitySynergy": "Fixed + Mutable: A balanced dynamic where one partner initiates, stabilizes, or provides adaptable perspective to the other.",
     "strengths": [
-      "Powerful karmic pull that pushes both individuals to mature emotionally.",
+      "Powerful karmic pull that pushes both souls to mature emotionally and spiritually.",
       "Unforgettable chemistry and passion born from sheer elemental contrast.",
       "Opportunity to develop immense patience, empathy, and unconditional love."
     ],
     "challenges": [
-      "Fundamental contrast in priorities: Leo's instinctual approach may confuse Pisces.",
+      "Fundamental contrast in priorities: Leo's instinctual approach may baffle Pisces.",
       "Tendency to misinterpret your partner's need for space or emotional expression."
     ],
     "tips": [
@@ -3171,40 +3687,48 @@ const ZODIAC_PAIRS = {
     ],
     "celebrityCouples": "Celebrated Leo & Pisces cosmic pairs",
     "genderAdvice": {
-      "male_female": "When a Leo man and a Pisces woman unite, balancing his Mars/solar leadership with her emotional sanctuary fosters lasting harmony.",
-      "female_male": "When a Leo woman and a Pisces man unite, celebrating her creative initiative while valuing his steadfast protection builds an unbreakable bond.",
-      "same_sex": "In a union between two souls with Leo and Pisces energies, open communication and honoring personal autonomy keeps the romance deeply alive."
+      "male_female": "In Linda Goodman's Love Signs analysis of the Leo Man with the Pisces Woman (6-8 Vibration): He expresses his masculine planetary energy through Sun, while she responds with Neptune & Jupiter grace. Success blooms when he honors her emotional sanctuary and she champions his purposeful ambitions.",
+      "female_male": "In Linda Goodman's Love Signs analysis of the Leo Woman with the Pisces Man (6-8 Vibration): She brings Leo's radiant initiative to the union, while he offers Pisces's steadfast anchor. When she trusts his protective strength and he respects her autonomy, their bond becomes unbreakable.",
+      "same_sex": "In Linda Goodman's cosmic synastry (6-8 Vibration): Two souls united under Leo and Pisces celestial energies find harmony when honoring personal autonomy, balancing giving with receiving, and allowing their elemental natures to enrich each other."
     }
   },
   "virgo_aries": {
     "sign1": "virgo",
     "sign2": "aries",
-    "overallScore": 46,
+    "overallScore": 48,
     "colorCategory": "red",
     "shadeLabel": "Growth Challenge",
-    "aspectName": "Quincunx (Mysterious Intrigue & Karmic Adjustment)",
-    "headline": "Virgo & Aries: Enigmatic Attraction Demanding Patience",
-    "summary": "Separated by five signs, you have little in common astrologically, which creates an intriguing magnetic mystery. Succeeding together requires appreciating your partner's entirely unique perspective on life.",
+    "aspectName": "6-8 Sun Sign Pattern (Karmic Mystery & Devoted Service)",
+    "vibrationCode": "6-8",
+    "lindaVibration": {
+      "code": "6-8",
+      "title": "6-8 Sun Sign Pattern (Karmic Mystery & Devoted Service)",
+      "theme": "Enigmatic Fascination, Hypnotic Pull & Karmic Duty",
+      "summary": "According to Linda Goodman, the 6-8 quincunx vibration is cloaked in hypnotic fascination and karmic debt. One partner feels drawn to serve, protect, or nurture the other, generating deep emotional or physical magnetism that requires profound patience to untangle.",
+      "karmicLesson": "Practicing unconditional love free from selfish demands, embracing differences that cannot be logically explained."
+    },
+    "headline": "Virgo & Aries: Enigmatic Fascination, Hypnotic Pull & Karmic Duty",
+    "summary": "According to Linda Goodman, the 6-8 quincunx vibration is cloaked in hypnotic fascination and karmic debt. One partner feels drawn to serve, protect, or nurture the other, generating deep emotional or physical magnetism that requires profound patience to untangle.",
     "parameters": {
-      "emotional": 44,
-      "communication": 49,
-      "romance": 43,
-      "trust": 46,
-      "stability": 45,
-      "lifestyle": 38
+      "emotional": 46,
+      "communication": 51,
+      "romance": 45,
+      "trust": 48,
+      "stability": 47,
+      "lifestyle": 40
     },
     "elementSynergy": {
       "title": "Fire & Earth (Hearthstone Fire)",
-      "text": "Fire provides creative energy and visionary boldness; Earth builds the practical structures to turn those visions into reality."
+      "text": "Fire provides creative courage and solar warmth; Earth builds the practical structures to turn those visions into lasting wealth and security."
     },
     "modalitySynergy": "Mutable + Cardinal: A balanced dynamic where one partner initiates, stabilizes, or provides adaptable perspective to the other.",
     "strengths": [
-      "Powerful karmic pull that pushes both individuals to mature emotionally.",
+      "Powerful karmic pull that pushes both souls to mature emotionally and spiritually.",
       "Unforgettable chemistry and passion born from sheer elemental contrast.",
       "Opportunity to develop immense patience, empathy, and unconditional love."
     ],
     "challenges": [
-      "Fundamental contrast in priorities: Virgo's instinctual approach may confuse Aries.",
+      "Fundamental contrast in priorities: Virgo's instinctual approach may baffle Aries.",
       "Tendency to misinterpret your partner's need for space or emotional expression."
     ],
     "tips": [
@@ -3214,31 +3738,39 @@ const ZODIAC_PAIRS = {
     ],
     "celebrityCouples": "Celebrated Virgo & Aries cosmic pairs",
     "genderAdvice": {
-      "male_female": "When a Virgo man and a Aries woman unite, balancing his Mars/solar leadership with her emotional sanctuary fosters lasting harmony.",
-      "female_male": "When a Virgo woman and a Aries man unite, celebrating her creative initiative while valuing his steadfast protection builds an unbreakable bond.",
-      "same_sex": "In a union between two souls with Virgo and Aries energies, open communication and honoring personal autonomy keeps the romance deeply alive."
+      "male_female": "In Linda Goodman's Love Signs analysis of the Virgo Man with the Aries Woman (6-8 Vibration): He expresses his masculine planetary energy through Mercury, while she responds with Mars grace. Success blooms when he honors her emotional sanctuary and she champions his purposeful ambitions.",
+      "female_male": "In Linda Goodman's Love Signs analysis of the Virgo Woman with the Aries Man (6-8 Vibration): She brings Virgo's radiant initiative to the union, while he offers Aries's steadfast anchor. When she trusts his protective strength and he respects her autonomy, their bond becomes unbreakable.",
+      "same_sex": "In Linda Goodman's cosmic synastry (6-8 Vibration): Two souls united under Virgo and Aries celestial energies find harmony when honoring personal autonomy, balancing giving with receiving, and allowing their elemental natures to enrich each other."
     }
   },
   "virgo_taurus": {
     "sign1": "virgo",
     "sign2": "taurus",
-    "overallScore": 96,
+    "overallScore": 97,
     "colorCategory": "green",
     "shadeLabel": "Harmonious Union",
-    "aspectName": "Trine (Divine Soulmate Element)",
-    "headline": "Virgo & Taurus: Effortless Harmony & Natural Soul Resonance",
-    "summary": "Sharing the same element (Fire-Fire, Earth-Earth, Air-Air, Water-Water) creates an instinctive, harmonious flow. You breathe the same spiritual air, understand each other's pacing, and feel deeply at home together.",
+    "aspectName": "5-9 Sun Sign Pattern (The Divine Cosmic Blessing)",
+    "vibrationCode": "5-9",
+    "lindaVibration": {
+      "code": "5-9",
+      "title": "5-9 Sun Sign Pattern (The Divine Cosmic Blessing)",
+      "theme": "Golden Trine, Soulmate Telepathy & Natural Sympathy",
+      "summary": "Linda Goodman's most celebrated synastry pattern! Sharing the same sacred element (Fire, Earth, Air, or Water) brings instant soul recognition. You forgive each other almost effortlessly, inspire each other's dreams, and enjoy an almost telepathic understanding.",
+      "karmicLesson": "Preserving sacred gratitude and avoiding taking your effortless soul harmony for granted."
+    },
+    "headline": "Virgo & Taurus: Golden Trine, Soulmate Telepathy & Natural Sympathy",
+    "summary": "Linda Goodman's most celebrated synastry pattern! Sharing the same sacred element (Fire, Earth, Air, or Water) brings instant soul recognition. You forgive each other almost effortlessly, inspire each other's dreams, and enjoy an almost telepathic understanding.",
     "parameters": {
-      "emotional": 96,
+      "emotional": 97,
       "communication": 94,
-      "romance": 93,
+      "romance": 94,
       "trust": 98,
       "stability": 98,
       "lifestyle": 96
     },
     "elementSynergy": {
-      "title": "Double Earth (Unshakeable Foundation)",
-      "text": "Deep practical grounding, financial prudence, and rock-solid loyalty. You build lasting wealth and a cozy empire together."
+      "title": "Double Earth (Unshakeable Bedrock)",
+      "text": "Linda Goodman praised double Earth as the rock of domestic security. You share common respect for practical honesty, financial prudence, and building a cozy, enduring haven."
     },
     "modalitySynergy": "Mutable + Fixed: A balanced dynamic where one partner initiates, stabilizes, or provides adaptable perspective to the other.",
     "strengths": [
@@ -3257,33 +3789,41 @@ const ZODIAC_PAIRS = {
     ],
     "celebrityCouples": "Celebrated Virgo & Taurus cosmic pairs",
     "genderAdvice": {
-      "male_female": "When a Virgo man and a Taurus woman unite, balancing his Mars/solar leadership with her emotional sanctuary fosters lasting harmony.",
-      "female_male": "When a Virgo woman and a Taurus man unite, celebrating her creative initiative while valuing his steadfast protection builds an unbreakable bond.",
-      "same_sex": "In a union between two souls with Virgo and Taurus energies, open communication and honoring personal autonomy keeps the romance deeply alive."
+      "male_female": "In Linda Goodman's Love Signs analysis of the Virgo Man with the Taurus Woman (5-9 Vibration): He expresses his masculine planetary energy through Mercury, while she responds with Venus grace. Success blooms when he honors her emotional sanctuary and she champions his purposeful ambitions.",
+      "female_male": "In Linda Goodman's Love Signs analysis of the Virgo Woman with the Taurus Man (5-9 Vibration): She brings Virgo's radiant initiative to the union, while he offers Taurus's steadfast anchor. When she trusts his protective strength and he respects her autonomy, their bond becomes unbreakable.",
+      "same_sex": "In Linda Goodman's cosmic synastry (5-9 Vibration): Two souls united under Virgo and Taurus celestial energies find harmony when honoring personal autonomy, balancing giving with receiving, and allowing their elemental natures to enrich each other."
     }
   },
   "virgo_gemini": {
     "sign1": "virgo",
     "sign2": "gemini",
-    "overallScore": 52,
+    "overallScore": 54,
     "colorCategory": "amber",
     "shadeLabel": "Dynamic Potential",
-    "aspectName": "Square (Passionate Friction & Dynamic Growth)",
-    "headline": "Virgo & Gemini: Electrifying Spark with Creative Challenge",
-    "summary": "Signs at a 90\u00b0 square share the same modality but clash elementally. This generates high attraction, intense emotional chemistry, and spirited debates that demand conscious diplomacy and mutual compromise.",
+    "aspectName": "4-10 Sun Sign Pattern (The Karmic Challenge & Crucible)",
+    "vibrationCode": "4-10",
+    "lindaVibration": {
+      "code": "4-10",
+      "title": "4-10 Sun Sign Pattern (The Karmic Challenge & Crucible)",
+      "theme": "Passionate Friction, Dramatic Chemistry & Soul Crucible",
+      "summary": "Linda Goodman described the 4-10 square vibration as the classic crucible of soul growth. Sharing the same modality but differing elements produces magnetic physical attraction paired with clashes of will. If ego yields to love, this union builds invincible diamond strength.",
+      "karmicLesson": "Transcending stubborn pride and mastering the noble art of sacrificial compromise."
+    },
+    "headline": "Virgo & Gemini: Passionate Friction, Dramatic Chemistry & Soul Crucible",
+    "summary": "Linda Goodman described the 4-10 square vibration as the classic crucible of soul growth. Sharing the same modality but differing elements produces magnetic physical attraction paired with clashes of will. If ego yields to love, this union builds invincible diamond strength.",
     "parameters": {
-      "emotional": 50,
-      "communication": 47,
-      "romance": 49,
-      "trust": 46,
-      "stability": 51,
-      "lifestyle": 44
+      "emotional": 52,
+      "communication": 49,
+      "romance": 51,
+      "trust": 48,
+      "stability": 53,
+      "lifestyle": 46
     },
     "elementSynergy": {
       "title": "Earth & Air (Pragmatic Strategy)",
-      "text": "Earth brings tangible discipline and organization; Air brings innovative ideas and sparkling conversational agility."
+      "text": "Earth brings tangible structure and sensible order; Air introduces inventive concepts and conversational sparkle. Mutual appreciation bridges different tempos."
     },
-    "modalitySynergy": "Both Mutable: High flexibility, continuous laughter, and easy adaptability. Anchor your connection with structured routines.",
+    "modalitySynergy": "Both Mutable (Adaptable): Continuous mental agility, laughter, and easy flexibility. Anchor your connection with grounding domestic routines.",
     "strengths": [
       "Dynamic growth: Virgo introduces Gemini to new perspectives and vice versa.",
       "Engaging romantic chemistry where you never run out of intriguing things to discover about each other.",
@@ -3294,37 +3834,45 @@ const ZODIAC_PAIRS = {
       "Occasional friction over lifestyle pacing or decision-making speed."
     ],
     "tips": [
-      "Adopt the 24-hour cooling off rule during heated arguments before revisiting sensitive topics.",
-      "Remember that Gemini communicates love in their own authentic dialect.",
-      "Celebrate your differences as unique strengths rather than flaws to be corrected."
+      "Adopt Linda Goodman's cooling-off principle during heated arguments before revisiting sensitive topics.",
+      "Remember that Gemini communicates love in their own authentic elemental dialect.",
+      "Celebrate your differences as complementary superpowers rather than personal flaws."
     ],
     "celebrityCouples": "Celebrated Virgo & Gemini cosmic pairs",
     "genderAdvice": {
-      "male_female": "When a Virgo man and a Gemini woman unite, balancing his Mars/solar leadership with her emotional sanctuary fosters lasting harmony.",
-      "female_male": "When a Virgo woman and a Gemini man unite, celebrating her creative initiative while valuing his steadfast protection builds an unbreakable bond.",
-      "same_sex": "In a union between two souls with Virgo and Gemini energies, open communication and honoring personal autonomy keeps the romance deeply alive."
+      "male_female": "In Linda Goodman's Love Signs analysis of the Virgo Man with the Gemini Woman (4-10 Vibration): He expresses his masculine planetary energy through Mercury, while she responds with Mercury grace. Success blooms when he honors her emotional sanctuary and she champions his purposeful ambitions.",
+      "female_male": "In Linda Goodman's Love Signs analysis of the Virgo Woman with the Gemini Man (4-10 Vibration): She brings Virgo's radiant initiative to the union, while he offers Gemini's steadfast anchor. When she trusts his protective strength and he respects her autonomy, their bond becomes unbreakable.",
+      "same_sex": "In Linda Goodman's cosmic synastry (4-10 Vibration): Two souls united under Virgo and Gemini celestial energies find harmony when honoring personal autonomy, balancing giving with receiving, and allowing their elemental natures to enrich each other."
     }
   },
   "virgo_cancer": {
     "sign1": "virgo",
     "sign2": "cancer",
-    "overallScore": 86,
+    "overallScore": 88,
     "colorCategory": "green",
     "shadeLabel": "Harmonious Union",
-    "aspectName": "Sextile (Harmonious Elemental Flow)",
-    "headline": "Virgo & Cancer: Stimulating Synergy & Easy Friendship",
-    "summary": "Your elements naturally complement each other (Fire invigorates Air, or Water nourishes Earth). Communication flows effortlessly, laughter comes easily, and mutual respect flourishes.",
+    "aspectName": "3-11 Sun Sign Pattern (Karmic Friends & Sympathetic Lovers)",
+    "vibrationCode": "3-11",
+    "lindaVibration": {
+      "code": "3-11",
+      "title": "3-11 Sun Sign Pattern (Karmic Friends & Sympathetic Lovers)",
+      "theme": "Enduring Camaraderie, Easy Forgiveness & High Devotion",
+      "summary": "Linda Goodman considered the 3-11 vibration one of the happiest and most enduring in the cosmos. Your signs form a natural sextile of friendship. Even through intense misunderstandings, 3-11 lovers remain steadfast allies, quick to forgive and eager to laugh.",
+      "karmicLesson": "Nurturing lifelong loyalty, humanitarian generosity, and effortless mutual forgiveness."
+    },
+    "headline": "Virgo & Cancer: Enduring Camaraderie, Easy Forgiveness & High Devotion",
+    "summary": "Linda Goodman considered the 3-11 vibration one of the happiest and most enduring in the cosmos. Your signs form a natural sextile of friendship. Even through intense misunderstandings, 3-11 lovers remain steadfast allies, quick to forgive and eager to laugh.",
     "parameters": {
-      "emotional": 88,
-      "communication": 89,
-      "romance": 88,
-      "trust": 91,
-      "stability": 92,
-      "lifestyle": 86
+      "emotional": 90,
+      "communication": 91,
+      "romance": 90,
+      "trust": 93,
+      "stability": 94,
+      "lifestyle": 88
     },
     "elementSynergy": {
       "title": "Earth & Water (Fertile Nurturing)",
-      "text": "Water softens Earth with empathy and emotion; Earth provides Water with steady shores of stability. A classic recipe for enduring married happiness."
+      "text": "Water softens Earth with tender emotional empathy; Earth provides Water with comforting shores of physical stability. A classic recipe for a thriving, enduring marriage."
     },
     "modalitySynergy": "Mutable + Cardinal: A balanced dynamic where one partner initiates, stabilizes, or provides adaptable perspective to the other.",
     "strengths": [
@@ -3343,31 +3891,39 @@ const ZODIAC_PAIRS = {
     ],
     "celebrityCouples": "Celebrated Virgo & Cancer cosmic pairs",
     "genderAdvice": {
-      "male_female": "When a Virgo man and a Cancer woman unite, balancing his Mars/solar leadership with her emotional sanctuary fosters lasting harmony.",
-      "female_male": "When a Virgo woman and a Cancer man unite, celebrating her creative initiative while valuing his steadfast protection builds an unbreakable bond.",
-      "same_sex": "In a union between two souls with Virgo and Cancer energies, open communication and honoring personal autonomy keeps the romance deeply alive."
+      "male_female": "In Linda Goodman's Love Signs analysis of the Virgo Man with the Cancer Woman (3-11 Vibration): He expresses his masculine planetary energy through Mercury, while she responds with Moon grace. Success blooms when he honors her emotional sanctuary and she champions his purposeful ambitions.",
+      "female_male": "In Linda Goodman's Love Signs analysis of the Virgo Woman with the Cancer Man (3-11 Vibration): She brings Virgo's radiant initiative to the union, while he offers Cancer's steadfast anchor. When she trusts his protective strength and he respects her autonomy, their bond becomes unbreakable.",
+      "same_sex": "In Linda Goodman's cosmic synastry (3-11 Vibration): Two souls united under Virgo and Cancer celestial energies find harmony when honoring personal autonomy, balancing giving with receiving, and allowing their elemental natures to enrich each other."
     }
   },
   "virgo_leo": {
     "sign1": "virgo",
     "sign2": "leo",
-    "overallScore": 62,
+    "overallScore": 64,
     "colorCategory": "amber",
     "shadeLabel": "Dynamic Potential",
-    "aspectName": "Semisextile (Neighboring Contrast)",
-    "headline": "Virgo & Leo: Complementary Growth & Mutual Learning",
-    "summary": "As neighboring signs, you operate from contrasting elemental perspectives. This match creates a learning journey where each partner expands the other's horizons if patience is practiced.",
+    "aspectName": "2-12 Sun Sign Pattern (The Karmic Teacher & Pupil)",
+    "vibrationCode": "2-12",
+    "lindaVibration": {
+      "code": "2-12",
+      "title": "2-12 Sun Sign Pattern (The Karmic Teacher & Pupil)",
+      "theme": "Karmic Learning, Compassion & Gentle Tutoring",
+      "summary": "According to Linda Goodman, the 2-12 vibration signifies that one sign has spiritually passed through the other's grade in the cosmic school. There is a deep, unspoken bond of patience, protection, and gentle tutoring. Tolerating different pacing unlocks profound mutual growth.",
+      "karmicLesson": "Bridging contrasting elemental perspectives through patient compassion and secret mutual admiration."
+    },
+    "headline": "Virgo & Leo: Karmic Learning, Compassion & Gentle Tutoring",
+    "summary": "According to Linda Goodman, the 2-12 vibration signifies that one sign has spiritually passed through the other's grade in the cosmic school. There is a deep, unspoken bond of patience, protection, and gentle tutoring. Tolerating different pacing unlocks profound mutual growth.",
     "parameters": {
-      "emotional": 60,
-      "communication": 65,
-      "romance": 59,
-      "trust": 62,
-      "stability": 64,
-      "lifestyle": 62
+      "emotional": 62,
+      "communication": 67,
+      "romance": 61,
+      "trust": 64,
+      "stability": 66,
+      "lifestyle": 64
     },
     "elementSynergy": {
       "title": "Fire & Earth (Hearthstone Fire)",
-      "text": "Fire provides creative energy and visionary boldness; Earth builds the practical structures to turn those visions into reality."
+      "text": "Fire provides creative courage and solar warmth; Earth builds the practical structures to turn those visions into lasting wealth and security."
     },
     "modalitySynergy": "Mutable + Fixed: A balanced dynamic where one partner initiates, stabilizes, or provides adaptable perspective to the other.",
     "strengths": [
@@ -3380,15 +3936,15 @@ const ZODIAC_PAIRS = {
       "Occasional friction over lifestyle pacing or decision-making speed."
     ],
     "tips": [
-      "Adopt the 24-hour cooling off rule during heated arguments before revisiting sensitive topics.",
-      "Remember that Leo communicates love in their own authentic dialect.",
-      "Celebrate your differences as unique strengths rather than flaws to be corrected."
+      "Adopt Linda Goodman's cooling-off principle during heated arguments before revisiting sensitive topics.",
+      "Remember that Leo communicates love in their own authentic elemental dialect.",
+      "Celebrate your differences as complementary superpowers rather than personal flaws."
     ],
     "celebrityCouples": "Celebrated Virgo & Leo cosmic pairs",
     "genderAdvice": {
-      "male_female": "When a Virgo man and a Leo woman unite, balancing his Mars/solar leadership with her emotional sanctuary fosters lasting harmony.",
-      "female_male": "When a Virgo woman and a Leo man unite, celebrating her creative initiative while valuing his steadfast protection builds an unbreakable bond.",
-      "same_sex": "In a union between two souls with Virgo and Leo energies, open communication and honoring personal autonomy keeps the romance deeply alive."
+      "male_female": "In Linda Goodman's Love Signs analysis of the Virgo Man with the Leo Woman (2-12 Vibration): He expresses his masculine planetary energy through Mercury, while she responds with Sun grace. Success blooms when he honors her emotional sanctuary and she champions his purposeful ambitions.",
+      "female_male": "In Linda Goodman's Love Signs analysis of the Virgo Woman with the Leo Man (2-12 Vibration): She brings Virgo's radiant initiative to the union, while he offers Leo's steadfast anchor. When she trusts his protective strength and he respects her autonomy, their bond becomes unbreakable.",
+      "same_sex": "In Linda Goodman's cosmic synastry (2-12 Vibration): Two souls united under Virgo and Leo celestial energies find harmony when honoring personal autonomy, balancing giving with receiving, and allowing their elemental natures to enrich each other."
     }
   },
   "virgo_virgo": {
@@ -3397,9 +3953,17 @@ const ZODIAC_PAIRS = {
     "overallScore": 82,
     "colorCategory": "green",
     "shadeLabel": "Harmonious Union",
-    "aspectName": "Conjunction (Mirror Alignment)",
-    "headline": "Virgo & Virgo: Deep Mirror Empathy & Shared Instincts",
-    "summary": "Sharing the exact same sun sign gives you an instinctual understanding of each other's drives and vulnerabilities. You understand each other's moods intuitively, though you must guard against magnifying shared blind spots.",
+    "aspectName": "1-1 Sun Sign Pattern (The Cosmic Mirror)",
+    "vibrationCode": "1-1",
+    "lindaVibration": {
+      "code": "1-1",
+      "title": "1-1 Sun Sign Pattern (The Cosmic Mirror)",
+      "theme": "Mirror Empathy & Double Ego Reflection",
+      "summary": "In Linda Goodman's Love Signs, the 1-1 vibration is like gazing directly into an astrological mirror. You recognize each other's hidden virtues and deepest faults instantly. This creates profound telepathic empathy, but both partners must guard against magnifying identical blind spots.",
+      "karmicLesson": "Cultivating emotional humility and learning self-acceptance through observing your own nature reflected in your mate."
+    },
+    "headline": "Virgo & Virgo: Mirror Empathy & Double Ego Reflection",
+    "summary": "In Linda Goodman's Love Signs, the 1-1 vibration is like gazing directly into an astrological mirror. You recognize each other's hidden virtues and deepest faults instantly. This creates profound telepathic empathy, but both partners must guard against magnifying identical blind spots.",
     "parameters": {
       "emotional": 82,
       "communication": 85,
@@ -3409,10 +3973,10 @@ const ZODIAC_PAIRS = {
       "lifestyle": 85
     },
     "elementSynergy": {
-      "title": "Double Earth (Unshakeable Foundation)",
-      "text": "Deep practical grounding, financial prudence, and rock-solid loyalty. You build lasting wealth and a cozy empire together."
+      "title": "Double Earth (Unshakeable Bedrock)",
+      "text": "Linda Goodman praised double Earth as the rock of domestic security. You share common respect for practical honesty, financial prudence, and building a cozy, enduring haven."
     },
-    "modalitySynergy": "Both Mutable: High flexibility, continuous laughter, and easy adaptability. Anchor your connection with structured routines.",
+    "modalitySynergy": "Both Mutable (Adaptable): Continuous mental agility, laughter, and easy flexibility. Anchor your connection with grounding domestic routines.",
     "strengths": [
       "Natural understanding: Virgo and Virgo instinctively comprehend each other's core motivations.",
       "Complimentary emotional rhythms that make daily life and domestic partnership feel comforting and safe.",
@@ -3429,31 +3993,39 @@ const ZODIAC_PAIRS = {
     ],
     "celebrityCouples": "Celebrated Virgo & Virgo cosmic pairs",
     "genderAdvice": {
-      "male_female": "When a Virgo man and a Virgo woman unite, balancing his Mars/solar leadership with her emotional sanctuary fosters lasting harmony.",
-      "female_male": "When a Virgo woman and a Virgo man unite, celebrating her creative initiative while valuing his steadfast protection builds an unbreakable bond.",
-      "same_sex": "In a union between two souls with Virgo and Virgo energies, open communication and honoring personal autonomy keeps the romance deeply alive."
+      "male_female": "In Linda Goodman's Love Signs analysis of the Virgo Man with the Virgo Woman (1-1 Vibration): He expresses his masculine planetary energy through Mercury, while she responds with Mercury grace. Success blooms when he honors her emotional sanctuary and she champions his purposeful ambitions.",
+      "female_male": "In Linda Goodman's Love Signs analysis of the Virgo Woman with the Virgo Man (1-1 Vibration): She brings Virgo's radiant initiative to the union, while he offers Virgo's steadfast anchor. When she trusts his protective strength and he respects her autonomy, their bond becomes unbreakable.",
+      "same_sex": "In Linda Goodman's cosmic synastry (1-1 Vibration): Two souls united under Virgo and Virgo celestial energies find harmony when honoring personal autonomy, balancing giving with receiving, and allowing their elemental natures to enrich each other."
     }
   },
   "virgo_libra": {
     "sign1": "virgo",
     "sign2": "libra",
-    "overallScore": 62,
+    "overallScore": 64,
     "colorCategory": "amber",
     "shadeLabel": "Dynamic Potential",
-    "aspectName": "Semisextile (Neighboring Contrast)",
-    "headline": "Virgo & Libra: Complementary Growth & Mutual Learning",
-    "summary": "As neighboring signs, you operate from contrasting elemental perspectives. This match creates a learning journey where each partner expands the other's horizons if patience is practiced.",
+    "aspectName": "2-12 Sun Sign Pattern (The Karmic Teacher & Pupil)",
+    "vibrationCode": "2-12",
+    "lindaVibration": {
+      "code": "2-12",
+      "title": "2-12 Sun Sign Pattern (The Karmic Teacher & Pupil)",
+      "theme": "Karmic Learning, Compassion & Gentle Tutoring",
+      "summary": "According to Linda Goodman, the 2-12 vibration signifies that one sign has spiritually passed through the other's grade in the cosmic school. There is a deep, unspoken bond of patience, protection, and gentle tutoring. Tolerating different pacing unlocks profound mutual growth.",
+      "karmicLesson": "Bridging contrasting elemental perspectives through patient compassion and secret mutual admiration."
+    },
+    "headline": "Virgo & Libra: Karmic Learning, Compassion & Gentle Tutoring",
+    "summary": "According to Linda Goodman, the 2-12 vibration signifies that one sign has spiritually passed through the other's grade in the cosmic school. There is a deep, unspoken bond of patience, protection, and gentle tutoring. Tolerating different pacing unlocks profound mutual growth.",
     "parameters": {
-      "emotional": 60,
-      "communication": 57,
-      "romance": 59,
-      "trust": 62,
-      "stability": 61,
-      "lifestyle": 62
+      "emotional": 62,
+      "communication": 59,
+      "romance": 61,
+      "trust": 64,
+      "stability": 63,
+      "lifestyle": 64
     },
     "elementSynergy": {
       "title": "Earth & Air (Pragmatic Strategy)",
-      "text": "Earth brings tangible discipline and organization; Air brings innovative ideas and sparkling conversational agility."
+      "text": "Earth brings tangible structure and sensible order; Air introduces inventive concepts and conversational sparkle. Mutual appreciation bridges different tempos."
     },
     "modalitySynergy": "Mutable + Cardinal: A balanced dynamic where one partner initiates, stabilizes, or provides adaptable perspective to the other.",
     "strengths": [
@@ -3466,37 +4038,45 @@ const ZODIAC_PAIRS = {
       "Occasional friction over lifestyle pacing or decision-making speed."
     ],
     "tips": [
-      "Adopt the 24-hour cooling off rule during heated arguments before revisiting sensitive topics.",
-      "Remember that Libra communicates love in their own authentic dialect.",
-      "Celebrate your differences as unique strengths rather than flaws to be corrected."
+      "Adopt Linda Goodman's cooling-off principle during heated arguments before revisiting sensitive topics.",
+      "Remember that Libra communicates love in their own authentic elemental dialect.",
+      "Celebrate your differences as complementary superpowers rather than personal flaws."
     ],
     "celebrityCouples": "Celebrated Virgo & Libra cosmic pairs",
     "genderAdvice": {
-      "male_female": "When a Virgo man and a Libra woman unite, balancing his Mars/solar leadership with her emotional sanctuary fosters lasting harmony.",
-      "female_male": "When a Virgo woman and a Libra man unite, celebrating her creative initiative while valuing his steadfast protection builds an unbreakable bond.",
-      "same_sex": "In a union between two souls with Virgo and Libra energies, open communication and honoring personal autonomy keeps the romance deeply alive."
+      "male_female": "In Linda Goodman's Love Signs analysis of the Virgo Man with the Libra Woman (2-12 Vibration): He expresses his masculine planetary energy through Mercury, while she responds with Venus grace. Success blooms when he honors her emotional sanctuary and she champions his purposeful ambitions.",
+      "female_male": "In Linda Goodman's Love Signs analysis of the Virgo Woman with the Libra Man (2-12 Vibration): She brings Virgo's radiant initiative to the union, while he offers Libra's steadfast anchor. When she trusts his protective strength and he respects her autonomy, their bond becomes unbreakable.",
+      "same_sex": "In Linda Goodman's cosmic synastry (2-12 Vibration): Two souls united under Virgo and Libra celestial energies find harmony when honoring personal autonomy, balancing giving with receiving, and allowing their elemental natures to enrich each other."
     }
   },
   "virgo_scorpio": {
     "sign1": "virgo",
     "sign2": "scorpio",
-    "overallScore": 91,
+    "overallScore": 92,
     "colorCategory": "green",
     "shadeLabel": "Harmonious Union",
-    "aspectName": "Sextile (Harmonious Elemental Flow)",
-    "headline": "Virgo & Scorpio: Stimulating Synergy & Easy Friendship",
-    "summary": "Your elements naturally complement each other (Fire invigorates Air, or Water nourishes Earth). Communication flows effortlessly, laughter comes easily, and mutual respect flourishes.",
+    "aspectName": "3-11 Sun Sign Pattern (Karmic Friends & Sympathetic Lovers)",
+    "vibrationCode": "3-11",
+    "lindaVibration": {
+      "code": "3-11",
+      "title": "3-11 Sun Sign Pattern (Karmic Friends & Sympathetic Lovers)",
+      "theme": "Enduring Camaraderie, Easy Forgiveness & High Devotion",
+      "summary": "Linda Goodman considered the 3-11 vibration one of the happiest and most enduring in the cosmos. Your signs form a natural sextile of friendship. Even through intense misunderstandings, 3-11 lovers remain steadfast allies, quick to forgive and eager to laugh.",
+      "karmicLesson": "Nurturing lifelong loyalty, humanitarian generosity, and effortless mutual forgiveness."
+    },
+    "headline": "Virgo & Scorpio: Enduring Camaraderie, Easy Forgiveness & High Devotion",
+    "summary": "Linda Goodman considered the 3-11 vibration one of the happiest and most enduring in the cosmos. Your signs form a natural sextile of friendship. Even through intense misunderstandings, 3-11 lovers remain steadfast allies, quick to forgive and eager to laugh.",
     "parameters": {
-      "emotional": 93,
+      "emotional": 94,
       "communication": 94,
       "romance": 92,
-      "trust": 96,
-      "stability": 97,
-      "lifestyle": 91
+      "trust": 97,
+      "stability": 98,
+      "lifestyle": 92
     },
     "elementSynergy": {
       "title": "Earth & Water (Fertile Nurturing)",
-      "text": "Water softens Earth with empathy and emotion; Earth provides Water with steady shores of stability. A classic recipe for enduring married happiness."
+      "text": "Water softens Earth with tender emotional empathy; Earth provides Water with comforting shores of physical stability. A classic recipe for a thriving, enduring marriage."
     },
     "modalitySynergy": "Mutable + Fixed: A balanced dynamic where one partner initiates, stabilizes, or provides adaptable perspective to the other.",
     "strengths": [
@@ -3515,33 +4095,41 @@ const ZODIAC_PAIRS = {
     ],
     "celebrityCouples": "Ryan Reynolds (Scorpio) & Blake Lively (Virgo)",
     "genderAdvice": {
-      "male_female": "When a Virgo man and a Scorpio woman unite, balancing his Mars/solar leadership with her emotional sanctuary fosters lasting harmony.",
-      "female_male": "When a Virgo woman and a Scorpio man unite, celebrating her creative initiative while valuing his steadfast protection builds an unbreakable bond.",
-      "same_sex": "In a union between two souls with Virgo and Scorpio energies, open communication and honoring personal autonomy keeps the romance deeply alive."
+      "male_female": "In Linda Goodman's Love Signs analysis of the Virgo Man with the Scorpio Woman (3-11 Vibration): He expresses his masculine planetary energy through Mercury, while she responds with Pluto & Mars grace. Success blooms when he honors her emotional sanctuary and she champions his purposeful ambitions.",
+      "female_male": "In Linda Goodman's Love Signs analysis of the Virgo Woman with the Scorpio Man (3-11 Vibration): She brings Virgo's radiant initiative to the union, while he offers Scorpio's steadfast anchor. When she trusts his protective strength and he respects her autonomy, their bond becomes unbreakable.",
+      "same_sex": "In Linda Goodman's cosmic synastry (3-11 Vibration): Two souls united under Virgo and Scorpio celestial energies find harmony when honoring personal autonomy, balancing giving with receiving, and allowing their elemental natures to enrich each other."
     }
   },
   "virgo_sagittarius": {
     "sign1": "virgo",
     "sign2": "sagittarius",
-    "overallScore": 52,
+    "overallScore": 54,
     "colorCategory": "amber",
     "shadeLabel": "Dynamic Potential",
-    "aspectName": "Square (Passionate Friction & Dynamic Growth)",
-    "headline": "Virgo & Sagittarius: Electrifying Spark with Creative Challenge",
-    "summary": "Signs at a 90\u00b0 square share the same modality but clash elementally. This generates high attraction, intense emotional chemistry, and spirited debates that demand conscious diplomacy and mutual compromise.",
+    "aspectName": "4-10 Sun Sign Pattern (The Karmic Challenge & Crucible)",
+    "vibrationCode": "4-10",
+    "lindaVibration": {
+      "code": "4-10",
+      "title": "4-10 Sun Sign Pattern (The Karmic Challenge & Crucible)",
+      "theme": "Passionate Friction, Dramatic Chemistry & Soul Crucible",
+      "summary": "Linda Goodman described the 4-10 square vibration as the classic crucible of soul growth. Sharing the same modality but differing elements produces magnetic physical attraction paired with clashes of will. If ego yields to love, this union builds invincible diamond strength.",
+      "karmicLesson": "Transcending stubborn pride and mastering the noble art of sacrificial compromise."
+    },
+    "headline": "Virgo & Sagittarius: Passionate Friction, Dramatic Chemistry & Soul Crucible",
+    "summary": "Linda Goodman described the 4-10 square vibration as the classic crucible of soul growth. Sharing the same modality but differing elements produces magnetic physical attraction paired with clashes of will. If ego yields to love, this union builds invincible diamond strength.",
     "parameters": {
-      "emotional": 50,
-      "communication": 55,
-      "romance": 49,
-      "trust": 46,
-      "stability": 51,
-      "lifestyle": 44
+      "emotional": 52,
+      "communication": 57,
+      "romance": 51,
+      "trust": 48,
+      "stability": 53,
+      "lifestyle": 46
     },
     "elementSynergy": {
       "title": "Fire & Earth (Hearthstone Fire)",
-      "text": "Fire provides creative energy and visionary boldness; Earth builds the practical structures to turn those visions into reality."
+      "text": "Fire provides creative courage and solar warmth; Earth builds the practical structures to turn those visions into lasting wealth and security."
     },
-    "modalitySynergy": "Both Mutable: High flexibility, continuous laughter, and easy adaptability. Anchor your connection with structured routines.",
+    "modalitySynergy": "Both Mutable (Adaptable): Continuous mental agility, laughter, and easy flexibility. Anchor your connection with grounding domestic routines.",
     "strengths": [
       "Dynamic growth: Virgo introduces Sagittarius to new perspectives and vice versa.",
       "Engaging romantic chemistry where you never run out of intriguing things to discover about each other.",
@@ -3552,37 +4140,45 @@ const ZODIAC_PAIRS = {
       "Occasional friction over lifestyle pacing or decision-making speed."
     ],
     "tips": [
-      "Adopt the 24-hour cooling off rule during heated arguments before revisiting sensitive topics.",
-      "Remember that Sagittarius communicates love in their own authentic dialect.",
-      "Celebrate your differences as unique strengths rather than flaws to be corrected."
+      "Adopt Linda Goodman's cooling-off principle during heated arguments before revisiting sensitive topics.",
+      "Remember that Sagittarius communicates love in their own authentic elemental dialect.",
+      "Celebrate your differences as complementary superpowers rather than personal flaws."
     ],
     "celebrityCouples": "Jay-Z (Sagittarius) & Beyonc\u00e9 (Virgo)",
     "genderAdvice": {
-      "male_female": "When a Virgo man and a Sagittarius woman unite, balancing his Mars/solar leadership with her emotional sanctuary fosters lasting harmony.",
-      "female_male": "When a Virgo woman and a Sagittarius man unite, celebrating her creative initiative while valuing his steadfast protection builds an unbreakable bond.",
-      "same_sex": "In a union between two souls with Virgo and Sagittarius energies, open communication and honoring personal autonomy keeps the romance deeply alive."
+      "male_female": "In Linda Goodman's Love Signs analysis of the Virgo Man with the Sagittarius Woman (4-10 Vibration): He expresses his masculine planetary energy through Mercury, while she responds with Jupiter grace. Success blooms when he honors her emotional sanctuary and she champions his purposeful ambitions.",
+      "female_male": "In Linda Goodman's Love Signs analysis of the Virgo Woman with the Sagittarius Man (4-10 Vibration): She brings Virgo's radiant initiative to the union, while he offers Sagittarius's steadfast anchor. When she trusts his protective strength and he respects her autonomy, their bond becomes unbreakable.",
+      "same_sex": "In Linda Goodman's cosmic synastry (4-10 Vibration): Two souls united under Virgo and Sagittarius celestial energies find harmony when honoring personal autonomy, balancing giving with receiving, and allowing their elemental natures to enrich each other."
     }
   },
   "virgo_capricorn": {
     "sign1": "virgo",
     "sign2": "capricorn",
-    "overallScore": 94,
+    "overallScore": 95,
     "colorCategory": "green",
     "shadeLabel": "Harmonious Union",
-    "aspectName": "Trine (Divine Soulmate Element)",
-    "headline": "Virgo & Capricorn: Effortless Harmony & Natural Soul Resonance",
-    "summary": "Sharing the same element (Fire-Fire, Earth-Earth, Air-Air, Water-Water) creates an instinctive, harmonious flow. You breathe the same spiritual air, understand each other's pacing, and feel deeply at home together.",
+    "aspectName": "5-9 Sun Sign Pattern (The Divine Cosmic Blessing)",
+    "vibrationCode": "5-9",
+    "lindaVibration": {
+      "code": "5-9",
+      "title": "5-9 Sun Sign Pattern (The Divine Cosmic Blessing)",
+      "theme": "Golden Trine, Soulmate Telepathy & Natural Sympathy",
+      "summary": "Linda Goodman's most celebrated synastry pattern! Sharing the same sacred element (Fire, Earth, Air, or Water) brings instant soul recognition. You forgive each other almost effortlessly, inspire each other's dreams, and enjoy an almost telepathic understanding.",
+      "karmicLesson": "Preserving sacred gratitude and avoiding taking your effortless soul harmony for granted."
+    },
+    "headline": "Virgo & Capricorn: Golden Trine, Soulmate Telepathy & Natural Sympathy",
+    "summary": "Linda Goodman's most celebrated synastry pattern! Sharing the same sacred element (Fire, Earth, Air, or Water) brings instant soul recognition. You forgive each other almost effortlessly, inspire each other's dreams, and enjoy an almost telepathic understanding.",
     "parameters": {
-      "emotional": 94,
+      "emotional": 95,
       "communication": 94,
-      "romance": 91,
+      "romance": 92,
       "trust": 98,
       "stability": 98,
       "lifestyle": 96
     },
     "elementSynergy": {
-      "title": "Double Earth (Unshakeable Foundation)",
-      "text": "Deep practical grounding, financial prudence, and rock-solid loyalty. You build lasting wealth and a cozy empire together."
+      "title": "Double Earth (Unshakeable Bedrock)",
+      "text": "Linda Goodman praised double Earth as the rock of domestic security. You share common respect for practical honesty, financial prudence, and building a cozy, enduring haven."
     },
     "modalitySynergy": "Mutable + Cardinal: A balanced dynamic where one partner initiates, stabilizes, or provides adaptable perspective to the other.",
     "strengths": [
@@ -3601,40 +4197,48 @@ const ZODIAC_PAIRS = {
     ],
     "celebrityCouples": "Celebrated Virgo & Capricorn cosmic pairs",
     "genderAdvice": {
-      "male_female": "When a Virgo man and a Capricorn woman unite, balancing his Mars/solar leadership with her emotional sanctuary fosters lasting harmony.",
-      "female_male": "When a Virgo woman and a Capricorn man unite, celebrating her creative initiative while valuing his steadfast protection builds an unbreakable bond.",
-      "same_sex": "In a union between two souls with Virgo and Capricorn energies, open communication and honoring personal autonomy keeps the romance deeply alive."
+      "male_female": "In Linda Goodman's Love Signs analysis of the Virgo Man with the Capricorn Woman (5-9 Vibration): He expresses his masculine planetary energy through Mercury, while she responds with Saturn grace. Success blooms when he honors her emotional sanctuary and she champions his purposeful ambitions.",
+      "female_male": "In Linda Goodman's Love Signs analysis of the Virgo Woman with the Capricorn Man (5-9 Vibration): She brings Virgo's radiant initiative to the union, while he offers Capricorn's steadfast anchor. When she trusts his protective strength and he respects her autonomy, their bond becomes unbreakable.",
+      "same_sex": "In Linda Goodman's cosmic synastry (5-9 Vibration): Two souls united under Virgo and Capricorn celestial energies find harmony when honoring personal autonomy, balancing giving with receiving, and allowing their elemental natures to enrich each other."
     }
   },
   "virgo_aquarius": {
     "sign1": "virgo",
     "sign2": "aquarius",
-    "overallScore": 46,
+    "overallScore": 48,
     "colorCategory": "red",
     "shadeLabel": "Growth Challenge",
-    "aspectName": "Quincunx (Mysterious Intrigue & Karmic Adjustment)",
-    "headline": "Virgo & Aquarius: Enigmatic Attraction Demanding Patience",
-    "summary": "Separated by five signs, you have little in common astrologically, which creates an intriguing magnetic mystery. Succeeding together requires appreciating your partner's entirely unique perspective on life.",
+    "aspectName": "6-8 Sun Sign Pattern (Karmic Mystery & Devoted Service)",
+    "vibrationCode": "6-8",
+    "lindaVibration": {
+      "code": "6-8",
+      "title": "6-8 Sun Sign Pattern (Karmic Mystery & Devoted Service)",
+      "theme": "Enigmatic Fascination, Hypnotic Pull & Karmic Duty",
+      "summary": "According to Linda Goodman, the 6-8 quincunx vibration is cloaked in hypnotic fascination and karmic debt. One partner feels drawn to serve, protect, or nurture the other, generating deep emotional or physical magnetism that requires profound patience to untangle.",
+      "karmicLesson": "Practicing unconditional love free from selfish demands, embracing differences that cannot be logically explained."
+    },
+    "headline": "Virgo & Aquarius: Enigmatic Fascination, Hypnotic Pull & Karmic Duty",
+    "summary": "According to Linda Goodman, the 6-8 quincunx vibration is cloaked in hypnotic fascination and karmic debt. One partner feels drawn to serve, protect, or nurture the other, generating deep emotional or physical magnetism that requires profound patience to untangle.",
     "parameters": {
-      "emotional": 44,
+      "emotional": 46,
       "communication": 45,
-      "romance": 43,
-      "trust": 46,
-      "stability": 48,
-      "lifestyle": 38
+      "romance": 45,
+      "trust": 48,
+      "stability": 50,
+      "lifestyle": 40
     },
     "elementSynergy": {
       "title": "Earth & Air (Pragmatic Strategy)",
-      "text": "Earth brings tangible discipline and organization; Air brings innovative ideas and sparkling conversational agility."
+      "text": "Earth brings tangible structure and sensible order; Air introduces inventive concepts and conversational sparkle. Mutual appreciation bridges different tempos."
     },
     "modalitySynergy": "Mutable + Fixed: A balanced dynamic where one partner initiates, stabilizes, or provides adaptable perspective to the other.",
     "strengths": [
-      "Powerful karmic pull that pushes both individuals to mature emotionally.",
+      "Powerful karmic pull that pushes both souls to mature emotionally and spiritually.",
       "Unforgettable chemistry and passion born from sheer elemental contrast.",
       "Opportunity to develop immense patience, empathy, and unconditional love."
     ],
     "challenges": [
-      "Fundamental contrast in priorities: Virgo's instinctual approach may confuse Aquarius.",
+      "Fundamental contrast in priorities: Virgo's instinctual approach may baffle Aquarius.",
       "Tendency to misinterpret your partner's need for space or emotional expression."
     ],
     "tips": [
@@ -3644,33 +4248,41 @@ const ZODIAC_PAIRS = {
     ],
     "celebrityCouples": "Celebrated Virgo & Aquarius cosmic pairs",
     "genderAdvice": {
-      "male_female": "When a Virgo man and a Aquarius woman unite, balancing his Mars/solar leadership with her emotional sanctuary fosters lasting harmony.",
-      "female_male": "When a Virgo woman and a Aquarius man unite, celebrating her creative initiative while valuing his steadfast protection builds an unbreakable bond.",
-      "same_sex": "In a union between two souls with Virgo and Aquarius energies, open communication and honoring personal autonomy keeps the romance deeply alive."
+      "male_female": "In Linda Goodman's Love Signs analysis of the Virgo Man with the Aquarius Woman (6-8 Vibration): He expresses his masculine planetary energy through Mercury, while she responds with Uranus & Saturn grace. Success blooms when he honors her emotional sanctuary and she champions his purposeful ambitions.",
+      "female_male": "In Linda Goodman's Love Signs analysis of the Virgo Woman with the Aquarius Man (6-8 Vibration): She brings Virgo's radiant initiative to the union, while he offers Aquarius's steadfast anchor. When she trusts his protective strength and he respects her autonomy, their bond becomes unbreakable.",
+      "same_sex": "In Linda Goodman's cosmic synastry (6-8 Vibration): Two souls united under Virgo and Aquarius celestial energies find harmony when honoring personal autonomy, balancing giving with receiving, and allowing their elemental natures to enrich each other."
     }
   },
   "virgo_pisces": {
     "sign1": "virgo",
     "sign2": "pisces",
-    "overallScore": 80,
+    "overallScore": 82,
     "colorCategory": "green",
     "shadeLabel": "Harmonious Union",
-    "aspectName": "Opposition (Cosmic Magnetism & Polar Balance)",
-    "headline": "Virgo & Pisces: Magnetic Attraction & Yin-Yang Balance",
-    "summary": "Sitting 180\u00b0 across the zodiac wheel, you are polar opposites. What one lacks, the other possesses in abundance. The chemistry is electric, offering the potential to form an unbeatable yin-and-yang partnership.",
+    "aspectName": "7-7 Sun Sign Pattern (Polar Magnetism & Cosmic Complements)",
+    "vibrationCode": "7-7",
+    "lindaVibration": {
+      "code": "7-7",
+      "title": "7-7 Sun Sign Pattern (Polar Magnetism & Cosmic Complements)",
+      "theme": "Opposites Attract, Celestial Electricity & Yin-Yang Balance",
+      "summary": "Sitting 180\u00b0 opposite on the zodiac wheel, Linda Goodman saw the 7-7 vibration as two halves of a single soul. What one lacks, the other possesses in abundance. It generates high romantic voltage: either a magnificent lifelong union or an explosive standoff.",
+      "karmicLesson": "Finding wholeness through merging opposite qualities into a unified, harmonious whole."
+    },
+    "headline": "Virgo & Pisces: Opposites Attract, Celestial Electricity & Yin-Yang Balance",
+    "summary": "Sitting 180\u00b0 opposite on the zodiac wheel, Linda Goodman saw the 7-7 vibration as two halves of a single soul. What one lacks, the other possesses in abundance. It generates high romantic voltage: either a magnificent lifelong union or an explosive standoff.",
     "parameters": {
-      "emotional": 82,
-      "communication": 83,
-      "romance": 88,
-      "trust": 85,
-      "stability": 86,
-      "lifestyle": 80
+      "emotional": 84,
+      "communication": 85,
+      "romance": 90,
+      "trust": 87,
+      "stability": 88,
+      "lifestyle": 82
     },
     "elementSynergy": {
       "title": "Earth & Water (Fertile Nurturing)",
-      "text": "Water softens Earth with empathy and emotion; Earth provides Water with steady shores of stability. A classic recipe for enduring married happiness."
+      "text": "Water softens Earth with tender emotional empathy; Earth provides Water with comforting shores of physical stability. A classic recipe for a thriving, enduring marriage."
     },
-    "modalitySynergy": "Both Mutable: High flexibility, continuous laughter, and easy adaptability. Anchor your connection with structured routines.",
+    "modalitySynergy": "Both Mutable (Adaptable): Continuous mental agility, laughter, and easy flexibility. Anchor your connection with grounding domestic routines.",
     "strengths": [
       "Natural understanding: Virgo and Pisces instinctively comprehend each other's core motivations.",
       "Complimentary emotional rhythms that make daily life and domestic partnership feel comforting and safe.",
@@ -3687,33 +4299,41 @@ const ZODIAC_PAIRS = {
     ],
     "celebrityCouples": "Celebrated Virgo & Pisces cosmic pairs",
     "genderAdvice": {
-      "male_female": "When a Virgo man and a Pisces woman unite, balancing his Mars/solar leadership with her emotional sanctuary fosters lasting harmony.",
-      "female_male": "When a Virgo woman and a Pisces man unite, celebrating her creative initiative while valuing his steadfast protection builds an unbreakable bond.",
-      "same_sex": "In a union between two souls with Virgo and Pisces energies, open communication and honoring personal autonomy keeps the romance deeply alive."
+      "male_female": "In Linda Goodman's Love Signs analysis of the Virgo Man with the Pisces Woman (7-7 Vibration): He expresses his masculine planetary energy through Mercury, while she responds with Neptune & Jupiter grace. Success blooms when he honors her emotional sanctuary and she champions his purposeful ambitions.",
+      "female_male": "In Linda Goodman's Love Signs analysis of the Virgo Woman with the Pisces Man (7-7 Vibration): She brings Virgo's radiant initiative to the union, while he offers Pisces's steadfast anchor. When she trusts his protective strength and he respects her autonomy, their bond becomes unbreakable.",
+      "same_sex": "In Linda Goodman's cosmic synastry (7-7 Vibration): Two souls united under Virgo and Pisces celestial energies find harmony when honoring personal autonomy, balancing giving with receiving, and allowing their elemental natures to enrich each other."
     }
   },
   "libra_aries": {
     "sign1": "libra",
     "sign2": "aries",
-    "overallScore": 80,
+    "overallScore": 82,
     "colorCategory": "green",
     "shadeLabel": "Harmonious Union",
-    "aspectName": "Opposition (Cosmic Magnetism & Polar Balance)",
-    "headline": "Libra & Aries: Magnetic Attraction & Yin-Yang Balance",
-    "summary": "Sitting 180\u00b0 across the zodiac wheel, you are polar opposites. What one lacks, the other possesses in abundance. The chemistry is electric, offering the potential to form an unbeatable yin-and-yang partnership.",
+    "aspectName": "7-7 Sun Sign Pattern (Polar Magnetism & Cosmic Complements)",
+    "vibrationCode": "7-7",
+    "lindaVibration": {
+      "code": "7-7",
+      "title": "7-7 Sun Sign Pattern (Polar Magnetism & Cosmic Complements)",
+      "theme": "Opposites Attract, Celestial Electricity & Yin-Yang Balance",
+      "summary": "Sitting 180\u00b0 opposite on the zodiac wheel, Linda Goodman saw the 7-7 vibration as two halves of a single soul. What one lacks, the other possesses in abundance. It generates high romantic voltage: either a magnificent lifelong union or an explosive standoff.",
+      "karmicLesson": "Finding wholeness through merging opposite qualities into a unified, harmonious whole."
+    },
+    "headline": "Libra & Aries: Opposites Attract, Celestial Electricity & Yin-Yang Balance",
+    "summary": "Sitting 180\u00b0 opposite on the zodiac wheel, Linda Goodman saw the 7-7 vibration as two halves of a single soul. What one lacks, the other possesses in abundance. It generates high romantic voltage: either a magnificent lifelong union or an explosive standoff.",
     "parameters": {
-      "emotional": 78,
-      "communication": 84,
-      "romance": 86,
-      "trust": 80,
-      "stability": 79,
-      "lifestyle": 80
+      "emotional": 80,
+      "communication": 86,
+      "romance": 88,
+      "trust": 82,
+      "stability": 81,
+      "lifestyle": 82
     },
     "elementSynergy": {
-      "title": "Fire & Air (Inspirational Catalyst)",
-      "text": "Air fuels Fire's passion, while Fire brings warmth and bold action to Air's inventive ideas. An exciting, socially vibrant union."
+      "title": "Fire & Air (Inspirational Breeze)",
+      "text": "Air fans Fire's flames into glorious creative radiance, while Fire warms Air's visionary ideals into bold reality. An exciting, intellectually vibrant union."
     },
-    "modalitySynergy": "Both Cardinal: Two visionary leaders who love initiating projects. Take turns steering to prevent power struggles.",
+    "modalitySynergy": "Both Cardinal (Initiators): Two natural leaders. Linda Goodman advised taking turns leading joint projects to eliminate power struggles.",
     "strengths": [
       "Natural understanding: Libra and Aries instinctively comprehend each other's core motivations.",
       "Complimentary emotional rhythms that make daily life and domestic partnership feel comforting and safe.",
@@ -3730,40 +4350,48 @@ const ZODIAC_PAIRS = {
     ],
     "celebrityCouples": "Michael Douglas (Libra) & Catherine Zeta-Jones (Libra)",
     "genderAdvice": {
-      "male_female": "When a Libra man and a Aries woman unite, balancing his Mars/solar leadership with her emotional sanctuary fosters lasting harmony.",
-      "female_male": "When a Libra woman and a Aries man unite, celebrating her creative initiative while valuing his steadfast protection builds an unbreakable bond.",
-      "same_sex": "In a union between two souls with Libra and Aries energies, open communication and honoring personal autonomy keeps the romance deeply alive."
+      "male_female": "In Linda Goodman's Love Signs analysis of the Libra Man with the Aries Woman (7-7 Vibration): He expresses his masculine planetary energy through Venus, while she responds with Mars grace. Success blooms when he honors her emotional sanctuary and she champions his purposeful ambitions.",
+      "female_male": "In Linda Goodman's Love Signs analysis of the Libra Woman with the Aries Man (7-7 Vibration): She brings Libra's radiant initiative to the union, while he offers Aries's steadfast anchor. When she trusts his protective strength and he respects her autonomy, their bond becomes unbreakable.",
+      "same_sex": "In Linda Goodman's cosmic synastry (7-7 Vibration): Two souls united under Libra and Aries celestial energies find harmony when honoring personal autonomy, balancing giving with receiving, and allowing their elemental natures to enrich each other."
     }
   },
   "libra_taurus": {
     "sign1": "libra",
     "sign2": "taurus",
-    "overallScore": 46,
+    "overallScore": 48,
     "colorCategory": "red",
     "shadeLabel": "Growth Challenge",
-    "aspectName": "Quincunx (Mysterious Intrigue & Karmic Adjustment)",
-    "headline": "Libra & Taurus: Enigmatic Attraction Demanding Patience",
-    "summary": "Separated by five signs, you have little in common astrologically, which creates an intriguing magnetic mystery. Succeeding together requires appreciating your partner's entirely unique perspective on life.",
+    "aspectName": "6-8 Sun Sign Pattern (Karmic Mystery & Devoted Service)",
+    "vibrationCode": "6-8",
+    "lindaVibration": {
+      "code": "6-8",
+      "title": "6-8 Sun Sign Pattern (Karmic Mystery & Devoted Service)",
+      "theme": "Enigmatic Fascination, Hypnotic Pull & Karmic Duty",
+      "summary": "According to Linda Goodman, the 6-8 quincunx vibration is cloaked in hypnotic fascination and karmic debt. One partner feels drawn to serve, protect, or nurture the other, generating deep emotional or physical magnetism that requires profound patience to untangle.",
+      "karmicLesson": "Practicing unconditional love free from selfish demands, embracing differences that cannot be logically explained."
+    },
+    "headline": "Libra & Taurus: Enigmatic Fascination, Hypnotic Pull & Karmic Duty",
+    "summary": "According to Linda Goodman, the 6-8 quincunx vibration is cloaked in hypnotic fascination and karmic debt. One partner feels drawn to serve, protect, or nurture the other, generating deep emotional or physical magnetism that requires profound patience to untangle.",
     "parameters": {
-      "emotional": 44,
+      "emotional": 46,
       "communication": 45,
-      "romance": 43,
-      "trust": 46,
-      "stability": 48,
-      "lifestyle": 38
+      "romance": 45,
+      "trust": 48,
+      "stability": 50,
+      "lifestyle": 40
     },
     "elementSynergy": {
       "title": "Earth & Air (Pragmatic Strategy)",
-      "text": "Earth brings tangible discipline and organization; Air brings innovative ideas and sparkling conversational agility."
+      "text": "Earth brings tangible structure and sensible order; Air introduces inventive concepts and conversational sparkle. Mutual appreciation bridges different tempos."
     },
     "modalitySynergy": "Cardinal + Fixed: A balanced dynamic where one partner initiates, stabilizes, or provides adaptable perspective to the other.",
     "strengths": [
-      "Powerful karmic pull that pushes both individuals to mature emotionally.",
+      "Powerful karmic pull that pushes both souls to mature emotionally and spiritually.",
       "Unforgettable chemistry and passion born from sheer elemental contrast.",
       "Opportunity to develop immense patience, empathy, and unconditional love."
     ],
     "challenges": [
-      "Fundamental contrast in priorities: Libra's instinctual approach may confuse Taurus.",
+      "Fundamental contrast in priorities: Libra's instinctual approach may baffle Taurus.",
       "Tendency to misinterpret your partner's need for space or emotional expression."
     ],
     "tips": [
@@ -3773,31 +4401,39 @@ const ZODIAC_PAIRS = {
     ],
     "celebrityCouples": "Celebrated Libra & Taurus cosmic pairs",
     "genderAdvice": {
-      "male_female": "When a Libra man and a Taurus woman unite, balancing his Mars/solar leadership with her emotional sanctuary fosters lasting harmony.",
-      "female_male": "When a Libra woman and a Taurus man unite, celebrating her creative initiative while valuing his steadfast protection builds an unbreakable bond.",
-      "same_sex": "In a union between two souls with Libra and Taurus energies, open communication and honoring personal autonomy keeps the romance deeply alive."
+      "male_female": "In Linda Goodman's Love Signs analysis of the Libra Man with the Taurus Woman (6-8 Vibration): He expresses his masculine planetary energy through Venus, while she responds with Venus grace. Success blooms when he honors her emotional sanctuary and she champions his purposeful ambitions.",
+      "female_male": "In Linda Goodman's Love Signs analysis of the Libra Woman with the Taurus Man (6-8 Vibration): She brings Libra's radiant initiative to the union, while he offers Taurus's steadfast anchor. When she trusts his protective strength and he respects her autonomy, their bond becomes unbreakable.",
+      "same_sex": "In Linda Goodman's cosmic synastry (6-8 Vibration): Two souls united under Libra and Taurus celestial energies find harmony when honoring personal autonomy, balancing giving with receiving, and allowing their elemental natures to enrich each other."
     }
   },
   "libra_gemini": {
     "sign1": "libra",
     "sign2": "gemini",
-    "overallScore": 96,
+    "overallScore": 97,
     "colorCategory": "green",
     "shadeLabel": "Harmonious Union",
-    "aspectName": "Trine (Divine Soulmate Element)",
-    "headline": "Libra & Gemini: Effortless Harmony & Natural Soul Resonance",
-    "summary": "Sharing the same element (Fire-Fire, Earth-Earth, Air-Air, Water-Water) creates an instinctive, harmonious flow. You breathe the same spiritual air, understand each other's pacing, and feel deeply at home together.",
+    "aspectName": "5-9 Sun Sign Pattern (The Divine Cosmic Blessing)",
+    "vibrationCode": "5-9",
+    "lindaVibration": {
+      "code": "5-9",
+      "title": "5-9 Sun Sign Pattern (The Divine Cosmic Blessing)",
+      "theme": "Golden Trine, Soulmate Telepathy & Natural Sympathy",
+      "summary": "Linda Goodman's most celebrated synastry pattern! Sharing the same sacred element (Fire, Earth, Air, or Water) brings instant soul recognition. You forgive each other almost effortlessly, inspire each other's dreams, and enjoy an almost telepathic understanding.",
+      "karmicLesson": "Preserving sacred gratitude and avoiding taking your effortless soul harmony for granted."
+    },
+    "headline": "Libra & Gemini: Golden Trine, Soulmate Telepathy & Natural Sympathy",
+    "summary": "Linda Goodman's most celebrated synastry pattern! Sharing the same sacred element (Fire, Earth, Air, or Water) brings instant soul recognition. You forgive each other almost effortlessly, inspire each other's dreams, and enjoy an almost telepathic understanding.",
     "parameters": {
-      "emotional": 96,
+      "emotional": 97,
       "communication": 98,
-      "romance": 93,
-      "trust": 96,
-      "stability": 91,
+      "romance": 94,
+      "trust": 97,
+      "stability": 92,
       "lifestyle": 96
     },
     "elementSynergy": {
       "title": "Double Air (Mental Telepathy)",
-      "text": "Incredible intellectual banter, endless laughter, and shared curiosity. A partnership where minds connect on a sparkling wavelength."
+      "text": "In Love Signs, two Air signs generate brilliant conversational agility and intellectual freedom. Your minds connect on a sparkling frequency filled with books, ideas, and laughter."
     },
     "modalitySynergy": "Cardinal + Mutable: A balanced dynamic where one partner initiates, stabilizes, or provides adaptable perspective to the other.",
     "strengths": [
@@ -3816,33 +4452,41 @@ const ZODIAC_PAIRS = {
     ],
     "celebrityCouples": "Will Smith (Libra) & Jada Pinkett Smith (Virgo)",
     "genderAdvice": {
-      "male_female": "When a Libra man and a Gemini woman unite, balancing his Mars/solar leadership with her emotional sanctuary fosters lasting harmony.",
-      "female_male": "When a Libra woman and a Gemini man unite, celebrating her creative initiative while valuing his steadfast protection builds an unbreakable bond.",
-      "same_sex": "In a union between two souls with Libra and Gemini energies, open communication and honoring personal autonomy keeps the romance deeply alive."
+      "male_female": "In Linda Goodman's Love Signs analysis of the Libra Man with the Gemini Woman (5-9 Vibration): He expresses his masculine planetary energy through Venus, while she responds with Mercury grace. Success blooms when he honors her emotional sanctuary and she champions his purposeful ambitions.",
+      "female_male": "In Linda Goodman's Love Signs analysis of the Libra Woman with the Gemini Man (5-9 Vibration): She brings Libra's radiant initiative to the union, while he offers Gemini's steadfast anchor. When she trusts his protective strength and he respects her autonomy, their bond becomes unbreakable.",
+      "same_sex": "In Linda Goodman's cosmic synastry (5-9 Vibration): Two souls united under Libra and Gemini celestial energies find harmony when honoring personal autonomy, balancing giving with receiving, and allowing their elemental natures to enrich each other."
     }
   },
   "libra_cancer": {
     "sign1": "libra",
     "sign2": "cancer",
-    "overallScore": 52,
+    "overallScore": 54,
     "colorCategory": "amber",
     "shadeLabel": "Dynamic Potential",
-    "aspectName": "Square (Passionate Friction & Dynamic Growth)",
-    "headline": "Libra & Cancer: Electrifying Spark with Creative Challenge",
-    "summary": "Signs at a 90\u00b0 square share the same modality but clash elementally. This generates high attraction, intense emotional chemistry, and spirited debates that demand conscious diplomacy and mutual compromise.",
+    "aspectName": "4-10 Sun Sign Pattern (The Karmic Challenge & Crucible)",
+    "vibrationCode": "4-10",
+    "lindaVibration": {
+      "code": "4-10",
+      "title": "4-10 Sun Sign Pattern (The Karmic Challenge & Crucible)",
+      "theme": "Passionate Friction, Dramatic Chemistry & Soul Crucible",
+      "summary": "Linda Goodman described the 4-10 square vibration as the classic crucible of soul growth. Sharing the same modality but differing elements produces magnetic physical attraction paired with clashes of will. If ego yields to love, this union builds invincible diamond strength.",
+      "karmicLesson": "Transcending stubborn pride and mastering the noble art of sacrificial compromise."
+    },
+    "headline": "Libra & Cancer: Passionate Friction, Dramatic Chemistry & Soul Crucible",
+    "summary": "Linda Goodman described the 4-10 square vibration as the classic crucible of soul growth. Sharing the same modality but differing elements produces magnetic physical attraction paired with clashes of will. If ego yields to love, this union builds invincible diamond strength.",
     "parameters": {
-      "emotional": 44,
-      "communication": 47,
-      "romance": 49,
-      "trust": 52,
-      "stability": 51,
-      "lifestyle": 44
+      "emotional": 46,
+      "communication": 49,
+      "romance": 51,
+      "trust": 54,
+      "stability": 53,
+      "lifestyle": 46
     },
     "elementSynergy": {
       "title": "Air & Water (Wind & Waves)",
-      "text": "Air analyzes experiences intellectually while Water experiences them through deep emotion. Finding balance creates profound holistic insight."
+      "text": "Air analyzes experiences intellectually while Water perceives them through psychic emotion. Honoring each other's distinct perception creates rich spiritual growth."
     },
-    "modalitySynergy": "Both Cardinal: Two visionary leaders who love initiating projects. Take turns steering to prevent power struggles.",
+    "modalitySynergy": "Both Cardinal (Initiators): Two natural leaders. Linda Goodman advised taking turns leading joint projects to eliminate power struggles.",
     "strengths": [
       "Dynamic growth: Libra introduces Cancer to new perspectives and vice versa.",
       "Engaging romantic chemistry where you never run out of intriguing things to discover about each other.",
@@ -3853,37 +4497,45 @@ const ZODIAC_PAIRS = {
       "Occasional friction over lifestyle pacing or decision-making speed."
     ],
     "tips": [
-      "Adopt the 24-hour cooling off rule during heated arguments before revisiting sensitive topics.",
-      "Remember that Cancer communicates love in their own authentic dialect.",
-      "Celebrate your differences as unique strengths rather than flaws to be corrected."
+      "Adopt Linda Goodman's cooling-off principle during heated arguments before revisiting sensitive topics.",
+      "Remember that Cancer communicates love in their own authentic elemental dialect.",
+      "Celebrate your differences as complementary superpowers rather than personal flaws."
     ],
     "celebrityCouples": "Celebrated Libra & Cancer cosmic pairs",
     "genderAdvice": {
-      "male_female": "When a Libra man and a Cancer woman unite, balancing his Mars/solar leadership with her emotional sanctuary fosters lasting harmony.",
-      "female_male": "When a Libra woman and a Cancer man unite, celebrating her creative initiative while valuing his steadfast protection builds an unbreakable bond.",
-      "same_sex": "In a union between two souls with Libra and Cancer energies, open communication and honoring personal autonomy keeps the romance deeply alive."
+      "male_female": "In Linda Goodman's Love Signs analysis of the Libra Man with the Cancer Woman (4-10 Vibration): He expresses his masculine planetary energy through Venus, while she responds with Moon grace. Success blooms when he honors her emotional sanctuary and she champions his purposeful ambitions.",
+      "female_male": "In Linda Goodman's Love Signs analysis of the Libra Woman with the Cancer Man (4-10 Vibration): She brings Libra's radiant initiative to the union, while he offers Cancer's steadfast anchor. When she trusts his protective strength and he respects her autonomy, their bond becomes unbreakable.",
+      "same_sex": "In Linda Goodman's cosmic synastry (4-10 Vibration): Two souls united under Libra and Cancer celestial energies find harmony when honoring personal autonomy, balancing giving with receiving, and allowing their elemental natures to enrich each other."
     }
   },
   "libra_leo": {
     "sign1": "libra",
     "sign2": "leo",
-    "overallScore": 86,
+    "overallScore": 88,
     "colorCategory": "green",
     "shadeLabel": "Harmonious Union",
-    "aspectName": "Sextile (Harmonious Elemental Flow)",
-    "headline": "Libra & Leo: Stimulating Synergy & Easy Friendship",
-    "summary": "Your elements naturally complement each other (Fire invigorates Air, or Water nourishes Earth). Communication flows effortlessly, laughter comes easily, and mutual respect flourishes.",
+    "aspectName": "3-11 Sun Sign Pattern (Karmic Friends & Sympathetic Lovers)",
+    "vibrationCode": "3-11",
+    "lindaVibration": {
+      "code": "3-11",
+      "title": "3-11 Sun Sign Pattern (Karmic Friends & Sympathetic Lovers)",
+      "theme": "Enduring Camaraderie, Easy Forgiveness & High Devotion",
+      "summary": "Linda Goodman considered the 3-11 vibration one of the happiest and most enduring in the cosmos. Your signs form a natural sextile of friendship. Even through intense misunderstandings, 3-11 lovers remain steadfast allies, quick to forgive and eager to laugh.",
+      "karmicLesson": "Nurturing lifelong loyalty, humanitarian generosity, and effortless mutual forgiveness."
+    },
+    "headline": "Libra & Leo: Enduring Camaraderie, Easy Forgiveness & High Devotion",
+    "summary": "Linda Goodman considered the 3-11 vibration one of the happiest and most enduring in the cosmos. Your signs form a natural sextile of friendship. Even through intense misunderstandings, 3-11 lovers remain steadfast allies, quick to forgive and eager to laugh.",
     "parameters": {
-      "emotional": 84,
-      "communication": 90,
-      "romance": 92,
-      "trust": 86,
-      "stability": 88,
-      "lifestyle": 86
+      "emotional": 86,
+      "communication": 92,
+      "romance": 94,
+      "trust": 88,
+      "stability": 90,
+      "lifestyle": 88
     },
     "elementSynergy": {
-      "title": "Fire & Air (Inspirational Catalyst)",
-      "text": "Air fuels Fire's passion, while Fire brings warmth and bold action to Air's inventive ideas. An exciting, socially vibrant union."
+      "title": "Fire & Air (Inspirational Breeze)",
+      "text": "Air fans Fire's flames into glorious creative radiance, while Fire warms Air's visionary ideals into bold reality. An exciting, intellectually vibrant union."
     },
     "modalitySynergy": "Cardinal + Fixed: A balanced dynamic where one partner initiates, stabilizes, or provides adaptable perspective to the other.",
     "strengths": [
@@ -3902,31 +4554,39 @@ const ZODIAC_PAIRS = {
     ],
     "celebrityCouples": "Celebrated Libra & Leo cosmic pairs",
     "genderAdvice": {
-      "male_female": "When a Libra man and a Leo woman unite, balancing his Mars/solar leadership with her emotional sanctuary fosters lasting harmony.",
-      "female_male": "When a Libra woman and a Leo man unite, celebrating her creative initiative while valuing his steadfast protection builds an unbreakable bond.",
-      "same_sex": "In a union between two souls with Libra and Leo energies, open communication and honoring personal autonomy keeps the romance deeply alive."
+      "male_female": "In Linda Goodman's Love Signs analysis of the Libra Man with the Leo Woman (3-11 Vibration): He expresses his masculine planetary energy through Venus, while she responds with Sun grace. Success blooms when he honors her emotional sanctuary and she champions his purposeful ambitions.",
+      "female_male": "In Linda Goodman's Love Signs analysis of the Libra Woman with the Leo Man (3-11 Vibration): She brings Libra's radiant initiative to the union, while he offers Leo's steadfast anchor. When she trusts his protective strength and he respects her autonomy, their bond becomes unbreakable.",
+      "same_sex": "In Linda Goodman's cosmic synastry (3-11 Vibration): Two souls united under Libra and Leo celestial energies find harmony when honoring personal autonomy, balancing giving with receiving, and allowing their elemental natures to enrich each other."
     }
   },
   "libra_virgo": {
     "sign1": "libra",
     "sign2": "virgo",
-    "overallScore": 62,
+    "overallScore": 64,
     "colorCategory": "amber",
     "shadeLabel": "Dynamic Potential",
-    "aspectName": "Semisextile (Neighboring Contrast)",
-    "headline": "Libra & Virgo: Complementary Growth & Mutual Learning",
-    "summary": "As neighboring signs, you operate from contrasting elemental perspectives. This match creates a learning journey where each partner expands the other's horizons if patience is practiced.",
+    "aspectName": "2-12 Sun Sign Pattern (The Karmic Teacher & Pupil)",
+    "vibrationCode": "2-12",
+    "lindaVibration": {
+      "code": "2-12",
+      "title": "2-12 Sun Sign Pattern (The Karmic Teacher & Pupil)",
+      "theme": "Karmic Learning, Compassion & Gentle Tutoring",
+      "summary": "According to Linda Goodman, the 2-12 vibration signifies that one sign has spiritually passed through the other's grade in the cosmic school. There is a deep, unspoken bond of patience, protection, and gentle tutoring. Tolerating different pacing unlocks profound mutual growth.",
+      "karmicLesson": "Bridging contrasting elemental perspectives through patient compassion and secret mutual admiration."
+    },
+    "headline": "Libra & Virgo: Karmic Learning, Compassion & Gentle Tutoring",
+    "summary": "According to Linda Goodman, the 2-12 vibration signifies that one sign has spiritually passed through the other's grade in the cosmic school. There is a deep, unspoken bond of patience, protection, and gentle tutoring. Tolerating different pacing unlocks profound mutual growth.",
     "parameters": {
-      "emotional": 60,
-      "communication": 57,
-      "romance": 59,
-      "trust": 62,
-      "stability": 61,
-      "lifestyle": 62
+      "emotional": 62,
+      "communication": 59,
+      "romance": 61,
+      "trust": 64,
+      "stability": 63,
+      "lifestyle": 64
     },
     "elementSynergy": {
       "title": "Earth & Air (Pragmatic Strategy)",
-      "text": "Earth brings tangible discipline and organization; Air brings innovative ideas and sparkling conversational agility."
+      "text": "Earth brings tangible structure and sensible order; Air introduces inventive concepts and conversational sparkle. Mutual appreciation bridges different tempos."
     },
     "modalitySynergy": "Cardinal + Mutable: A balanced dynamic where one partner initiates, stabilizes, or provides adaptable perspective to the other.",
     "strengths": [
@@ -3939,15 +4599,15 @@ const ZODIAC_PAIRS = {
       "Occasional friction over lifestyle pacing or decision-making speed."
     ],
     "tips": [
-      "Adopt the 24-hour cooling off rule during heated arguments before revisiting sensitive topics.",
-      "Remember that Virgo communicates love in their own authentic dialect.",
-      "Celebrate your differences as unique strengths rather than flaws to be corrected."
+      "Adopt Linda Goodman's cooling-off principle during heated arguments before revisiting sensitive topics.",
+      "Remember that Virgo communicates love in their own authentic elemental dialect.",
+      "Celebrate your differences as complementary superpowers rather than personal flaws."
     ],
     "celebrityCouples": "Celebrated Libra & Virgo cosmic pairs",
     "genderAdvice": {
-      "male_female": "When a Libra man and a Virgo woman unite, balancing his Mars/solar leadership with her emotional sanctuary fosters lasting harmony.",
-      "female_male": "When a Libra woman and a Virgo man unite, celebrating her creative initiative while valuing his steadfast protection builds an unbreakable bond.",
-      "same_sex": "In a union between two souls with Libra and Virgo energies, open communication and honoring personal autonomy keeps the romance deeply alive."
+      "male_female": "In Linda Goodman's Love Signs analysis of the Libra Man with the Virgo Woman (2-12 Vibration): He expresses his masculine planetary energy through Venus, while she responds with Mercury grace. Success blooms when he honors her emotional sanctuary and she champions his purposeful ambitions.",
+      "female_male": "In Linda Goodman's Love Signs analysis of the Libra Woman with the Virgo Man (2-12 Vibration): She brings Libra's radiant initiative to the union, while he offers Virgo's steadfast anchor. When she trusts his protective strength and he respects her autonomy, their bond becomes unbreakable.",
+      "same_sex": "In Linda Goodman's cosmic synastry (2-12 Vibration): Two souls united under Libra and Virgo celestial energies find harmony when honoring personal autonomy, balancing giving with receiving, and allowing their elemental natures to enrich each other."
     }
   },
   "libra_libra": {
@@ -3956,9 +4616,17 @@ const ZODIAC_PAIRS = {
     "overallScore": 82,
     "colorCategory": "green",
     "shadeLabel": "Harmonious Union",
-    "aspectName": "Conjunction (Mirror Alignment)",
-    "headline": "Libra & Libra: Deep Mirror Empathy & Shared Instincts",
-    "summary": "Sharing the exact same sun sign gives you an instinctual understanding of each other's drives and vulnerabilities. You understand each other's moods intuitively, though you must guard against magnifying shared blind spots.",
+    "aspectName": "1-1 Sun Sign Pattern (The Cosmic Mirror)",
+    "vibrationCode": "1-1",
+    "lindaVibration": {
+      "code": "1-1",
+      "title": "1-1 Sun Sign Pattern (The Cosmic Mirror)",
+      "theme": "Mirror Empathy & Double Ego Reflection",
+      "summary": "In Linda Goodman's Love Signs, the 1-1 vibration is like gazing directly into an astrological mirror. You recognize each other's hidden virtues and deepest faults instantly. This creates profound telepathic empathy, but both partners must guard against magnifying identical blind spots.",
+      "karmicLesson": "Cultivating emotional humility and learning self-acceptance through observing your own nature reflected in your mate."
+    },
+    "headline": "Libra & Libra: Mirror Empathy & Double Ego Reflection",
+    "summary": "In Linda Goodman's Love Signs, the 1-1 vibration is like gazing directly into an astrological mirror. You recognize each other's hidden virtues and deepest faults instantly. This creates profound telepathic empathy, but both partners must guard against magnifying identical blind spots.",
     "parameters": {
       "emotional": 82,
       "communication": 87,
@@ -3969,9 +4637,9 @@ const ZODIAC_PAIRS = {
     },
     "elementSynergy": {
       "title": "Double Air (Mental Telepathy)",
-      "text": "Incredible intellectual banter, endless laughter, and shared curiosity. A partnership where minds connect on a sparkling wavelength."
+      "text": "In Love Signs, two Air signs generate brilliant conversational agility and intellectual freedom. Your minds connect on a sparkling frequency filled with books, ideas, and laughter."
     },
-    "modalitySynergy": "Both Cardinal: Two visionary leaders who love initiating projects. Take turns steering to prevent power struggles.",
+    "modalitySynergy": "Both Cardinal (Initiators): Two natural leaders. Linda Goodman advised taking turns leading joint projects to eliminate power struggles.",
     "strengths": [
       "Natural understanding: Libra and Libra instinctively comprehend each other's core motivations.",
       "Complimentary emotional rhythms that make daily life and domestic partnership feel comforting and safe.",
@@ -3988,31 +4656,39 @@ const ZODIAC_PAIRS = {
     ],
     "celebrityCouples": "Celebrated Libra & Libra cosmic pairs",
     "genderAdvice": {
-      "male_female": "When a Libra man and a Libra woman unite, balancing his Mars/solar leadership with her emotional sanctuary fosters lasting harmony.",
-      "female_male": "When a Libra woman and a Libra man unite, celebrating her creative initiative while valuing his steadfast protection builds an unbreakable bond.",
-      "same_sex": "In a union between two souls with Libra and Libra energies, open communication and honoring personal autonomy keeps the romance deeply alive."
+      "male_female": "In Linda Goodman's Love Signs analysis of the Libra Man with the Libra Woman (1-1 Vibration): He expresses his masculine planetary energy through Venus, while she responds with Venus grace. Success blooms when he honors her emotional sanctuary and she champions his purposeful ambitions.",
+      "female_male": "In Linda Goodman's Love Signs analysis of the Libra Woman with the Libra Man (1-1 Vibration): She brings Libra's radiant initiative to the union, while he offers Libra's steadfast anchor. When she trusts his protective strength and he respects her autonomy, their bond becomes unbreakable.",
+      "same_sex": "In Linda Goodman's cosmic synastry (1-1 Vibration): Two souls united under Libra and Libra celestial energies find harmony when honoring personal autonomy, balancing giving with receiving, and allowing their elemental natures to enrich each other."
     }
   },
   "libra_scorpio": {
     "sign1": "libra",
     "sign2": "scorpio",
-    "overallScore": 62,
+    "overallScore": 64,
     "colorCategory": "amber",
     "shadeLabel": "Dynamic Potential",
-    "aspectName": "Semisextile (Neighboring Contrast)",
-    "headline": "Libra & Scorpio: Complementary Growth & Mutual Learning",
-    "summary": "As neighboring signs, you operate from contrasting elemental perspectives. This match creates a learning journey where each partner expands the other's horizons if patience is practiced.",
+    "aspectName": "2-12 Sun Sign Pattern (The Karmic Teacher & Pupil)",
+    "vibrationCode": "2-12",
+    "lindaVibration": {
+      "code": "2-12",
+      "title": "2-12 Sun Sign Pattern (The Karmic Teacher & Pupil)",
+      "theme": "Karmic Learning, Compassion & Gentle Tutoring",
+      "summary": "According to Linda Goodman, the 2-12 vibration signifies that one sign has spiritually passed through the other's grade in the cosmic school. There is a deep, unspoken bond of patience, protection, and gentle tutoring. Tolerating different pacing unlocks profound mutual growth.",
+      "karmicLesson": "Bridging contrasting elemental perspectives through patient compassion and secret mutual admiration."
+    },
+    "headline": "Libra & Scorpio: Karmic Learning, Compassion & Gentle Tutoring",
+    "summary": "According to Linda Goodman, the 2-12 vibration signifies that one sign has spiritually passed through the other's grade in the cosmic school. There is a deep, unspoken bond of patience, protection, and gentle tutoring. Tolerating different pacing unlocks profound mutual growth.",
     "parameters": {
-      "emotional": 54,
-      "communication": 57,
-      "romance": 59,
-      "trust": 62,
-      "stability": 64,
-      "lifestyle": 62
+      "emotional": 56,
+      "communication": 59,
+      "romance": 61,
+      "trust": 64,
+      "stability": 66,
+      "lifestyle": 64
     },
     "elementSynergy": {
       "title": "Air & Water (Wind & Waves)",
-      "text": "Air analyzes experiences intellectually while Water experiences them through deep emotion. Finding balance creates profound holistic insight."
+      "text": "Air analyzes experiences intellectually while Water perceives them through psychic emotion. Honoring each other's distinct perception creates rich spiritual growth."
     },
     "modalitySynergy": "Cardinal + Fixed: A balanced dynamic where one partner initiates, stabilizes, or provides adaptable perspective to the other.",
     "strengths": [
@@ -4025,37 +4701,45 @@ const ZODIAC_PAIRS = {
       "Occasional friction over lifestyle pacing or decision-making speed."
     ],
     "tips": [
-      "Adopt the 24-hour cooling off rule during heated arguments before revisiting sensitive topics.",
-      "Remember that Scorpio communicates love in their own authentic dialect.",
-      "Celebrate your differences as unique strengths rather than flaws to be corrected."
+      "Adopt Linda Goodman's cooling-off principle during heated arguments before revisiting sensitive topics.",
+      "Remember that Scorpio communicates love in their own authentic elemental dialect.",
+      "Celebrate your differences as complementary superpowers rather than personal flaws."
     ],
     "celebrityCouples": "Celebrated Libra & Scorpio cosmic pairs",
     "genderAdvice": {
-      "male_female": "When a Libra man and a Scorpio woman unite, balancing his Mars/solar leadership with her emotional sanctuary fosters lasting harmony.",
-      "female_male": "When a Libra woman and a Scorpio man unite, celebrating her creative initiative while valuing his steadfast protection builds an unbreakable bond.",
-      "same_sex": "In a union between two souls with Libra and Scorpio energies, open communication and honoring personal autonomy keeps the romance deeply alive."
+      "male_female": "In Linda Goodman's Love Signs analysis of the Libra Man with the Scorpio Woman (2-12 Vibration): He expresses his masculine planetary energy through Venus, while she responds with Pluto & Mars grace. Success blooms when he honors her emotional sanctuary and she champions his purposeful ambitions.",
+      "female_male": "In Linda Goodman's Love Signs analysis of the Libra Woman with the Scorpio Man (2-12 Vibration): She brings Libra's radiant initiative to the union, while he offers Scorpio's steadfast anchor. When she trusts his protective strength and he respects her autonomy, their bond becomes unbreakable.",
+      "same_sex": "In Linda Goodman's cosmic synastry (2-12 Vibration): Two souls united under Libra and Scorpio celestial energies find harmony when honoring personal autonomy, balancing giving with receiving, and allowing their elemental natures to enrich each other."
     }
   },
   "libra_sagittarius": {
     "sign1": "libra",
     "sign2": "sagittarius",
-    "overallScore": 86,
+    "overallScore": 88,
     "colorCategory": "green",
     "shadeLabel": "Harmonious Union",
-    "aspectName": "Sextile (Harmonious Elemental Flow)",
-    "headline": "Libra & Sagittarius: Stimulating Synergy & Easy Friendship",
-    "summary": "Your elements naturally complement each other (Fire invigorates Air, or Water nourishes Earth). Communication flows effortlessly, laughter comes easily, and mutual respect flourishes.",
+    "aspectName": "3-11 Sun Sign Pattern (Karmic Friends & Sympathetic Lovers)",
+    "vibrationCode": "3-11",
+    "lindaVibration": {
+      "code": "3-11",
+      "title": "3-11 Sun Sign Pattern (Karmic Friends & Sympathetic Lovers)",
+      "theme": "Enduring Camaraderie, Easy Forgiveness & High Devotion",
+      "summary": "Linda Goodman considered the 3-11 vibration one of the happiest and most enduring in the cosmos. Your signs form a natural sextile of friendship. Even through intense misunderstandings, 3-11 lovers remain steadfast allies, quick to forgive and eager to laugh.",
+      "karmicLesson": "Nurturing lifelong loyalty, humanitarian generosity, and effortless mutual forgiveness."
+    },
+    "headline": "Libra & Sagittarius: Enduring Camaraderie, Easy Forgiveness & High Devotion",
+    "summary": "Linda Goodman considered the 3-11 vibration one of the happiest and most enduring in the cosmos. Your signs form a natural sextile of friendship. Even through intense misunderstandings, 3-11 lovers remain steadfast allies, quick to forgive and eager to laugh.",
     "parameters": {
-      "emotional": 84,
-      "communication": 90,
-      "romance": 92,
-      "trust": 86,
-      "stability": 85,
-      "lifestyle": 86
+      "emotional": 86,
+      "communication": 92,
+      "romance": 94,
+      "trust": 88,
+      "stability": 87,
+      "lifestyle": 88
     },
     "elementSynergy": {
-      "title": "Fire & Air (Inspirational Catalyst)",
-      "text": "Air fuels Fire's passion, while Fire brings warmth and bold action to Air's inventive ideas. An exciting, socially vibrant union."
+      "title": "Fire & Air (Inspirational Breeze)",
+      "text": "Air fans Fire's flames into glorious creative radiance, while Fire warms Air's visionary ideals into bold reality. An exciting, intellectually vibrant union."
     },
     "modalitySynergy": "Cardinal + Mutable: A balanced dynamic where one partner initiates, stabilizes, or provides adaptable perspective to the other.",
     "strengths": [
@@ -4074,33 +4758,41 @@ const ZODIAC_PAIRS = {
     ],
     "celebrityCouples": "Celebrated Libra & Sagittarius cosmic pairs",
     "genderAdvice": {
-      "male_female": "When a Libra man and a Sagittarius woman unite, balancing his Mars/solar leadership with her emotional sanctuary fosters lasting harmony.",
-      "female_male": "When a Libra woman and a Sagittarius man unite, celebrating her creative initiative while valuing his steadfast protection builds an unbreakable bond.",
-      "same_sex": "In a union between two souls with Libra and Sagittarius energies, open communication and honoring personal autonomy keeps the romance deeply alive."
+      "male_female": "In Linda Goodman's Love Signs analysis of the Libra Man with the Sagittarius Woman (3-11 Vibration): He expresses his masculine planetary energy through Venus, while she responds with Jupiter grace. Success blooms when he honors her emotional sanctuary and she champions his purposeful ambitions.",
+      "female_male": "In Linda Goodman's Love Signs analysis of the Libra Woman with the Sagittarius Man (3-11 Vibration): She brings Libra's radiant initiative to the union, while he offers Sagittarius's steadfast anchor. When she trusts his protective strength and he respects her autonomy, their bond becomes unbreakable.",
+      "same_sex": "In Linda Goodman's cosmic synastry (3-11 Vibration): Two souls united under Libra and Sagittarius celestial energies find harmony when honoring personal autonomy, balancing giving with receiving, and allowing their elemental natures to enrich each other."
     }
   },
   "libra_capricorn": {
     "sign1": "libra",
     "sign2": "capricorn",
-    "overallScore": 52,
+    "overallScore": 54,
     "colorCategory": "amber",
     "shadeLabel": "Dynamic Potential",
-    "aspectName": "Square (Passionate Friction & Dynamic Growth)",
-    "headline": "Libra & Capricorn: Electrifying Spark with Creative Challenge",
-    "summary": "Signs at a 90\u00b0 square share the same modality but clash elementally. This generates high attraction, intense emotional chemistry, and spirited debates that demand conscious diplomacy and mutual compromise.",
+    "aspectName": "4-10 Sun Sign Pattern (The Karmic Challenge & Crucible)",
+    "vibrationCode": "4-10",
+    "lindaVibration": {
+      "code": "4-10",
+      "title": "4-10 Sun Sign Pattern (The Karmic Challenge & Crucible)",
+      "theme": "Passionate Friction, Dramatic Chemistry & Soul Crucible",
+      "summary": "Linda Goodman described the 4-10 square vibration as the classic crucible of soul growth. Sharing the same modality but differing elements produces magnetic physical attraction paired with clashes of will. If ego yields to love, this union builds invincible diamond strength.",
+      "karmicLesson": "Transcending stubborn pride and mastering the noble art of sacrificial compromise."
+    },
+    "headline": "Libra & Capricorn: Passionate Friction, Dramatic Chemistry & Soul Crucible",
+    "summary": "Linda Goodman described the 4-10 square vibration as the classic crucible of soul growth. Sharing the same modality but differing elements produces magnetic physical attraction paired with clashes of will. If ego yields to love, this union builds invincible diamond strength.",
     "parameters": {
-      "emotional": 50,
-      "communication": 47,
-      "romance": 49,
-      "trust": 52,
-      "stability": 51,
-      "lifestyle": 44
+      "emotional": 52,
+      "communication": 49,
+      "romance": 51,
+      "trust": 54,
+      "stability": 53,
+      "lifestyle": 46
     },
     "elementSynergy": {
       "title": "Earth & Air (Pragmatic Strategy)",
-      "text": "Earth brings tangible discipline and organization; Air brings innovative ideas and sparkling conversational agility."
+      "text": "Earth brings tangible structure and sensible order; Air introduces inventive concepts and conversational sparkle. Mutual appreciation bridges different tempos."
     },
-    "modalitySynergy": "Both Cardinal: Two visionary leaders who love initiating projects. Take turns steering to prevent power struggles.",
+    "modalitySynergy": "Both Cardinal (Initiators): Two natural leaders. Linda Goodman advised taking turns leading joint projects to eliminate power struggles.",
     "strengths": [
       "Dynamic growth: Libra introduces Capricorn to new perspectives and vice versa.",
       "Engaging romantic chemistry where you never run out of intriguing things to discover about each other.",
@@ -4111,37 +4803,45 @@ const ZODIAC_PAIRS = {
       "Occasional friction over lifestyle pacing or decision-making speed."
     ],
     "tips": [
-      "Adopt the 24-hour cooling off rule during heated arguments before revisiting sensitive topics.",
-      "Remember that Capricorn communicates love in their own authentic dialect.",
-      "Celebrate your differences as unique strengths rather than flaws to be corrected."
+      "Adopt Linda Goodman's cooling-off principle during heated arguments before revisiting sensitive topics.",
+      "Remember that Capricorn communicates love in their own authentic elemental dialect.",
+      "Celebrate your differences as complementary superpowers rather than personal flaws."
     ],
     "celebrityCouples": "Celebrated Libra & Capricorn cosmic pairs",
     "genderAdvice": {
-      "male_female": "When a Libra man and a Capricorn woman unite, balancing his Mars/solar leadership with her emotional sanctuary fosters lasting harmony.",
-      "female_male": "When a Libra woman and a Capricorn man unite, celebrating her creative initiative while valuing his steadfast protection builds an unbreakable bond.",
-      "same_sex": "In a union between two souls with Libra and Capricorn energies, open communication and honoring personal autonomy keeps the romance deeply alive."
+      "male_female": "In Linda Goodman's Love Signs analysis of the Libra Man with the Capricorn Woman (4-10 Vibration): He expresses his masculine planetary energy through Venus, while she responds with Saturn grace. Success blooms when he honors her emotional sanctuary and she champions his purposeful ambitions.",
+      "female_male": "In Linda Goodman's Love Signs analysis of the Libra Woman with the Capricorn Man (4-10 Vibration): She brings Libra's radiant initiative to the union, while he offers Capricorn's steadfast anchor. When she trusts his protective strength and he respects her autonomy, their bond becomes unbreakable.",
+      "same_sex": "In Linda Goodman's cosmic synastry (4-10 Vibration): Two souls united under Libra and Capricorn celestial energies find harmony when honoring personal autonomy, balancing giving with receiving, and allowing their elemental natures to enrich each other."
     }
   },
   "libra_aquarius": {
     "sign1": "libra",
     "sign2": "aquarius",
-    "overallScore": 94,
+    "overallScore": 95,
     "colorCategory": "green",
     "shadeLabel": "Harmonious Union",
-    "aspectName": "Trine (Divine Soulmate Element)",
-    "headline": "Libra & Aquarius: Effortless Harmony & Natural Soul Resonance",
-    "summary": "Sharing the same element (Fire-Fire, Earth-Earth, Air-Air, Water-Water) creates an instinctive, harmonious flow. You breathe the same spiritual air, understand each other's pacing, and feel deeply at home together.",
+    "aspectName": "5-9 Sun Sign Pattern (The Divine Cosmic Blessing)",
+    "vibrationCode": "5-9",
+    "lindaVibration": {
+      "code": "5-9",
+      "title": "5-9 Sun Sign Pattern (The Divine Cosmic Blessing)",
+      "theme": "Golden Trine, Soulmate Telepathy & Natural Sympathy",
+      "summary": "Linda Goodman's most celebrated synastry pattern! Sharing the same sacred element (Fire, Earth, Air, or Water) brings instant soul recognition. You forgive each other almost effortlessly, inspire each other's dreams, and enjoy an almost telepathic understanding.",
+      "karmicLesson": "Preserving sacred gratitude and avoiding taking your effortless soul harmony for granted."
+    },
+    "headline": "Libra & Aquarius: Golden Trine, Soulmate Telepathy & Natural Sympathy",
+    "summary": "Linda Goodman's most celebrated synastry pattern! Sharing the same sacred element (Fire, Earth, Air, or Water) brings instant soul recognition. You forgive each other almost effortlessly, inspire each other's dreams, and enjoy an almost telepathic understanding.",
     "parameters": {
-      "emotional": 94,
+      "emotional": 95,
       "communication": 98,
-      "romance": 91,
-      "trust": 94,
-      "stability": 89,
+      "romance": 92,
+      "trust": 95,
+      "stability": 90,
       "lifestyle": 96
     },
     "elementSynergy": {
       "title": "Double Air (Mental Telepathy)",
-      "text": "Incredible intellectual banter, endless laughter, and shared curiosity. A partnership where minds connect on a sparkling wavelength."
+      "text": "In Love Signs, two Air signs generate brilliant conversational agility and intellectual freedom. Your minds connect on a sparkling frequency filled with books, ideas, and laughter."
     },
     "modalitySynergy": "Cardinal + Fixed: A balanced dynamic where one partner initiates, stabilizes, or provides adaptable perspective to the other.",
     "strengths": [
@@ -4160,40 +4860,48 @@ const ZODIAC_PAIRS = {
     ],
     "celebrityCouples": "Celebrated Libra & Aquarius cosmic pairs",
     "genderAdvice": {
-      "male_female": "When a Libra man and a Aquarius woman unite, balancing his Mars/solar leadership with her emotional sanctuary fosters lasting harmony.",
-      "female_male": "When a Libra woman and a Aquarius man unite, celebrating her creative initiative while valuing his steadfast protection builds an unbreakable bond.",
-      "same_sex": "In a union between two souls with Libra and Aquarius energies, open communication and honoring personal autonomy keeps the romance deeply alive."
+      "male_female": "In Linda Goodman's Love Signs analysis of the Libra Man with the Aquarius Woman (5-9 Vibration): He expresses his masculine planetary energy through Venus, while she responds with Uranus & Saturn grace. Success blooms when he honors her emotional sanctuary and she champions his purposeful ambitions.",
+      "female_male": "In Linda Goodman's Love Signs analysis of the Libra Woman with the Aquarius Man (5-9 Vibration): She brings Libra's radiant initiative to the union, while he offers Aquarius's steadfast anchor. When she trusts his protective strength and he respects her autonomy, their bond becomes unbreakable.",
+      "same_sex": "In Linda Goodman's cosmic synastry (5-9 Vibration): Two souls united under Libra and Aquarius celestial energies find harmony when honoring personal autonomy, balancing giving with receiving, and allowing their elemental natures to enrich each other."
     }
   },
   "libra_pisces": {
     "sign1": "libra",
     "sign2": "pisces",
-    "overallScore": 46,
+    "overallScore": 48,
     "colorCategory": "red",
     "shadeLabel": "Growth Challenge",
-    "aspectName": "Quincunx (Mysterious Intrigue & Karmic Adjustment)",
-    "headline": "Libra & Pisces: Enigmatic Attraction Demanding Patience",
-    "summary": "Separated by five signs, you have little in common astrologically, which creates an intriguing magnetic mystery. Succeeding together requires appreciating your partner's entirely unique perspective on life.",
+    "aspectName": "6-8 Sun Sign Pattern (Karmic Mystery & Devoted Service)",
+    "vibrationCode": "6-8",
+    "lindaVibration": {
+      "code": "6-8",
+      "title": "6-8 Sun Sign Pattern (Karmic Mystery & Devoted Service)",
+      "theme": "Enigmatic Fascination, Hypnotic Pull & Karmic Duty",
+      "summary": "According to Linda Goodman, the 6-8 quincunx vibration is cloaked in hypnotic fascination and karmic debt. One partner feels drawn to serve, protect, or nurture the other, generating deep emotional or physical magnetism that requires profound patience to untangle.",
+      "karmicLesson": "Practicing unconditional love free from selfish demands, embracing differences that cannot be logically explained."
+    },
+    "headline": "Libra & Pisces: Enigmatic Fascination, Hypnotic Pull & Karmic Duty",
+    "summary": "According to Linda Goodman, the 6-8 quincunx vibration is cloaked in hypnotic fascination and karmic debt. One partner feels drawn to serve, protect, or nurture the other, generating deep emotional or physical magnetism that requires profound patience to untangle.",
     "parameters": {
       "emotional": 42,
       "communication": 45,
-      "romance": 43,
-      "trust": 46,
-      "stability": 45,
-      "lifestyle": 38
+      "romance": 45,
+      "trust": 48,
+      "stability": 47,
+      "lifestyle": 40
     },
     "elementSynergy": {
       "title": "Air & Water (Wind & Waves)",
-      "text": "Air analyzes experiences intellectually while Water experiences them through deep emotion. Finding balance creates profound holistic insight."
+      "text": "Air analyzes experiences intellectually while Water perceives them through psychic emotion. Honoring each other's distinct perception creates rich spiritual growth."
     },
     "modalitySynergy": "Cardinal + Mutable: A balanced dynamic where one partner initiates, stabilizes, or provides adaptable perspective to the other.",
     "strengths": [
-      "Powerful karmic pull that pushes both individuals to mature emotionally.",
+      "Powerful karmic pull that pushes both souls to mature emotionally and spiritually.",
       "Unforgettable chemistry and passion born from sheer elemental contrast.",
       "Opportunity to develop immense patience, empathy, and unconditional love."
     ],
     "challenges": [
-      "Fundamental contrast in priorities: Libra's instinctual approach may confuse Pisces.",
+      "Fundamental contrast in priorities: Libra's instinctual approach may baffle Pisces.",
       "Tendency to misinterpret your partner's need for space or emotional expression."
     ],
     "tips": [
@@ -4203,31 +4911,39 @@ const ZODIAC_PAIRS = {
     ],
     "celebrityCouples": "Celebrated Libra & Pisces cosmic pairs",
     "genderAdvice": {
-      "male_female": "When a Libra man and a Pisces woman unite, balancing his Mars/solar leadership with her emotional sanctuary fosters lasting harmony.",
-      "female_male": "When a Libra woman and a Pisces man unite, celebrating her creative initiative while valuing his steadfast protection builds an unbreakable bond.",
-      "same_sex": "In a union between two souls with Libra and Pisces energies, open communication and honoring personal autonomy keeps the romance deeply alive."
+      "male_female": "In Linda Goodman's Love Signs analysis of the Libra Man with the Pisces Woman (6-8 Vibration): He expresses his masculine planetary energy through Venus, while she responds with Neptune & Jupiter grace. Success blooms when he honors her emotional sanctuary and she champions his purposeful ambitions.",
+      "female_male": "In Linda Goodman's Love Signs analysis of the Libra Woman with the Pisces Man (6-8 Vibration): She brings Libra's radiant initiative to the union, while he offers Pisces's steadfast anchor. When she trusts his protective strength and he respects her autonomy, their bond becomes unbreakable.",
+      "same_sex": "In Linda Goodman's cosmic synastry (6-8 Vibration): Two souls united under Libra and Pisces celestial energies find harmony when honoring personal autonomy, balancing giving with receiving, and allowing their elemental natures to enrich each other."
     }
   },
   "scorpio_aries": {
     "sign1": "scorpio",
     "sign2": "aries",
-    "overallScore": 50,
+    "overallScore": 51,
     "colorCategory": "amber",
     "shadeLabel": "Dynamic Potential",
-    "aspectName": "Quincunx (Mysterious Intrigue & Karmic Adjustment)",
-    "headline": "Scorpio & Aries: Enigmatic Attraction Demanding Patience",
-    "summary": "Separated by five signs, you have little in common astrologically, which creates an intriguing magnetic mystery. Succeeding together requires appreciating your partner's entirely unique perspective on life.",
+    "aspectName": "6-8 Sun Sign Pattern (Karmic Mystery & Devoted Service)",
+    "vibrationCode": "6-8",
+    "lindaVibration": {
+      "code": "6-8",
+      "title": "6-8 Sun Sign Pattern (Karmic Mystery & Devoted Service)",
+      "theme": "Enigmatic Fascination, Hypnotic Pull & Karmic Duty",
+      "summary": "According to Linda Goodman, the 6-8 quincunx vibration is cloaked in hypnotic fascination and karmic debt. One partner feels drawn to serve, protect, or nurture the other, generating deep emotional or physical magnetism that requires profound patience to untangle.",
+      "karmicLesson": "Practicing unconditional love free from selfish demands, embracing differences that cannot be logically explained."
+    },
+    "headline": "Scorpio & Aries: Enigmatic Fascination, Hypnotic Pull & Karmic Duty",
+    "summary": "According to Linda Goodman, the 6-8 quincunx vibration is cloaked in hypnotic fascination and karmic debt. One partner feels drawn to serve, protect, or nurture the other, generating deep emotional or physical magnetism that requires profound patience to untangle.",
     "parameters": {
-      "emotional": 40,
-      "communication": 50,
-      "romance": 47,
-      "trust": 50,
-      "stability": 52,
-      "lifestyle": 42
+      "emotional": 41,
+      "communication": 51,
+      "romance": 48,
+      "trust": 51,
+      "stability": 53,
+      "lifestyle": 43
     },
     "elementSynergy": {
-      "title": "Fire & Water (Steam & Intense Chemistry)",
-      "text": "Extremely passionate and emotionally turbulent. Fire inspires Water to take bold leaps; Water teaches Fire the beauty of tender emotional depth."
+      "title": "Fire & Water (Steam & Intense Passion)",
+      "text": "Extremely passionate and emotionally turbulent. Fire inspires Water to take brave leaps; Water teaches Fire the beauty of quiet emotional vulnerability."
     },
     "modalitySynergy": "Fixed + Cardinal: A balanced dynamic where one partner initiates, stabilizes, or provides adaptable perspective to the other.",
     "strengths": [
@@ -4240,39 +4956,47 @@ const ZODIAC_PAIRS = {
       "Occasional friction over lifestyle pacing or decision-making speed."
     ],
     "tips": [
-      "Adopt the 24-hour cooling off rule during heated arguments before revisiting sensitive topics.",
-      "Remember that Aries communicates love in their own authentic dialect.",
-      "Celebrate your differences as unique strengths rather than flaws to be corrected."
+      "Adopt Linda Goodman's cooling-off principle during heated arguments before revisiting sensitive topics.",
+      "Remember that Aries communicates love in their own authentic elemental dialect.",
+      "Celebrate your differences as complementary superpowers rather than personal flaws."
     ],
     "celebrityCouples": "Celebrated Scorpio & Aries cosmic pairs",
     "genderAdvice": {
-      "male_female": "When a Scorpio man and a Aries woman unite, balancing his Mars/solar leadership with her emotional sanctuary fosters lasting harmony.",
-      "female_male": "When a Scorpio woman and a Aries man unite, celebrating her creative initiative while valuing his steadfast protection builds an unbreakable bond.",
-      "same_sex": "In a union between two souls with Scorpio and Aries energies, open communication and honoring personal autonomy keeps the romance deeply alive."
+      "male_female": "In Linda Goodman's Love Signs analysis of the Scorpio Man with the Aries Woman (6-8 Vibration): He expresses his masculine planetary energy through Pluto & Mars, while she responds with Mars grace. Success blooms when he honors her emotional sanctuary and she champions his purposeful ambitions.",
+      "female_male": "In Linda Goodman's Love Signs analysis of the Scorpio Woman with the Aries Man (6-8 Vibration): She brings Scorpio's radiant initiative to the union, while he offers Aries's steadfast anchor. When she trusts his protective strength and he respects her autonomy, their bond becomes unbreakable.",
+      "same_sex": "In Linda Goodman's cosmic synastry (6-8 Vibration): Two souls united under Scorpio and Aries celestial energies find harmony when honoring personal autonomy, balancing giving with receiving, and allowing their elemental natures to enrich each other."
     }
   },
   "scorpio_taurus": {
     "sign1": "scorpio",
     "sign2": "taurus",
-    "overallScore": 83,
+    "overallScore": 85,
     "colorCategory": "green",
     "shadeLabel": "Harmonious Union",
-    "aspectName": "Opposition (Cosmic Magnetism & Polar Balance)",
-    "headline": "Scorpio & Taurus: Magnetic Attraction & Yin-Yang Balance",
-    "summary": "Sitting 180\u00b0 across the zodiac wheel, you are polar opposites. What one lacks, the other possesses in abundance. The chemistry is electric, offering the potential to form an unbeatable yin-and-yang partnership.",
+    "aspectName": "7-7 Sun Sign Pattern (Polar Magnetism & Cosmic Complements)",
+    "vibrationCode": "7-7",
+    "lindaVibration": {
+      "code": "7-7",
+      "title": "7-7 Sun Sign Pattern (Polar Magnetism & Cosmic Complements)",
+      "theme": "Opposites Attract, Celestial Electricity & Yin-Yang Balance",
+      "summary": "Sitting 180\u00b0 opposite on the zodiac wheel, Linda Goodman saw the 7-7 vibration as two halves of a single soul. What one lacks, the other possesses in abundance. It generates high romantic voltage: either a magnificent lifelong union or an explosive standoff.",
+      "karmicLesson": "Finding wholeness through merging opposite qualities into a unified, harmonious whole."
+    },
+    "headline": "Scorpio & Taurus: Opposites Attract, Celestial Electricity & Yin-Yang Balance",
+    "summary": "Sitting 180\u00b0 opposite on the zodiac wheel, Linda Goodman saw the 7-7 vibration as two halves of a single soul. What one lacks, the other possesses in abundance. It generates high romantic voltage: either a magnificent lifelong union or an explosive standoff.",
     "parameters": {
-      "emotional": 85,
-      "communication": 83,
-      "romance": 91,
-      "trust": 88,
-      "stability": 89,
-      "lifestyle": 83
+      "emotional": 87,
+      "communication": 85,
+      "romance": 93,
+      "trust": 90,
+      "stability": 91,
+      "lifestyle": 85
     },
     "elementSynergy": {
       "title": "Earth & Water (Fertile Nurturing)",
-      "text": "Water softens Earth with empathy and emotion; Earth provides Water with steady shores of stability. A classic recipe for enduring married happiness."
+      "text": "Water softens Earth with tender emotional empathy; Earth provides Water with comforting shores of physical stability. A classic recipe for a thriving, enduring marriage."
     },
-    "modalitySynergy": "Both Fixed: Unshakable loyalty and steadfast commitment. Practice active compromise to prevent stubborn standoffs.",
+    "modalitySynergy": "Both Fixed (Stabilizers): Unshakeable loyalty and rock-solid fidelity. Linda Goodman urged practicing gentle flexibility to resolve stubborn standoffs.",
     "strengths": [
       "Natural understanding: Scorpio and Taurus instinctively comprehend each other's core motivations.",
       "Complimentary emotional rhythms that make daily life and domestic partnership feel comforting and safe.",
@@ -4289,40 +5013,48 @@ const ZODIAC_PAIRS = {
     ],
     "celebrityCouples": "Celebrated Scorpio & Taurus cosmic pairs",
     "genderAdvice": {
-      "male_female": "When a Scorpio man and a Taurus woman unite, balancing his Mars/solar leadership with her emotional sanctuary fosters lasting harmony.",
-      "female_male": "When a Scorpio woman and a Taurus man unite, celebrating her creative initiative while valuing his steadfast protection builds an unbreakable bond.",
-      "same_sex": "In a union between two souls with Scorpio and Taurus energies, open communication and honoring personal autonomy keeps the romance deeply alive."
+      "male_female": "In Linda Goodman's Love Signs analysis of the Scorpio Man with the Taurus Woman (7-7 Vibration): He expresses his masculine planetary energy through Pluto & Mars, while she responds with Venus grace. Success blooms when he honors her emotional sanctuary and she champions his purposeful ambitions.",
+      "female_male": "In Linda Goodman's Love Signs analysis of the Scorpio Woman with the Taurus Man (7-7 Vibration): She brings Scorpio's radiant initiative to the union, while he offers Taurus's steadfast anchor. When she trusts his protective strength and he respects her autonomy, their bond becomes unbreakable.",
+      "same_sex": "In Linda Goodman's cosmic synastry (7-7 Vibration): Two souls united under Scorpio and Taurus celestial energies find harmony when honoring personal autonomy, balancing giving with receiving, and allowing their elemental natures to enrich each other."
     }
   },
   "scorpio_gemini": {
     "sign1": "scorpio",
     "sign2": "gemini",
-    "overallScore": 46,
+    "overallScore": 48,
     "colorCategory": "red",
     "shadeLabel": "Growth Challenge",
-    "aspectName": "Quincunx (Mysterious Intrigue & Karmic Adjustment)",
-    "headline": "Scorpio & Gemini: Enigmatic Attraction Demanding Patience",
-    "summary": "Separated by five signs, you have little in common astrologically, which creates an intriguing magnetic mystery. Succeeding together requires appreciating your partner's entirely unique perspective on life.",
+    "aspectName": "6-8 Sun Sign Pattern (Karmic Mystery & Devoted Service)",
+    "vibrationCode": "6-8",
+    "lindaVibration": {
+      "code": "6-8",
+      "title": "6-8 Sun Sign Pattern (Karmic Mystery & Devoted Service)",
+      "theme": "Enigmatic Fascination, Hypnotic Pull & Karmic Duty",
+      "summary": "According to Linda Goodman, the 6-8 quincunx vibration is cloaked in hypnotic fascination and karmic debt. One partner feels drawn to serve, protect, or nurture the other, generating deep emotional or physical magnetism that requires profound patience to untangle.",
+      "karmicLesson": "Practicing unconditional love free from selfish demands, embracing differences that cannot be logically explained."
+    },
+    "headline": "Scorpio & Gemini: Enigmatic Fascination, Hypnotic Pull & Karmic Duty",
+    "summary": "According to Linda Goodman, the 6-8 quincunx vibration is cloaked in hypnotic fascination and karmic debt. One partner feels drawn to serve, protect, or nurture the other, generating deep emotional or physical magnetism that requires profound patience to untangle.",
     "parameters": {
       "emotional": 42,
       "communication": 45,
-      "romance": 43,
-      "trust": 46,
-      "stability": 48,
-      "lifestyle": 38
+      "romance": 45,
+      "trust": 48,
+      "stability": 50,
+      "lifestyle": 40
     },
     "elementSynergy": {
       "title": "Air & Water (Wind & Waves)",
-      "text": "Air analyzes experiences intellectually while Water experiences them through deep emotion. Finding balance creates profound holistic insight."
+      "text": "Air analyzes experiences intellectually while Water perceives them through psychic emotion. Honoring each other's distinct perception creates rich spiritual growth."
     },
     "modalitySynergy": "Fixed + Mutable: A balanced dynamic where one partner initiates, stabilizes, or provides adaptable perspective to the other.",
     "strengths": [
-      "Powerful karmic pull that pushes both individuals to mature emotionally.",
+      "Powerful karmic pull that pushes both souls to mature emotionally and spiritually.",
       "Unforgettable chemistry and passion born from sheer elemental contrast.",
       "Opportunity to develop immense patience, empathy, and unconditional love."
     ],
     "challenges": [
-      "Fundamental contrast in priorities: Scorpio's instinctual approach may confuse Gemini.",
+      "Fundamental contrast in priorities: Scorpio's instinctual approach may baffle Gemini.",
       "Tendency to misinterpret your partner's need for space or emotional expression."
     ],
     "tips": [
@@ -4332,31 +5064,39 @@ const ZODIAC_PAIRS = {
     ],
     "celebrityCouples": "Celebrated Scorpio & Gemini cosmic pairs",
     "genderAdvice": {
-      "male_female": "When a Scorpio man and a Gemini woman unite, balancing his Mars/solar leadership with her emotional sanctuary fosters lasting harmony.",
-      "female_male": "When a Scorpio woman and a Gemini man unite, celebrating her creative initiative while valuing his steadfast protection builds an unbreakable bond.",
-      "same_sex": "In a union between two souls with Scorpio and Gemini energies, open communication and honoring personal autonomy keeps the romance deeply alive."
+      "male_female": "In Linda Goodman's Love Signs analysis of the Scorpio Man with the Gemini Woman (6-8 Vibration): He expresses his masculine planetary energy through Pluto & Mars, while she responds with Mercury grace. Success blooms when he honors her emotional sanctuary and she champions his purposeful ambitions.",
+      "female_male": "In Linda Goodman's Love Signs analysis of the Scorpio Woman with the Gemini Man (6-8 Vibration): She brings Scorpio's radiant initiative to the union, while he offers Gemini's steadfast anchor. When she trusts his protective strength and he respects her autonomy, their bond becomes unbreakable.",
+      "same_sex": "In Linda Goodman's cosmic synastry (6-8 Vibration): Two souls united under Scorpio and Gemini celestial energies find harmony when honoring personal autonomy, balancing giving with receiving, and allowing their elemental natures to enrich each other."
     }
   },
   "scorpio_cancer": {
     "sign1": "scorpio",
     "sign2": "cancer",
-    "overallScore": 97,
+    "overallScore": 98,
     "colorCategory": "green",
     "shadeLabel": "Harmonious Union",
-    "aspectName": "Trine (Divine Soulmate Element)",
-    "headline": "Scorpio & Cancer: Effortless Harmony & Natural Soul Resonance",
-    "summary": "Sharing the same element (Fire-Fire, Earth-Earth, Air-Air, Water-Water) creates an instinctive, harmonious flow. You breathe the same spiritual air, understand each other's pacing, and feel deeply at home together.",
+    "aspectName": "5-9 Sun Sign Pattern (The Divine Cosmic Blessing)",
+    "vibrationCode": "5-9",
+    "lindaVibration": {
+      "code": "5-9",
+      "title": "5-9 Sun Sign Pattern (The Divine Cosmic Blessing)",
+      "theme": "Golden Trine, Soulmate Telepathy & Natural Sympathy",
+      "summary": "Linda Goodman's most celebrated synastry pattern! Sharing the same sacred element (Fire, Earth, Air, or Water) brings instant soul recognition. You forgive each other almost effortlessly, inspire each other's dreams, and enjoy an almost telepathic understanding.",
+      "karmicLesson": "Preserving sacred gratitude and avoiding taking your effortless soul harmony for granted."
+    },
+    "headline": "Scorpio & Cancer: Golden Trine, Soulmate Telepathy & Natural Sympathy",
+    "summary": "Linda Goodman's most celebrated synastry pattern! Sharing the same sacred element (Fire, Earth, Air, or Water) brings instant soul recognition. You forgive each other almost effortlessly, inspire each other's dreams, and enjoy an almost telepathic understanding.",
     "parameters": {
       "emotional": 98,
-      "communication": 97,
-      "romance": 94,
-      "trust": 97,
+      "communication": 98,
+      "romance": 95,
+      "trust": 98,
       "stability": 94,
       "lifestyle": 96
     },
     "elementSynergy": {
-      "title": "Double Water (Oceanic Soul Bond)",
-      "text": "Intuitive, deeply emotional, and almost telepathic understanding. You hold space for each other's deepest vulnerabilities and dreams."
+      "title": "Double Water (Oceanic Soul Resonance)",
+      "text": "Linda Goodman described two Water signs as deep telepathic soulmates. You sense each other's moods intuitively without words, creating a sacred emotional sanctuary."
     },
     "modalitySynergy": "Fixed + Cardinal: A balanced dynamic where one partner initiates, stabilizes, or provides adaptable perspective to the other.",
     "strengths": [
@@ -4375,33 +5115,41 @@ const ZODIAC_PAIRS = {
     ],
     "celebrityCouples": "Celebrated Scorpio & Cancer cosmic pairs",
     "genderAdvice": {
-      "male_female": "When a Scorpio man and a Cancer woman unite, balancing his Mars/solar leadership with her emotional sanctuary fosters lasting harmony.",
-      "female_male": "When a Scorpio woman and a Cancer man unite, celebrating her creative initiative while valuing his steadfast protection builds an unbreakable bond.",
-      "same_sex": "In a union between two souls with Scorpio and Cancer energies, open communication and honoring personal autonomy keeps the romance deeply alive."
+      "male_female": "In Linda Goodman's Love Signs analysis of the Scorpio Man with the Cancer Woman (5-9 Vibration): He expresses his masculine planetary energy through Pluto & Mars, while she responds with Moon grace. Success blooms when he honors her emotional sanctuary and she champions his purposeful ambitions.",
+      "female_male": "In Linda Goodman's Love Signs analysis of the Scorpio Woman with the Cancer Man (5-9 Vibration): She brings Scorpio's radiant initiative to the union, while he offers Cancer's steadfast anchor. When she trusts his protective strength and he respects her autonomy, their bond becomes unbreakable.",
+      "same_sex": "In Linda Goodman's cosmic synastry (5-9 Vibration): Two souls united under Scorpio and Cancer celestial energies find harmony when honoring personal autonomy, balancing giving with receiving, and allowing their elemental natures to enrich each other."
     }
   },
   "scorpio_leo": {
     "sign1": "scorpio",
     "sign2": "leo",
-    "overallScore": 52,
+    "overallScore": 54,
     "colorCategory": "amber",
     "shadeLabel": "Dynamic Potential",
-    "aspectName": "Square (Passionate Friction & Dynamic Growth)",
-    "headline": "Scorpio & Leo: Electrifying Spark with Creative Challenge",
-    "summary": "Signs at a 90\u00b0 square share the same modality but clash elementally. This generates high attraction, intense emotional chemistry, and spirited debates that demand conscious diplomacy and mutual compromise.",
+    "aspectName": "4-10 Sun Sign Pattern (The Karmic Challenge & Crucible)",
+    "vibrationCode": "4-10",
+    "lindaVibration": {
+      "code": "4-10",
+      "title": "4-10 Sun Sign Pattern (The Karmic Challenge & Crucible)",
+      "theme": "Passionate Friction, Dramatic Chemistry & Soul Crucible",
+      "summary": "Linda Goodman described the 4-10 square vibration as the classic crucible of soul growth. Sharing the same modality but differing elements produces magnetic physical attraction paired with clashes of will. If ego yields to love, this union builds invincible diamond strength.",
+      "karmicLesson": "Transcending stubborn pride and mastering the noble art of sacrificial compromise."
+    },
+    "headline": "Scorpio & Leo: Passionate Friction, Dramatic Chemistry & Soul Crucible",
+    "summary": "Linda Goodman described the 4-10 square vibration as the classic crucible of soul growth. Sharing the same modality but differing elements produces magnetic physical attraction paired with clashes of will. If ego yields to love, this union builds invincible diamond strength.",
     "parameters": {
-      "emotional": 42,
-      "communication": 52,
-      "romance": 49,
-      "trust": 56,
-      "stability": 54,
-      "lifestyle": 44
+      "emotional": 44,
+      "communication": 54,
+      "romance": 51,
+      "trust": 58,
+      "stability": 56,
+      "lifestyle": 46
     },
     "elementSynergy": {
-      "title": "Fire & Water (Steam & Intense Chemistry)",
-      "text": "Extremely passionate and emotionally turbulent. Fire inspires Water to take bold leaps; Water teaches Fire the beauty of tender emotional depth."
+      "title": "Fire & Water (Steam & Intense Passion)",
+      "text": "Extremely passionate and emotionally turbulent. Fire inspires Water to take brave leaps; Water teaches Fire the beauty of quiet emotional vulnerability."
     },
-    "modalitySynergy": "Both Fixed: Unshakable loyalty and steadfast commitment. Practice active compromise to prevent stubborn standoffs.",
+    "modalitySynergy": "Both Fixed (Stabilizers): Unshakeable loyalty and rock-solid fidelity. Linda Goodman urged practicing gentle flexibility to resolve stubborn standoffs.",
     "strengths": [
       "Dynamic growth: Scorpio introduces Leo to new perspectives and vice versa.",
       "Engaging romantic chemistry where you never run out of intriguing things to discover about each other.",
@@ -4412,37 +5160,45 @@ const ZODIAC_PAIRS = {
       "Occasional friction over lifestyle pacing or decision-making speed."
     ],
     "tips": [
-      "Adopt the 24-hour cooling off rule during heated arguments before revisiting sensitive topics.",
-      "Remember that Leo communicates love in their own authentic dialect.",
-      "Celebrate your differences as unique strengths rather than flaws to be corrected."
+      "Adopt Linda Goodman's cooling-off principle during heated arguments before revisiting sensitive topics.",
+      "Remember that Leo communicates love in their own authentic elemental dialect.",
+      "Celebrate your differences as complementary superpowers rather than personal flaws."
     ],
     "celebrityCouples": "Celebrated Scorpio & Leo cosmic pairs",
     "genderAdvice": {
-      "male_female": "When a Scorpio man and a Leo woman unite, balancing his Mars/solar leadership with her emotional sanctuary fosters lasting harmony.",
-      "female_male": "When a Scorpio woman and a Leo man unite, celebrating her creative initiative while valuing his steadfast protection builds an unbreakable bond.",
-      "same_sex": "In a union between two souls with Scorpio and Leo energies, open communication and honoring personal autonomy keeps the romance deeply alive."
+      "male_female": "In Linda Goodman's Love Signs analysis of the Scorpio Man with the Leo Woman (4-10 Vibration): He expresses his masculine planetary energy through Pluto & Mars, while she responds with Sun grace. Success blooms when he honors her emotional sanctuary and she champions his purposeful ambitions.",
+      "female_male": "In Linda Goodman's Love Signs analysis of the Scorpio Woman with the Leo Man (4-10 Vibration): She brings Scorpio's radiant initiative to the union, while he offers Leo's steadfast anchor. When she trusts his protective strength and he respects her autonomy, their bond becomes unbreakable.",
+      "same_sex": "In Linda Goodman's cosmic synastry (4-10 Vibration): Two souls united under Scorpio and Leo celestial energies find harmony when honoring personal autonomy, balancing giving with receiving, and allowing their elemental natures to enrich each other."
     }
   },
   "scorpio_virgo": {
     "sign1": "scorpio",
     "sign2": "virgo",
-    "overallScore": 91,
+    "overallScore": 92,
     "colorCategory": "green",
     "shadeLabel": "Harmonious Union",
-    "aspectName": "Sextile (Harmonious Elemental Flow)",
-    "headline": "Scorpio & Virgo: Stimulating Synergy & Easy Friendship",
-    "summary": "Your elements naturally complement each other (Fire invigorates Air, or Water nourishes Earth). Communication flows effortlessly, laughter comes easily, and mutual respect flourishes.",
+    "aspectName": "3-11 Sun Sign Pattern (Karmic Friends & Sympathetic Lovers)",
+    "vibrationCode": "3-11",
+    "lindaVibration": {
+      "code": "3-11",
+      "title": "3-11 Sun Sign Pattern (Karmic Friends & Sympathetic Lovers)",
+      "theme": "Enduring Camaraderie, Easy Forgiveness & High Devotion",
+      "summary": "Linda Goodman considered the 3-11 vibration one of the happiest and most enduring in the cosmos. Your signs form a natural sextile of friendship. Even through intense misunderstandings, 3-11 lovers remain steadfast allies, quick to forgive and eager to laugh.",
+      "karmicLesson": "Nurturing lifelong loyalty, humanitarian generosity, and effortless mutual forgiveness."
+    },
+    "headline": "Scorpio & Virgo: Enduring Camaraderie, Easy Forgiveness & High Devotion",
+    "summary": "Linda Goodman considered the 3-11 vibration one of the happiest and most enduring in the cosmos. Your signs form a natural sextile of friendship. Even through intense misunderstandings, 3-11 lovers remain steadfast allies, quick to forgive and eager to laugh.",
     "parameters": {
-      "emotional": 93,
+      "emotional": 94,
       "communication": 94,
       "romance": 92,
-      "trust": 96,
-      "stability": 97,
-      "lifestyle": 91
+      "trust": 97,
+      "stability": 98,
+      "lifestyle": 92
     },
     "elementSynergy": {
       "title": "Earth & Water (Fertile Nurturing)",
-      "text": "Water softens Earth with empathy and emotion; Earth provides Water with steady shores of stability. A classic recipe for enduring married happiness."
+      "text": "Water softens Earth with tender emotional empathy; Earth provides Water with comforting shores of physical stability. A classic recipe for a thriving, enduring marriage."
     },
     "modalitySynergy": "Fixed + Mutable: A balanced dynamic where one partner initiates, stabilizes, or provides adaptable perspective to the other.",
     "strengths": [
@@ -4461,31 +5217,39 @@ const ZODIAC_PAIRS = {
     ],
     "celebrityCouples": "Ryan Reynolds (Scorpio) & Blake Lively (Virgo)",
     "genderAdvice": {
-      "male_female": "When a Scorpio man and a Virgo woman unite, balancing his Mars/solar leadership with her emotional sanctuary fosters lasting harmony.",
-      "female_male": "When a Scorpio woman and a Virgo man unite, celebrating her creative initiative while valuing his steadfast protection builds an unbreakable bond.",
-      "same_sex": "In a union between two souls with Scorpio and Virgo energies, open communication and honoring personal autonomy keeps the romance deeply alive."
+      "male_female": "In Linda Goodman's Love Signs analysis of the Scorpio Man with the Virgo Woman (3-11 Vibration): He expresses his masculine planetary energy through Pluto & Mars, while she responds with Mercury grace. Success blooms when he honors her emotional sanctuary and she champions his purposeful ambitions.",
+      "female_male": "In Linda Goodman's Love Signs analysis of the Scorpio Woman with the Virgo Man (3-11 Vibration): She brings Scorpio's radiant initiative to the union, while he offers Virgo's steadfast anchor. When she trusts his protective strength and he respects her autonomy, their bond becomes unbreakable.",
+      "same_sex": "In Linda Goodman's cosmic synastry (3-11 Vibration): Two souls united under Scorpio and Virgo celestial energies find harmony when honoring personal autonomy, balancing giving with receiving, and allowing their elemental natures to enrich each other."
     }
   },
   "scorpio_libra": {
     "sign1": "scorpio",
     "sign2": "libra",
-    "overallScore": 62,
+    "overallScore": 64,
     "colorCategory": "amber",
     "shadeLabel": "Dynamic Potential",
-    "aspectName": "Semisextile (Neighboring Contrast)",
-    "headline": "Scorpio & Libra: Complementary Growth & Mutual Learning",
-    "summary": "As neighboring signs, you operate from contrasting elemental perspectives. This match creates a learning journey where each partner expands the other's horizons if patience is practiced.",
+    "aspectName": "2-12 Sun Sign Pattern (The Karmic Teacher & Pupil)",
+    "vibrationCode": "2-12",
+    "lindaVibration": {
+      "code": "2-12",
+      "title": "2-12 Sun Sign Pattern (The Karmic Teacher & Pupil)",
+      "theme": "Karmic Learning, Compassion & Gentle Tutoring",
+      "summary": "According to Linda Goodman, the 2-12 vibration signifies that one sign has spiritually passed through the other's grade in the cosmic school. There is a deep, unspoken bond of patience, protection, and gentle tutoring. Tolerating different pacing unlocks profound mutual growth.",
+      "karmicLesson": "Bridging contrasting elemental perspectives through patient compassion and secret mutual admiration."
+    },
+    "headline": "Scorpio & Libra: Karmic Learning, Compassion & Gentle Tutoring",
+    "summary": "According to Linda Goodman, the 2-12 vibration signifies that one sign has spiritually passed through the other's grade in the cosmic school. There is a deep, unspoken bond of patience, protection, and gentle tutoring. Tolerating different pacing unlocks profound mutual growth.",
     "parameters": {
-      "emotional": 54,
-      "communication": 57,
-      "romance": 59,
-      "trust": 62,
-      "stability": 64,
-      "lifestyle": 62
+      "emotional": 56,
+      "communication": 59,
+      "romance": 61,
+      "trust": 64,
+      "stability": 66,
+      "lifestyle": 64
     },
     "elementSynergy": {
       "title": "Air & Water (Wind & Waves)",
-      "text": "Air analyzes experiences intellectually while Water experiences them through deep emotion. Finding balance creates profound holistic insight."
+      "text": "Air analyzes experiences intellectually while Water perceives them through psychic emotion. Honoring each other's distinct perception creates rich spiritual growth."
     },
     "modalitySynergy": "Fixed + Cardinal: A balanced dynamic where one partner initiates, stabilizes, or provides adaptable perspective to the other.",
     "strengths": [
@@ -4498,15 +5262,15 @@ const ZODIAC_PAIRS = {
       "Occasional friction over lifestyle pacing or decision-making speed."
     ],
     "tips": [
-      "Adopt the 24-hour cooling off rule during heated arguments before revisiting sensitive topics.",
-      "Remember that Libra communicates love in their own authentic dialect.",
-      "Celebrate your differences as unique strengths rather than flaws to be corrected."
+      "Adopt Linda Goodman's cooling-off principle during heated arguments before revisiting sensitive topics.",
+      "Remember that Libra communicates love in their own authentic elemental dialect.",
+      "Celebrate your differences as complementary superpowers rather than personal flaws."
     ],
     "celebrityCouples": "Celebrated Scorpio & Libra cosmic pairs",
     "genderAdvice": {
-      "male_female": "When a Scorpio man and a Libra woman unite, balancing his Mars/solar leadership with her emotional sanctuary fosters lasting harmony.",
-      "female_male": "When a Scorpio woman and a Libra man unite, celebrating her creative initiative while valuing his steadfast protection builds an unbreakable bond.",
-      "same_sex": "In a union between two souls with Scorpio and Libra energies, open communication and honoring personal autonomy keeps the romance deeply alive."
+      "male_female": "In Linda Goodman's Love Signs analysis of the Scorpio Man with the Libra Woman (2-12 Vibration): He expresses his masculine planetary energy through Pluto & Mars, while she responds with Venus grace. Success blooms when he honors her emotional sanctuary and she champions his purposeful ambitions.",
+      "female_male": "In Linda Goodman's Love Signs analysis of the Scorpio Woman with the Libra Man (2-12 Vibration): She brings Scorpio's radiant initiative to the union, while he offers Libra's steadfast anchor. When she trusts his protective strength and he respects her autonomy, their bond becomes unbreakable.",
+      "same_sex": "In Linda Goodman's cosmic synastry (2-12 Vibration): Two souls united under Scorpio and Libra celestial energies find harmony when honoring personal autonomy, balancing giving with receiving, and allowing their elemental natures to enrich each other."
     }
   },
   "scorpio_scorpio": {
@@ -4515,9 +5279,17 @@ const ZODIAC_PAIRS = {
     "overallScore": 82,
     "colorCategory": "green",
     "shadeLabel": "Harmonious Union",
-    "aspectName": "Conjunction (Mirror Alignment)",
-    "headline": "Scorpio & Scorpio: Deep Mirror Empathy & Shared Instincts",
-    "summary": "Sharing the exact same sun sign gives you an instinctual understanding of each other's drives and vulnerabilities. You understand each other's moods intuitively, though you must guard against magnifying shared blind spots.",
+    "aspectName": "1-1 Sun Sign Pattern (The Cosmic Mirror)",
+    "vibrationCode": "1-1",
+    "lindaVibration": {
+      "code": "1-1",
+      "title": "1-1 Sun Sign Pattern (The Cosmic Mirror)",
+      "theme": "Mirror Empathy & Double Ego Reflection",
+      "summary": "In Linda Goodman's Love Signs, the 1-1 vibration is like gazing directly into an astrological mirror. You recognize each other's hidden virtues and deepest faults instantly. This creates profound telepathic empathy, but both partners must guard against magnifying identical blind spots.",
+      "karmicLesson": "Cultivating emotional humility and learning self-acceptance through observing your own nature reflected in your mate."
+    },
+    "headline": "Scorpio & Scorpio: Mirror Empathy & Double Ego Reflection",
+    "summary": "In Linda Goodman's Love Signs, the 1-1 vibration is like gazing directly into an astrological mirror. You recognize each other's hidden virtues and deepest faults instantly. This creates profound telepathic empathy, but both partners must guard against magnifying identical blind spots.",
     "parameters": {
       "emotional": 86,
       "communication": 82,
@@ -4527,10 +5299,10 @@ const ZODIAC_PAIRS = {
       "lifestyle": 85
     },
     "elementSynergy": {
-      "title": "Double Water (Oceanic Soul Bond)",
-      "text": "Intuitive, deeply emotional, and almost telepathic understanding. You hold space for each other's deepest vulnerabilities and dreams."
+      "title": "Double Water (Oceanic Soul Resonance)",
+      "text": "Linda Goodman described two Water signs as deep telepathic soulmates. You sense each other's moods intuitively without words, creating a sacred emotional sanctuary."
     },
-    "modalitySynergy": "Both Fixed: Unshakable loyalty and steadfast commitment. Practice active compromise to prevent stubborn standoffs.",
+    "modalitySynergy": "Both Fixed (Stabilizers): Unshakeable loyalty and rock-solid fidelity. Linda Goodman urged practicing gentle flexibility to resolve stubborn standoffs.",
     "strengths": [
       "Natural understanding: Scorpio and Scorpio instinctively comprehend each other's core motivations.",
       "Complimentary emotional rhythms that make daily life and domestic partnership feel comforting and safe.",
@@ -4547,31 +5319,39 @@ const ZODIAC_PAIRS = {
     ],
     "celebrityCouples": "Celebrated Scorpio & Scorpio cosmic pairs",
     "genderAdvice": {
-      "male_female": "When a Scorpio man and a Scorpio woman unite, balancing his Mars/solar leadership with her emotional sanctuary fosters lasting harmony.",
-      "female_male": "When a Scorpio woman and a Scorpio man unite, celebrating her creative initiative while valuing his steadfast protection builds an unbreakable bond.",
-      "same_sex": "In a union between two souls with Scorpio and Scorpio energies, open communication and honoring personal autonomy keeps the romance deeply alive."
+      "male_female": "In Linda Goodman's Love Signs analysis of the Scorpio Man with the Scorpio Woman (1-1 Vibration): He expresses his masculine planetary energy through Pluto & Mars, while she responds with Pluto & Mars grace. Success blooms when he honors her emotional sanctuary and she champions his purposeful ambitions.",
+      "female_male": "In Linda Goodman's Love Signs analysis of the Scorpio Woman with the Scorpio Man (1-1 Vibration): She brings Scorpio's radiant initiative to the union, while he offers Scorpio's steadfast anchor. When she trusts his protective strength and he respects her autonomy, their bond becomes unbreakable.",
+      "same_sex": "In Linda Goodman's cosmic synastry (1-1 Vibration): Two souls united under Scorpio and Scorpio celestial energies find harmony when honoring personal autonomy, balancing giving with receiving, and allowing their elemental natures to enrich each other."
     }
   },
   "scorpio_sagittarius": {
     "sign1": "scorpio",
     "sign2": "sagittarius",
-    "overallScore": 62,
+    "overallScore": 64,
     "colorCategory": "amber",
     "shadeLabel": "Dynamic Potential",
-    "aspectName": "Semisextile (Neighboring Contrast)",
-    "headline": "Scorpio & Sagittarius: Complementary Growth & Mutual Learning",
-    "summary": "As neighboring signs, you operate from contrasting elemental perspectives. This match creates a learning journey where each partner expands the other's horizons if patience is practiced.",
+    "aspectName": "2-12 Sun Sign Pattern (The Karmic Teacher & Pupil)",
+    "vibrationCode": "2-12",
+    "lindaVibration": {
+      "code": "2-12",
+      "title": "2-12 Sun Sign Pattern (The Karmic Teacher & Pupil)",
+      "theme": "Karmic Learning, Compassion & Gentle Tutoring",
+      "summary": "According to Linda Goodman, the 2-12 vibration signifies that one sign has spiritually passed through the other's grade in the cosmic school. There is a deep, unspoken bond of patience, protection, and gentle tutoring. Tolerating different pacing unlocks profound mutual growth.",
+      "karmicLesson": "Bridging contrasting elemental perspectives through patient compassion and secret mutual admiration."
+    },
+    "headline": "Scorpio & Sagittarius: Karmic Learning, Compassion & Gentle Tutoring",
+    "summary": "According to Linda Goodman, the 2-12 vibration signifies that one sign has spiritually passed through the other's grade in the cosmic school. There is a deep, unspoken bond of patience, protection, and gentle tutoring. Tolerating different pacing unlocks profound mutual growth.",
     "parameters": {
-      "emotional": 52,
-      "communication": 62,
-      "romance": 59,
-      "trust": 62,
-      "stability": 64,
-      "lifestyle": 62
+      "emotional": 54,
+      "communication": 64,
+      "romance": 61,
+      "trust": 64,
+      "stability": 66,
+      "lifestyle": 64
     },
     "elementSynergy": {
-      "title": "Fire & Water (Steam & Intense Chemistry)",
-      "text": "Extremely passionate and emotionally turbulent. Fire inspires Water to take bold leaps; Water teaches Fire the beauty of tender emotional depth."
+      "title": "Fire & Water (Steam & Intense Passion)",
+      "text": "Extremely passionate and emotionally turbulent. Fire inspires Water to take brave leaps; Water teaches Fire the beauty of quiet emotional vulnerability."
     },
     "modalitySynergy": "Fixed + Mutable: A balanced dynamic where one partner initiates, stabilizes, or provides adaptable perspective to the other.",
     "strengths": [
@@ -4584,37 +5364,45 @@ const ZODIAC_PAIRS = {
       "Occasional friction over lifestyle pacing or decision-making speed."
     ],
     "tips": [
-      "Adopt the 24-hour cooling off rule during heated arguments before revisiting sensitive topics.",
-      "Remember that Sagittarius communicates love in their own authentic dialect.",
-      "Celebrate your differences as unique strengths rather than flaws to be corrected."
+      "Adopt Linda Goodman's cooling-off principle during heated arguments before revisiting sensitive topics.",
+      "Remember that Sagittarius communicates love in their own authentic elemental dialect.",
+      "Celebrate your differences as complementary superpowers rather than personal flaws."
     ],
     "celebrityCouples": "Celebrated Scorpio & Sagittarius cosmic pairs",
     "genderAdvice": {
-      "male_female": "When a Scorpio man and a Sagittarius woman unite, balancing his Mars/solar leadership with her emotional sanctuary fosters lasting harmony.",
-      "female_male": "When a Scorpio woman and a Sagittarius man unite, celebrating her creative initiative while valuing his steadfast protection builds an unbreakable bond.",
-      "same_sex": "In a union between two souls with Scorpio and Sagittarius energies, open communication and honoring personal autonomy keeps the romance deeply alive."
+      "male_female": "In Linda Goodman's Love Signs analysis of the Scorpio Man with the Sagittarius Woman (2-12 Vibration): He expresses his masculine planetary energy through Pluto & Mars, while she responds with Jupiter grace. Success blooms when he honors her emotional sanctuary and she champions his purposeful ambitions.",
+      "female_male": "In Linda Goodman's Love Signs analysis of the Scorpio Woman with the Sagittarius Man (2-12 Vibration): She brings Scorpio's radiant initiative to the union, while he offers Sagittarius's steadfast anchor. When she trusts his protective strength and he respects her autonomy, their bond becomes unbreakable.",
+      "same_sex": "In Linda Goodman's cosmic synastry (2-12 Vibration): Two souls united under Scorpio and Sagittarius celestial energies find harmony when honoring personal autonomy, balancing giving with receiving, and allowing their elemental natures to enrich each other."
     }
   },
   "scorpio_capricorn": {
     "sign1": "scorpio",
     "sign2": "capricorn",
-    "overallScore": 86,
+    "overallScore": 88,
     "colorCategory": "green",
     "shadeLabel": "Harmonious Union",
-    "aspectName": "Sextile (Harmonious Elemental Flow)",
-    "headline": "Scorpio & Capricorn: Stimulating Synergy & Easy Friendship",
-    "summary": "Your elements naturally complement each other (Fire invigorates Air, or Water nourishes Earth). Communication flows effortlessly, laughter comes easily, and mutual respect flourishes.",
+    "aspectName": "3-11 Sun Sign Pattern (Karmic Friends & Sympathetic Lovers)",
+    "vibrationCode": "3-11",
+    "lindaVibration": {
+      "code": "3-11",
+      "title": "3-11 Sun Sign Pattern (Karmic Friends & Sympathetic Lovers)",
+      "theme": "Enduring Camaraderie, Easy Forgiveness & High Devotion",
+      "summary": "Linda Goodman considered the 3-11 vibration one of the happiest and most enduring in the cosmos. Your signs form a natural sextile of friendship. Even through intense misunderstandings, 3-11 lovers remain steadfast allies, quick to forgive and eager to laugh.",
+      "karmicLesson": "Nurturing lifelong loyalty, humanitarian generosity, and effortless mutual forgiveness."
+    },
+    "headline": "Scorpio & Capricorn: Enduring Camaraderie, Easy Forgiveness & High Devotion",
+    "summary": "Linda Goodman considered the 3-11 vibration one of the happiest and most enduring in the cosmos. Your signs form a natural sextile of friendship. Even through intense misunderstandings, 3-11 lovers remain steadfast allies, quick to forgive and eager to laugh.",
     "parameters": {
-      "emotional": 88,
-      "communication": 86,
-      "romance": 88,
-      "trust": 91,
-      "stability": 92,
-      "lifestyle": 86
+      "emotional": 90,
+      "communication": 88,
+      "romance": 90,
+      "trust": 93,
+      "stability": 94,
+      "lifestyle": 88
     },
     "elementSynergy": {
       "title": "Earth & Water (Fertile Nurturing)",
-      "text": "Water softens Earth with empathy and emotion; Earth provides Water with steady shores of stability. A classic recipe for enduring married happiness."
+      "text": "Water softens Earth with tender emotional empathy; Earth provides Water with comforting shores of physical stability. A classic recipe for a thriving, enduring marriage."
     },
     "modalitySynergy": "Fixed + Cardinal: A balanced dynamic where one partner initiates, stabilizes, or provides adaptable perspective to the other.",
     "strengths": [
@@ -4633,33 +5421,41 @@ const ZODIAC_PAIRS = {
     ],
     "celebrityCouples": "Celebrated Scorpio & Capricorn cosmic pairs",
     "genderAdvice": {
-      "male_female": "When a Scorpio man and a Capricorn woman unite, balancing his Mars/solar leadership with her emotional sanctuary fosters lasting harmony.",
-      "female_male": "When a Scorpio woman and a Capricorn man unite, celebrating her creative initiative while valuing his steadfast protection builds an unbreakable bond.",
-      "same_sex": "In a union between two souls with Scorpio and Capricorn energies, open communication and honoring personal autonomy keeps the romance deeply alive."
+      "male_female": "In Linda Goodman's Love Signs analysis of the Scorpio Man with the Capricorn Woman (3-11 Vibration): He expresses his masculine planetary energy through Pluto & Mars, while she responds with Saturn grace. Success blooms when he honors her emotional sanctuary and she champions his purposeful ambitions.",
+      "female_male": "In Linda Goodman's Love Signs analysis of the Scorpio Woman with the Capricorn Man (3-11 Vibration): She brings Scorpio's radiant initiative to the union, while he offers Capricorn's steadfast anchor. When she trusts his protective strength and he respects her autonomy, their bond becomes unbreakable.",
+      "same_sex": "In Linda Goodman's cosmic synastry (3-11 Vibration): Two souls united under Scorpio and Capricorn celestial energies find harmony when honoring personal autonomy, balancing giving with receiving, and allowing their elemental natures to enrich each other."
     }
   },
   "scorpio_aquarius": {
     "sign1": "scorpio",
     "sign2": "aquarius",
-    "overallScore": 52,
+    "overallScore": 54,
     "colorCategory": "amber",
     "shadeLabel": "Dynamic Potential",
-    "aspectName": "Square (Passionate Friction & Dynamic Growth)",
-    "headline": "Scorpio & Aquarius: Electrifying Spark with Creative Challenge",
-    "summary": "Signs at a 90\u00b0 square share the same modality but clash elementally. This generates high attraction, intense emotional chemistry, and spirited debates that demand conscious diplomacy and mutual compromise.",
+    "aspectName": "4-10 Sun Sign Pattern (The Karmic Challenge & Crucible)",
+    "vibrationCode": "4-10",
+    "lindaVibration": {
+      "code": "4-10",
+      "title": "4-10 Sun Sign Pattern (The Karmic Challenge & Crucible)",
+      "theme": "Passionate Friction, Dramatic Chemistry & Soul Crucible",
+      "summary": "Linda Goodman described the 4-10 square vibration as the classic crucible of soul growth. Sharing the same modality but differing elements produces magnetic physical attraction paired with clashes of will. If ego yields to love, this union builds invincible diamond strength.",
+      "karmicLesson": "Transcending stubborn pride and mastering the noble art of sacrificial compromise."
+    },
+    "headline": "Scorpio & Aquarius: Passionate Friction, Dramatic Chemistry & Soul Crucible",
+    "summary": "Linda Goodman described the 4-10 square vibration as the classic crucible of soul growth. Sharing the same modality but differing elements produces magnetic physical attraction paired with clashes of will. If ego yields to love, this union builds invincible diamond strength.",
     "parameters": {
-      "emotional": 44,
-      "communication": 47,
-      "romance": 49,
-      "trust": 56,
-      "stability": 54,
-      "lifestyle": 44
+      "emotional": 46,
+      "communication": 49,
+      "romance": 51,
+      "trust": 58,
+      "stability": 56,
+      "lifestyle": 46
     },
     "elementSynergy": {
       "title": "Air & Water (Wind & Waves)",
-      "text": "Air analyzes experiences intellectually while Water experiences them through deep emotion. Finding balance creates profound holistic insight."
+      "text": "Air analyzes experiences intellectually while Water perceives them through psychic emotion. Honoring each other's distinct perception creates rich spiritual growth."
     },
-    "modalitySynergy": "Both Fixed: Unshakable loyalty and steadfast commitment. Practice active compromise to prevent stubborn standoffs.",
+    "modalitySynergy": "Both Fixed (Stabilizers): Unshakeable loyalty and rock-solid fidelity. Linda Goodman urged practicing gentle flexibility to resolve stubborn standoffs.",
     "strengths": [
       "Dynamic growth: Scorpio introduces Aquarius to new perspectives and vice versa.",
       "Engaging romantic chemistry where you never run out of intriguing things to discover about each other.",
@@ -4670,37 +5466,45 @@ const ZODIAC_PAIRS = {
       "Occasional friction over lifestyle pacing or decision-making speed."
     ],
     "tips": [
-      "Adopt the 24-hour cooling off rule during heated arguments before revisiting sensitive topics.",
-      "Remember that Aquarius communicates love in their own authentic dialect.",
-      "Celebrate your differences as unique strengths rather than flaws to be corrected."
+      "Adopt Linda Goodman's cooling-off principle during heated arguments before revisiting sensitive topics.",
+      "Remember that Aquarius communicates love in their own authentic elemental dialect.",
+      "Celebrate your differences as complementary superpowers rather than personal flaws."
     ],
     "celebrityCouples": "Celebrated Scorpio & Aquarius cosmic pairs",
     "genderAdvice": {
-      "male_female": "When a Scorpio man and a Aquarius woman unite, balancing his Mars/solar leadership with her emotional sanctuary fosters lasting harmony.",
-      "female_male": "When a Scorpio woman and a Aquarius man unite, celebrating her creative initiative while valuing his steadfast protection builds an unbreakable bond.",
-      "same_sex": "In a union between two souls with Scorpio and Aquarius energies, open communication and honoring personal autonomy keeps the romance deeply alive."
+      "male_female": "In Linda Goodman's Love Signs analysis of the Scorpio Man with the Aquarius Woman (4-10 Vibration): He expresses his masculine planetary energy through Pluto & Mars, while she responds with Uranus & Saturn grace. Success blooms when he honors her emotional sanctuary and she champions his purposeful ambitions.",
+      "female_male": "In Linda Goodman's Love Signs analysis of the Scorpio Woman with the Aquarius Man (4-10 Vibration): She brings Scorpio's radiant initiative to the union, while he offers Aquarius's steadfast anchor. When she trusts his protective strength and he respects her autonomy, their bond becomes unbreakable.",
+      "same_sex": "In Linda Goodman's cosmic synastry (4-10 Vibration): Two souls united under Scorpio and Aquarius celestial energies find harmony when honoring personal autonomy, balancing giving with receiving, and allowing their elemental natures to enrich each other."
     }
   },
   "scorpio_pisces": {
     "sign1": "scorpio",
     "sign2": "pisces",
-    "overallScore": 94,
+    "overallScore": 95,
     "colorCategory": "green",
     "shadeLabel": "Harmonious Union",
-    "aspectName": "Trine (Divine Soulmate Element)",
-    "headline": "Scorpio & Pisces: Effortless Harmony & Natural Soul Resonance",
-    "summary": "Sharing the same element (Fire-Fire, Earth-Earth, Air-Air, Water-Water) creates an instinctive, harmonious flow. You breathe the same spiritual air, understand each other's pacing, and feel deeply at home together.",
+    "aspectName": "5-9 Sun Sign Pattern (The Divine Cosmic Blessing)",
+    "vibrationCode": "5-9",
+    "lindaVibration": {
+      "code": "5-9",
+      "title": "5-9 Sun Sign Pattern (The Divine Cosmic Blessing)",
+      "theme": "Golden Trine, Soulmate Telepathy & Natural Sympathy",
+      "summary": "Linda Goodman's most celebrated synastry pattern! Sharing the same sacred element (Fire, Earth, Air, or Water) brings instant soul recognition. You forgive each other almost effortlessly, inspire each other's dreams, and enjoy an almost telepathic understanding.",
+      "karmicLesson": "Preserving sacred gratitude and avoiding taking your effortless soul harmony for granted."
+    },
+    "headline": "Scorpio & Pisces: Golden Trine, Soulmate Telepathy & Natural Sympathy",
+    "summary": "Linda Goodman's most celebrated synastry pattern! Sharing the same sacred element (Fire, Earth, Air, or Water) brings instant soul recognition. You forgive each other almost effortlessly, inspire each other's dreams, and enjoy an almost telepathic understanding.",
     "parameters": {
       "emotional": 98,
-      "communication": 94,
-      "romance": 91,
-      "trust": 94,
+      "communication": 95,
+      "romance": 92,
+      "trust": 95,
       "stability": 94,
       "lifestyle": 96
     },
     "elementSynergy": {
-      "title": "Double Water (Oceanic Soul Bond)",
-      "text": "Intuitive, deeply emotional, and almost telepathic understanding. You hold space for each other's deepest vulnerabilities and dreams."
+      "title": "Double Water (Oceanic Soul Resonance)",
+      "text": "Linda Goodman described two Water signs as deep telepathic soulmates. You sense each other's moods intuitively without words, creating a sacred emotional sanctuary."
     },
     "modalitySynergy": "Fixed + Mutable: A balanced dynamic where one partner initiates, stabilizes, or provides adaptable perspective to the other.",
     "strengths": [
@@ -4719,31 +5523,39 @@ const ZODIAC_PAIRS = {
     ],
     "celebrityCouples": "Goldie Hawn (Scorpio) & Kurt Russell (Pisces)",
     "genderAdvice": {
-      "male_female": "When a Scorpio man and a Pisces woman unite, balancing his Mars/solar leadership with her emotional sanctuary fosters lasting harmony.",
-      "female_male": "When a Scorpio woman and a Pisces man unite, celebrating her creative initiative while valuing his steadfast protection builds an unbreakable bond.",
-      "same_sex": "In a union between two souls with Scorpio and Pisces energies, open communication and honoring personal autonomy keeps the romance deeply alive."
+      "male_female": "In Linda Goodman's Love Signs analysis of the Scorpio Man with the Pisces Woman (5-9 Vibration): He expresses his masculine planetary energy through Pluto & Mars, while she responds with Neptune & Jupiter grace. Success blooms when he honors her emotional sanctuary and she champions his purposeful ambitions.",
+      "female_male": "In Linda Goodman's Love Signs analysis of the Scorpio Woman with the Pisces Man (5-9 Vibration): She brings Scorpio's radiant initiative to the union, while he offers Pisces's steadfast anchor. When she trusts his protective strength and he respects her autonomy, their bond becomes unbreakable.",
+      "same_sex": "In Linda Goodman's cosmic synastry (5-9 Vibration): Two souls united under Scorpio and Pisces celestial energies find harmony when honoring personal autonomy, balancing giving with receiving, and allowing their elemental natures to enrich each other."
     }
   },
   "sagittarius_aries": {
     "sign1": "sagittarius",
     "sign2": "aries",
-    "overallScore": 97,
+    "overallScore": 98,
     "colorCategory": "green",
     "shadeLabel": "Harmonious Union",
-    "aspectName": "Trine (Divine Soulmate Element)",
-    "headline": "Sagittarius & Aries: Effortless Harmony & Natural Soul Resonance",
-    "summary": "Sharing the same element (Fire-Fire, Earth-Earth, Air-Air, Water-Water) creates an instinctive, harmonious flow. You breathe the same spiritual air, understand each other's pacing, and feel deeply at home together.",
+    "aspectName": "5-9 Sun Sign Pattern (The Divine Cosmic Blessing)",
+    "vibrationCode": "5-9",
+    "lindaVibration": {
+      "code": "5-9",
+      "title": "5-9 Sun Sign Pattern (The Divine Cosmic Blessing)",
+      "theme": "Golden Trine, Soulmate Telepathy & Natural Sympathy",
+      "summary": "Linda Goodman's most celebrated synastry pattern! Sharing the same sacred element (Fire, Earth, Air, or Water) brings instant soul recognition. You forgive each other almost effortlessly, inspire each other's dreams, and enjoy an almost telepathic understanding.",
+      "karmicLesson": "Preserving sacred gratitude and avoiding taking your effortless soul harmony for granted."
+    },
+    "headline": "Sagittarius & Aries: Golden Trine, Soulmate Telepathy & Natural Sympathy",
+    "summary": "Linda Goodman's most celebrated synastry pattern! Sharing the same sacred element (Fire, Earth, Air, or Water) brings instant soul recognition. You forgive each other almost effortlessly, inspire each other's dreams, and enjoy an almost telepathic understanding.",
     "parameters": {
-      "emotional": 97,
-      "communication": 97,
+      "emotional": 98,
+      "communication": 98,
       "romance": 98,
-      "trust": 97,
-      "stability": 92,
+      "trust": 98,
+      "stability": 93,
       "lifestyle": 96
     },
     "elementSynergy": {
       "title": "Double Fire (Electric Blaze)",
-      "text": "Intense passion, shared ambition, and instant adrenaline. You fuel each other's dreams, but must ensure competitive sparks don't burn down emotional bridges."
+      "text": "As Linda Goodman observed, two Fire signs create immediate enthusiasm and dramatic warmth. You champion each other's boldness, but must take care that competitive sparks don't burn down tender feelings."
     },
     "modalitySynergy": "Mutable + Cardinal: A balanced dynamic where one partner initiates, stabilizes, or provides adaptable perspective to the other.",
     "strengths": [
@@ -4762,40 +5574,48 @@ const ZODIAC_PAIRS = {
     ],
     "celebrityCouples": "Celebrated Sagittarius & Aries cosmic pairs",
     "genderAdvice": {
-      "male_female": "When a Sagittarius man and a Aries woman unite, balancing his Mars/solar leadership with her emotional sanctuary fosters lasting harmony.",
-      "female_male": "When a Sagittarius woman and a Aries man unite, celebrating her creative initiative while valuing his steadfast protection builds an unbreakable bond.",
-      "same_sex": "In a union between two souls with Sagittarius and Aries energies, open communication and honoring personal autonomy keeps the romance deeply alive."
+      "male_female": "In Linda Goodman's Love Signs analysis of the Sagittarius Man with the Aries Woman (5-9 Vibration): He expresses his masculine planetary energy through Jupiter, while she responds with Mars grace. Success blooms when he honors her emotional sanctuary and she champions his purposeful ambitions.",
+      "female_male": "In Linda Goodman's Love Signs analysis of the Sagittarius Woman with the Aries Man (5-9 Vibration): She brings Sagittarius's radiant initiative to the union, while he offers Aries's steadfast anchor. When she trusts his protective strength and he respects her autonomy, their bond becomes unbreakable.",
+      "same_sex": "In Linda Goodman's cosmic synastry (5-9 Vibration): Two souls united under Sagittarius and Aries celestial energies find harmony when honoring personal autonomy, balancing giving with receiving, and allowing their elemental natures to enrich each other."
     }
   },
   "sagittarius_taurus": {
     "sign1": "sagittarius",
     "sign2": "taurus",
-    "overallScore": 46,
+    "overallScore": 48,
     "colorCategory": "red",
     "shadeLabel": "Growth Challenge",
-    "aspectName": "Quincunx (Mysterious Intrigue & Karmic Adjustment)",
-    "headline": "Sagittarius & Taurus: Enigmatic Attraction Demanding Patience",
-    "summary": "Separated by five signs, you have little in common astrologically, which creates an intriguing magnetic mystery. Succeeding together requires appreciating your partner's entirely unique perspective on life.",
+    "aspectName": "6-8 Sun Sign Pattern (Karmic Mystery & Devoted Service)",
+    "vibrationCode": "6-8",
+    "lindaVibration": {
+      "code": "6-8",
+      "title": "6-8 Sun Sign Pattern (Karmic Mystery & Devoted Service)",
+      "theme": "Enigmatic Fascination, Hypnotic Pull & Karmic Duty",
+      "summary": "According to Linda Goodman, the 6-8 quincunx vibration is cloaked in hypnotic fascination and karmic debt. One partner feels drawn to serve, protect, or nurture the other, generating deep emotional or physical magnetism that requires profound patience to untangle.",
+      "karmicLesson": "Practicing unconditional love free from selfish demands, embracing differences that cannot be logically explained."
+    },
+    "headline": "Sagittarius & Taurus: Enigmatic Fascination, Hypnotic Pull & Karmic Duty",
+    "summary": "According to Linda Goodman, the 6-8 quincunx vibration is cloaked in hypnotic fascination and karmic debt. One partner feels drawn to serve, protect, or nurture the other, generating deep emotional or physical magnetism that requires profound patience to untangle.",
     "parameters": {
-      "emotional": 44,
-      "communication": 46,
-      "romance": 43,
-      "trust": 46,
-      "stability": 48,
-      "lifestyle": 38
+      "emotional": 46,
+      "communication": 48,
+      "romance": 45,
+      "trust": 48,
+      "stability": 50,
+      "lifestyle": 40
     },
     "elementSynergy": {
       "title": "Fire & Earth (Hearthstone Fire)",
-      "text": "Fire provides creative energy and visionary boldness; Earth builds the practical structures to turn those visions into reality."
+      "text": "Fire provides creative courage and solar warmth; Earth builds the practical structures to turn those visions into lasting wealth and security."
     },
     "modalitySynergy": "Mutable + Fixed: A balanced dynamic where one partner initiates, stabilizes, or provides adaptable perspective to the other.",
     "strengths": [
-      "Powerful karmic pull that pushes both individuals to mature emotionally.",
+      "Powerful karmic pull that pushes both souls to mature emotionally and spiritually.",
       "Unforgettable chemistry and passion born from sheer elemental contrast.",
       "Opportunity to develop immense patience, empathy, and unconditional love."
     ],
     "challenges": [
-      "Fundamental contrast in priorities: Sagittarius's instinctual approach may confuse Taurus.",
+      "Fundamental contrast in priorities: Sagittarius's instinctual approach may baffle Taurus.",
       "Tendency to misinterpret your partner's need for space or emotional expression."
     ],
     "tips": [
@@ -4805,33 +5625,41 @@ const ZODIAC_PAIRS = {
     ],
     "celebrityCouples": "Celebrated Sagittarius & Taurus cosmic pairs",
     "genderAdvice": {
-      "male_female": "When a Sagittarius man and a Taurus woman unite, balancing his Mars/solar leadership with her emotional sanctuary fosters lasting harmony.",
-      "female_male": "When a Sagittarius woman and a Taurus man unite, celebrating her creative initiative while valuing his steadfast protection builds an unbreakable bond.",
-      "same_sex": "In a union between two souls with Sagittarius and Taurus energies, open communication and honoring personal autonomy keeps the romance deeply alive."
+      "male_female": "In Linda Goodman's Love Signs analysis of the Sagittarius Man with the Taurus Woman (6-8 Vibration): He expresses his masculine planetary energy through Jupiter, while she responds with Venus grace. Success blooms when he honors her emotional sanctuary and she champions his purposeful ambitions.",
+      "female_male": "In Linda Goodman's Love Signs analysis of the Sagittarius Woman with the Taurus Man (6-8 Vibration): She brings Sagittarius's radiant initiative to the union, while he offers Taurus's steadfast anchor. When she trusts his protective strength and he respects her autonomy, their bond becomes unbreakable.",
+      "same_sex": "In Linda Goodman's cosmic synastry (6-8 Vibration): Two souls united under Sagittarius and Taurus celestial energies find harmony when honoring personal autonomy, balancing giving with receiving, and allowing their elemental natures to enrich each other."
     }
   },
   "sagittarius_gemini": {
     "sign1": "sagittarius",
     "sign2": "gemini",
-    "overallScore": 80,
+    "overallScore": 82,
     "colorCategory": "green",
     "shadeLabel": "Harmonious Union",
-    "aspectName": "Opposition (Cosmic Magnetism & Polar Balance)",
-    "headline": "Sagittarius & Gemini: Magnetic Attraction & Yin-Yang Balance",
-    "summary": "Sitting 180\u00b0 across the zodiac wheel, you are polar opposites. What one lacks, the other possesses in abundance. The chemistry is electric, offering the potential to form an unbeatable yin-and-yang partnership.",
+    "aspectName": "7-7 Sun Sign Pattern (Polar Magnetism & Cosmic Complements)",
+    "vibrationCode": "7-7",
+    "lindaVibration": {
+      "code": "7-7",
+      "title": "7-7 Sun Sign Pattern (Polar Magnetism & Cosmic Complements)",
+      "theme": "Opposites Attract, Celestial Electricity & Yin-Yang Balance",
+      "summary": "Sitting 180\u00b0 opposite on the zodiac wheel, Linda Goodman saw the 7-7 vibration as two halves of a single soul. What one lacks, the other possesses in abundance. It generates high romantic voltage: either a magnificent lifelong union or an explosive standoff.",
+      "karmicLesson": "Finding wholeness through merging opposite qualities into a unified, harmonious whole."
+    },
+    "headline": "Sagittarius & Gemini: Opposites Attract, Celestial Electricity & Yin-Yang Balance",
+    "summary": "Sitting 180\u00b0 opposite on the zodiac wheel, Linda Goodman saw the 7-7 vibration as two halves of a single soul. What one lacks, the other possesses in abundance. It generates high romantic voltage: either a magnificent lifelong union or an explosive standoff.",
     "parameters": {
-      "emotional": 78,
-      "communication": 84,
-      "romance": 86,
-      "trust": 74,
-      "stability": 79,
-      "lifestyle": 80
+      "emotional": 80,
+      "communication": 86,
+      "romance": 88,
+      "trust": 76,
+      "stability": 81,
+      "lifestyle": 82
     },
     "elementSynergy": {
-      "title": "Fire & Air (Inspirational Catalyst)",
-      "text": "Air fuels Fire's passion, while Fire brings warmth and bold action to Air's inventive ideas. An exciting, socially vibrant union."
+      "title": "Fire & Air (Inspirational Breeze)",
+      "text": "Air fans Fire's flames into glorious creative radiance, while Fire warms Air's visionary ideals into bold reality. An exciting, intellectually vibrant union."
     },
-    "modalitySynergy": "Both Mutable: High flexibility, continuous laughter, and easy adaptability. Anchor your connection with structured routines.",
+    "modalitySynergy": "Both Mutable (Adaptable): Continuous mental agility, laughter, and easy flexibility. Anchor your connection with grounding domestic routines.",
     "strengths": [
       "Natural understanding: Sagittarius and Gemini instinctively comprehend each other's core motivations.",
       "Complimentary emotional rhythms that make daily life and domestic partnership feel comforting and safe.",
@@ -4848,40 +5676,48 @@ const ZODIAC_PAIRS = {
     ],
     "celebrityCouples": "Celebrated Sagittarius & Gemini cosmic pairs",
     "genderAdvice": {
-      "male_female": "When a Sagittarius man and a Gemini woman unite, balancing his Mars/solar leadership with her emotional sanctuary fosters lasting harmony.",
-      "female_male": "When a Sagittarius woman and a Gemini man unite, celebrating her creative initiative while valuing his steadfast protection builds an unbreakable bond.",
-      "same_sex": "In a union between two souls with Sagittarius and Gemini energies, open communication and honoring personal autonomy keeps the romance deeply alive."
+      "male_female": "In Linda Goodman's Love Signs analysis of the Sagittarius Man with the Gemini Woman (7-7 Vibration): He expresses his masculine planetary energy through Jupiter, while she responds with Mercury grace. Success blooms when he honors her emotional sanctuary and she champions his purposeful ambitions.",
+      "female_male": "In Linda Goodman's Love Signs analysis of the Sagittarius Woman with the Gemini Man (7-7 Vibration): She brings Sagittarius's radiant initiative to the union, while he offers Gemini's steadfast anchor. When she trusts his protective strength and he respects her autonomy, their bond becomes unbreakable.",
+      "same_sex": "In Linda Goodman's cosmic synastry (7-7 Vibration): Two souls united under Sagittarius and Gemini celestial energies find harmony when honoring personal autonomy, balancing giving with receiving, and allowing their elemental natures to enrich each other."
     }
   },
   "sagittarius_cancer": {
     "sign1": "sagittarius",
     "sign2": "cancer",
-    "overallScore": 46,
+    "overallScore": 48,
     "colorCategory": "red",
     "shadeLabel": "Growth Challenge",
-    "aspectName": "Quincunx (Mysterious Intrigue & Karmic Adjustment)",
-    "headline": "Sagittarius & Cancer: Enigmatic Attraction Demanding Patience",
-    "summary": "Separated by five signs, you have little in common astrologically, which creates an intriguing magnetic mystery. Succeeding together requires appreciating your partner's entirely unique perspective on life.",
+    "aspectName": "6-8 Sun Sign Pattern (Karmic Mystery & Devoted Service)",
+    "vibrationCode": "6-8",
+    "lindaVibration": {
+      "code": "6-8",
+      "title": "6-8 Sun Sign Pattern (Karmic Mystery & Devoted Service)",
+      "theme": "Enigmatic Fascination, Hypnotic Pull & Karmic Duty",
+      "summary": "According to Linda Goodman, the 6-8 quincunx vibration is cloaked in hypnotic fascination and karmic debt. One partner feels drawn to serve, protect, or nurture the other, generating deep emotional or physical magnetism that requires profound patience to untangle.",
+      "karmicLesson": "Practicing unconditional love free from selfish demands, embracing differences that cannot be logically explained."
+    },
+    "headline": "Sagittarius & Cancer: Enigmatic Fascination, Hypnotic Pull & Karmic Duty",
+    "summary": "According to Linda Goodman, the 6-8 quincunx vibration is cloaked in hypnotic fascination and karmic debt. One partner feels drawn to serve, protect, or nurture the other, generating deep emotional or physical magnetism that requires profound patience to untangle.",
     "parameters": {
       "emotional": 40,
-      "communication": 46,
-      "romance": 43,
-      "trust": 46,
-      "stability": 45,
-      "lifestyle": 38
+      "communication": 48,
+      "romance": 45,
+      "trust": 48,
+      "stability": 47,
+      "lifestyle": 40
     },
     "elementSynergy": {
-      "title": "Fire & Water (Steam & Intense Chemistry)",
-      "text": "Extremely passionate and emotionally turbulent. Fire inspires Water to take bold leaps; Water teaches Fire the beauty of tender emotional depth."
+      "title": "Fire & Water (Steam & Intense Passion)",
+      "text": "Extremely passionate and emotionally turbulent. Fire inspires Water to take brave leaps; Water teaches Fire the beauty of quiet emotional vulnerability."
     },
     "modalitySynergy": "Mutable + Cardinal: A balanced dynamic where one partner initiates, stabilizes, or provides adaptable perspective to the other.",
     "strengths": [
-      "Powerful karmic pull that pushes both individuals to mature emotionally.",
+      "Powerful karmic pull that pushes both souls to mature emotionally and spiritually.",
       "Unforgettable chemistry and passion born from sheer elemental contrast.",
       "Opportunity to develop immense patience, empathy, and unconditional love."
     ],
     "challenges": [
-      "Fundamental contrast in priorities: Sagittarius's instinctual approach may confuse Cancer.",
+      "Fundamental contrast in priorities: Sagittarius's instinctual approach may baffle Cancer.",
       "Tendency to misinterpret your partner's need for space or emotional expression."
     ],
     "tips": [
@@ -4891,31 +5727,39 @@ const ZODIAC_PAIRS = {
     ],
     "celebrityCouples": "Celebrated Sagittarius & Cancer cosmic pairs",
     "genderAdvice": {
-      "male_female": "When a Sagittarius man and a Cancer woman unite, balancing his Mars/solar leadership with her emotional sanctuary fosters lasting harmony.",
-      "female_male": "When a Sagittarius woman and a Cancer man unite, celebrating her creative initiative while valuing his steadfast protection builds an unbreakable bond.",
-      "same_sex": "In a union between two souls with Sagittarius and Cancer energies, open communication and honoring personal autonomy keeps the romance deeply alive."
+      "male_female": "In Linda Goodman's Love Signs analysis of the Sagittarius Man with the Cancer Woman (6-8 Vibration): He expresses his masculine planetary energy through Jupiter, while she responds with Moon grace. Success blooms when he honors her emotional sanctuary and she champions his purposeful ambitions.",
+      "female_male": "In Linda Goodman's Love Signs analysis of the Sagittarius Woman with the Cancer Man (6-8 Vibration): She brings Sagittarius's radiant initiative to the union, while he offers Cancer's steadfast anchor. When she trusts his protective strength and he respects her autonomy, their bond becomes unbreakable.",
+      "same_sex": "In Linda Goodman's cosmic synastry (6-8 Vibration): Two souls united under Sagittarius and Cancer celestial energies find harmony when honoring personal autonomy, balancing giving with receiving, and allowing their elemental natures to enrich each other."
     }
   },
   "sagittarius_leo": {
     "sign1": "sagittarius",
     "sign2": "leo",
-    "overallScore": 94,
+    "overallScore": 95,
     "colorCategory": "green",
     "shadeLabel": "Harmonious Union",
-    "aspectName": "Trine (Divine Soulmate Element)",
-    "headline": "Sagittarius & Leo: Effortless Harmony & Natural Soul Resonance",
-    "summary": "Sharing the same element (Fire-Fire, Earth-Earth, Air-Air, Water-Water) creates an instinctive, harmonious flow. You breathe the same spiritual air, understand each other's pacing, and feel deeply at home together.",
+    "aspectName": "5-9 Sun Sign Pattern (The Divine Cosmic Blessing)",
+    "vibrationCode": "5-9",
+    "lindaVibration": {
+      "code": "5-9",
+      "title": "5-9 Sun Sign Pattern (The Divine Cosmic Blessing)",
+      "theme": "Golden Trine, Soulmate Telepathy & Natural Sympathy",
+      "summary": "Linda Goodman's most celebrated synastry pattern! Sharing the same sacred element (Fire, Earth, Air, or Water) brings instant soul recognition. You forgive each other almost effortlessly, inspire each other's dreams, and enjoy an almost telepathic understanding.",
+      "karmicLesson": "Preserving sacred gratitude and avoiding taking your effortless soul harmony for granted."
+    },
+    "headline": "Sagittarius & Leo: Golden Trine, Soulmate Telepathy & Natural Sympathy",
+    "summary": "Linda Goodman's most celebrated synastry pattern! Sharing the same sacred element (Fire, Earth, Air, or Water) brings instant soul recognition. You forgive each other almost effortlessly, inspire each other's dreams, and enjoy an almost telepathic understanding.",
     "parameters": {
-      "emotional": 94,
-      "communication": 94,
+      "emotional": 95,
+      "communication": 95,
       "romance": 98,
-      "trust": 94,
-      "stability": 89,
+      "trust": 95,
+      "stability": 90,
       "lifestyle": 96
     },
     "elementSynergy": {
       "title": "Double Fire (Electric Blaze)",
-      "text": "Intense passion, shared ambition, and instant adrenaline. You fuel each other's dreams, but must ensure competitive sparks don't burn down emotional bridges."
+      "text": "As Linda Goodman observed, two Fire signs create immediate enthusiasm and dramatic warmth. You champion each other's boldness, but must take care that competitive sparks don't burn down tender feelings."
     },
     "modalitySynergy": "Mutable + Fixed: A balanced dynamic where one partner initiates, stabilizes, or provides adaptable perspective to the other.",
     "strengths": [
@@ -4934,33 +5778,41 @@ const ZODIAC_PAIRS = {
     ],
     "celebrityCouples": "Barack Obama (Leo) & Michelle Obama (Capricorn/Sagittarius cusp) / Jennifer Lopez & Ben Affleck",
     "genderAdvice": {
-      "male_female": "When a Sagittarius man and a Leo woman unite, balancing his Mars/solar leadership with her emotional sanctuary fosters lasting harmony.",
-      "female_male": "When a Sagittarius woman and a Leo man unite, celebrating her creative initiative while valuing his steadfast protection builds an unbreakable bond.",
-      "same_sex": "In a union between two souls with Sagittarius and Leo energies, open communication and honoring personal autonomy keeps the romance deeply alive."
+      "male_female": "In Linda Goodman's Love Signs analysis of the Sagittarius Man with the Leo Woman (5-9 Vibration): He expresses his masculine planetary energy through Jupiter, while she responds with Sun grace. Success blooms when he honors her emotional sanctuary and she champions his purposeful ambitions.",
+      "female_male": "In Linda Goodman's Love Signs analysis of the Sagittarius Woman with the Leo Man (5-9 Vibration): She brings Sagittarius's radiant initiative to the union, while he offers Leo's steadfast anchor. When she trusts his protective strength and he respects her autonomy, their bond becomes unbreakable.",
+      "same_sex": "In Linda Goodman's cosmic synastry (5-9 Vibration): Two souls united under Sagittarius and Leo celestial energies find harmony when honoring personal autonomy, balancing giving with receiving, and allowing their elemental natures to enrich each other."
     }
   },
   "sagittarius_virgo": {
     "sign1": "sagittarius",
     "sign2": "virgo",
-    "overallScore": 52,
+    "overallScore": 54,
     "colorCategory": "amber",
     "shadeLabel": "Dynamic Potential",
-    "aspectName": "Square (Passionate Friction & Dynamic Growth)",
-    "headline": "Sagittarius & Virgo: Electrifying Spark with Creative Challenge",
-    "summary": "Signs at a 90\u00b0 square share the same modality but clash elementally. This generates high attraction, intense emotional chemistry, and spirited debates that demand conscious diplomacy and mutual compromise.",
+    "aspectName": "4-10 Sun Sign Pattern (The Karmic Challenge & Crucible)",
+    "vibrationCode": "4-10",
+    "lindaVibration": {
+      "code": "4-10",
+      "title": "4-10 Sun Sign Pattern (The Karmic Challenge & Crucible)",
+      "theme": "Passionate Friction, Dramatic Chemistry & Soul Crucible",
+      "summary": "Linda Goodman described the 4-10 square vibration as the classic crucible of soul growth. Sharing the same modality but differing elements produces magnetic physical attraction paired with clashes of will. If ego yields to love, this union builds invincible diamond strength.",
+      "karmicLesson": "Transcending stubborn pride and mastering the noble art of sacrificial compromise."
+    },
+    "headline": "Sagittarius & Virgo: Passionate Friction, Dramatic Chemistry & Soul Crucible",
+    "summary": "Linda Goodman described the 4-10 square vibration as the classic crucible of soul growth. Sharing the same modality but differing elements produces magnetic physical attraction paired with clashes of will. If ego yields to love, this union builds invincible diamond strength.",
     "parameters": {
-      "emotional": 50,
-      "communication": 55,
-      "romance": 49,
-      "trust": 46,
-      "stability": 51,
-      "lifestyle": 44
+      "emotional": 52,
+      "communication": 57,
+      "romance": 51,
+      "trust": 48,
+      "stability": 53,
+      "lifestyle": 46
     },
     "elementSynergy": {
       "title": "Fire & Earth (Hearthstone Fire)",
-      "text": "Fire provides creative energy and visionary boldness; Earth builds the practical structures to turn those visions into reality."
+      "text": "Fire provides creative courage and solar warmth; Earth builds the practical structures to turn those visions into lasting wealth and security."
     },
-    "modalitySynergy": "Both Mutable: High flexibility, continuous laughter, and easy adaptability. Anchor your connection with structured routines.",
+    "modalitySynergy": "Both Mutable (Adaptable): Continuous mental agility, laughter, and easy flexibility. Anchor your connection with grounding domestic routines.",
     "strengths": [
       "Dynamic growth: Sagittarius introduces Virgo to new perspectives and vice versa.",
       "Engaging romantic chemistry where you never run out of intriguing things to discover about each other.",
@@ -4971,37 +5823,45 @@ const ZODIAC_PAIRS = {
       "Occasional friction over lifestyle pacing or decision-making speed."
     ],
     "tips": [
-      "Adopt the 24-hour cooling off rule during heated arguments before revisiting sensitive topics.",
-      "Remember that Virgo communicates love in their own authentic dialect.",
-      "Celebrate your differences as unique strengths rather than flaws to be corrected."
+      "Adopt Linda Goodman's cooling-off principle during heated arguments before revisiting sensitive topics.",
+      "Remember that Virgo communicates love in their own authentic elemental dialect.",
+      "Celebrate your differences as complementary superpowers rather than personal flaws."
     ],
     "celebrityCouples": "Jay-Z (Sagittarius) & Beyonc\u00e9 (Virgo)",
     "genderAdvice": {
-      "male_female": "When a Sagittarius man and a Virgo woman unite, balancing his Mars/solar leadership with her emotional sanctuary fosters lasting harmony.",
-      "female_male": "When a Sagittarius woman and a Virgo man unite, celebrating her creative initiative while valuing his steadfast protection builds an unbreakable bond.",
-      "same_sex": "In a union between two souls with Sagittarius and Virgo energies, open communication and honoring personal autonomy keeps the romance deeply alive."
+      "male_female": "In Linda Goodman's Love Signs analysis of the Sagittarius Man with the Virgo Woman (4-10 Vibration): He expresses his masculine planetary energy through Jupiter, while she responds with Mercury grace. Success blooms when he honors her emotional sanctuary and she champions his purposeful ambitions.",
+      "female_male": "In Linda Goodman's Love Signs analysis of the Sagittarius Woman with the Virgo Man (4-10 Vibration): She brings Sagittarius's radiant initiative to the union, while he offers Virgo's steadfast anchor. When she trusts his protective strength and he respects her autonomy, their bond becomes unbreakable.",
+      "same_sex": "In Linda Goodman's cosmic synastry (4-10 Vibration): Two souls united under Sagittarius and Virgo celestial energies find harmony when honoring personal autonomy, balancing giving with receiving, and allowing their elemental natures to enrich each other."
     }
   },
   "sagittarius_libra": {
     "sign1": "sagittarius",
     "sign2": "libra",
-    "overallScore": 86,
+    "overallScore": 88,
     "colorCategory": "green",
     "shadeLabel": "Harmonious Union",
-    "aspectName": "Sextile (Harmonious Elemental Flow)",
-    "headline": "Sagittarius & Libra: Stimulating Synergy & Easy Friendship",
-    "summary": "Your elements naturally complement each other (Fire invigorates Air, or Water nourishes Earth). Communication flows effortlessly, laughter comes easily, and mutual respect flourishes.",
+    "aspectName": "3-11 Sun Sign Pattern (Karmic Friends & Sympathetic Lovers)",
+    "vibrationCode": "3-11",
+    "lindaVibration": {
+      "code": "3-11",
+      "title": "3-11 Sun Sign Pattern (Karmic Friends & Sympathetic Lovers)",
+      "theme": "Enduring Camaraderie, Easy Forgiveness & High Devotion",
+      "summary": "Linda Goodman considered the 3-11 vibration one of the happiest and most enduring in the cosmos. Your signs form a natural sextile of friendship. Even through intense misunderstandings, 3-11 lovers remain steadfast allies, quick to forgive and eager to laugh.",
+      "karmicLesson": "Nurturing lifelong loyalty, humanitarian generosity, and effortless mutual forgiveness."
+    },
+    "headline": "Sagittarius & Libra: Enduring Camaraderie, Easy Forgiveness & High Devotion",
+    "summary": "Linda Goodman considered the 3-11 vibration one of the happiest and most enduring in the cosmos. Your signs form a natural sextile of friendship. Even through intense misunderstandings, 3-11 lovers remain steadfast allies, quick to forgive and eager to laugh.",
     "parameters": {
-      "emotional": 84,
-      "communication": 90,
-      "romance": 92,
-      "trust": 86,
-      "stability": 85,
-      "lifestyle": 86
+      "emotional": 86,
+      "communication": 92,
+      "romance": 94,
+      "trust": 88,
+      "stability": 87,
+      "lifestyle": 88
     },
     "elementSynergy": {
-      "title": "Fire & Air (Inspirational Catalyst)",
-      "text": "Air fuels Fire's passion, while Fire brings warmth and bold action to Air's inventive ideas. An exciting, socially vibrant union."
+      "title": "Fire & Air (Inspirational Breeze)",
+      "text": "Air fans Fire's flames into glorious creative radiance, while Fire warms Air's visionary ideals into bold reality. An exciting, intellectually vibrant union."
     },
     "modalitySynergy": "Mutable + Cardinal: A balanced dynamic where one partner initiates, stabilizes, or provides adaptable perspective to the other.",
     "strengths": [
@@ -5020,31 +5880,39 @@ const ZODIAC_PAIRS = {
     ],
     "celebrityCouples": "Celebrated Sagittarius & Libra cosmic pairs",
     "genderAdvice": {
-      "male_female": "When a Sagittarius man and a Libra woman unite, balancing his Mars/solar leadership with her emotional sanctuary fosters lasting harmony.",
-      "female_male": "When a Sagittarius woman and a Libra man unite, celebrating her creative initiative while valuing his steadfast protection builds an unbreakable bond.",
-      "same_sex": "In a union between two souls with Sagittarius and Libra energies, open communication and honoring personal autonomy keeps the romance deeply alive."
+      "male_female": "In Linda Goodman's Love Signs analysis of the Sagittarius Man with the Libra Woman (3-11 Vibration): He expresses his masculine planetary energy through Jupiter, while she responds with Venus grace. Success blooms when he honors her emotional sanctuary and she champions his purposeful ambitions.",
+      "female_male": "In Linda Goodman's Love Signs analysis of the Sagittarius Woman with the Libra Man (3-11 Vibration): She brings Sagittarius's radiant initiative to the union, while he offers Libra's steadfast anchor. When she trusts his protective strength and he respects her autonomy, their bond becomes unbreakable.",
+      "same_sex": "In Linda Goodman's cosmic synastry (3-11 Vibration): Two souls united under Sagittarius and Libra celestial energies find harmony when honoring personal autonomy, balancing giving with receiving, and allowing their elemental natures to enrich each other."
     }
   },
   "sagittarius_scorpio": {
     "sign1": "sagittarius",
     "sign2": "scorpio",
-    "overallScore": 62,
+    "overallScore": 64,
     "colorCategory": "amber",
     "shadeLabel": "Dynamic Potential",
-    "aspectName": "Semisextile (Neighboring Contrast)",
-    "headline": "Sagittarius & Scorpio: Complementary Growth & Mutual Learning",
-    "summary": "As neighboring signs, you operate from contrasting elemental perspectives. This match creates a learning journey where each partner expands the other's horizons if patience is practiced.",
+    "aspectName": "2-12 Sun Sign Pattern (The Karmic Teacher & Pupil)",
+    "vibrationCode": "2-12",
+    "lindaVibration": {
+      "code": "2-12",
+      "title": "2-12 Sun Sign Pattern (The Karmic Teacher & Pupil)",
+      "theme": "Karmic Learning, Compassion & Gentle Tutoring",
+      "summary": "According to Linda Goodman, the 2-12 vibration signifies that one sign has spiritually passed through the other's grade in the cosmic school. There is a deep, unspoken bond of patience, protection, and gentle tutoring. Tolerating different pacing unlocks profound mutual growth.",
+      "karmicLesson": "Bridging contrasting elemental perspectives through patient compassion and secret mutual admiration."
+    },
+    "headline": "Sagittarius & Scorpio: Karmic Learning, Compassion & Gentle Tutoring",
+    "summary": "According to Linda Goodman, the 2-12 vibration signifies that one sign has spiritually passed through the other's grade in the cosmic school. There is a deep, unspoken bond of patience, protection, and gentle tutoring. Tolerating different pacing unlocks profound mutual growth.",
     "parameters": {
-      "emotional": 52,
-      "communication": 62,
-      "romance": 59,
-      "trust": 62,
-      "stability": 64,
-      "lifestyle": 62
+      "emotional": 54,
+      "communication": 64,
+      "romance": 61,
+      "trust": 64,
+      "stability": 66,
+      "lifestyle": 64
     },
     "elementSynergy": {
-      "title": "Fire & Water (Steam & Intense Chemistry)",
-      "text": "Extremely passionate and emotionally turbulent. Fire inspires Water to take bold leaps; Water teaches Fire the beauty of tender emotional depth."
+      "title": "Fire & Water (Steam & Intense Passion)",
+      "text": "Extremely passionate and emotionally turbulent. Fire inspires Water to take brave leaps; Water teaches Fire the beauty of quiet emotional vulnerability."
     },
     "modalitySynergy": "Mutable + Fixed: A balanced dynamic where one partner initiates, stabilizes, or provides adaptable perspective to the other.",
     "strengths": [
@@ -5057,15 +5925,15 @@ const ZODIAC_PAIRS = {
       "Occasional friction over lifestyle pacing or decision-making speed."
     ],
     "tips": [
-      "Adopt the 24-hour cooling off rule during heated arguments before revisiting sensitive topics.",
-      "Remember that Scorpio communicates love in their own authentic dialect.",
-      "Celebrate your differences as unique strengths rather than flaws to be corrected."
+      "Adopt Linda Goodman's cooling-off principle during heated arguments before revisiting sensitive topics.",
+      "Remember that Scorpio communicates love in their own authentic elemental dialect.",
+      "Celebrate your differences as complementary superpowers rather than personal flaws."
     ],
     "celebrityCouples": "Celebrated Sagittarius & Scorpio cosmic pairs",
     "genderAdvice": {
-      "male_female": "When a Sagittarius man and a Scorpio woman unite, balancing his Mars/solar leadership with her emotional sanctuary fosters lasting harmony.",
-      "female_male": "When a Sagittarius woman and a Scorpio man unite, celebrating her creative initiative while valuing his steadfast protection builds an unbreakable bond.",
-      "same_sex": "In a union between two souls with Sagittarius and Scorpio energies, open communication and honoring personal autonomy keeps the romance deeply alive."
+      "male_female": "In Linda Goodman's Love Signs analysis of the Sagittarius Man with the Scorpio Woman (2-12 Vibration): He expresses his masculine planetary energy through Jupiter, while she responds with Pluto & Mars grace. Success blooms when he honors her emotional sanctuary and she champions his purposeful ambitions.",
+      "female_male": "In Linda Goodman's Love Signs analysis of the Sagittarius Woman with the Scorpio Man (2-12 Vibration): She brings Sagittarius's radiant initiative to the union, while he offers Scorpio's steadfast anchor. When she trusts his protective strength and he respects her autonomy, their bond becomes unbreakable.",
+      "same_sex": "In Linda Goodman's cosmic synastry (2-12 Vibration): Two souls united under Sagittarius and Scorpio celestial energies find harmony when honoring personal autonomy, balancing giving with receiving, and allowing their elemental natures to enrich each other."
     }
   },
   "sagittarius_sagittarius": {
@@ -5074,9 +5942,17 @@ const ZODIAC_PAIRS = {
     "overallScore": 82,
     "colorCategory": "green",
     "shadeLabel": "Harmonious Union",
-    "aspectName": "Conjunction (Mirror Alignment)",
-    "headline": "Sagittarius & Sagittarius: Deep Mirror Empathy & Shared Instincts",
-    "summary": "Sharing the exact same sun sign gives you an instinctual understanding of each other's drives and vulnerabilities. You understand each other's moods intuitively, though you must guard against magnifying shared blind spots.",
+    "aspectName": "1-1 Sun Sign Pattern (The Cosmic Mirror)",
+    "vibrationCode": "1-1",
+    "lindaVibration": {
+      "code": "1-1",
+      "title": "1-1 Sun Sign Pattern (The Cosmic Mirror)",
+      "theme": "Mirror Empathy & Double Ego Reflection",
+      "summary": "In Linda Goodman's Love Signs, the 1-1 vibration is like gazing directly into an astrological mirror. You recognize each other's hidden virtues and deepest faults instantly. This creates profound telepathic empathy, but both partners must guard against magnifying identical blind spots.",
+      "karmicLesson": "Cultivating emotional humility and learning self-acceptance through observing your own nature reflected in your mate."
+    },
+    "headline": "Sagittarius & Sagittarius: Mirror Empathy & Double Ego Reflection",
+    "summary": "In Linda Goodman's Love Signs, the 1-1 vibration is like gazing directly into an astrological mirror. You recognize each other's hidden virtues and deepest faults instantly. This creates profound telepathic empathy, but both partners must guard against magnifying identical blind spots.",
     "parameters": {
       "emotional": 82,
       "communication": 82,
@@ -5087,9 +5963,9 @@ const ZODIAC_PAIRS = {
     },
     "elementSynergy": {
       "title": "Double Fire (Electric Blaze)",
-      "text": "Intense passion, shared ambition, and instant adrenaline. You fuel each other's dreams, but must ensure competitive sparks don't burn down emotional bridges."
+      "text": "As Linda Goodman observed, two Fire signs create immediate enthusiasm and dramatic warmth. You champion each other's boldness, but must take care that competitive sparks don't burn down tender feelings."
     },
-    "modalitySynergy": "Both Mutable: High flexibility, continuous laughter, and easy adaptability. Anchor your connection with structured routines.",
+    "modalitySynergy": "Both Mutable (Adaptable): Continuous mental agility, laughter, and easy flexibility. Anchor your connection with grounding domestic routines.",
     "strengths": [
       "Natural understanding: Sagittarius and Sagittarius instinctively comprehend each other's core motivations.",
       "Complimentary emotional rhythms that make daily life and domestic partnership feel comforting and safe.",
@@ -5106,31 +5982,39 @@ const ZODIAC_PAIRS = {
     ],
     "celebrityCouples": "Celebrated Sagittarius & Sagittarius cosmic pairs",
     "genderAdvice": {
-      "male_female": "When a Sagittarius man and a Sagittarius woman unite, balancing his Mars/solar leadership with her emotional sanctuary fosters lasting harmony.",
-      "female_male": "When a Sagittarius woman and a Sagittarius man unite, celebrating her creative initiative while valuing his steadfast protection builds an unbreakable bond.",
-      "same_sex": "In a union between two souls with Sagittarius and Sagittarius energies, open communication and honoring personal autonomy keeps the romance deeply alive."
+      "male_female": "In Linda Goodman's Love Signs analysis of the Sagittarius Man with the Sagittarius Woman (1-1 Vibration): He expresses his masculine planetary energy through Jupiter, while she responds with Jupiter grace. Success blooms when he honors her emotional sanctuary and she champions his purposeful ambitions.",
+      "female_male": "In Linda Goodman's Love Signs analysis of the Sagittarius Woman with the Sagittarius Man (1-1 Vibration): She brings Sagittarius's radiant initiative to the union, while he offers Sagittarius's steadfast anchor. When she trusts his protective strength and he respects her autonomy, their bond becomes unbreakable.",
+      "same_sex": "In Linda Goodman's cosmic synastry (1-1 Vibration): Two souls united under Sagittarius and Sagittarius celestial energies find harmony when honoring personal autonomy, balancing giving with receiving, and allowing their elemental natures to enrich each other."
     }
   },
   "sagittarius_capricorn": {
     "sign1": "sagittarius",
     "sign2": "capricorn",
-    "overallScore": 62,
+    "overallScore": 64,
     "colorCategory": "amber",
     "shadeLabel": "Dynamic Potential",
-    "aspectName": "Semisextile (Neighboring Contrast)",
-    "headline": "Sagittarius & Capricorn: Complementary Growth & Mutual Learning",
-    "summary": "As neighboring signs, you operate from contrasting elemental perspectives. This match creates a learning journey where each partner expands the other's horizons if patience is practiced.",
+    "aspectName": "2-12 Sun Sign Pattern (The Karmic Teacher & Pupil)",
+    "vibrationCode": "2-12",
+    "lindaVibration": {
+      "code": "2-12",
+      "title": "2-12 Sun Sign Pattern (The Karmic Teacher & Pupil)",
+      "theme": "Karmic Learning, Compassion & Gentle Tutoring",
+      "summary": "According to Linda Goodman, the 2-12 vibration signifies that one sign has spiritually passed through the other's grade in the cosmic school. There is a deep, unspoken bond of patience, protection, and gentle tutoring. Tolerating different pacing unlocks profound mutual growth.",
+      "karmicLesson": "Bridging contrasting elemental perspectives through patient compassion and secret mutual admiration."
+    },
+    "headline": "Sagittarius & Capricorn: Karmic Learning, Compassion & Gentle Tutoring",
+    "summary": "According to Linda Goodman, the 2-12 vibration signifies that one sign has spiritually passed through the other's grade in the cosmic school. There is a deep, unspoken bond of patience, protection, and gentle tutoring. Tolerating different pacing unlocks profound mutual growth.",
     "parameters": {
-      "emotional": 60,
-      "communication": 62,
-      "romance": 59,
-      "trust": 62,
-      "stability": 61,
-      "lifestyle": 62
+      "emotional": 62,
+      "communication": 64,
+      "romance": 61,
+      "trust": 64,
+      "stability": 63,
+      "lifestyle": 64
     },
     "elementSynergy": {
       "title": "Fire & Earth (Hearthstone Fire)",
-      "text": "Fire provides creative energy and visionary boldness; Earth builds the practical structures to turn those visions into reality."
+      "text": "Fire provides creative courage and solar warmth; Earth builds the practical structures to turn those visions into lasting wealth and security."
     },
     "modalitySynergy": "Mutable + Cardinal: A balanced dynamic where one partner initiates, stabilizes, or provides adaptable perspective to the other.",
     "strengths": [
@@ -5143,37 +6027,45 @@ const ZODIAC_PAIRS = {
       "Occasional friction over lifestyle pacing or decision-making speed."
     ],
     "tips": [
-      "Adopt the 24-hour cooling off rule during heated arguments before revisiting sensitive topics.",
-      "Remember that Capricorn communicates love in their own authentic dialect.",
-      "Celebrate your differences as unique strengths rather than flaws to be corrected."
+      "Adopt Linda Goodman's cooling-off principle during heated arguments before revisiting sensitive topics.",
+      "Remember that Capricorn communicates love in their own authentic elemental dialect.",
+      "Celebrate your differences as complementary superpowers rather than personal flaws."
     ],
     "celebrityCouples": "Celebrated Sagittarius & Capricorn cosmic pairs",
     "genderAdvice": {
-      "male_female": "When a Sagittarius man and a Capricorn woman unite, balancing his Mars/solar leadership with her emotional sanctuary fosters lasting harmony.",
-      "female_male": "When a Sagittarius woman and a Capricorn man unite, celebrating her creative initiative while valuing his steadfast protection builds an unbreakable bond.",
-      "same_sex": "In a union between two souls with Sagittarius and Capricorn energies, open communication and honoring personal autonomy keeps the romance deeply alive."
+      "male_female": "In Linda Goodman's Love Signs analysis of the Sagittarius Man with the Capricorn Woman (2-12 Vibration): He expresses his masculine planetary energy through Jupiter, while she responds with Saturn grace. Success blooms when he honors her emotional sanctuary and she champions his purposeful ambitions.",
+      "female_male": "In Linda Goodman's Love Signs analysis of the Sagittarius Woman with the Capricorn Man (2-12 Vibration): She brings Sagittarius's radiant initiative to the union, while he offers Capricorn's steadfast anchor. When she trusts his protective strength and he respects her autonomy, their bond becomes unbreakable.",
+      "same_sex": "In Linda Goodman's cosmic synastry (2-12 Vibration): Two souls united under Sagittarius and Capricorn celestial energies find harmony when honoring personal autonomy, balancing giving with receiving, and allowing their elemental natures to enrich each other."
     }
   },
   "sagittarius_aquarius": {
     "sign1": "sagittarius",
     "sign2": "aquarius",
-    "overallScore": 86,
+    "overallScore": 88,
     "colorCategory": "green",
     "shadeLabel": "Harmonious Union",
-    "aspectName": "Sextile (Harmonious Elemental Flow)",
-    "headline": "Sagittarius & Aquarius: Stimulating Synergy & Easy Friendship",
-    "summary": "Your elements naturally complement each other (Fire invigorates Air, or Water nourishes Earth). Communication flows effortlessly, laughter comes easily, and mutual respect flourishes.",
+    "aspectName": "3-11 Sun Sign Pattern (Karmic Friends & Sympathetic Lovers)",
+    "vibrationCode": "3-11",
+    "lindaVibration": {
+      "code": "3-11",
+      "title": "3-11 Sun Sign Pattern (Karmic Friends & Sympathetic Lovers)",
+      "theme": "Enduring Camaraderie, Easy Forgiveness & High Devotion",
+      "summary": "Linda Goodman considered the 3-11 vibration one of the happiest and most enduring in the cosmos. Your signs form a natural sextile of friendship. Even through intense misunderstandings, 3-11 lovers remain steadfast allies, quick to forgive and eager to laugh.",
+      "karmicLesson": "Nurturing lifelong loyalty, humanitarian generosity, and effortless mutual forgiveness."
+    },
+    "headline": "Sagittarius & Aquarius: Enduring Camaraderie, Easy Forgiveness & High Devotion",
+    "summary": "Linda Goodman considered the 3-11 vibration one of the happiest and most enduring in the cosmos. Your signs form a natural sextile of friendship. Even through intense misunderstandings, 3-11 lovers remain steadfast allies, quick to forgive and eager to laugh.",
     "parameters": {
-      "emotional": 84,
-      "communication": 90,
-      "romance": 92,
-      "trust": 86,
-      "stability": 88,
-      "lifestyle": 86
+      "emotional": 86,
+      "communication": 92,
+      "romance": 94,
+      "trust": 88,
+      "stability": 90,
+      "lifestyle": 88
     },
     "elementSynergy": {
-      "title": "Fire & Air (Inspirational Catalyst)",
-      "text": "Air fuels Fire's passion, while Fire brings warmth and bold action to Air's inventive ideas. An exciting, socially vibrant union."
+      "title": "Fire & Air (Inspirational Breeze)",
+      "text": "Air fans Fire's flames into glorious creative radiance, while Fire warms Air's visionary ideals into bold reality. An exciting, intellectually vibrant union."
     },
     "modalitySynergy": "Mutable + Fixed: A balanced dynamic where one partner initiates, stabilizes, or provides adaptable perspective to the other.",
     "strengths": [
@@ -5192,33 +6084,41 @@ const ZODIAC_PAIRS = {
     ],
     "celebrityCouples": "Celebrated Sagittarius & Aquarius cosmic pairs",
     "genderAdvice": {
-      "male_female": "When a Sagittarius man and a Aquarius woman unite, balancing his Mars/solar leadership with her emotional sanctuary fosters lasting harmony.",
-      "female_male": "When a Sagittarius woman and a Aquarius man unite, celebrating her creative initiative while valuing his steadfast protection builds an unbreakable bond.",
-      "same_sex": "In a union between two souls with Sagittarius and Aquarius energies, open communication and honoring personal autonomy keeps the romance deeply alive."
+      "male_female": "In Linda Goodman's Love Signs analysis of the Sagittarius Man with the Aquarius Woman (3-11 Vibration): He expresses his masculine planetary energy through Jupiter, while she responds with Uranus & Saturn grace. Success blooms when he honors her emotional sanctuary and she champions his purposeful ambitions.",
+      "female_male": "In Linda Goodman's Love Signs analysis of the Sagittarius Woman with the Aquarius Man (3-11 Vibration): She brings Sagittarius's radiant initiative to the union, while he offers Aquarius's steadfast anchor. When she trusts his protective strength and he respects her autonomy, their bond becomes unbreakable.",
+      "same_sex": "In Linda Goodman's cosmic synastry (3-11 Vibration): Two souls united under Sagittarius and Aquarius celestial energies find harmony when honoring personal autonomy, balancing giving with receiving, and allowing their elemental natures to enrich each other."
     }
   },
   "sagittarius_pisces": {
     "sign1": "sagittarius",
     "sign2": "pisces",
-    "overallScore": 55,
+    "overallScore": 54,
     "colorCategory": "amber",
     "shadeLabel": "Dynamic Potential",
-    "aspectName": "Square (Passionate Friction & Dynamic Growth)",
-    "headline": "Sagittarius & Pisces: Electrifying Spark with Creative Challenge",
-    "summary": "Signs at a 90\u00b0 square share the same modality but clash elementally. This generates high attraction, intense emotional chemistry, and spirited debates that demand conscious diplomacy and mutual compromise.",
+    "aspectName": "4-10 Sun Sign Pattern (The Karmic Challenge & Crucible)",
+    "vibrationCode": "4-10",
+    "lindaVibration": {
+      "code": "4-10",
+      "title": "4-10 Sun Sign Pattern (The Karmic Challenge & Crucible)",
+      "theme": "Passionate Friction, Dramatic Chemistry & Soul Crucible",
+      "summary": "Linda Goodman described the 4-10 square vibration as the classic crucible of soul growth. Sharing the same modality but differing elements produces magnetic physical attraction paired with clashes of will. If ego yields to love, this union builds invincible diamond strength.",
+      "karmicLesson": "Transcending stubborn pride and mastering the noble art of sacrificial compromise."
+    },
+    "headline": "Sagittarius & Pisces: Passionate Friction, Dramatic Chemistry & Soul Crucible",
+    "summary": "Linda Goodman described the 4-10 square vibration as the classic crucible of soul growth. Sharing the same modality but differing elements produces magnetic physical attraction paired with clashes of will. If ego yields to love, this union builds invincible diamond strength.",
     "parameters": {
-      "emotional": 45,
-      "communication": 55,
-      "romance": 52,
-      "trust": 49,
-      "stability": 54,
-      "lifestyle": 47
+      "emotional": 44,
+      "communication": 54,
+      "romance": 51,
+      "trust": 48,
+      "stability": 53,
+      "lifestyle": 46
     },
     "elementSynergy": {
-      "title": "Fire & Water (Steam & Intense Chemistry)",
-      "text": "Extremely passionate and emotionally turbulent. Fire inspires Water to take bold leaps; Water teaches Fire the beauty of tender emotional depth."
+      "title": "Fire & Water (Steam & Intense Passion)",
+      "text": "Extremely passionate and emotionally turbulent. Fire inspires Water to take brave leaps; Water teaches Fire the beauty of quiet emotional vulnerability."
     },
-    "modalitySynergy": "Both Mutable: High flexibility, continuous laughter, and easy adaptability. Anchor your connection with structured routines.",
+    "modalitySynergy": "Both Mutable (Adaptable): Continuous mental agility, laughter, and easy flexibility. Anchor your connection with grounding domestic routines.",
     "strengths": [
       "Dynamic growth: Sagittarius introduces Pisces to new perspectives and vice versa.",
       "Engaging romantic chemistry where you never run out of intriguing things to discover about each other.",
@@ -5229,39 +6129,47 @@ const ZODIAC_PAIRS = {
       "Occasional friction over lifestyle pacing or decision-making speed."
     ],
     "tips": [
-      "Adopt the 24-hour cooling off rule during heated arguments before revisiting sensitive topics.",
-      "Remember that Pisces communicates love in their own authentic dialect.",
-      "Celebrate your differences as unique strengths rather than flaws to be corrected."
+      "Adopt Linda Goodman's cooling-off principle during heated arguments before revisiting sensitive topics.",
+      "Remember that Pisces communicates love in their own authentic elemental dialect.",
+      "Celebrate your differences as complementary superpowers rather than personal flaws."
     ],
     "celebrityCouples": "Celebrated Sagittarius & Pisces cosmic pairs",
     "genderAdvice": {
-      "male_female": "When a Sagittarius man and a Pisces woman unite, balancing his Mars/solar leadership with her emotional sanctuary fosters lasting harmony.",
-      "female_male": "When a Sagittarius woman and a Pisces man unite, celebrating her creative initiative while valuing his steadfast protection builds an unbreakable bond.",
-      "same_sex": "In a union between two souls with Sagittarius and Pisces energies, open communication and honoring personal autonomy keeps the romance deeply alive."
+      "male_female": "In Linda Goodman's Love Signs analysis of the Sagittarius Man with the Pisces Woman (4-10 Vibration): He expresses his masculine planetary energy through Jupiter, while she responds with Neptune & Jupiter grace. Success blooms when he honors her emotional sanctuary and she champions his purposeful ambitions.",
+      "female_male": "In Linda Goodman's Love Signs analysis of the Sagittarius Woman with the Pisces Man (4-10 Vibration): She brings Sagittarius's radiant initiative to the union, while he offers Pisces's steadfast anchor. When she trusts his protective strength and he respects her autonomy, their bond becomes unbreakable.",
+      "same_sex": "In Linda Goodman's cosmic synastry (4-10 Vibration): Two souls united under Sagittarius and Pisces celestial energies find harmony when honoring personal autonomy, balancing giving with receiving, and allowing their elemental natures to enrich each other."
     }
   },
   "capricorn_aries": {
     "sign1": "capricorn",
     "sign2": "aries",
-    "overallScore": 52,
+    "overallScore": 54,
     "colorCategory": "amber",
     "shadeLabel": "Dynamic Potential",
-    "aspectName": "Square (Passionate Friction & Dynamic Growth)",
-    "headline": "Capricorn & Aries: Electrifying Spark with Creative Challenge",
-    "summary": "Signs at a 90\u00b0 square share the same modality but clash elementally. This generates high attraction, intense emotional chemistry, and spirited debates that demand conscious diplomacy and mutual compromise.",
+    "aspectName": "4-10 Sun Sign Pattern (The Karmic Challenge & Crucible)",
+    "vibrationCode": "4-10",
+    "lindaVibration": {
+      "code": "4-10",
+      "title": "4-10 Sun Sign Pattern (The Karmic Challenge & Crucible)",
+      "theme": "Passionate Friction, Dramatic Chemistry & Soul Crucible",
+      "summary": "Linda Goodman described the 4-10 square vibration as the classic crucible of soul growth. Sharing the same modality but differing elements produces magnetic physical attraction paired with clashes of will. If ego yields to love, this union builds invincible diamond strength.",
+      "karmicLesson": "Transcending stubborn pride and mastering the noble art of sacrificial compromise."
+    },
+    "headline": "Capricorn & Aries: Passionate Friction, Dramatic Chemistry & Soul Crucible",
+    "summary": "Linda Goodman described the 4-10 square vibration as the classic crucible of soul growth. Sharing the same modality but differing elements produces magnetic physical attraction paired with clashes of will. If ego yields to love, this union builds invincible diamond strength.",
     "parameters": {
-      "emotional": 50,
-      "communication": 52,
-      "romance": 49,
-      "trust": 52,
-      "stability": 51,
-      "lifestyle": 44
+      "emotional": 52,
+      "communication": 54,
+      "romance": 51,
+      "trust": 54,
+      "stability": 53,
+      "lifestyle": 46
     },
     "elementSynergy": {
       "title": "Fire & Earth (Hearthstone Fire)",
-      "text": "Fire provides creative energy and visionary boldness; Earth builds the practical structures to turn those visions into reality."
+      "text": "Fire provides creative courage and solar warmth; Earth builds the practical structures to turn those visions into lasting wealth and security."
     },
-    "modalitySynergy": "Both Cardinal: Two visionary leaders who love initiating projects. Take turns steering to prevent power struggles.",
+    "modalitySynergy": "Both Cardinal (Initiators): Two natural leaders. Linda Goodman advised taking turns leading joint projects to eliminate power struggles.",
     "strengths": [
       "Dynamic growth: Capricorn introduces Aries to new perspectives and vice versa.",
       "Engaging romantic chemistry where you never run out of intriguing things to discover about each other.",
@@ -5272,37 +6180,45 @@ const ZODIAC_PAIRS = {
       "Occasional friction over lifestyle pacing or decision-making speed."
     ],
     "tips": [
-      "Adopt the 24-hour cooling off rule during heated arguments before revisiting sensitive topics.",
-      "Remember that Aries communicates love in their own authentic dialect.",
-      "Celebrate your differences as unique strengths rather than flaws to be corrected."
+      "Adopt Linda Goodman's cooling-off principle during heated arguments before revisiting sensitive topics.",
+      "Remember that Aries communicates love in their own authentic elemental dialect.",
+      "Celebrate your differences as complementary superpowers rather than personal flaws."
     ],
     "celebrityCouples": "Celebrated Capricorn & Aries cosmic pairs",
     "genderAdvice": {
-      "male_female": "When a Capricorn man and a Aries woman unite, balancing his Mars/solar leadership with her emotional sanctuary fosters lasting harmony.",
-      "female_male": "When a Capricorn woman and a Aries man unite, celebrating her creative initiative while valuing his steadfast protection builds an unbreakable bond.",
-      "same_sex": "In a union between two souls with Capricorn and Aries energies, open communication and honoring personal autonomy keeps the romance deeply alive."
+      "male_female": "In Linda Goodman's Love Signs analysis of the Capricorn Man with the Aries Woman (4-10 Vibration): He expresses his masculine planetary energy through Saturn, while she responds with Mars grace. Success blooms when he honors her emotional sanctuary and she champions his purposeful ambitions.",
+      "female_male": "In Linda Goodman's Love Signs analysis of the Capricorn Woman with the Aries Man (4-10 Vibration): She brings Capricorn's radiant initiative to the union, while he offers Aries's steadfast anchor. When she trusts his protective strength and he respects her autonomy, their bond becomes unbreakable.",
+      "same_sex": "In Linda Goodman's cosmic synastry (4-10 Vibration): Two souls united under Capricorn and Aries celestial energies find harmony when honoring personal autonomy, balancing giving with receiving, and allowing their elemental natures to enrich each other."
     }
   },
   "capricorn_taurus": {
     "sign1": "capricorn",
     "sign2": "taurus",
-    "overallScore": 94,
+    "overallScore": 95,
     "colorCategory": "green",
     "shadeLabel": "Harmonious Union",
-    "aspectName": "Trine (Divine Soulmate Element)",
-    "headline": "Capricorn & Taurus: Effortless Harmony & Natural Soul Resonance",
-    "summary": "Sharing the same element (Fire-Fire, Earth-Earth, Air-Air, Water-Water) creates an instinctive, harmonious flow. You breathe the same spiritual air, understand each other's pacing, and feel deeply at home together.",
+    "aspectName": "5-9 Sun Sign Pattern (The Divine Cosmic Blessing)",
+    "vibrationCode": "5-9",
+    "lindaVibration": {
+      "code": "5-9",
+      "title": "5-9 Sun Sign Pattern (The Divine Cosmic Blessing)",
+      "theme": "Golden Trine, Soulmate Telepathy & Natural Sympathy",
+      "summary": "Linda Goodman's most celebrated synastry pattern! Sharing the same sacred element (Fire, Earth, Air, or Water) brings instant soul recognition. You forgive each other almost effortlessly, inspire each other's dreams, and enjoy an almost telepathic understanding.",
+      "karmicLesson": "Preserving sacred gratitude and avoiding taking your effortless soul harmony for granted."
+    },
+    "headline": "Capricorn & Taurus: Golden Trine, Soulmate Telepathy & Natural Sympathy",
+    "summary": "Linda Goodman's most celebrated synastry pattern! Sharing the same sacred element (Fire, Earth, Air, or Water) brings instant soul recognition. You forgive each other almost effortlessly, inspire each other's dreams, and enjoy an almost telepathic understanding.",
     "parameters": {
-      "emotional": 94,
-      "communication": 94,
-      "romance": 91,
+      "emotional": 95,
+      "communication": 95,
+      "romance": 92,
       "trust": 98,
       "stability": 98,
       "lifestyle": 96
     },
     "elementSynergy": {
-      "title": "Double Earth (Unshakeable Foundation)",
-      "text": "Deep practical grounding, financial prudence, and rock-solid loyalty. You build lasting wealth and a cozy empire together."
+      "title": "Double Earth (Unshakeable Bedrock)",
+      "text": "Linda Goodman praised double Earth as the rock of domestic security. You share common respect for practical honesty, financial prudence, and building a cozy, enduring haven."
     },
     "modalitySynergy": "Cardinal + Fixed: A balanced dynamic where one partner initiates, stabilizes, or provides adaptable perspective to the other.",
     "strengths": [
@@ -5321,40 +6237,48 @@ const ZODIAC_PAIRS = {
     ],
     "celebrityCouples": "David Beckham (Taurus) & Victoria Beckham (Aries/Taurus)",
     "genderAdvice": {
-      "male_female": "When a Capricorn man and a Taurus woman unite, balancing his Mars/solar leadership with her emotional sanctuary fosters lasting harmony.",
-      "female_male": "When a Capricorn woman and a Taurus man unite, celebrating her creative initiative while valuing his steadfast protection builds an unbreakable bond.",
-      "same_sex": "In a union between two souls with Capricorn and Taurus energies, open communication and honoring personal autonomy keeps the romance deeply alive."
+      "male_female": "In Linda Goodman's Love Signs analysis of the Capricorn Man with the Taurus Woman (5-9 Vibration): He expresses his masculine planetary energy through Saturn, while she responds with Venus grace. Success blooms when he honors her emotional sanctuary and she champions his purposeful ambitions.",
+      "female_male": "In Linda Goodman's Love Signs analysis of the Capricorn Woman with the Taurus Man (5-9 Vibration): She brings Capricorn's radiant initiative to the union, while he offers Taurus's steadfast anchor. When she trusts his protective strength and he respects her autonomy, their bond becomes unbreakable.",
+      "same_sex": "In Linda Goodman's cosmic synastry (5-9 Vibration): Two souls united under Capricorn and Taurus celestial energies find harmony when honoring personal autonomy, balancing giving with receiving, and allowing their elemental natures to enrich each other."
     }
   },
   "capricorn_gemini": {
     "sign1": "capricorn",
     "sign2": "gemini",
-    "overallScore": 46,
+    "overallScore": 48,
     "colorCategory": "red",
     "shadeLabel": "Growth Challenge",
-    "aspectName": "Quincunx (Mysterious Intrigue & Karmic Adjustment)",
-    "headline": "Capricorn & Gemini: Enigmatic Attraction Demanding Patience",
-    "summary": "Separated by five signs, you have little in common astrologically, which creates an intriguing magnetic mystery. Succeeding together requires appreciating your partner's entirely unique perspective on life.",
+    "aspectName": "6-8 Sun Sign Pattern (Karmic Mystery & Devoted Service)",
+    "vibrationCode": "6-8",
+    "lindaVibration": {
+      "code": "6-8",
+      "title": "6-8 Sun Sign Pattern (Karmic Mystery & Devoted Service)",
+      "theme": "Enigmatic Fascination, Hypnotic Pull & Karmic Duty",
+      "summary": "According to Linda Goodman, the 6-8 quincunx vibration is cloaked in hypnotic fascination and karmic debt. One partner feels drawn to serve, protect, or nurture the other, generating deep emotional or physical magnetism that requires profound patience to untangle.",
+      "karmicLesson": "Practicing unconditional love free from selfish demands, embracing differences that cannot be logically explained."
+    },
+    "headline": "Capricorn & Gemini: Enigmatic Fascination, Hypnotic Pull & Karmic Duty",
+    "summary": "According to Linda Goodman, the 6-8 quincunx vibration is cloaked in hypnotic fascination and karmic debt. One partner feels drawn to serve, protect, or nurture the other, generating deep emotional or physical magnetism that requires profound patience to untangle.",
     "parameters": {
-      "emotional": 44,
+      "emotional": 46,
       "communication": 45,
-      "romance": 43,
-      "trust": 46,
-      "stability": 45,
-      "lifestyle": 38
+      "romance": 45,
+      "trust": 48,
+      "stability": 47,
+      "lifestyle": 40
     },
     "elementSynergy": {
       "title": "Earth & Air (Pragmatic Strategy)",
-      "text": "Earth brings tangible discipline and organization; Air brings innovative ideas and sparkling conversational agility."
+      "text": "Earth brings tangible structure and sensible order; Air introduces inventive concepts and conversational sparkle. Mutual appreciation bridges different tempos."
     },
     "modalitySynergy": "Cardinal + Mutable: A balanced dynamic where one partner initiates, stabilizes, or provides adaptable perspective to the other.",
     "strengths": [
-      "Powerful karmic pull that pushes both individuals to mature emotionally.",
+      "Powerful karmic pull that pushes both souls to mature emotionally and spiritually.",
       "Unforgettable chemistry and passion born from sheer elemental contrast.",
       "Opportunity to develop immense patience, empathy, and unconditional love."
     ],
     "challenges": [
-      "Fundamental contrast in priorities: Capricorn's instinctual approach may confuse Gemini.",
+      "Fundamental contrast in priorities: Capricorn's instinctual approach may baffle Gemini.",
       "Tendency to misinterpret your partner's need for space or emotional expression."
     ],
     "tips": [
@@ -5364,33 +6288,41 @@ const ZODIAC_PAIRS = {
     ],
     "celebrityCouples": "Celebrated Capricorn & Gemini cosmic pairs",
     "genderAdvice": {
-      "male_female": "When a Capricorn man and a Gemini woman unite, balancing his Mars/solar leadership with her emotional sanctuary fosters lasting harmony.",
-      "female_male": "When a Capricorn woman and a Gemini man unite, celebrating her creative initiative while valuing his steadfast protection builds an unbreakable bond.",
-      "same_sex": "In a union between two souls with Capricorn and Gemini energies, open communication and honoring personal autonomy keeps the romance deeply alive."
+      "male_female": "In Linda Goodman's Love Signs analysis of the Capricorn Man with the Gemini Woman (6-8 Vibration): He expresses his masculine planetary energy through Saturn, while she responds with Mercury grace. Success blooms when he honors her emotional sanctuary and she champions his purposeful ambitions.",
+      "female_male": "In Linda Goodman's Love Signs analysis of the Capricorn Woman with the Gemini Man (6-8 Vibration): She brings Capricorn's radiant initiative to the union, while he offers Gemini's steadfast anchor. When she trusts his protective strength and he respects her autonomy, their bond becomes unbreakable.",
+      "same_sex": "In Linda Goodman's cosmic synastry (6-8 Vibration): Two souls united under Capricorn and Gemini celestial energies find harmony when honoring personal autonomy, balancing giving with receiving, and allowing their elemental natures to enrich each other."
     }
   },
   "capricorn_cancer": {
     "sign1": "capricorn",
     "sign2": "cancer",
-    "overallScore": 84,
+    "overallScore": 86,
     "colorCategory": "green",
     "shadeLabel": "Harmonious Union",
-    "aspectName": "Opposition (Cosmic Magnetism & Polar Balance)",
-    "headline": "Capricorn & Cancer: Magnetic Attraction & Yin-Yang Balance",
-    "summary": "Sitting 180\u00b0 across the zodiac wheel, you are polar opposites. What one lacks, the other possesses in abundance. The chemistry is electric, offering the potential to form an unbeatable yin-and-yang partnership.",
+    "aspectName": "7-7 Sun Sign Pattern (Polar Magnetism & Cosmic Complements)",
+    "vibrationCode": "7-7",
+    "lindaVibration": {
+      "code": "7-7",
+      "title": "7-7 Sun Sign Pattern (Polar Magnetism & Cosmic Complements)",
+      "theme": "Opposites Attract, Celestial Electricity & Yin-Yang Balance",
+      "summary": "Sitting 180\u00b0 opposite on the zodiac wheel, Linda Goodman saw the 7-7 vibration as two halves of a single soul. What one lacks, the other possesses in abundance. It generates high romantic voltage: either a magnificent lifelong union or an explosive standoff.",
+      "karmicLesson": "Finding wholeness through merging opposite qualities into a unified, harmonious whole."
+    },
+    "headline": "Capricorn & Cancer: Opposites Attract, Celestial Electricity & Yin-Yang Balance",
+    "summary": "Sitting 180\u00b0 opposite on the zodiac wheel, Linda Goodman saw the 7-7 vibration as two halves of a single soul. What one lacks, the other possesses in abundance. It generates high romantic voltage: either a magnificent lifelong union or an explosive standoff.",
     "parameters": {
-      "emotional": 86,
-      "communication": 84,
-      "romance": 92,
-      "trust": 89,
-      "stability": 90,
-      "lifestyle": 84
+      "emotional": 88,
+      "communication": 86,
+      "romance": 94,
+      "trust": 91,
+      "stability": 92,
+      "lifestyle": 86
     },
     "elementSynergy": {
       "title": "Earth & Water (Fertile Nurturing)",
-      "text": "Water softens Earth with empathy and emotion; Earth provides Water with steady shores of stability. A classic recipe for enduring married happiness."
+      "text": "Water softens Earth with tender emotional empathy; Earth provides Water with comforting shores of physical stability. A classic recipe for a thriving, enduring marriage."
     },
-    "modalitySynergy": "Both Cardinal: Two visionary leaders who love initiating projects. Take turns steering to prevent power struggles.",
+    "modalitySynergy": "Both Cardinal (Initiators): Two natural leaders. Linda Goodman advised taking turns leading joint projects to eliminate power struggles.",
     "strengths": [
       "Natural understanding: Capricorn and Cancer instinctively comprehend each other's core motivations.",
       "Complimentary emotional rhythms that make daily life and domestic partnership feel comforting and safe.",
@@ -5407,40 +6339,48 @@ const ZODIAC_PAIRS = {
     ],
     "celebrityCouples": "Prince William (Cancer) & Kate Middleton (Capricorn)",
     "genderAdvice": {
-      "male_female": "When a Capricorn man and a Cancer woman unite, balancing his Mars/solar leadership with her emotional sanctuary fosters lasting harmony.",
-      "female_male": "When a Capricorn woman and a Cancer man unite, celebrating her creative initiative while valuing his steadfast protection builds an unbreakable bond.",
-      "same_sex": "In a union between two souls with Capricorn and Cancer energies, open communication and honoring personal autonomy keeps the romance deeply alive."
+      "male_female": "In Linda Goodman's Love Signs analysis of the Capricorn Man with the Cancer Woman (7-7 Vibration): He expresses his masculine planetary energy through Saturn, while she responds with Moon grace. Success blooms when he honors her emotional sanctuary and she champions his purposeful ambitions.",
+      "female_male": "In Linda Goodman's Love Signs analysis of the Capricorn Woman with the Cancer Man (7-7 Vibration): She brings Capricorn's radiant initiative to the union, while he offers Cancer's steadfast anchor. When she trusts his protective strength and he respects her autonomy, their bond becomes unbreakable.",
+      "same_sex": "In Linda Goodman's cosmic synastry (7-7 Vibration): Two souls united under Capricorn and Cancer celestial energies find harmony when honoring personal autonomy, balancing giving with receiving, and allowing their elemental natures to enrich each other."
     }
   },
   "capricorn_leo": {
     "sign1": "capricorn",
     "sign2": "leo",
-    "overallScore": 46,
+    "overallScore": 48,
     "colorCategory": "red",
     "shadeLabel": "Growth Challenge",
-    "aspectName": "Quincunx (Mysterious Intrigue & Karmic Adjustment)",
-    "headline": "Capricorn & Leo: Enigmatic Attraction Demanding Patience",
-    "summary": "Separated by five signs, you have little in common astrologically, which creates an intriguing magnetic mystery. Succeeding together requires appreciating your partner's entirely unique perspective on life.",
+    "aspectName": "6-8 Sun Sign Pattern (Karmic Mystery & Devoted Service)",
+    "vibrationCode": "6-8",
+    "lindaVibration": {
+      "code": "6-8",
+      "title": "6-8 Sun Sign Pattern (Karmic Mystery & Devoted Service)",
+      "theme": "Enigmatic Fascination, Hypnotic Pull & Karmic Duty",
+      "summary": "According to Linda Goodman, the 6-8 quincunx vibration is cloaked in hypnotic fascination and karmic debt. One partner feels drawn to serve, protect, or nurture the other, generating deep emotional or physical magnetism that requires profound patience to untangle.",
+      "karmicLesson": "Practicing unconditional love free from selfish demands, embracing differences that cannot be logically explained."
+    },
+    "headline": "Capricorn & Leo: Enigmatic Fascination, Hypnotic Pull & Karmic Duty",
+    "summary": "According to Linda Goodman, the 6-8 quincunx vibration is cloaked in hypnotic fascination and karmic debt. One partner feels drawn to serve, protect, or nurture the other, generating deep emotional or physical magnetism that requires profound patience to untangle.",
     "parameters": {
-      "emotional": 44,
-      "communication": 46,
-      "romance": 43,
-      "trust": 46,
-      "stability": 48,
-      "lifestyle": 38
+      "emotional": 46,
+      "communication": 48,
+      "romance": 45,
+      "trust": 48,
+      "stability": 50,
+      "lifestyle": 40
     },
     "elementSynergy": {
       "title": "Fire & Earth (Hearthstone Fire)",
-      "text": "Fire provides creative energy and visionary boldness; Earth builds the practical structures to turn those visions into reality."
+      "text": "Fire provides creative courage and solar warmth; Earth builds the practical structures to turn those visions into lasting wealth and security."
     },
     "modalitySynergy": "Cardinal + Fixed: A balanced dynamic where one partner initiates, stabilizes, or provides adaptable perspective to the other.",
     "strengths": [
-      "Powerful karmic pull that pushes both individuals to mature emotionally.",
+      "Powerful karmic pull that pushes both souls to mature emotionally and spiritually.",
       "Unforgettable chemistry and passion born from sheer elemental contrast.",
       "Opportunity to develop immense patience, empathy, and unconditional love."
     ],
     "challenges": [
-      "Fundamental contrast in priorities: Capricorn's instinctual approach may confuse Leo.",
+      "Fundamental contrast in priorities: Capricorn's instinctual approach may baffle Leo.",
       "Tendency to misinterpret your partner's need for space or emotional expression."
     ],
     "tips": [
@@ -5450,31 +6390,39 @@ const ZODIAC_PAIRS = {
     ],
     "celebrityCouples": "Celebrated Capricorn & Leo cosmic pairs",
     "genderAdvice": {
-      "male_female": "When a Capricorn man and a Leo woman unite, balancing his Mars/solar leadership with her emotional sanctuary fosters lasting harmony.",
-      "female_male": "When a Capricorn woman and a Leo man unite, celebrating her creative initiative while valuing his steadfast protection builds an unbreakable bond.",
-      "same_sex": "In a union between two souls with Capricorn and Leo energies, open communication and honoring personal autonomy keeps the romance deeply alive."
+      "male_female": "In Linda Goodman's Love Signs analysis of the Capricorn Man with the Leo Woman (6-8 Vibration): He expresses his masculine planetary energy through Saturn, while she responds with Sun grace. Success blooms when he honors her emotional sanctuary and she champions his purposeful ambitions.",
+      "female_male": "In Linda Goodman's Love Signs analysis of the Capricorn Woman with the Leo Man (6-8 Vibration): She brings Capricorn's radiant initiative to the union, while he offers Leo's steadfast anchor. When she trusts his protective strength and he respects her autonomy, their bond becomes unbreakable.",
+      "same_sex": "In Linda Goodman's cosmic synastry (6-8 Vibration): Two souls united under Capricorn and Leo celestial energies find harmony when honoring personal autonomy, balancing giving with receiving, and allowing their elemental natures to enrich each other."
     }
   },
   "capricorn_virgo": {
     "sign1": "capricorn",
     "sign2": "virgo",
-    "overallScore": 94,
+    "overallScore": 95,
     "colorCategory": "green",
     "shadeLabel": "Harmonious Union",
-    "aspectName": "Trine (Divine Soulmate Element)",
-    "headline": "Capricorn & Virgo: Effortless Harmony & Natural Soul Resonance",
-    "summary": "Sharing the same element (Fire-Fire, Earth-Earth, Air-Air, Water-Water) creates an instinctive, harmonious flow. You breathe the same spiritual air, understand each other's pacing, and feel deeply at home together.",
+    "aspectName": "5-9 Sun Sign Pattern (The Divine Cosmic Blessing)",
+    "vibrationCode": "5-9",
+    "lindaVibration": {
+      "code": "5-9",
+      "title": "5-9 Sun Sign Pattern (The Divine Cosmic Blessing)",
+      "theme": "Golden Trine, Soulmate Telepathy & Natural Sympathy",
+      "summary": "Linda Goodman's most celebrated synastry pattern! Sharing the same sacred element (Fire, Earth, Air, or Water) brings instant soul recognition. You forgive each other almost effortlessly, inspire each other's dreams, and enjoy an almost telepathic understanding.",
+      "karmicLesson": "Preserving sacred gratitude and avoiding taking your effortless soul harmony for granted."
+    },
+    "headline": "Capricorn & Virgo: Golden Trine, Soulmate Telepathy & Natural Sympathy",
+    "summary": "Linda Goodman's most celebrated synastry pattern! Sharing the same sacred element (Fire, Earth, Air, or Water) brings instant soul recognition. You forgive each other almost effortlessly, inspire each other's dreams, and enjoy an almost telepathic understanding.",
     "parameters": {
-      "emotional": 94,
+      "emotional": 95,
       "communication": 94,
-      "romance": 91,
+      "romance": 92,
       "trust": 98,
       "stability": 98,
       "lifestyle": 96
     },
     "elementSynergy": {
-      "title": "Double Earth (Unshakeable Foundation)",
-      "text": "Deep practical grounding, financial prudence, and rock-solid loyalty. You build lasting wealth and a cozy empire together."
+      "title": "Double Earth (Unshakeable Bedrock)",
+      "text": "Linda Goodman praised double Earth as the rock of domestic security. You share common respect for practical honesty, financial prudence, and building a cozy, enduring haven."
     },
     "modalitySynergy": "Cardinal + Mutable: A balanced dynamic where one partner initiates, stabilizes, or provides adaptable perspective to the other.",
     "strengths": [
@@ -5493,33 +6441,41 @@ const ZODIAC_PAIRS = {
     ],
     "celebrityCouples": "Celebrated Capricorn & Virgo cosmic pairs",
     "genderAdvice": {
-      "male_female": "When a Capricorn man and a Virgo woman unite, balancing his Mars/solar leadership with her emotional sanctuary fosters lasting harmony.",
-      "female_male": "When a Capricorn woman and a Virgo man unite, celebrating her creative initiative while valuing his steadfast protection builds an unbreakable bond.",
-      "same_sex": "In a union between two souls with Capricorn and Virgo energies, open communication and honoring personal autonomy keeps the romance deeply alive."
+      "male_female": "In Linda Goodman's Love Signs analysis of the Capricorn Man with the Virgo Woman (5-9 Vibration): He expresses his masculine planetary energy through Saturn, while she responds with Mercury grace. Success blooms when he honors her emotional sanctuary and she champions his purposeful ambitions.",
+      "female_male": "In Linda Goodman's Love Signs analysis of the Capricorn Woman with the Virgo Man (5-9 Vibration): She brings Capricorn's radiant initiative to the union, while he offers Virgo's steadfast anchor. When she trusts his protective strength and he respects her autonomy, their bond becomes unbreakable.",
+      "same_sex": "In Linda Goodman's cosmic synastry (5-9 Vibration): Two souls united under Capricorn and Virgo celestial energies find harmony when honoring personal autonomy, balancing giving with receiving, and allowing their elemental natures to enrich each other."
     }
   },
   "capricorn_libra": {
     "sign1": "capricorn",
     "sign2": "libra",
-    "overallScore": 52,
+    "overallScore": 54,
     "colorCategory": "amber",
     "shadeLabel": "Dynamic Potential",
-    "aspectName": "Square (Passionate Friction & Dynamic Growth)",
-    "headline": "Capricorn & Libra: Electrifying Spark with Creative Challenge",
-    "summary": "Signs at a 90\u00b0 square share the same modality but clash elementally. This generates high attraction, intense emotional chemistry, and spirited debates that demand conscious diplomacy and mutual compromise.",
+    "aspectName": "4-10 Sun Sign Pattern (The Karmic Challenge & Crucible)",
+    "vibrationCode": "4-10",
+    "lindaVibration": {
+      "code": "4-10",
+      "title": "4-10 Sun Sign Pattern (The Karmic Challenge & Crucible)",
+      "theme": "Passionate Friction, Dramatic Chemistry & Soul Crucible",
+      "summary": "Linda Goodman described the 4-10 square vibration as the classic crucible of soul growth. Sharing the same modality but differing elements produces magnetic physical attraction paired with clashes of will. If ego yields to love, this union builds invincible diamond strength.",
+      "karmicLesson": "Transcending stubborn pride and mastering the noble art of sacrificial compromise."
+    },
+    "headline": "Capricorn & Libra: Passionate Friction, Dramatic Chemistry & Soul Crucible",
+    "summary": "Linda Goodman described the 4-10 square vibration as the classic crucible of soul growth. Sharing the same modality but differing elements produces magnetic physical attraction paired with clashes of will. If ego yields to love, this union builds invincible diamond strength.",
     "parameters": {
-      "emotional": 50,
-      "communication": 47,
-      "romance": 49,
-      "trust": 52,
-      "stability": 51,
-      "lifestyle": 44
+      "emotional": 52,
+      "communication": 49,
+      "romance": 51,
+      "trust": 54,
+      "stability": 53,
+      "lifestyle": 46
     },
     "elementSynergy": {
       "title": "Earth & Air (Pragmatic Strategy)",
-      "text": "Earth brings tangible discipline and organization; Air brings innovative ideas and sparkling conversational agility."
+      "text": "Earth brings tangible structure and sensible order; Air introduces inventive concepts and conversational sparkle. Mutual appreciation bridges different tempos."
     },
-    "modalitySynergy": "Both Cardinal: Two visionary leaders who love initiating projects. Take turns steering to prevent power struggles.",
+    "modalitySynergy": "Both Cardinal (Initiators): Two natural leaders. Linda Goodman advised taking turns leading joint projects to eliminate power struggles.",
     "strengths": [
       "Dynamic growth: Capricorn introduces Libra to new perspectives and vice versa.",
       "Engaging romantic chemistry where you never run out of intriguing things to discover about each other.",
@@ -5530,37 +6486,45 @@ const ZODIAC_PAIRS = {
       "Occasional friction over lifestyle pacing or decision-making speed."
     ],
     "tips": [
-      "Adopt the 24-hour cooling off rule during heated arguments before revisiting sensitive topics.",
-      "Remember that Libra communicates love in their own authentic dialect.",
-      "Celebrate your differences as unique strengths rather than flaws to be corrected."
+      "Adopt Linda Goodman's cooling-off principle during heated arguments before revisiting sensitive topics.",
+      "Remember that Libra communicates love in their own authentic elemental dialect.",
+      "Celebrate your differences as complementary superpowers rather than personal flaws."
     ],
     "celebrityCouples": "Celebrated Capricorn & Libra cosmic pairs",
     "genderAdvice": {
-      "male_female": "When a Capricorn man and a Libra woman unite, balancing his Mars/solar leadership with her emotional sanctuary fosters lasting harmony.",
-      "female_male": "When a Capricorn woman and a Libra man unite, celebrating her creative initiative while valuing his steadfast protection builds an unbreakable bond.",
-      "same_sex": "In a union between two souls with Capricorn and Libra energies, open communication and honoring personal autonomy keeps the romance deeply alive."
+      "male_female": "In Linda Goodman's Love Signs analysis of the Capricorn Man with the Libra Woman (4-10 Vibration): He expresses his masculine planetary energy through Saturn, while she responds with Venus grace. Success blooms when he honors her emotional sanctuary and she champions his purposeful ambitions.",
+      "female_male": "In Linda Goodman's Love Signs analysis of the Capricorn Woman with the Libra Man (4-10 Vibration): She brings Capricorn's radiant initiative to the union, while he offers Libra's steadfast anchor. When she trusts his protective strength and he respects her autonomy, their bond becomes unbreakable.",
+      "same_sex": "In Linda Goodman's cosmic synastry (4-10 Vibration): Two souls united under Capricorn and Libra celestial energies find harmony when honoring personal autonomy, balancing giving with receiving, and allowing their elemental natures to enrich each other."
     }
   },
   "capricorn_scorpio": {
     "sign1": "capricorn",
     "sign2": "scorpio",
-    "overallScore": 86,
+    "overallScore": 88,
     "colorCategory": "green",
     "shadeLabel": "Harmonious Union",
-    "aspectName": "Sextile (Harmonious Elemental Flow)",
-    "headline": "Capricorn & Scorpio: Stimulating Synergy & Easy Friendship",
-    "summary": "Your elements naturally complement each other (Fire invigorates Air, or Water nourishes Earth). Communication flows effortlessly, laughter comes easily, and mutual respect flourishes.",
+    "aspectName": "3-11 Sun Sign Pattern (Karmic Friends & Sympathetic Lovers)",
+    "vibrationCode": "3-11",
+    "lindaVibration": {
+      "code": "3-11",
+      "title": "3-11 Sun Sign Pattern (Karmic Friends & Sympathetic Lovers)",
+      "theme": "Enduring Camaraderie, Easy Forgiveness & High Devotion",
+      "summary": "Linda Goodman considered the 3-11 vibration one of the happiest and most enduring in the cosmos. Your signs form a natural sextile of friendship. Even through intense misunderstandings, 3-11 lovers remain steadfast allies, quick to forgive and eager to laugh.",
+      "karmicLesson": "Nurturing lifelong loyalty, humanitarian generosity, and effortless mutual forgiveness."
+    },
+    "headline": "Capricorn & Scorpio: Enduring Camaraderie, Easy Forgiveness & High Devotion",
+    "summary": "Linda Goodman considered the 3-11 vibration one of the happiest and most enduring in the cosmos. Your signs form a natural sextile of friendship. Even through intense misunderstandings, 3-11 lovers remain steadfast allies, quick to forgive and eager to laugh.",
     "parameters": {
-      "emotional": 88,
-      "communication": 86,
-      "romance": 88,
-      "trust": 91,
-      "stability": 92,
-      "lifestyle": 86
+      "emotional": 90,
+      "communication": 88,
+      "romance": 90,
+      "trust": 93,
+      "stability": 94,
+      "lifestyle": 88
     },
     "elementSynergy": {
       "title": "Earth & Water (Fertile Nurturing)",
-      "text": "Water softens Earth with empathy and emotion; Earth provides Water with steady shores of stability. A classic recipe for enduring married happiness."
+      "text": "Water softens Earth with tender emotional empathy; Earth provides Water with comforting shores of physical stability. A classic recipe for a thriving, enduring marriage."
     },
     "modalitySynergy": "Cardinal + Fixed: A balanced dynamic where one partner initiates, stabilizes, or provides adaptable perspective to the other.",
     "strengths": [
@@ -5579,31 +6543,39 @@ const ZODIAC_PAIRS = {
     ],
     "celebrityCouples": "Celebrated Capricorn & Scorpio cosmic pairs",
     "genderAdvice": {
-      "male_female": "When a Capricorn man and a Scorpio woman unite, balancing his Mars/solar leadership with her emotional sanctuary fosters lasting harmony.",
-      "female_male": "When a Capricorn woman and a Scorpio man unite, celebrating her creative initiative while valuing his steadfast protection builds an unbreakable bond.",
-      "same_sex": "In a union between two souls with Capricorn and Scorpio energies, open communication and honoring personal autonomy keeps the romance deeply alive."
+      "male_female": "In Linda Goodman's Love Signs analysis of the Capricorn Man with the Scorpio Woman (3-11 Vibration): He expresses his masculine planetary energy through Saturn, while she responds with Pluto & Mars grace. Success blooms when he honors her emotional sanctuary and she champions his purposeful ambitions.",
+      "female_male": "In Linda Goodman's Love Signs analysis of the Capricorn Woman with the Scorpio Man (3-11 Vibration): She brings Capricorn's radiant initiative to the union, while he offers Scorpio's steadfast anchor. When she trusts his protective strength and he respects her autonomy, their bond becomes unbreakable.",
+      "same_sex": "In Linda Goodman's cosmic synastry (3-11 Vibration): Two souls united under Capricorn and Scorpio celestial energies find harmony when honoring personal autonomy, balancing giving with receiving, and allowing their elemental natures to enrich each other."
     }
   },
   "capricorn_sagittarius": {
     "sign1": "capricorn",
     "sign2": "sagittarius",
-    "overallScore": 62,
+    "overallScore": 64,
     "colorCategory": "amber",
     "shadeLabel": "Dynamic Potential",
-    "aspectName": "Semisextile (Neighboring Contrast)",
-    "headline": "Capricorn & Sagittarius: Complementary Growth & Mutual Learning",
-    "summary": "As neighboring signs, you operate from contrasting elemental perspectives. This match creates a learning journey where each partner expands the other's horizons if patience is practiced.",
+    "aspectName": "2-12 Sun Sign Pattern (The Karmic Teacher & Pupil)",
+    "vibrationCode": "2-12",
+    "lindaVibration": {
+      "code": "2-12",
+      "title": "2-12 Sun Sign Pattern (The Karmic Teacher & Pupil)",
+      "theme": "Karmic Learning, Compassion & Gentle Tutoring",
+      "summary": "According to Linda Goodman, the 2-12 vibration signifies that one sign has spiritually passed through the other's grade in the cosmic school. There is a deep, unspoken bond of patience, protection, and gentle tutoring. Tolerating different pacing unlocks profound mutual growth.",
+      "karmicLesson": "Bridging contrasting elemental perspectives through patient compassion and secret mutual admiration."
+    },
+    "headline": "Capricorn & Sagittarius: Karmic Learning, Compassion & Gentle Tutoring",
+    "summary": "According to Linda Goodman, the 2-12 vibration signifies that one sign has spiritually passed through the other's grade in the cosmic school. There is a deep, unspoken bond of patience, protection, and gentle tutoring. Tolerating different pacing unlocks profound mutual growth.",
     "parameters": {
-      "emotional": 60,
-      "communication": 62,
-      "romance": 59,
-      "trust": 62,
-      "stability": 61,
-      "lifestyle": 62
+      "emotional": 62,
+      "communication": 64,
+      "romance": 61,
+      "trust": 64,
+      "stability": 63,
+      "lifestyle": 64
     },
     "elementSynergy": {
       "title": "Fire & Earth (Hearthstone Fire)",
-      "text": "Fire provides creative energy and visionary boldness; Earth builds the practical structures to turn those visions into reality."
+      "text": "Fire provides creative courage and solar warmth; Earth builds the practical structures to turn those visions into lasting wealth and security."
     },
     "modalitySynergy": "Cardinal + Mutable: A balanced dynamic where one partner initiates, stabilizes, or provides adaptable perspective to the other.",
     "strengths": [
@@ -5616,15 +6588,15 @@ const ZODIAC_PAIRS = {
       "Occasional friction over lifestyle pacing or decision-making speed."
     ],
     "tips": [
-      "Adopt the 24-hour cooling off rule during heated arguments before revisiting sensitive topics.",
-      "Remember that Sagittarius communicates love in their own authentic dialect.",
-      "Celebrate your differences as unique strengths rather than flaws to be corrected."
+      "Adopt Linda Goodman's cooling-off principle during heated arguments before revisiting sensitive topics.",
+      "Remember that Sagittarius communicates love in their own authentic elemental dialect.",
+      "Celebrate your differences as complementary superpowers rather than personal flaws."
     ],
     "celebrityCouples": "Celebrated Capricorn & Sagittarius cosmic pairs",
     "genderAdvice": {
-      "male_female": "When a Capricorn man and a Sagittarius woman unite, balancing his Mars/solar leadership with her emotional sanctuary fosters lasting harmony.",
-      "female_male": "When a Capricorn woman and a Sagittarius man unite, celebrating her creative initiative while valuing his steadfast protection builds an unbreakable bond.",
-      "same_sex": "In a union between two souls with Capricorn and Sagittarius energies, open communication and honoring personal autonomy keeps the romance deeply alive."
+      "male_female": "In Linda Goodman's Love Signs analysis of the Capricorn Man with the Sagittarius Woman (2-12 Vibration): He expresses his masculine planetary energy through Saturn, while she responds with Jupiter grace. Success blooms when he honors her emotional sanctuary and she champions his purposeful ambitions.",
+      "female_male": "In Linda Goodman's Love Signs analysis of the Capricorn Woman with the Sagittarius Man (2-12 Vibration): She brings Capricorn's radiant initiative to the union, while he offers Sagittarius's steadfast anchor. When she trusts his protective strength and he respects her autonomy, their bond becomes unbreakable.",
+      "same_sex": "In Linda Goodman's cosmic synastry (2-12 Vibration): Two souls united under Capricorn and Sagittarius celestial energies find harmony when honoring personal autonomy, balancing giving with receiving, and allowing their elemental natures to enrich each other."
     }
   },
   "capricorn_capricorn": {
@@ -5633,9 +6605,17 @@ const ZODIAC_PAIRS = {
     "overallScore": 82,
     "colorCategory": "green",
     "shadeLabel": "Harmonious Union",
-    "aspectName": "Conjunction (Mirror Alignment)",
-    "headline": "Capricorn & Capricorn: Deep Mirror Empathy & Shared Instincts",
-    "summary": "Sharing the exact same sun sign gives you an instinctual understanding of each other's drives and vulnerabilities. You understand each other's moods intuitively, though you must guard against magnifying shared blind spots.",
+    "aspectName": "1-1 Sun Sign Pattern (The Cosmic Mirror)",
+    "vibrationCode": "1-1",
+    "lindaVibration": {
+      "code": "1-1",
+      "title": "1-1 Sun Sign Pattern (The Cosmic Mirror)",
+      "theme": "Mirror Empathy & Double Ego Reflection",
+      "summary": "In Linda Goodman's Love Signs, the 1-1 vibration is like gazing directly into an astrological mirror. You recognize each other's hidden virtues and deepest faults instantly. This creates profound telepathic empathy, but both partners must guard against magnifying identical blind spots.",
+      "karmicLesson": "Cultivating emotional humility and learning self-acceptance through observing your own nature reflected in your mate."
+    },
+    "headline": "Capricorn & Capricorn: Mirror Empathy & Double Ego Reflection",
+    "summary": "In Linda Goodman's Love Signs, the 1-1 vibration is like gazing directly into an astrological mirror. You recognize each other's hidden virtues and deepest faults instantly. This creates profound telepathic empathy, but both partners must guard against magnifying identical blind spots.",
     "parameters": {
       "emotional": 82,
       "communication": 82,
@@ -5645,10 +6625,10 @@ const ZODIAC_PAIRS = {
       "lifestyle": 85
     },
     "elementSynergy": {
-      "title": "Double Earth (Unshakeable Foundation)",
-      "text": "Deep practical grounding, financial prudence, and rock-solid loyalty. You build lasting wealth and a cozy empire together."
+      "title": "Double Earth (Unshakeable Bedrock)",
+      "text": "Linda Goodman praised double Earth as the rock of domestic security. You share common respect for practical honesty, financial prudence, and building a cozy, enduring haven."
     },
-    "modalitySynergy": "Both Cardinal: Two visionary leaders who love initiating projects. Take turns steering to prevent power struggles.",
+    "modalitySynergy": "Both Cardinal (Initiators): Two natural leaders. Linda Goodman advised taking turns leading joint projects to eliminate power struggles.",
     "strengths": [
       "Natural understanding: Capricorn and Capricorn instinctively comprehend each other's core motivations.",
       "Complimentary emotional rhythms that make daily life and domestic partnership feel comforting and safe.",
@@ -5665,31 +6645,39 @@ const ZODIAC_PAIRS = {
     ],
     "celebrityCouples": "Celebrated Capricorn & Capricorn cosmic pairs",
     "genderAdvice": {
-      "male_female": "When a Capricorn man and a Capricorn woman unite, balancing his Mars/solar leadership with her emotional sanctuary fosters lasting harmony.",
-      "female_male": "When a Capricorn woman and a Capricorn man unite, celebrating her creative initiative while valuing his steadfast protection builds an unbreakable bond.",
-      "same_sex": "In a union between two souls with Capricorn and Capricorn energies, open communication and honoring personal autonomy keeps the romance deeply alive."
+      "male_female": "In Linda Goodman's Love Signs analysis of the Capricorn Man with the Capricorn Woman (1-1 Vibration): He expresses his masculine planetary energy through Saturn, while she responds with Saturn grace. Success blooms when he honors her emotional sanctuary and she champions his purposeful ambitions.",
+      "female_male": "In Linda Goodman's Love Signs analysis of the Capricorn Woman with the Capricorn Man (1-1 Vibration): She brings Capricorn's radiant initiative to the union, while he offers Capricorn's steadfast anchor. When she trusts his protective strength and he respects her autonomy, their bond becomes unbreakable.",
+      "same_sex": "In Linda Goodman's cosmic synastry (1-1 Vibration): Two souls united under Capricorn and Capricorn celestial energies find harmony when honoring personal autonomy, balancing giving with receiving, and allowing their elemental natures to enrich each other."
     }
   },
   "capricorn_aquarius": {
     "sign1": "capricorn",
     "sign2": "aquarius",
-    "overallScore": 62,
+    "overallScore": 64,
     "colorCategory": "amber",
     "shadeLabel": "Dynamic Potential",
-    "aspectName": "Semisextile (Neighboring Contrast)",
-    "headline": "Capricorn & Aquarius: Complementary Growth & Mutual Learning",
-    "summary": "As neighboring signs, you operate from contrasting elemental perspectives. This match creates a learning journey where each partner expands the other's horizons if patience is practiced.",
+    "aspectName": "2-12 Sun Sign Pattern (The Karmic Teacher & Pupil)",
+    "vibrationCode": "2-12",
+    "lindaVibration": {
+      "code": "2-12",
+      "title": "2-12 Sun Sign Pattern (The Karmic Teacher & Pupil)",
+      "theme": "Karmic Learning, Compassion & Gentle Tutoring",
+      "summary": "According to Linda Goodman, the 2-12 vibration signifies that one sign has spiritually passed through the other's grade in the cosmic school. There is a deep, unspoken bond of patience, protection, and gentle tutoring. Tolerating different pacing unlocks profound mutual growth.",
+      "karmicLesson": "Bridging contrasting elemental perspectives through patient compassion and secret mutual admiration."
+    },
+    "headline": "Capricorn & Aquarius: Karmic Learning, Compassion & Gentle Tutoring",
+    "summary": "According to Linda Goodman, the 2-12 vibration signifies that one sign has spiritually passed through the other's grade in the cosmic school. There is a deep, unspoken bond of patience, protection, and gentle tutoring. Tolerating different pacing unlocks profound mutual growth.",
     "parameters": {
-      "emotional": 60,
-      "communication": 57,
-      "romance": 59,
-      "trust": 62,
-      "stability": 64,
-      "lifestyle": 62
+      "emotional": 62,
+      "communication": 59,
+      "romance": 61,
+      "trust": 64,
+      "stability": 66,
+      "lifestyle": 64
     },
     "elementSynergy": {
       "title": "Earth & Air (Pragmatic Strategy)",
-      "text": "Earth brings tangible discipline and organization; Air brings innovative ideas and sparkling conversational agility."
+      "text": "Earth brings tangible structure and sensible order; Air introduces inventive concepts and conversational sparkle. Mutual appreciation bridges different tempos."
     },
     "modalitySynergy": "Cardinal + Fixed: A balanced dynamic where one partner initiates, stabilizes, or provides adaptable perspective to the other.",
     "strengths": [
@@ -5702,37 +6690,45 @@ const ZODIAC_PAIRS = {
       "Occasional friction over lifestyle pacing or decision-making speed."
     ],
     "tips": [
-      "Adopt the 24-hour cooling off rule during heated arguments before revisiting sensitive topics.",
-      "Remember that Aquarius communicates love in their own authentic dialect.",
-      "Celebrate your differences as unique strengths rather than flaws to be corrected."
+      "Adopt Linda Goodman's cooling-off principle during heated arguments before revisiting sensitive topics.",
+      "Remember that Aquarius communicates love in their own authentic elemental dialect.",
+      "Celebrate your differences as complementary superpowers rather than personal flaws."
     ],
     "celebrityCouples": "Celebrated Capricorn & Aquarius cosmic pairs",
     "genderAdvice": {
-      "male_female": "When a Capricorn man and a Aquarius woman unite, balancing his Mars/solar leadership with her emotional sanctuary fosters lasting harmony.",
-      "female_male": "When a Capricorn woman and a Aquarius man unite, celebrating her creative initiative while valuing his steadfast protection builds an unbreakable bond.",
-      "same_sex": "In a union between two souls with Capricorn and Aquarius energies, open communication and honoring personal autonomy keeps the romance deeply alive."
+      "male_female": "In Linda Goodman's Love Signs analysis of the Capricorn Man with the Aquarius Woman (2-12 Vibration): He expresses his masculine planetary energy through Saturn, while she responds with Uranus & Saturn grace. Success blooms when he honors her emotional sanctuary and she champions his purposeful ambitions.",
+      "female_male": "In Linda Goodman's Love Signs analysis of the Capricorn Woman with the Aquarius Man (2-12 Vibration): She brings Capricorn's radiant initiative to the union, while he offers Aquarius's steadfast anchor. When she trusts his protective strength and he respects her autonomy, their bond becomes unbreakable.",
+      "same_sex": "In Linda Goodman's cosmic synastry (2-12 Vibration): Two souls united under Capricorn and Aquarius celestial energies find harmony when honoring personal autonomy, balancing giving with receiving, and allowing their elemental natures to enrich each other."
     }
   },
   "capricorn_pisces": {
     "sign1": "capricorn",
     "sign2": "pisces",
-    "overallScore": 86,
+    "overallScore": 88,
     "colorCategory": "green",
     "shadeLabel": "Harmonious Union",
-    "aspectName": "Sextile (Harmonious Elemental Flow)",
-    "headline": "Capricorn & Pisces: Stimulating Synergy & Easy Friendship",
-    "summary": "Your elements naturally complement each other (Fire invigorates Air, or Water nourishes Earth). Communication flows effortlessly, laughter comes easily, and mutual respect flourishes.",
+    "aspectName": "3-11 Sun Sign Pattern (Karmic Friends & Sympathetic Lovers)",
+    "vibrationCode": "3-11",
+    "lindaVibration": {
+      "code": "3-11",
+      "title": "3-11 Sun Sign Pattern (Karmic Friends & Sympathetic Lovers)",
+      "theme": "Enduring Camaraderie, Easy Forgiveness & High Devotion",
+      "summary": "Linda Goodman considered the 3-11 vibration one of the happiest and most enduring in the cosmos. Your signs form a natural sextile of friendship. Even through intense misunderstandings, 3-11 lovers remain steadfast allies, quick to forgive and eager to laugh.",
+      "karmicLesson": "Nurturing lifelong loyalty, humanitarian generosity, and effortless mutual forgiveness."
+    },
+    "headline": "Capricorn & Pisces: Enduring Camaraderie, Easy Forgiveness & High Devotion",
+    "summary": "Linda Goodman considered the 3-11 vibration one of the happiest and most enduring in the cosmos. Your signs form a natural sextile of friendship. Even through intense misunderstandings, 3-11 lovers remain steadfast allies, quick to forgive and eager to laugh.",
     "parameters": {
-      "emotional": 88,
-      "communication": 86,
-      "romance": 88,
-      "trust": 91,
-      "stability": 92,
-      "lifestyle": 86
+      "emotional": 90,
+      "communication": 88,
+      "romance": 90,
+      "trust": 93,
+      "stability": 94,
+      "lifestyle": 88
     },
     "elementSynergy": {
       "title": "Earth & Water (Fertile Nurturing)",
-      "text": "Water softens Earth with empathy and emotion; Earth provides Water with steady shores of stability. A classic recipe for enduring married happiness."
+      "text": "Water softens Earth with tender emotional empathy; Earth provides Water with comforting shores of physical stability. A classic recipe for a thriving, enduring marriage."
     },
     "modalitySynergy": "Cardinal + Mutable: A balanced dynamic where one partner initiates, stabilizes, or provides adaptable perspective to the other.",
     "strengths": [
@@ -5751,31 +6747,39 @@ const ZODIAC_PAIRS = {
     ],
     "celebrityCouples": "Celebrated Capricorn & Pisces cosmic pairs",
     "genderAdvice": {
-      "male_female": "When a Capricorn man and a Pisces woman unite, balancing his Mars/solar leadership with her emotional sanctuary fosters lasting harmony.",
-      "female_male": "When a Capricorn woman and a Pisces man unite, celebrating her creative initiative while valuing his steadfast protection builds an unbreakable bond.",
-      "same_sex": "In a union between two souls with Capricorn and Pisces energies, open communication and honoring personal autonomy keeps the romance deeply alive."
+      "male_female": "In Linda Goodman's Love Signs analysis of the Capricorn Man with the Pisces Woman (3-11 Vibration): He expresses his masculine planetary energy through Saturn, while she responds with Neptune & Jupiter grace. Success blooms when he honors her emotional sanctuary and she champions his purposeful ambitions.",
+      "female_male": "In Linda Goodman's Love Signs analysis of the Capricorn Woman with the Pisces Man (3-11 Vibration): She brings Capricorn's radiant initiative to the union, while he offers Pisces's steadfast anchor. When she trusts his protective strength and he respects her autonomy, their bond becomes unbreakable.",
+      "same_sex": "In Linda Goodman's cosmic synastry (3-11 Vibration): Two souls united under Capricorn and Pisces celestial energies find harmony when honoring personal autonomy, balancing giving with receiving, and allowing their elemental natures to enrich each other."
     }
   },
   "aquarius_aries": {
     "sign1": "aquarius",
     "sign2": "aries",
-    "overallScore": 86,
+    "overallScore": 88,
     "colorCategory": "green",
     "shadeLabel": "Harmonious Union",
-    "aspectName": "Sextile (Harmonious Elemental Flow)",
-    "headline": "Aquarius & Aries: Stimulating Synergy & Easy Friendship",
-    "summary": "Your elements naturally complement each other (Fire invigorates Air, or Water nourishes Earth). Communication flows effortlessly, laughter comes easily, and mutual respect flourishes.",
+    "aspectName": "3-11 Sun Sign Pattern (Karmic Friends & Sympathetic Lovers)",
+    "vibrationCode": "3-11",
+    "lindaVibration": {
+      "code": "3-11",
+      "title": "3-11 Sun Sign Pattern (Karmic Friends & Sympathetic Lovers)",
+      "theme": "Enduring Camaraderie, Easy Forgiveness & High Devotion",
+      "summary": "Linda Goodman considered the 3-11 vibration one of the happiest and most enduring in the cosmos. Your signs form a natural sextile of friendship. Even through intense misunderstandings, 3-11 lovers remain steadfast allies, quick to forgive and eager to laugh.",
+      "karmicLesson": "Nurturing lifelong loyalty, humanitarian generosity, and effortless mutual forgiveness."
+    },
+    "headline": "Aquarius & Aries: Enduring Camaraderie, Easy Forgiveness & High Devotion",
+    "summary": "Linda Goodman considered the 3-11 vibration one of the happiest and most enduring in the cosmos. Your signs form a natural sextile of friendship. Even through intense misunderstandings, 3-11 lovers remain steadfast allies, quick to forgive and eager to laugh.",
     "parameters": {
-      "emotional": 84,
-      "communication": 90,
-      "romance": 92,
-      "trust": 86,
-      "stability": 88,
-      "lifestyle": 86
+      "emotional": 86,
+      "communication": 92,
+      "romance": 94,
+      "trust": 88,
+      "stability": 90,
+      "lifestyle": 88
     },
     "elementSynergy": {
-      "title": "Fire & Air (Inspirational Catalyst)",
-      "text": "Air fuels Fire's passion, while Fire brings warmth and bold action to Air's inventive ideas. An exciting, socially vibrant union."
+      "title": "Fire & Air (Inspirational Breeze)",
+      "text": "Air fans Fire's flames into glorious creative radiance, while Fire warms Air's visionary ideals into bold reality. An exciting, intellectually vibrant union."
     },
     "modalitySynergy": "Fixed + Cardinal: A balanced dynamic where one partner initiates, stabilizes, or provides adaptable perspective to the other.",
     "strengths": [
@@ -5794,33 +6798,41 @@ const ZODIAC_PAIRS = {
     ],
     "celebrityCouples": "Celebrated Aquarius & Aries cosmic pairs",
     "genderAdvice": {
-      "male_female": "When a Aquarius man and a Aries woman unite, balancing his Mars/solar leadership with her emotional sanctuary fosters lasting harmony.",
-      "female_male": "When a Aquarius woman and a Aries man unite, celebrating her creative initiative while valuing his steadfast protection builds an unbreakable bond.",
-      "same_sex": "In a union between two souls with Aquarius and Aries energies, open communication and honoring personal autonomy keeps the romance deeply alive."
+      "male_female": "In Linda Goodman's Love Signs analysis of the Aquarius Man with the Aries Woman (3-11 Vibration): He expresses his masculine planetary energy through Uranus & Saturn, while she responds with Mars grace. Success blooms when he honors her emotional sanctuary and she champions his purposeful ambitions.",
+      "female_male": "In Linda Goodman's Love Signs analysis of the Aquarius Woman with the Aries Man (3-11 Vibration): She brings Aquarius's radiant initiative to the union, while he offers Aries's steadfast anchor. When she trusts his protective strength and he respects her autonomy, their bond becomes unbreakable.",
+      "same_sex": "In Linda Goodman's cosmic synastry (3-11 Vibration): Two souls united under Aquarius and Aries celestial energies find harmony when honoring personal autonomy, balancing giving with receiving, and allowing their elemental natures to enrich each other."
     }
   },
   "aquarius_taurus": {
     "sign1": "aquarius",
     "sign2": "taurus",
-    "overallScore": 52,
+    "overallScore": 54,
     "colorCategory": "amber",
     "shadeLabel": "Dynamic Potential",
-    "aspectName": "Square (Passionate Friction & Dynamic Growth)",
-    "headline": "Aquarius & Taurus: Electrifying Spark with Creative Challenge",
-    "summary": "Signs at a 90\u00b0 square share the same modality but clash elementally. This generates high attraction, intense emotional chemistry, and spirited debates that demand conscious diplomacy and mutual compromise.",
+    "aspectName": "4-10 Sun Sign Pattern (The Karmic Challenge & Crucible)",
+    "vibrationCode": "4-10",
+    "lindaVibration": {
+      "code": "4-10",
+      "title": "4-10 Sun Sign Pattern (The Karmic Challenge & Crucible)",
+      "theme": "Passionate Friction, Dramatic Chemistry & Soul Crucible",
+      "summary": "Linda Goodman described the 4-10 square vibration as the classic crucible of soul growth. Sharing the same modality but differing elements produces magnetic physical attraction paired with clashes of will. If ego yields to love, this union builds invincible diamond strength.",
+      "karmicLesson": "Transcending stubborn pride and mastering the noble art of sacrificial compromise."
+    },
+    "headline": "Aquarius & Taurus: Passionate Friction, Dramatic Chemistry & Soul Crucible",
+    "summary": "Linda Goodman described the 4-10 square vibration as the classic crucible of soul growth. Sharing the same modality but differing elements produces magnetic physical attraction paired with clashes of will. If ego yields to love, this union builds invincible diamond strength.",
     "parameters": {
-      "emotional": 50,
-      "communication": 47,
-      "romance": 49,
-      "trust": 56,
-      "stability": 54,
-      "lifestyle": 44
+      "emotional": 52,
+      "communication": 49,
+      "romance": 51,
+      "trust": 58,
+      "stability": 56,
+      "lifestyle": 46
     },
     "elementSynergy": {
       "title": "Earth & Air (Pragmatic Strategy)",
-      "text": "Earth brings tangible discipline and organization; Air brings innovative ideas and sparkling conversational agility."
+      "text": "Earth brings tangible structure and sensible order; Air introduces inventive concepts and conversational sparkle. Mutual appreciation bridges different tempos."
     },
-    "modalitySynergy": "Both Fixed: Unshakable loyalty and steadfast commitment. Practice active compromise to prevent stubborn standoffs.",
+    "modalitySynergy": "Both Fixed (Stabilizers): Unshakeable loyalty and rock-solid fidelity. Linda Goodman urged practicing gentle flexibility to resolve stubborn standoffs.",
     "strengths": [
       "Dynamic growth: Aquarius introduces Taurus to new perspectives and vice versa.",
       "Engaging romantic chemistry where you never run out of intriguing things to discover about each other.",
@@ -5831,37 +6843,45 @@ const ZODIAC_PAIRS = {
       "Occasional friction over lifestyle pacing or decision-making speed."
     ],
     "tips": [
-      "Adopt the 24-hour cooling off rule during heated arguments before revisiting sensitive topics.",
-      "Remember that Taurus communicates love in their own authentic dialect.",
-      "Celebrate your differences as unique strengths rather than flaws to be corrected."
+      "Adopt Linda Goodman's cooling-off principle during heated arguments before revisiting sensitive topics.",
+      "Remember that Taurus communicates love in their own authentic elemental dialect.",
+      "Celebrate your differences as complementary superpowers rather than personal flaws."
     ],
     "celebrityCouples": "Celebrated Aquarius & Taurus cosmic pairs",
     "genderAdvice": {
-      "male_female": "When a Aquarius man and a Taurus woman unite, balancing his Mars/solar leadership with her emotional sanctuary fosters lasting harmony.",
-      "female_male": "When a Aquarius woman and a Taurus man unite, celebrating her creative initiative while valuing his steadfast protection builds an unbreakable bond.",
-      "same_sex": "In a union between two souls with Aquarius and Taurus energies, open communication and honoring personal autonomy keeps the romance deeply alive."
+      "male_female": "In Linda Goodman's Love Signs analysis of the Aquarius Man with the Taurus Woman (4-10 Vibration): He expresses his masculine planetary energy through Uranus & Saturn, while she responds with Venus grace. Success blooms when he honors her emotional sanctuary and she champions his purposeful ambitions.",
+      "female_male": "In Linda Goodman's Love Signs analysis of the Aquarius Woman with the Taurus Man (4-10 Vibration): She brings Aquarius's radiant initiative to the union, while he offers Taurus's steadfast anchor. When she trusts his protective strength and he respects her autonomy, their bond becomes unbreakable.",
+      "same_sex": "In Linda Goodman's cosmic synastry (4-10 Vibration): Two souls united under Aquarius and Taurus celestial energies find harmony when honoring personal autonomy, balancing giving with receiving, and allowing their elemental natures to enrich each other."
     }
   },
   "aquarius_gemini": {
     "sign1": "aquarius",
     "sign2": "gemini",
-    "overallScore": 94,
+    "overallScore": 95,
     "colorCategory": "green",
     "shadeLabel": "Harmonious Union",
-    "aspectName": "Trine (Divine Soulmate Element)",
-    "headline": "Aquarius & Gemini: Effortless Harmony & Natural Soul Resonance",
-    "summary": "Sharing the same element (Fire-Fire, Earth-Earth, Air-Air, Water-Water) creates an instinctive, harmonious flow. You breathe the same spiritual air, understand each other's pacing, and feel deeply at home together.",
+    "aspectName": "5-9 Sun Sign Pattern (The Divine Cosmic Blessing)",
+    "vibrationCode": "5-9",
+    "lindaVibration": {
+      "code": "5-9",
+      "title": "5-9 Sun Sign Pattern (The Divine Cosmic Blessing)",
+      "theme": "Golden Trine, Soulmate Telepathy & Natural Sympathy",
+      "summary": "Linda Goodman's most celebrated synastry pattern! Sharing the same sacred element (Fire, Earth, Air, or Water) brings instant soul recognition. You forgive each other almost effortlessly, inspire each other's dreams, and enjoy an almost telepathic understanding.",
+      "karmicLesson": "Preserving sacred gratitude and avoiding taking your effortless soul harmony for granted."
+    },
+    "headline": "Aquarius & Gemini: Golden Trine, Soulmate Telepathy & Natural Sympathy",
+    "summary": "Linda Goodman's most celebrated synastry pattern! Sharing the same sacred element (Fire, Earth, Air, or Water) brings instant soul recognition. You forgive each other almost effortlessly, inspire each other's dreams, and enjoy an almost telepathic understanding.",
     "parameters": {
-      "emotional": 94,
+      "emotional": 95,
       "communication": 98,
-      "romance": 91,
-      "trust": 94,
-      "stability": 89,
+      "romance": 92,
+      "trust": 95,
+      "stability": 90,
       "lifestyle": 96
     },
     "elementSynergy": {
       "title": "Double Air (Mental Telepathy)",
-      "text": "Incredible intellectual banter, endless laughter, and shared curiosity. A partnership where minds connect on a sparkling wavelength."
+      "text": "In Love Signs, two Air signs generate brilliant conversational agility and intellectual freedom. Your minds connect on a sparkling frequency filled with books, ideas, and laughter."
     },
     "modalitySynergy": "Fixed + Mutable: A balanced dynamic where one partner initiates, stabilizes, or provides adaptable perspective to the other.",
     "strengths": [
@@ -5880,40 +6900,48 @@ const ZODIAC_PAIRS = {
     ],
     "celebrityCouples": "Justin Timberlake (Aquarius) & Jessica Biel (Pisces)",
     "genderAdvice": {
-      "male_female": "When a Aquarius man and a Gemini woman unite, balancing his Mars/solar leadership with her emotional sanctuary fosters lasting harmony.",
-      "female_male": "When a Aquarius woman and a Gemini man unite, celebrating her creative initiative while valuing his steadfast protection builds an unbreakable bond.",
-      "same_sex": "In a union between two souls with Aquarius and Gemini energies, open communication and honoring personal autonomy keeps the romance deeply alive."
+      "male_female": "In Linda Goodman's Love Signs analysis of the Aquarius Man with the Gemini Woman (5-9 Vibration): He expresses his masculine planetary energy through Uranus & Saturn, while she responds with Mercury grace. Success blooms when he honors her emotional sanctuary and she champions his purposeful ambitions.",
+      "female_male": "In Linda Goodman's Love Signs analysis of the Aquarius Woman with the Gemini Man (5-9 Vibration): She brings Aquarius's radiant initiative to the union, while he offers Gemini's steadfast anchor. When she trusts his protective strength and he respects her autonomy, their bond becomes unbreakable.",
+      "same_sex": "In Linda Goodman's cosmic synastry (5-9 Vibration): Two souls united under Aquarius and Gemini celestial energies find harmony when honoring personal autonomy, balancing giving with receiving, and allowing their elemental natures to enrich each other."
     }
   },
   "aquarius_cancer": {
     "sign1": "aquarius",
     "sign2": "cancer",
-    "overallScore": 46,
+    "overallScore": 48,
     "colorCategory": "red",
     "shadeLabel": "Growth Challenge",
-    "aspectName": "Quincunx (Mysterious Intrigue & Karmic Adjustment)",
-    "headline": "Aquarius & Cancer: Enigmatic Attraction Demanding Patience",
-    "summary": "Separated by five signs, you have little in common astrologically, which creates an intriguing magnetic mystery. Succeeding together requires appreciating your partner's entirely unique perspective on life.",
+    "aspectName": "6-8 Sun Sign Pattern (Karmic Mystery & Devoted Service)",
+    "vibrationCode": "6-8",
+    "lindaVibration": {
+      "code": "6-8",
+      "title": "6-8 Sun Sign Pattern (Karmic Mystery & Devoted Service)",
+      "theme": "Enigmatic Fascination, Hypnotic Pull & Karmic Duty",
+      "summary": "According to Linda Goodman, the 6-8 quincunx vibration is cloaked in hypnotic fascination and karmic debt. One partner feels drawn to serve, protect, or nurture the other, generating deep emotional or physical magnetism that requires profound patience to untangle.",
+      "karmicLesson": "Practicing unconditional love free from selfish demands, embracing differences that cannot be logically explained."
+    },
+    "headline": "Aquarius & Cancer: Enigmatic Fascination, Hypnotic Pull & Karmic Duty",
+    "summary": "According to Linda Goodman, the 6-8 quincunx vibration is cloaked in hypnotic fascination and karmic debt. One partner feels drawn to serve, protect, or nurture the other, generating deep emotional or physical magnetism that requires profound patience to untangle.",
     "parameters": {
       "emotional": 42,
       "communication": 45,
-      "romance": 43,
-      "trust": 46,
-      "stability": 48,
-      "lifestyle": 38
+      "romance": 45,
+      "trust": 48,
+      "stability": 50,
+      "lifestyle": 40
     },
     "elementSynergy": {
       "title": "Air & Water (Wind & Waves)",
-      "text": "Air analyzes experiences intellectually while Water experiences them through deep emotion. Finding balance creates profound holistic insight."
+      "text": "Air analyzes experiences intellectually while Water perceives them through psychic emotion. Honoring each other's distinct perception creates rich spiritual growth."
     },
     "modalitySynergy": "Fixed + Cardinal: A balanced dynamic where one partner initiates, stabilizes, or provides adaptable perspective to the other.",
     "strengths": [
-      "Powerful karmic pull that pushes both individuals to mature emotionally.",
+      "Powerful karmic pull that pushes both souls to mature emotionally and spiritually.",
       "Unforgettable chemistry and passion born from sheer elemental contrast.",
       "Opportunity to develop immense patience, empathy, and unconditional love."
     ],
     "challenges": [
-      "Fundamental contrast in priorities: Aquarius's instinctual approach may confuse Cancer.",
+      "Fundamental contrast in priorities: Aquarius's instinctual approach may baffle Cancer.",
       "Tendency to misinterpret your partner's need for space or emotional expression."
     ],
     "tips": [
@@ -5923,33 +6951,41 @@ const ZODIAC_PAIRS = {
     ],
     "celebrityCouples": "Celebrated Aquarius & Cancer cosmic pairs",
     "genderAdvice": {
-      "male_female": "When a Aquarius man and a Cancer woman unite, balancing his Mars/solar leadership with her emotional sanctuary fosters lasting harmony.",
-      "female_male": "When a Aquarius woman and a Cancer man unite, celebrating her creative initiative while valuing his steadfast protection builds an unbreakable bond.",
-      "same_sex": "In a union between two souls with Aquarius and Cancer energies, open communication and honoring personal autonomy keeps the romance deeply alive."
+      "male_female": "In Linda Goodman's Love Signs analysis of the Aquarius Man with the Cancer Woman (6-8 Vibration): He expresses his masculine planetary energy through Uranus & Saturn, while she responds with Moon grace. Success blooms when he honors her emotional sanctuary and she champions his purposeful ambitions.",
+      "female_male": "In Linda Goodman's Love Signs analysis of the Aquarius Woman with the Cancer Man (6-8 Vibration): She brings Aquarius's radiant initiative to the union, while he offers Cancer's steadfast anchor. When she trusts his protective strength and he respects her autonomy, their bond becomes unbreakable.",
+      "same_sex": "In Linda Goodman's cosmic synastry (6-8 Vibration): Two souls united under Aquarius and Cancer celestial energies find harmony when honoring personal autonomy, balancing giving with receiving, and allowing their elemental natures to enrich each other."
     }
   },
   "aquarius_leo": {
     "sign1": "aquarius",
     "sign2": "leo",
-    "overallScore": 80,
+    "overallScore": 82,
     "colorCategory": "green",
     "shadeLabel": "Harmonious Union",
-    "aspectName": "Opposition (Cosmic Magnetism & Polar Balance)",
-    "headline": "Aquarius & Leo: Magnetic Attraction & Yin-Yang Balance",
-    "summary": "Sitting 180\u00b0 across the zodiac wheel, you are polar opposites. What one lacks, the other possesses in abundance. The chemistry is electric, offering the potential to form an unbeatable yin-and-yang partnership.",
+    "aspectName": "7-7 Sun Sign Pattern (Polar Magnetism & Cosmic Complements)",
+    "vibrationCode": "7-7",
+    "lindaVibration": {
+      "code": "7-7",
+      "title": "7-7 Sun Sign Pattern (Polar Magnetism & Cosmic Complements)",
+      "theme": "Opposites Attract, Celestial Electricity & Yin-Yang Balance",
+      "summary": "Sitting 180\u00b0 opposite on the zodiac wheel, Linda Goodman saw the 7-7 vibration as two halves of a single soul. What one lacks, the other possesses in abundance. It generates high romantic voltage: either a magnificent lifelong union or an explosive standoff.",
+      "karmicLesson": "Finding wholeness through merging opposite qualities into a unified, harmonious whole."
+    },
+    "headline": "Aquarius & Leo: Opposites Attract, Celestial Electricity & Yin-Yang Balance",
+    "summary": "Sitting 180\u00b0 opposite on the zodiac wheel, Linda Goodman saw the 7-7 vibration as two halves of a single soul. What one lacks, the other possesses in abundance. It generates high romantic voltage: either a magnificent lifelong union or an explosive standoff.",
     "parameters": {
-      "emotional": 78,
-      "communication": 84,
-      "romance": 86,
-      "trust": 84,
-      "stability": 82,
-      "lifestyle": 80
+      "emotional": 80,
+      "communication": 86,
+      "romance": 88,
+      "trust": 86,
+      "stability": 84,
+      "lifestyle": 82
     },
     "elementSynergy": {
-      "title": "Fire & Air (Inspirational Catalyst)",
-      "text": "Air fuels Fire's passion, while Fire brings warmth and bold action to Air's inventive ideas. An exciting, socially vibrant union."
+      "title": "Fire & Air (Inspirational Breeze)",
+      "text": "Air fans Fire's flames into glorious creative radiance, while Fire warms Air's visionary ideals into bold reality. An exciting, intellectually vibrant union."
     },
-    "modalitySynergy": "Both Fixed: Unshakable loyalty and steadfast commitment. Practice active compromise to prevent stubborn standoffs.",
+    "modalitySynergy": "Both Fixed (Stabilizers): Unshakeable loyalty and rock-solid fidelity. Linda Goodman urged practicing gentle flexibility to resolve stubborn standoffs.",
     "strengths": [
       "Natural understanding: Aquarius and Leo instinctively comprehend each other's core motivations.",
       "Complimentary emotional rhythms that make daily life and domestic partnership feel comforting and safe.",
@@ -5966,40 +7002,48 @@ const ZODIAC_PAIRS = {
     ],
     "celebrityCouples": "Ashton Kutcher (Aquarius) & Mila Kunis (Leo)",
     "genderAdvice": {
-      "male_female": "When a Aquarius man and a Leo woman unite, balancing his Mars/solar leadership with her emotional sanctuary fosters lasting harmony.",
-      "female_male": "When a Aquarius woman and a Leo man unite, celebrating her creative initiative while valuing his steadfast protection builds an unbreakable bond.",
-      "same_sex": "In a union between two souls with Aquarius and Leo energies, open communication and honoring personal autonomy keeps the romance deeply alive."
+      "male_female": "In Linda Goodman's Love Signs analysis of the Aquarius Man with the Leo Woman (7-7 Vibration): He expresses his masculine planetary energy through Uranus & Saturn, while she responds with Sun grace. Success blooms when he honors her emotional sanctuary and she champions his purposeful ambitions.",
+      "female_male": "In Linda Goodman's Love Signs analysis of the Aquarius Woman with the Leo Man (7-7 Vibration): She brings Aquarius's radiant initiative to the union, while he offers Leo's steadfast anchor. When she trusts his protective strength and he respects her autonomy, their bond becomes unbreakable.",
+      "same_sex": "In Linda Goodman's cosmic synastry (7-7 Vibration): Two souls united under Aquarius and Leo celestial energies find harmony when honoring personal autonomy, balancing giving with receiving, and allowing their elemental natures to enrich each other."
     }
   },
   "aquarius_virgo": {
     "sign1": "aquarius",
     "sign2": "virgo",
-    "overallScore": 46,
+    "overallScore": 48,
     "colorCategory": "red",
     "shadeLabel": "Growth Challenge",
-    "aspectName": "Quincunx (Mysterious Intrigue & Karmic Adjustment)",
-    "headline": "Aquarius & Virgo: Enigmatic Attraction Demanding Patience",
-    "summary": "Separated by five signs, you have little in common astrologically, which creates an intriguing magnetic mystery. Succeeding together requires appreciating your partner's entirely unique perspective on life.",
+    "aspectName": "6-8 Sun Sign Pattern (Karmic Mystery & Devoted Service)",
+    "vibrationCode": "6-8",
+    "lindaVibration": {
+      "code": "6-8",
+      "title": "6-8 Sun Sign Pattern (Karmic Mystery & Devoted Service)",
+      "theme": "Enigmatic Fascination, Hypnotic Pull & Karmic Duty",
+      "summary": "According to Linda Goodman, the 6-8 quincunx vibration is cloaked in hypnotic fascination and karmic debt. One partner feels drawn to serve, protect, or nurture the other, generating deep emotional or physical magnetism that requires profound patience to untangle.",
+      "karmicLesson": "Practicing unconditional love free from selfish demands, embracing differences that cannot be logically explained."
+    },
+    "headline": "Aquarius & Virgo: Enigmatic Fascination, Hypnotic Pull & Karmic Duty",
+    "summary": "According to Linda Goodman, the 6-8 quincunx vibration is cloaked in hypnotic fascination and karmic debt. One partner feels drawn to serve, protect, or nurture the other, generating deep emotional or physical magnetism that requires profound patience to untangle.",
     "parameters": {
-      "emotional": 44,
+      "emotional": 46,
       "communication": 45,
-      "romance": 43,
-      "trust": 46,
-      "stability": 48,
-      "lifestyle": 38
+      "romance": 45,
+      "trust": 48,
+      "stability": 50,
+      "lifestyle": 40
     },
     "elementSynergy": {
       "title": "Earth & Air (Pragmatic Strategy)",
-      "text": "Earth brings tangible discipline and organization; Air brings innovative ideas and sparkling conversational agility."
+      "text": "Earth brings tangible structure and sensible order; Air introduces inventive concepts and conversational sparkle. Mutual appreciation bridges different tempos."
     },
     "modalitySynergy": "Fixed + Mutable: A balanced dynamic where one partner initiates, stabilizes, or provides adaptable perspective to the other.",
     "strengths": [
-      "Powerful karmic pull that pushes both individuals to mature emotionally.",
+      "Powerful karmic pull that pushes both souls to mature emotionally and spiritually.",
       "Unforgettable chemistry and passion born from sheer elemental contrast.",
       "Opportunity to develop immense patience, empathy, and unconditional love."
     ],
     "challenges": [
-      "Fundamental contrast in priorities: Aquarius's instinctual approach may confuse Virgo.",
+      "Fundamental contrast in priorities: Aquarius's instinctual approach may baffle Virgo.",
       "Tendency to misinterpret your partner's need for space or emotional expression."
     ],
     "tips": [
@@ -6009,31 +7053,39 @@ const ZODIAC_PAIRS = {
     ],
     "celebrityCouples": "Celebrated Aquarius & Virgo cosmic pairs",
     "genderAdvice": {
-      "male_female": "When a Aquarius man and a Virgo woman unite, balancing his Mars/solar leadership with her emotional sanctuary fosters lasting harmony.",
-      "female_male": "When a Aquarius woman and a Virgo man unite, celebrating her creative initiative while valuing his steadfast protection builds an unbreakable bond.",
-      "same_sex": "In a union between two souls with Aquarius and Virgo energies, open communication and honoring personal autonomy keeps the romance deeply alive."
+      "male_female": "In Linda Goodman's Love Signs analysis of the Aquarius Man with the Virgo Woman (6-8 Vibration): He expresses his masculine planetary energy through Uranus & Saturn, while she responds with Mercury grace. Success blooms when he honors her emotional sanctuary and she champions his purposeful ambitions.",
+      "female_male": "In Linda Goodman's Love Signs analysis of the Aquarius Woman with the Virgo Man (6-8 Vibration): She brings Aquarius's radiant initiative to the union, while he offers Virgo's steadfast anchor. When she trusts his protective strength and he respects her autonomy, their bond becomes unbreakable.",
+      "same_sex": "In Linda Goodman's cosmic synastry (6-8 Vibration): Two souls united under Aquarius and Virgo celestial energies find harmony when honoring personal autonomy, balancing giving with receiving, and allowing their elemental natures to enrich each other."
     }
   },
   "aquarius_libra": {
     "sign1": "aquarius",
     "sign2": "libra",
-    "overallScore": 94,
+    "overallScore": 95,
     "colorCategory": "green",
     "shadeLabel": "Harmonious Union",
-    "aspectName": "Trine (Divine Soulmate Element)",
-    "headline": "Aquarius & Libra: Effortless Harmony & Natural Soul Resonance",
-    "summary": "Sharing the same element (Fire-Fire, Earth-Earth, Air-Air, Water-Water) creates an instinctive, harmonious flow. You breathe the same spiritual air, understand each other's pacing, and feel deeply at home together.",
+    "aspectName": "5-9 Sun Sign Pattern (The Divine Cosmic Blessing)",
+    "vibrationCode": "5-9",
+    "lindaVibration": {
+      "code": "5-9",
+      "title": "5-9 Sun Sign Pattern (The Divine Cosmic Blessing)",
+      "theme": "Golden Trine, Soulmate Telepathy & Natural Sympathy",
+      "summary": "Linda Goodman's most celebrated synastry pattern! Sharing the same sacred element (Fire, Earth, Air, or Water) brings instant soul recognition. You forgive each other almost effortlessly, inspire each other's dreams, and enjoy an almost telepathic understanding.",
+      "karmicLesson": "Preserving sacred gratitude and avoiding taking your effortless soul harmony for granted."
+    },
+    "headline": "Aquarius & Libra: Golden Trine, Soulmate Telepathy & Natural Sympathy",
+    "summary": "Linda Goodman's most celebrated synastry pattern! Sharing the same sacred element (Fire, Earth, Air, or Water) brings instant soul recognition. You forgive each other almost effortlessly, inspire each other's dreams, and enjoy an almost telepathic understanding.",
     "parameters": {
-      "emotional": 94,
+      "emotional": 95,
       "communication": 98,
-      "romance": 91,
-      "trust": 94,
-      "stability": 89,
+      "romance": 92,
+      "trust": 95,
+      "stability": 90,
       "lifestyle": 96
     },
     "elementSynergy": {
       "title": "Double Air (Mental Telepathy)",
-      "text": "Incredible intellectual banter, endless laughter, and shared curiosity. A partnership where minds connect on a sparkling wavelength."
+      "text": "In Love Signs, two Air signs generate brilliant conversational agility and intellectual freedom. Your minds connect on a sparkling frequency filled with books, ideas, and laughter."
     },
     "modalitySynergy": "Fixed + Cardinal: A balanced dynamic where one partner initiates, stabilizes, or provides adaptable perspective to the other.",
     "strengths": [
@@ -6052,33 +7104,41 @@ const ZODIAC_PAIRS = {
     ],
     "celebrityCouples": "Celebrated Aquarius & Libra cosmic pairs",
     "genderAdvice": {
-      "male_female": "When a Aquarius man and a Libra woman unite, balancing his Mars/solar leadership with her emotional sanctuary fosters lasting harmony.",
-      "female_male": "When a Aquarius woman and a Libra man unite, celebrating her creative initiative while valuing his steadfast protection builds an unbreakable bond.",
-      "same_sex": "In a union between two souls with Aquarius and Libra energies, open communication and honoring personal autonomy keeps the romance deeply alive."
+      "male_female": "In Linda Goodman's Love Signs analysis of the Aquarius Man with the Libra Woman (5-9 Vibration): He expresses his masculine planetary energy through Uranus & Saturn, while she responds with Venus grace. Success blooms when he honors her emotional sanctuary and she champions his purposeful ambitions.",
+      "female_male": "In Linda Goodman's Love Signs analysis of the Aquarius Woman with the Libra Man (5-9 Vibration): She brings Aquarius's radiant initiative to the union, while he offers Libra's steadfast anchor. When she trusts his protective strength and he respects her autonomy, their bond becomes unbreakable.",
+      "same_sex": "In Linda Goodman's cosmic synastry (5-9 Vibration): Two souls united under Aquarius and Libra celestial energies find harmony when honoring personal autonomy, balancing giving with receiving, and allowing their elemental natures to enrich each other."
     }
   },
   "aquarius_scorpio": {
     "sign1": "aquarius",
     "sign2": "scorpio",
-    "overallScore": 52,
+    "overallScore": 54,
     "colorCategory": "amber",
     "shadeLabel": "Dynamic Potential",
-    "aspectName": "Square (Passionate Friction & Dynamic Growth)",
-    "headline": "Aquarius & Scorpio: Electrifying Spark with Creative Challenge",
-    "summary": "Signs at a 90\u00b0 square share the same modality but clash elementally. This generates high attraction, intense emotional chemistry, and spirited debates that demand conscious diplomacy and mutual compromise.",
+    "aspectName": "4-10 Sun Sign Pattern (The Karmic Challenge & Crucible)",
+    "vibrationCode": "4-10",
+    "lindaVibration": {
+      "code": "4-10",
+      "title": "4-10 Sun Sign Pattern (The Karmic Challenge & Crucible)",
+      "theme": "Passionate Friction, Dramatic Chemistry & Soul Crucible",
+      "summary": "Linda Goodman described the 4-10 square vibration as the classic crucible of soul growth. Sharing the same modality but differing elements produces magnetic physical attraction paired with clashes of will. If ego yields to love, this union builds invincible diamond strength.",
+      "karmicLesson": "Transcending stubborn pride and mastering the noble art of sacrificial compromise."
+    },
+    "headline": "Aquarius & Scorpio: Passionate Friction, Dramatic Chemistry & Soul Crucible",
+    "summary": "Linda Goodman described the 4-10 square vibration as the classic crucible of soul growth. Sharing the same modality but differing elements produces magnetic physical attraction paired with clashes of will. If ego yields to love, this union builds invincible diamond strength.",
     "parameters": {
-      "emotional": 44,
-      "communication": 47,
-      "romance": 49,
-      "trust": 56,
-      "stability": 54,
-      "lifestyle": 44
+      "emotional": 46,
+      "communication": 49,
+      "romance": 51,
+      "trust": 58,
+      "stability": 56,
+      "lifestyle": 46
     },
     "elementSynergy": {
       "title": "Air & Water (Wind & Waves)",
-      "text": "Air analyzes experiences intellectually while Water experiences them through deep emotion. Finding balance creates profound holistic insight."
+      "text": "Air analyzes experiences intellectually while Water perceives them through psychic emotion. Honoring each other's distinct perception creates rich spiritual growth."
     },
-    "modalitySynergy": "Both Fixed: Unshakable loyalty and steadfast commitment. Practice active compromise to prevent stubborn standoffs.",
+    "modalitySynergy": "Both Fixed (Stabilizers): Unshakeable loyalty and rock-solid fidelity. Linda Goodman urged practicing gentle flexibility to resolve stubborn standoffs.",
     "strengths": [
       "Dynamic growth: Aquarius introduces Scorpio to new perspectives and vice versa.",
       "Engaging romantic chemistry where you never run out of intriguing things to discover about each other.",
@@ -6089,37 +7149,45 @@ const ZODIAC_PAIRS = {
       "Occasional friction over lifestyle pacing or decision-making speed."
     ],
     "tips": [
-      "Adopt the 24-hour cooling off rule during heated arguments before revisiting sensitive topics.",
-      "Remember that Scorpio communicates love in their own authentic dialect.",
-      "Celebrate your differences as unique strengths rather than flaws to be corrected."
+      "Adopt Linda Goodman's cooling-off principle during heated arguments before revisiting sensitive topics.",
+      "Remember that Scorpio communicates love in their own authentic elemental dialect.",
+      "Celebrate your differences as complementary superpowers rather than personal flaws."
     ],
     "celebrityCouples": "Celebrated Aquarius & Scorpio cosmic pairs",
     "genderAdvice": {
-      "male_female": "When a Aquarius man and a Scorpio woman unite, balancing his Mars/solar leadership with her emotional sanctuary fosters lasting harmony.",
-      "female_male": "When a Aquarius woman and a Scorpio man unite, celebrating her creative initiative while valuing his steadfast protection builds an unbreakable bond.",
-      "same_sex": "In a union between two souls with Aquarius and Scorpio energies, open communication and honoring personal autonomy keeps the romance deeply alive."
+      "male_female": "In Linda Goodman's Love Signs analysis of the Aquarius Man with the Scorpio Woman (4-10 Vibration): He expresses his masculine planetary energy through Uranus & Saturn, while she responds with Pluto & Mars grace. Success blooms when he honors her emotional sanctuary and she champions his purposeful ambitions.",
+      "female_male": "In Linda Goodman's Love Signs analysis of the Aquarius Woman with the Scorpio Man (4-10 Vibration): She brings Aquarius's radiant initiative to the union, while he offers Scorpio's steadfast anchor. When she trusts his protective strength and he respects her autonomy, their bond becomes unbreakable.",
+      "same_sex": "In Linda Goodman's cosmic synastry (4-10 Vibration): Two souls united under Aquarius and Scorpio celestial energies find harmony when honoring personal autonomy, balancing giving with receiving, and allowing their elemental natures to enrich each other."
     }
   },
   "aquarius_sagittarius": {
     "sign1": "aquarius",
     "sign2": "sagittarius",
-    "overallScore": 86,
+    "overallScore": 88,
     "colorCategory": "green",
     "shadeLabel": "Harmonious Union",
-    "aspectName": "Sextile (Harmonious Elemental Flow)",
-    "headline": "Aquarius & Sagittarius: Stimulating Synergy & Easy Friendship",
-    "summary": "Your elements naturally complement each other (Fire invigorates Air, or Water nourishes Earth). Communication flows effortlessly, laughter comes easily, and mutual respect flourishes.",
+    "aspectName": "3-11 Sun Sign Pattern (Karmic Friends & Sympathetic Lovers)",
+    "vibrationCode": "3-11",
+    "lindaVibration": {
+      "code": "3-11",
+      "title": "3-11 Sun Sign Pattern (Karmic Friends & Sympathetic Lovers)",
+      "theme": "Enduring Camaraderie, Easy Forgiveness & High Devotion",
+      "summary": "Linda Goodman considered the 3-11 vibration one of the happiest and most enduring in the cosmos. Your signs form a natural sextile of friendship. Even through intense misunderstandings, 3-11 lovers remain steadfast allies, quick to forgive and eager to laugh.",
+      "karmicLesson": "Nurturing lifelong loyalty, humanitarian generosity, and effortless mutual forgiveness."
+    },
+    "headline": "Aquarius & Sagittarius: Enduring Camaraderie, Easy Forgiveness & High Devotion",
+    "summary": "Linda Goodman considered the 3-11 vibration one of the happiest and most enduring in the cosmos. Your signs form a natural sextile of friendship. Even through intense misunderstandings, 3-11 lovers remain steadfast allies, quick to forgive and eager to laugh.",
     "parameters": {
-      "emotional": 84,
-      "communication": 90,
-      "romance": 92,
-      "trust": 86,
-      "stability": 88,
-      "lifestyle": 86
+      "emotional": 86,
+      "communication": 92,
+      "romance": 94,
+      "trust": 88,
+      "stability": 90,
+      "lifestyle": 88
     },
     "elementSynergy": {
-      "title": "Fire & Air (Inspirational Catalyst)",
-      "text": "Air fuels Fire's passion, while Fire brings warmth and bold action to Air's inventive ideas. An exciting, socially vibrant union."
+      "title": "Fire & Air (Inspirational Breeze)",
+      "text": "Air fans Fire's flames into glorious creative radiance, while Fire warms Air's visionary ideals into bold reality. An exciting, intellectually vibrant union."
     },
     "modalitySynergy": "Fixed + Mutable: A balanced dynamic where one partner initiates, stabilizes, or provides adaptable perspective to the other.",
     "strengths": [
@@ -6138,31 +7206,39 @@ const ZODIAC_PAIRS = {
     ],
     "celebrityCouples": "Celebrated Aquarius & Sagittarius cosmic pairs",
     "genderAdvice": {
-      "male_female": "When a Aquarius man and a Sagittarius woman unite, balancing his Mars/solar leadership with her emotional sanctuary fosters lasting harmony.",
-      "female_male": "When a Aquarius woman and a Sagittarius man unite, celebrating her creative initiative while valuing his steadfast protection builds an unbreakable bond.",
-      "same_sex": "In a union between two souls with Aquarius and Sagittarius energies, open communication and honoring personal autonomy keeps the romance deeply alive."
+      "male_female": "In Linda Goodman's Love Signs analysis of the Aquarius Man with the Sagittarius Woman (3-11 Vibration): He expresses his masculine planetary energy through Uranus & Saturn, while she responds with Jupiter grace. Success blooms when he honors her emotional sanctuary and she champions his purposeful ambitions.",
+      "female_male": "In Linda Goodman's Love Signs analysis of the Aquarius Woman with the Sagittarius Man (3-11 Vibration): She brings Aquarius's radiant initiative to the union, while he offers Sagittarius's steadfast anchor. When she trusts his protective strength and he respects her autonomy, their bond becomes unbreakable.",
+      "same_sex": "In Linda Goodman's cosmic synastry (3-11 Vibration): Two souls united under Aquarius and Sagittarius celestial energies find harmony when honoring personal autonomy, balancing giving with receiving, and allowing their elemental natures to enrich each other."
     }
   },
   "aquarius_capricorn": {
     "sign1": "aquarius",
     "sign2": "capricorn",
-    "overallScore": 62,
+    "overallScore": 64,
     "colorCategory": "amber",
     "shadeLabel": "Dynamic Potential",
-    "aspectName": "Semisextile (Neighboring Contrast)",
-    "headline": "Aquarius & Capricorn: Complementary Growth & Mutual Learning",
-    "summary": "As neighboring signs, you operate from contrasting elemental perspectives. This match creates a learning journey where each partner expands the other's horizons if patience is practiced.",
+    "aspectName": "2-12 Sun Sign Pattern (The Karmic Teacher & Pupil)",
+    "vibrationCode": "2-12",
+    "lindaVibration": {
+      "code": "2-12",
+      "title": "2-12 Sun Sign Pattern (The Karmic Teacher & Pupil)",
+      "theme": "Karmic Learning, Compassion & Gentle Tutoring",
+      "summary": "According to Linda Goodman, the 2-12 vibration signifies that one sign has spiritually passed through the other's grade in the cosmic school. There is a deep, unspoken bond of patience, protection, and gentle tutoring. Tolerating different pacing unlocks profound mutual growth.",
+      "karmicLesson": "Bridging contrasting elemental perspectives through patient compassion and secret mutual admiration."
+    },
+    "headline": "Aquarius & Capricorn: Karmic Learning, Compassion & Gentle Tutoring",
+    "summary": "According to Linda Goodman, the 2-12 vibration signifies that one sign has spiritually passed through the other's grade in the cosmic school. There is a deep, unspoken bond of patience, protection, and gentle tutoring. Tolerating different pacing unlocks profound mutual growth.",
     "parameters": {
-      "emotional": 60,
-      "communication": 57,
-      "romance": 59,
-      "trust": 62,
-      "stability": 64,
-      "lifestyle": 62
+      "emotional": 62,
+      "communication": 59,
+      "romance": 61,
+      "trust": 64,
+      "stability": 66,
+      "lifestyle": 64
     },
     "elementSynergy": {
       "title": "Earth & Air (Pragmatic Strategy)",
-      "text": "Earth brings tangible discipline and organization; Air brings innovative ideas and sparkling conversational agility."
+      "text": "Earth brings tangible structure and sensible order; Air introduces inventive concepts and conversational sparkle. Mutual appreciation bridges different tempos."
     },
     "modalitySynergy": "Fixed + Cardinal: A balanced dynamic where one partner initiates, stabilizes, or provides adaptable perspective to the other.",
     "strengths": [
@@ -6175,15 +7251,15 @@ const ZODIAC_PAIRS = {
       "Occasional friction over lifestyle pacing or decision-making speed."
     ],
     "tips": [
-      "Adopt the 24-hour cooling off rule during heated arguments before revisiting sensitive topics.",
-      "Remember that Capricorn communicates love in their own authentic dialect.",
-      "Celebrate your differences as unique strengths rather than flaws to be corrected."
+      "Adopt Linda Goodman's cooling-off principle during heated arguments before revisiting sensitive topics.",
+      "Remember that Capricorn communicates love in their own authentic elemental dialect.",
+      "Celebrate your differences as complementary superpowers rather than personal flaws."
     ],
     "celebrityCouples": "Celebrated Aquarius & Capricorn cosmic pairs",
     "genderAdvice": {
-      "male_female": "When a Aquarius man and a Capricorn woman unite, balancing his Mars/solar leadership with her emotional sanctuary fosters lasting harmony.",
-      "female_male": "When a Aquarius woman and a Capricorn man unite, celebrating her creative initiative while valuing his steadfast protection builds an unbreakable bond.",
-      "same_sex": "In a union between two souls with Aquarius and Capricorn energies, open communication and honoring personal autonomy keeps the romance deeply alive."
+      "male_female": "In Linda Goodman's Love Signs analysis of the Aquarius Man with the Capricorn Woman (2-12 Vibration): He expresses his masculine planetary energy through Uranus & Saturn, while she responds with Saturn grace. Success blooms when he honors her emotional sanctuary and she champions his purposeful ambitions.",
+      "female_male": "In Linda Goodman's Love Signs analysis of the Aquarius Woman with the Capricorn Man (2-12 Vibration): She brings Aquarius's radiant initiative to the union, while he offers Capricorn's steadfast anchor. When she trusts his protective strength and he respects her autonomy, their bond becomes unbreakable.",
+      "same_sex": "In Linda Goodman's cosmic synastry (2-12 Vibration): Two souls united under Aquarius and Capricorn celestial energies find harmony when honoring personal autonomy, balancing giving with receiving, and allowing their elemental natures to enrich each other."
     }
   },
   "aquarius_aquarius": {
@@ -6192,9 +7268,17 @@ const ZODIAC_PAIRS = {
     "overallScore": 82,
     "colorCategory": "green",
     "shadeLabel": "Harmonious Union",
-    "aspectName": "Conjunction (Mirror Alignment)",
-    "headline": "Aquarius & Aquarius: Deep Mirror Empathy & Shared Instincts",
-    "summary": "Sharing the exact same sun sign gives you an instinctual understanding of each other's drives and vulnerabilities. You understand each other's moods intuitively, though you must guard against magnifying shared blind spots.",
+    "aspectName": "1-1 Sun Sign Pattern (The Cosmic Mirror)",
+    "vibrationCode": "1-1",
+    "lindaVibration": {
+      "code": "1-1",
+      "title": "1-1 Sun Sign Pattern (The Cosmic Mirror)",
+      "theme": "Mirror Empathy & Double Ego Reflection",
+      "summary": "In Linda Goodman's Love Signs, the 1-1 vibration is like gazing directly into an astrological mirror. You recognize each other's hidden virtues and deepest faults instantly. This creates profound telepathic empathy, but both partners must guard against magnifying identical blind spots.",
+      "karmicLesson": "Cultivating emotional humility and learning self-acceptance through observing your own nature reflected in your mate."
+    },
+    "headline": "Aquarius & Aquarius: Mirror Empathy & Double Ego Reflection",
+    "summary": "In Linda Goodman's Love Signs, the 1-1 vibration is like gazing directly into an astrological mirror. You recognize each other's hidden virtues and deepest faults instantly. This creates profound telepathic empathy, but both partners must guard against magnifying identical blind spots.",
     "parameters": {
       "emotional": 82,
       "communication": 87,
@@ -6205,9 +7289,9 @@ const ZODIAC_PAIRS = {
     },
     "elementSynergy": {
       "title": "Double Air (Mental Telepathy)",
-      "text": "Incredible intellectual banter, endless laughter, and shared curiosity. A partnership where minds connect on a sparkling wavelength."
+      "text": "In Love Signs, two Air signs generate brilliant conversational agility and intellectual freedom. Your minds connect on a sparkling frequency filled with books, ideas, and laughter."
     },
-    "modalitySynergy": "Both Fixed: Unshakable loyalty and steadfast commitment. Practice active compromise to prevent stubborn standoffs.",
+    "modalitySynergy": "Both Fixed (Stabilizers): Unshakeable loyalty and rock-solid fidelity. Linda Goodman urged practicing gentle flexibility to resolve stubborn standoffs.",
     "strengths": [
       "Natural understanding: Aquarius and Aquarius instinctively comprehend each other's core motivations.",
       "Complimentary emotional rhythms that make daily life and domestic partnership feel comforting and safe.",
@@ -6224,31 +7308,39 @@ const ZODIAC_PAIRS = {
     ],
     "celebrityCouples": "Celebrated Aquarius & Aquarius cosmic pairs",
     "genderAdvice": {
-      "male_female": "When a Aquarius man and a Aquarius woman unite, balancing his Mars/solar leadership with her emotional sanctuary fosters lasting harmony.",
-      "female_male": "When a Aquarius woman and a Aquarius man unite, celebrating her creative initiative while valuing his steadfast protection builds an unbreakable bond.",
-      "same_sex": "In a union between two souls with Aquarius and Aquarius energies, open communication and honoring personal autonomy keeps the romance deeply alive."
+      "male_female": "In Linda Goodman's Love Signs analysis of the Aquarius Man with the Aquarius Woman (1-1 Vibration): He expresses his masculine planetary energy through Uranus & Saturn, while she responds with Uranus & Saturn grace. Success blooms when he honors her emotional sanctuary and she champions his purposeful ambitions.",
+      "female_male": "In Linda Goodman's Love Signs analysis of the Aquarius Woman with the Aquarius Man (1-1 Vibration): She brings Aquarius's radiant initiative to the union, while he offers Aquarius's steadfast anchor. When she trusts his protective strength and he respects her autonomy, their bond becomes unbreakable.",
+      "same_sex": "In Linda Goodman's cosmic synastry (1-1 Vibration): Two souls united under Aquarius and Aquarius celestial energies find harmony when honoring personal autonomy, balancing giving with receiving, and allowing their elemental natures to enrich each other."
     }
   },
   "aquarius_pisces": {
     "sign1": "aquarius",
     "sign2": "pisces",
-    "overallScore": 62,
+    "overallScore": 64,
     "colorCategory": "amber",
     "shadeLabel": "Dynamic Potential",
-    "aspectName": "Semisextile (Neighboring Contrast)",
-    "headline": "Aquarius & Pisces: Complementary Growth & Mutual Learning",
-    "summary": "As neighboring signs, you operate from contrasting elemental perspectives. This match creates a learning journey where each partner expands the other's horizons if patience is practiced.",
+    "aspectName": "2-12 Sun Sign Pattern (The Karmic Teacher & Pupil)",
+    "vibrationCode": "2-12",
+    "lindaVibration": {
+      "code": "2-12",
+      "title": "2-12 Sun Sign Pattern (The Karmic Teacher & Pupil)",
+      "theme": "Karmic Learning, Compassion & Gentle Tutoring",
+      "summary": "According to Linda Goodman, the 2-12 vibration signifies that one sign has spiritually passed through the other's grade in the cosmic school. There is a deep, unspoken bond of patience, protection, and gentle tutoring. Tolerating different pacing unlocks profound mutual growth.",
+      "karmicLesson": "Bridging contrasting elemental perspectives through patient compassion and secret mutual admiration."
+    },
+    "headline": "Aquarius & Pisces: Karmic Learning, Compassion & Gentle Tutoring",
+    "summary": "According to Linda Goodman, the 2-12 vibration signifies that one sign has spiritually passed through the other's grade in the cosmic school. There is a deep, unspoken bond of patience, protection, and gentle tutoring. Tolerating different pacing unlocks profound mutual growth.",
     "parameters": {
-      "emotional": 54,
-      "communication": 57,
-      "romance": 59,
-      "trust": 62,
-      "stability": 64,
-      "lifestyle": 62
+      "emotional": 56,
+      "communication": 59,
+      "romance": 61,
+      "trust": 64,
+      "stability": 66,
+      "lifestyle": 64
     },
     "elementSynergy": {
       "title": "Air & Water (Wind & Waves)",
-      "text": "Air analyzes experiences intellectually while Water experiences them through deep emotion. Finding balance creates profound holistic insight."
+      "text": "Air analyzes experiences intellectually while Water perceives them through psychic emotion. Honoring each other's distinct perception creates rich spiritual growth."
     },
     "modalitySynergy": "Fixed + Mutable: A balanced dynamic where one partner initiates, stabilizes, or provides adaptable perspective to the other.",
     "strengths": [
@@ -6261,37 +7353,45 @@ const ZODIAC_PAIRS = {
       "Occasional friction over lifestyle pacing or decision-making speed."
     ],
     "tips": [
-      "Adopt the 24-hour cooling off rule during heated arguments before revisiting sensitive topics.",
-      "Remember that Pisces communicates love in their own authentic dialect.",
-      "Celebrate your differences as unique strengths rather than flaws to be corrected."
+      "Adopt Linda Goodman's cooling-off principle during heated arguments before revisiting sensitive topics.",
+      "Remember that Pisces communicates love in their own authentic elemental dialect.",
+      "Celebrate your differences as complementary superpowers rather than personal flaws."
     ],
     "celebrityCouples": "Celebrated Aquarius & Pisces cosmic pairs",
     "genderAdvice": {
-      "male_female": "When a Aquarius man and a Pisces woman unite, balancing his Mars/solar leadership with her emotional sanctuary fosters lasting harmony.",
-      "female_male": "When a Aquarius woman and a Pisces man unite, celebrating her creative initiative while valuing his steadfast protection builds an unbreakable bond.",
-      "same_sex": "In a union between two souls with Aquarius and Pisces energies, open communication and honoring personal autonomy keeps the romance deeply alive."
+      "male_female": "In Linda Goodman's Love Signs analysis of the Aquarius Man with the Pisces Woman (2-12 Vibration): He expresses his masculine planetary energy through Uranus & Saturn, while she responds with Neptune & Jupiter grace. Success blooms when he honors her emotional sanctuary and she champions his purposeful ambitions.",
+      "female_male": "In Linda Goodman's Love Signs analysis of the Aquarius Woman with the Pisces Man (2-12 Vibration): She brings Aquarius's radiant initiative to the union, while he offers Pisces's steadfast anchor. When she trusts his protective strength and he respects her autonomy, their bond becomes unbreakable.",
+      "same_sex": "In Linda Goodman's cosmic synastry (2-12 Vibration): Two souls united under Aquarius and Pisces celestial energies find harmony when honoring personal autonomy, balancing giving with receiving, and allowing their elemental natures to enrich each other."
     }
   },
   "pisces_aries": {
     "sign1": "pisces",
     "sign2": "aries",
-    "overallScore": 62,
+    "overallScore": 64,
     "colorCategory": "amber",
     "shadeLabel": "Dynamic Potential",
-    "aspectName": "Semisextile (Neighboring Contrast)",
-    "headline": "Pisces & Aries: Complementary Growth & Mutual Learning",
-    "summary": "As neighboring signs, you operate from contrasting elemental perspectives. This match creates a learning journey where each partner expands the other's horizons if patience is practiced.",
+    "aspectName": "2-12 Sun Sign Pattern (The Karmic Teacher & Pupil)",
+    "vibrationCode": "2-12",
+    "lindaVibration": {
+      "code": "2-12",
+      "title": "2-12 Sun Sign Pattern (The Karmic Teacher & Pupil)",
+      "theme": "Karmic Learning, Compassion & Gentle Tutoring",
+      "summary": "According to Linda Goodman, the 2-12 vibration signifies that one sign has spiritually passed through the other's grade in the cosmic school. There is a deep, unspoken bond of patience, protection, and gentle tutoring. Tolerating different pacing unlocks profound mutual growth.",
+      "karmicLesson": "Bridging contrasting elemental perspectives through patient compassion and secret mutual admiration."
+    },
+    "headline": "Pisces & Aries: Karmic Learning, Compassion & Gentle Tutoring",
+    "summary": "According to Linda Goodman, the 2-12 vibration signifies that one sign has spiritually passed through the other's grade in the cosmic school. There is a deep, unspoken bond of patience, protection, and gentle tutoring. Tolerating different pacing unlocks profound mutual growth.",
     "parameters": {
-      "emotional": 52,
-      "communication": 62,
-      "romance": 59,
-      "trust": 62,
-      "stability": 61,
-      "lifestyle": 62
+      "emotional": 54,
+      "communication": 64,
+      "romance": 61,
+      "trust": 64,
+      "stability": 63,
+      "lifestyle": 64
     },
     "elementSynergy": {
-      "title": "Fire & Water (Steam & Intense Chemistry)",
-      "text": "Extremely passionate and emotionally turbulent. Fire inspires Water to take bold leaps; Water teaches Fire the beauty of tender emotional depth."
+      "title": "Fire & Water (Steam & Intense Passion)",
+      "text": "Extremely passionate and emotionally turbulent. Fire inspires Water to take brave leaps; Water teaches Fire the beauty of quiet emotional vulnerability."
     },
     "modalitySynergy": "Mutable + Cardinal: A balanced dynamic where one partner initiates, stabilizes, or provides adaptable perspective to the other.",
     "strengths": [
@@ -6304,37 +7404,45 @@ const ZODIAC_PAIRS = {
       "Occasional friction over lifestyle pacing or decision-making speed."
     ],
     "tips": [
-      "Adopt the 24-hour cooling off rule during heated arguments before revisiting sensitive topics.",
-      "Remember that Aries communicates love in their own authentic dialect.",
-      "Celebrate your differences as unique strengths rather than flaws to be corrected."
+      "Adopt Linda Goodman's cooling-off principle during heated arguments before revisiting sensitive topics.",
+      "Remember that Aries communicates love in their own authentic elemental dialect.",
+      "Celebrate your differences as complementary superpowers rather than personal flaws."
     ],
     "celebrityCouples": "Celebrated Pisces & Aries cosmic pairs",
     "genderAdvice": {
-      "male_female": "When a Pisces man and a Aries woman unite, balancing his Mars/solar leadership with her emotional sanctuary fosters lasting harmony.",
-      "female_male": "When a Pisces woman and a Aries man unite, celebrating her creative initiative while valuing his steadfast protection builds an unbreakable bond.",
-      "same_sex": "In a union between two souls with Pisces and Aries energies, open communication and honoring personal autonomy keeps the romance deeply alive."
+      "male_female": "In Linda Goodman's Love Signs analysis of the Pisces Man with the Aries Woman (2-12 Vibration): He expresses his masculine planetary energy through Neptune & Jupiter, while she responds with Mars grace. Success blooms when he honors her emotional sanctuary and she champions his purposeful ambitions.",
+      "female_male": "In Linda Goodman's Love Signs analysis of the Pisces Woman with the Aries Man (2-12 Vibration): She brings Pisces's radiant initiative to the union, while he offers Aries's steadfast anchor. When she trusts his protective strength and he respects her autonomy, their bond becomes unbreakable.",
+      "same_sex": "In Linda Goodman's cosmic synastry (2-12 Vibration): Two souls united under Pisces and Aries celestial energies find harmony when honoring personal autonomy, balancing giving with receiving, and allowing their elemental natures to enrich each other."
     }
   },
   "pisces_taurus": {
     "sign1": "pisces",
     "sign2": "taurus",
-    "overallScore": 86,
+    "overallScore": 88,
     "colorCategory": "green",
     "shadeLabel": "Harmonious Union",
-    "aspectName": "Sextile (Harmonious Elemental Flow)",
-    "headline": "Pisces & Taurus: Stimulating Synergy & Easy Friendship",
-    "summary": "Your elements naturally complement each other (Fire invigorates Air, or Water nourishes Earth). Communication flows effortlessly, laughter comes easily, and mutual respect flourishes.",
+    "aspectName": "3-11 Sun Sign Pattern (Karmic Friends & Sympathetic Lovers)",
+    "vibrationCode": "3-11",
+    "lindaVibration": {
+      "code": "3-11",
+      "title": "3-11 Sun Sign Pattern (Karmic Friends & Sympathetic Lovers)",
+      "theme": "Enduring Camaraderie, Easy Forgiveness & High Devotion",
+      "summary": "Linda Goodman considered the 3-11 vibration one of the happiest and most enduring in the cosmos. Your signs form a natural sextile of friendship. Even through intense misunderstandings, 3-11 lovers remain steadfast allies, quick to forgive and eager to laugh.",
+      "karmicLesson": "Nurturing lifelong loyalty, humanitarian generosity, and effortless mutual forgiveness."
+    },
+    "headline": "Pisces & Taurus: Enduring Camaraderie, Easy Forgiveness & High Devotion",
+    "summary": "Linda Goodman considered the 3-11 vibration one of the happiest and most enduring in the cosmos. Your signs form a natural sextile of friendship. Even through intense misunderstandings, 3-11 lovers remain steadfast allies, quick to forgive and eager to laugh.",
     "parameters": {
-      "emotional": 88,
-      "communication": 86,
-      "romance": 88,
-      "trust": 91,
-      "stability": 92,
-      "lifestyle": 86
+      "emotional": 90,
+      "communication": 88,
+      "romance": 90,
+      "trust": 93,
+      "stability": 94,
+      "lifestyle": 88
     },
     "elementSynergy": {
       "title": "Earth & Water (Fertile Nurturing)",
-      "text": "Water softens Earth with empathy and emotion; Earth provides Water with steady shores of stability. A classic recipe for enduring married happiness."
+      "text": "Water softens Earth with tender emotional empathy; Earth provides Water with comforting shores of physical stability. A classic recipe for a thriving, enduring marriage."
     },
     "modalitySynergy": "Mutable + Fixed: A balanced dynamic where one partner initiates, stabilizes, or provides adaptable perspective to the other.",
     "strengths": [
@@ -6353,33 +7461,41 @@ const ZODIAC_PAIRS = {
     ],
     "celebrityCouples": "Celebrated Pisces & Taurus cosmic pairs",
     "genderAdvice": {
-      "male_female": "When a Pisces man and a Taurus woman unite, balancing his Mars/solar leadership with her emotional sanctuary fosters lasting harmony.",
-      "female_male": "When a Pisces woman and a Taurus man unite, celebrating her creative initiative while valuing his steadfast protection builds an unbreakable bond.",
-      "same_sex": "In a union between two souls with Pisces and Taurus energies, open communication and honoring personal autonomy keeps the romance deeply alive."
+      "male_female": "In Linda Goodman's Love Signs analysis of the Pisces Man with the Taurus Woman (3-11 Vibration): He expresses his masculine planetary energy through Neptune & Jupiter, while she responds with Venus grace. Success blooms when he honors her emotional sanctuary and she champions his purposeful ambitions.",
+      "female_male": "In Linda Goodman's Love Signs analysis of the Pisces Woman with the Taurus Man (3-11 Vibration): She brings Pisces's radiant initiative to the union, while he offers Taurus's steadfast anchor. When she trusts his protective strength and he respects her autonomy, their bond becomes unbreakable.",
+      "same_sex": "In Linda Goodman's cosmic synastry (3-11 Vibration): Two souls united under Pisces and Taurus celestial energies find harmony when honoring personal autonomy, balancing giving with receiving, and allowing their elemental natures to enrich each other."
     }
   },
   "pisces_gemini": {
     "sign1": "pisces",
     "sign2": "gemini",
-    "overallScore": 52,
+    "overallScore": 54,
     "colorCategory": "amber",
     "shadeLabel": "Dynamic Potential",
-    "aspectName": "Square (Passionate Friction & Dynamic Growth)",
-    "headline": "Pisces & Gemini: Electrifying Spark with Creative Challenge",
-    "summary": "Signs at a 90\u00b0 square share the same modality but clash elementally. This generates high attraction, intense emotional chemistry, and spirited debates that demand conscious diplomacy and mutual compromise.",
+    "aspectName": "4-10 Sun Sign Pattern (The Karmic Challenge & Crucible)",
+    "vibrationCode": "4-10",
+    "lindaVibration": {
+      "code": "4-10",
+      "title": "4-10 Sun Sign Pattern (The Karmic Challenge & Crucible)",
+      "theme": "Passionate Friction, Dramatic Chemistry & Soul Crucible",
+      "summary": "Linda Goodman described the 4-10 square vibration as the classic crucible of soul growth. Sharing the same modality but differing elements produces magnetic physical attraction paired with clashes of will. If ego yields to love, this union builds invincible diamond strength.",
+      "karmicLesson": "Transcending stubborn pride and mastering the noble art of sacrificial compromise."
+    },
+    "headline": "Pisces & Gemini: Passionate Friction, Dramatic Chemistry & Soul Crucible",
+    "summary": "Linda Goodman described the 4-10 square vibration as the classic crucible of soul growth. Sharing the same modality but differing elements produces magnetic physical attraction paired with clashes of will. If ego yields to love, this union builds invincible diamond strength.",
     "parameters": {
-      "emotional": 44,
-      "communication": 47,
-      "romance": 49,
-      "trust": 46,
-      "stability": 51,
-      "lifestyle": 44
+      "emotional": 46,
+      "communication": 49,
+      "romance": 51,
+      "trust": 48,
+      "stability": 53,
+      "lifestyle": 46
     },
     "elementSynergy": {
       "title": "Air & Water (Wind & Waves)",
-      "text": "Air analyzes experiences intellectually while Water experiences them through deep emotion. Finding balance creates profound holistic insight."
+      "text": "Air analyzes experiences intellectually while Water perceives them through psychic emotion. Honoring each other's distinct perception creates rich spiritual growth."
     },
-    "modalitySynergy": "Both Mutable: High flexibility, continuous laughter, and easy adaptability. Anchor your connection with structured routines.",
+    "modalitySynergy": "Both Mutable (Adaptable): Continuous mental agility, laughter, and easy flexibility. Anchor your connection with grounding domestic routines.",
     "strengths": [
       "Dynamic growth: Pisces introduces Gemini to new perspectives and vice versa.",
       "Engaging romantic chemistry where you never run out of intriguing things to discover about each other.",
@@ -6390,37 +7506,45 @@ const ZODIAC_PAIRS = {
       "Occasional friction over lifestyle pacing or decision-making speed."
     ],
     "tips": [
-      "Adopt the 24-hour cooling off rule during heated arguments before revisiting sensitive topics.",
-      "Remember that Gemini communicates love in their own authentic dialect.",
-      "Celebrate your differences as unique strengths rather than flaws to be corrected."
+      "Adopt Linda Goodman's cooling-off principle during heated arguments before revisiting sensitive topics.",
+      "Remember that Gemini communicates love in their own authentic elemental dialect.",
+      "Celebrate your differences as complementary superpowers rather than personal flaws."
     ],
     "celebrityCouples": "Celebrated Pisces & Gemini cosmic pairs",
     "genderAdvice": {
-      "male_female": "When a Pisces man and a Gemini woman unite, balancing his Mars/solar leadership with her emotional sanctuary fosters lasting harmony.",
-      "female_male": "When a Pisces woman and a Gemini man unite, celebrating her creative initiative while valuing his steadfast protection builds an unbreakable bond.",
-      "same_sex": "In a union between two souls with Pisces and Gemini energies, open communication and honoring personal autonomy keeps the romance deeply alive."
+      "male_female": "In Linda Goodman's Love Signs analysis of the Pisces Man with the Gemini Woman (4-10 Vibration): He expresses his masculine planetary energy through Neptune & Jupiter, while she responds with Mercury grace. Success blooms when he honors her emotional sanctuary and she champions his purposeful ambitions.",
+      "female_male": "In Linda Goodman's Love Signs analysis of the Pisces Woman with the Gemini Man (4-10 Vibration): She brings Pisces's radiant initiative to the union, while he offers Gemini's steadfast anchor. When she trusts his protective strength and he respects her autonomy, their bond becomes unbreakable.",
+      "same_sex": "In Linda Goodman's cosmic synastry (4-10 Vibration): Two souls united under Pisces and Gemini celestial energies find harmony when honoring personal autonomy, balancing giving with receiving, and allowing their elemental natures to enrich each other."
     }
   },
   "pisces_cancer": {
     "sign1": "pisces",
     "sign2": "cancer",
-    "overallScore": 94,
+    "overallScore": 95,
     "colorCategory": "green",
     "shadeLabel": "Harmonious Union",
-    "aspectName": "Trine (Divine Soulmate Element)",
-    "headline": "Pisces & Cancer: Effortless Harmony & Natural Soul Resonance",
-    "summary": "Sharing the same element (Fire-Fire, Earth-Earth, Air-Air, Water-Water) creates an instinctive, harmonious flow. You breathe the same spiritual air, understand each other's pacing, and feel deeply at home together.",
+    "aspectName": "5-9 Sun Sign Pattern (The Divine Cosmic Blessing)",
+    "vibrationCode": "5-9",
+    "lindaVibration": {
+      "code": "5-9",
+      "title": "5-9 Sun Sign Pattern (The Divine Cosmic Blessing)",
+      "theme": "Golden Trine, Soulmate Telepathy & Natural Sympathy",
+      "summary": "Linda Goodman's most celebrated synastry pattern! Sharing the same sacred element (Fire, Earth, Air, or Water) brings instant soul recognition. You forgive each other almost effortlessly, inspire each other's dreams, and enjoy an almost telepathic understanding.",
+      "karmicLesson": "Preserving sacred gratitude and avoiding taking your effortless soul harmony for granted."
+    },
+    "headline": "Pisces & Cancer: Golden Trine, Soulmate Telepathy & Natural Sympathy",
+    "summary": "Linda Goodman's most celebrated synastry pattern! Sharing the same sacred element (Fire, Earth, Air, or Water) brings instant soul recognition. You forgive each other almost effortlessly, inspire each other's dreams, and enjoy an almost telepathic understanding.",
     "parameters": {
       "emotional": 98,
-      "communication": 94,
-      "romance": 91,
-      "trust": 94,
-      "stability": 93,
+      "communication": 95,
+      "romance": 92,
+      "trust": 95,
+      "stability": 94,
       "lifestyle": 96
     },
     "elementSynergy": {
-      "title": "Double Water (Oceanic Soul Bond)",
-      "text": "Intuitive, deeply emotional, and almost telepathic understanding. You hold space for each other's deepest vulnerabilities and dreams."
+      "title": "Double Water (Oceanic Soul Resonance)",
+      "text": "Linda Goodman described two Water signs as deep telepathic soulmates. You sense each other's moods intuitively without words, creating a sacred emotional sanctuary."
     },
     "modalitySynergy": "Mutable + Cardinal: A balanced dynamic where one partner initiates, stabilizes, or provides adaptable perspective to the other.",
     "strengths": [
@@ -6439,40 +7563,48 @@ const ZODIAC_PAIRS = {
     ],
     "celebrityCouples": "Celebrated Pisces & Cancer cosmic pairs",
     "genderAdvice": {
-      "male_female": "When a Pisces man and a Cancer woman unite, balancing his Mars/solar leadership with her emotional sanctuary fosters lasting harmony.",
-      "female_male": "When a Pisces woman and a Cancer man unite, celebrating her creative initiative while valuing his steadfast protection builds an unbreakable bond.",
-      "same_sex": "In a union between two souls with Pisces and Cancer energies, open communication and honoring personal autonomy keeps the romance deeply alive."
+      "male_female": "In Linda Goodman's Love Signs analysis of the Pisces Man with the Cancer Woman (5-9 Vibration): He expresses his masculine planetary energy through Neptune & Jupiter, while she responds with Moon grace. Success blooms when he honors her emotional sanctuary and she champions his purposeful ambitions.",
+      "female_male": "In Linda Goodman's Love Signs analysis of the Pisces Woman with the Cancer Man (5-9 Vibration): She brings Pisces's radiant initiative to the union, while he offers Cancer's steadfast anchor. When she trusts his protective strength and he respects her autonomy, their bond becomes unbreakable.",
+      "same_sex": "In Linda Goodman's cosmic synastry (5-9 Vibration): Two souls united under Pisces and Cancer celestial energies find harmony when honoring personal autonomy, balancing giving with receiving, and allowing their elemental natures to enrich each other."
     }
   },
   "pisces_leo": {
     "sign1": "pisces",
     "sign2": "leo",
-    "overallScore": 46,
+    "overallScore": 48,
     "colorCategory": "red",
     "shadeLabel": "Growth Challenge",
-    "aspectName": "Quincunx (Mysterious Intrigue & Karmic Adjustment)",
-    "headline": "Pisces & Leo: Enigmatic Attraction Demanding Patience",
-    "summary": "Separated by five signs, you have little in common astrologically, which creates an intriguing magnetic mystery. Succeeding together requires appreciating your partner's entirely unique perspective on life.",
+    "aspectName": "6-8 Sun Sign Pattern (Karmic Mystery & Devoted Service)",
+    "vibrationCode": "6-8",
+    "lindaVibration": {
+      "code": "6-8",
+      "title": "6-8 Sun Sign Pattern (Karmic Mystery & Devoted Service)",
+      "theme": "Enigmatic Fascination, Hypnotic Pull & Karmic Duty",
+      "summary": "According to Linda Goodman, the 6-8 quincunx vibration is cloaked in hypnotic fascination and karmic debt. One partner feels drawn to serve, protect, or nurture the other, generating deep emotional or physical magnetism that requires profound patience to untangle.",
+      "karmicLesson": "Practicing unconditional love free from selfish demands, embracing differences that cannot be logically explained."
+    },
+    "headline": "Pisces & Leo: Enigmatic Fascination, Hypnotic Pull & Karmic Duty",
+    "summary": "According to Linda Goodman, the 6-8 quincunx vibration is cloaked in hypnotic fascination and karmic debt. One partner feels drawn to serve, protect, or nurture the other, generating deep emotional or physical magnetism that requires profound patience to untangle.",
     "parameters": {
       "emotional": 40,
-      "communication": 46,
-      "romance": 43,
-      "trust": 46,
-      "stability": 48,
-      "lifestyle": 38
+      "communication": 48,
+      "romance": 45,
+      "trust": 48,
+      "stability": 50,
+      "lifestyle": 40
     },
     "elementSynergy": {
-      "title": "Fire & Water (Steam & Intense Chemistry)",
-      "text": "Extremely passionate and emotionally turbulent. Fire inspires Water to take bold leaps; Water teaches Fire the beauty of tender emotional depth."
+      "title": "Fire & Water (Steam & Intense Passion)",
+      "text": "Extremely passionate and emotionally turbulent. Fire inspires Water to take brave leaps; Water teaches Fire the beauty of quiet emotional vulnerability."
     },
     "modalitySynergy": "Mutable + Fixed: A balanced dynamic where one partner initiates, stabilizes, or provides adaptable perspective to the other.",
     "strengths": [
-      "Powerful karmic pull that pushes both individuals to mature emotionally.",
+      "Powerful karmic pull that pushes both souls to mature emotionally and spiritually.",
       "Unforgettable chemistry and passion born from sheer elemental contrast.",
       "Opportunity to develop immense patience, empathy, and unconditional love."
     ],
     "challenges": [
-      "Fundamental contrast in priorities: Pisces's instinctual approach may confuse Leo.",
+      "Fundamental contrast in priorities: Pisces's instinctual approach may baffle Leo.",
       "Tendency to misinterpret your partner's need for space or emotional expression."
     ],
     "tips": [
@@ -6482,33 +7614,41 @@ const ZODIAC_PAIRS = {
     ],
     "celebrityCouples": "Celebrated Pisces & Leo cosmic pairs",
     "genderAdvice": {
-      "male_female": "When a Pisces man and a Leo woman unite, balancing his Mars/solar leadership with her emotional sanctuary fosters lasting harmony.",
-      "female_male": "When a Pisces woman and a Leo man unite, celebrating her creative initiative while valuing his steadfast protection builds an unbreakable bond.",
-      "same_sex": "In a union between two souls with Pisces and Leo energies, open communication and honoring personal autonomy keeps the romance deeply alive."
+      "male_female": "In Linda Goodman's Love Signs analysis of the Pisces Man with the Leo Woman (6-8 Vibration): He expresses his masculine planetary energy through Neptune & Jupiter, while she responds with Sun grace. Success blooms when he honors her emotional sanctuary and she champions his purposeful ambitions.",
+      "female_male": "In Linda Goodman's Love Signs analysis of the Pisces Woman with the Leo Man (6-8 Vibration): She brings Pisces's radiant initiative to the union, while he offers Leo's steadfast anchor. When she trusts his protective strength and he respects her autonomy, their bond becomes unbreakable.",
+      "same_sex": "In Linda Goodman's cosmic synastry (6-8 Vibration): Two souls united under Pisces and Leo celestial energies find harmony when honoring personal autonomy, balancing giving with receiving, and allowing their elemental natures to enrich each other."
     }
   },
   "pisces_virgo": {
     "sign1": "pisces",
     "sign2": "virgo",
-    "overallScore": 80,
+    "overallScore": 82,
     "colorCategory": "green",
     "shadeLabel": "Harmonious Union",
-    "aspectName": "Opposition (Cosmic Magnetism & Polar Balance)",
-    "headline": "Pisces & Virgo: Magnetic Attraction & Yin-Yang Balance",
-    "summary": "Sitting 180\u00b0 across the zodiac wheel, you are polar opposites. What one lacks, the other possesses in abundance. The chemistry is electric, offering the potential to form an unbeatable yin-and-yang partnership.",
+    "aspectName": "7-7 Sun Sign Pattern (Polar Magnetism & Cosmic Complements)",
+    "vibrationCode": "7-7",
+    "lindaVibration": {
+      "code": "7-7",
+      "title": "7-7 Sun Sign Pattern (Polar Magnetism & Cosmic Complements)",
+      "theme": "Opposites Attract, Celestial Electricity & Yin-Yang Balance",
+      "summary": "Sitting 180\u00b0 opposite on the zodiac wheel, Linda Goodman saw the 7-7 vibration as two halves of a single soul. What one lacks, the other possesses in abundance. It generates high romantic voltage: either a magnificent lifelong union or an explosive standoff.",
+      "karmicLesson": "Finding wholeness through merging opposite qualities into a unified, harmonious whole."
+    },
+    "headline": "Pisces & Virgo: Opposites Attract, Celestial Electricity & Yin-Yang Balance",
+    "summary": "Sitting 180\u00b0 opposite on the zodiac wheel, Linda Goodman saw the 7-7 vibration as two halves of a single soul. What one lacks, the other possesses in abundance. It generates high romantic voltage: either a magnificent lifelong union or an explosive standoff.",
     "parameters": {
-      "emotional": 82,
-      "communication": 83,
-      "romance": 88,
-      "trust": 85,
-      "stability": 86,
-      "lifestyle": 80
+      "emotional": 84,
+      "communication": 85,
+      "romance": 90,
+      "trust": 87,
+      "stability": 88,
+      "lifestyle": 82
     },
     "elementSynergy": {
       "title": "Earth & Water (Fertile Nurturing)",
-      "text": "Water softens Earth with empathy and emotion; Earth provides Water with steady shores of stability. A classic recipe for enduring married happiness."
+      "text": "Water softens Earth with tender emotional empathy; Earth provides Water with comforting shores of physical stability. A classic recipe for a thriving, enduring marriage."
     },
-    "modalitySynergy": "Both Mutable: High flexibility, continuous laughter, and easy adaptability. Anchor your connection with structured routines.",
+    "modalitySynergy": "Both Mutable (Adaptable): Continuous mental agility, laughter, and easy flexibility. Anchor your connection with grounding domestic routines.",
     "strengths": [
       "Natural understanding: Pisces and Virgo instinctively comprehend each other's core motivations.",
       "Complimentary emotional rhythms that make daily life and domestic partnership feel comforting and safe.",
@@ -6525,40 +7665,48 @@ const ZODIAC_PAIRS = {
     ],
     "celebrityCouples": "Celebrated Pisces & Virgo cosmic pairs",
     "genderAdvice": {
-      "male_female": "When a Pisces man and a Virgo woman unite, balancing his Mars/solar leadership with her emotional sanctuary fosters lasting harmony.",
-      "female_male": "When a Pisces woman and a Virgo man unite, celebrating her creative initiative while valuing his steadfast protection builds an unbreakable bond.",
-      "same_sex": "In a union between two souls with Pisces and Virgo energies, open communication and honoring personal autonomy keeps the romance deeply alive."
+      "male_female": "In Linda Goodman's Love Signs analysis of the Pisces Man with the Virgo Woman (7-7 Vibration): He expresses his masculine planetary energy through Neptune & Jupiter, while she responds with Mercury grace. Success blooms when he honors her emotional sanctuary and she champions his purposeful ambitions.",
+      "female_male": "In Linda Goodman's Love Signs analysis of the Pisces Woman with the Virgo Man (7-7 Vibration): She brings Pisces's radiant initiative to the union, while he offers Virgo's steadfast anchor. When she trusts his protective strength and he respects her autonomy, their bond becomes unbreakable.",
+      "same_sex": "In Linda Goodman's cosmic synastry (7-7 Vibration): Two souls united under Pisces and Virgo celestial energies find harmony when honoring personal autonomy, balancing giving with receiving, and allowing their elemental natures to enrich each other."
     }
   },
   "pisces_libra": {
     "sign1": "pisces",
     "sign2": "libra",
-    "overallScore": 46,
+    "overallScore": 48,
     "colorCategory": "red",
     "shadeLabel": "Growth Challenge",
-    "aspectName": "Quincunx (Mysterious Intrigue & Karmic Adjustment)",
-    "headline": "Pisces & Libra: Enigmatic Attraction Demanding Patience",
-    "summary": "Separated by five signs, you have little in common astrologically, which creates an intriguing magnetic mystery. Succeeding together requires appreciating your partner's entirely unique perspective on life.",
+    "aspectName": "6-8 Sun Sign Pattern (Karmic Mystery & Devoted Service)",
+    "vibrationCode": "6-8",
+    "lindaVibration": {
+      "code": "6-8",
+      "title": "6-8 Sun Sign Pattern (Karmic Mystery & Devoted Service)",
+      "theme": "Enigmatic Fascination, Hypnotic Pull & Karmic Duty",
+      "summary": "According to Linda Goodman, the 6-8 quincunx vibration is cloaked in hypnotic fascination and karmic debt. One partner feels drawn to serve, protect, or nurture the other, generating deep emotional or physical magnetism that requires profound patience to untangle.",
+      "karmicLesson": "Practicing unconditional love free from selfish demands, embracing differences that cannot be logically explained."
+    },
+    "headline": "Pisces & Libra: Enigmatic Fascination, Hypnotic Pull & Karmic Duty",
+    "summary": "According to Linda Goodman, the 6-8 quincunx vibration is cloaked in hypnotic fascination and karmic debt. One partner feels drawn to serve, protect, or nurture the other, generating deep emotional or physical magnetism that requires profound patience to untangle.",
     "parameters": {
       "emotional": 42,
       "communication": 45,
-      "romance": 43,
-      "trust": 46,
-      "stability": 45,
-      "lifestyle": 38
+      "romance": 45,
+      "trust": 48,
+      "stability": 47,
+      "lifestyle": 40
     },
     "elementSynergy": {
       "title": "Air & Water (Wind & Waves)",
-      "text": "Air analyzes experiences intellectually while Water experiences them through deep emotion. Finding balance creates profound holistic insight."
+      "text": "Air analyzes experiences intellectually while Water perceives them through psychic emotion. Honoring each other's distinct perception creates rich spiritual growth."
     },
     "modalitySynergy": "Mutable + Cardinal: A balanced dynamic where one partner initiates, stabilizes, or provides adaptable perspective to the other.",
     "strengths": [
-      "Powerful karmic pull that pushes both individuals to mature emotionally.",
+      "Powerful karmic pull that pushes both souls to mature emotionally and spiritually.",
       "Unforgettable chemistry and passion born from sheer elemental contrast.",
       "Opportunity to develop immense patience, empathy, and unconditional love."
     ],
     "challenges": [
-      "Fundamental contrast in priorities: Pisces's instinctual approach may confuse Libra.",
+      "Fundamental contrast in priorities: Pisces's instinctual approach may baffle Libra.",
       "Tendency to misinterpret your partner's need for space or emotional expression."
     ],
     "tips": [
@@ -6568,31 +7716,39 @@ const ZODIAC_PAIRS = {
     ],
     "celebrityCouples": "Celebrated Pisces & Libra cosmic pairs",
     "genderAdvice": {
-      "male_female": "When a Pisces man and a Libra woman unite, balancing his Mars/solar leadership with her emotional sanctuary fosters lasting harmony.",
-      "female_male": "When a Pisces woman and a Libra man unite, celebrating her creative initiative while valuing his steadfast protection builds an unbreakable bond.",
-      "same_sex": "In a union between two souls with Pisces and Libra energies, open communication and honoring personal autonomy keeps the romance deeply alive."
+      "male_female": "In Linda Goodman's Love Signs analysis of the Pisces Man with the Libra Woman (6-8 Vibration): He expresses his masculine planetary energy through Neptune & Jupiter, while she responds with Venus grace. Success blooms when he honors her emotional sanctuary and she champions his purposeful ambitions.",
+      "female_male": "In Linda Goodman's Love Signs analysis of the Pisces Woman with the Libra Man (6-8 Vibration): She brings Pisces's radiant initiative to the union, while he offers Libra's steadfast anchor. When she trusts his protective strength and he respects her autonomy, their bond becomes unbreakable.",
+      "same_sex": "In Linda Goodman's cosmic synastry (6-8 Vibration): Two souls united under Pisces and Libra celestial energies find harmony when honoring personal autonomy, balancing giving with receiving, and allowing their elemental natures to enrich each other."
     }
   },
   "pisces_scorpio": {
     "sign1": "pisces",
     "sign2": "scorpio",
-    "overallScore": 94,
+    "overallScore": 95,
     "colorCategory": "green",
     "shadeLabel": "Harmonious Union",
-    "aspectName": "Trine (Divine Soulmate Element)",
-    "headline": "Pisces & Scorpio: Effortless Harmony & Natural Soul Resonance",
-    "summary": "Sharing the same element (Fire-Fire, Earth-Earth, Air-Air, Water-Water) creates an instinctive, harmonious flow. You breathe the same spiritual air, understand each other's pacing, and feel deeply at home together.",
+    "aspectName": "5-9 Sun Sign Pattern (The Divine Cosmic Blessing)",
+    "vibrationCode": "5-9",
+    "lindaVibration": {
+      "code": "5-9",
+      "title": "5-9 Sun Sign Pattern (The Divine Cosmic Blessing)",
+      "theme": "Golden Trine, Soulmate Telepathy & Natural Sympathy",
+      "summary": "Linda Goodman's most celebrated synastry pattern! Sharing the same sacred element (Fire, Earth, Air, or Water) brings instant soul recognition. You forgive each other almost effortlessly, inspire each other's dreams, and enjoy an almost telepathic understanding.",
+      "karmicLesson": "Preserving sacred gratitude and avoiding taking your effortless soul harmony for granted."
+    },
+    "headline": "Pisces & Scorpio: Golden Trine, Soulmate Telepathy & Natural Sympathy",
+    "summary": "Linda Goodman's most celebrated synastry pattern! Sharing the same sacred element (Fire, Earth, Air, or Water) brings instant soul recognition. You forgive each other almost effortlessly, inspire each other's dreams, and enjoy an almost telepathic understanding.",
     "parameters": {
       "emotional": 98,
-      "communication": 94,
-      "romance": 91,
-      "trust": 94,
+      "communication": 95,
+      "romance": 92,
+      "trust": 95,
       "stability": 94,
       "lifestyle": 96
     },
     "elementSynergy": {
-      "title": "Double Water (Oceanic Soul Bond)",
-      "text": "Intuitive, deeply emotional, and almost telepathic understanding. You hold space for each other's deepest vulnerabilities and dreams."
+      "title": "Double Water (Oceanic Soul Resonance)",
+      "text": "Linda Goodman described two Water signs as deep telepathic soulmates. You sense each other's moods intuitively without words, creating a sacred emotional sanctuary."
     },
     "modalitySynergy": "Mutable + Fixed: A balanced dynamic where one partner initiates, stabilizes, or provides adaptable perspective to the other.",
     "strengths": [
@@ -6611,33 +7767,41 @@ const ZODIAC_PAIRS = {
     ],
     "celebrityCouples": "Goldie Hawn (Scorpio) & Kurt Russell (Pisces)",
     "genderAdvice": {
-      "male_female": "When a Pisces man and a Scorpio woman unite, balancing his Mars/solar leadership with her emotional sanctuary fosters lasting harmony.",
-      "female_male": "When a Pisces woman and a Scorpio man unite, celebrating her creative initiative while valuing his steadfast protection builds an unbreakable bond.",
-      "same_sex": "In a union between two souls with Pisces and Scorpio energies, open communication and honoring personal autonomy keeps the romance deeply alive."
+      "male_female": "In Linda Goodman's Love Signs analysis of the Pisces Man with the Scorpio Woman (5-9 Vibration): He expresses his masculine planetary energy through Neptune & Jupiter, while she responds with Pluto & Mars grace. Success blooms when he honors her emotional sanctuary and she champions his purposeful ambitions.",
+      "female_male": "In Linda Goodman's Love Signs analysis of the Pisces Woman with the Scorpio Man (5-9 Vibration): She brings Pisces's radiant initiative to the union, while he offers Scorpio's steadfast anchor. When she trusts his protective strength and he respects her autonomy, their bond becomes unbreakable.",
+      "same_sex": "In Linda Goodman's cosmic synastry (5-9 Vibration): Two souls united under Pisces and Scorpio celestial energies find harmony when honoring personal autonomy, balancing giving with receiving, and allowing their elemental natures to enrich each other."
     }
   },
   "pisces_sagittarius": {
     "sign1": "pisces",
     "sign2": "sagittarius",
-    "overallScore": 55,
+    "overallScore": 54,
     "colorCategory": "amber",
     "shadeLabel": "Dynamic Potential",
-    "aspectName": "Square (Passionate Friction & Dynamic Growth)",
-    "headline": "Pisces & Sagittarius: Electrifying Spark with Creative Challenge",
-    "summary": "Signs at a 90\u00b0 square share the same modality but clash elementally. This generates high attraction, intense emotional chemistry, and spirited debates that demand conscious diplomacy and mutual compromise.",
+    "aspectName": "4-10 Sun Sign Pattern (The Karmic Challenge & Crucible)",
+    "vibrationCode": "4-10",
+    "lindaVibration": {
+      "code": "4-10",
+      "title": "4-10 Sun Sign Pattern (The Karmic Challenge & Crucible)",
+      "theme": "Passionate Friction, Dramatic Chemistry & Soul Crucible",
+      "summary": "Linda Goodman described the 4-10 square vibration as the classic crucible of soul growth. Sharing the same modality but differing elements produces magnetic physical attraction paired with clashes of will. If ego yields to love, this union builds invincible diamond strength.",
+      "karmicLesson": "Transcending stubborn pride and mastering the noble art of sacrificial compromise."
+    },
+    "headline": "Pisces & Sagittarius: Passionate Friction, Dramatic Chemistry & Soul Crucible",
+    "summary": "Linda Goodman described the 4-10 square vibration as the classic crucible of soul growth. Sharing the same modality but differing elements produces magnetic physical attraction paired with clashes of will. If ego yields to love, this union builds invincible diamond strength.",
     "parameters": {
-      "emotional": 45,
-      "communication": 55,
-      "romance": 52,
-      "trust": 49,
-      "stability": 54,
-      "lifestyle": 47
+      "emotional": 44,
+      "communication": 54,
+      "romance": 51,
+      "trust": 48,
+      "stability": 53,
+      "lifestyle": 46
     },
     "elementSynergy": {
-      "title": "Fire & Water (Steam & Intense Chemistry)",
-      "text": "Extremely passionate and emotionally turbulent. Fire inspires Water to take bold leaps; Water teaches Fire the beauty of tender emotional depth."
+      "title": "Fire & Water (Steam & Intense Passion)",
+      "text": "Extremely passionate and emotionally turbulent. Fire inspires Water to take brave leaps; Water teaches Fire the beauty of quiet emotional vulnerability."
     },
-    "modalitySynergy": "Both Mutable: High flexibility, continuous laughter, and easy adaptability. Anchor your connection with structured routines.",
+    "modalitySynergy": "Both Mutable (Adaptable): Continuous mental agility, laughter, and easy flexibility. Anchor your connection with grounding domestic routines.",
     "strengths": [
       "Dynamic growth: Pisces introduces Sagittarius to new perspectives and vice versa.",
       "Engaging romantic chemistry where you never run out of intriguing things to discover about each other.",
@@ -6648,37 +7812,45 @@ const ZODIAC_PAIRS = {
       "Occasional friction over lifestyle pacing or decision-making speed."
     ],
     "tips": [
-      "Adopt the 24-hour cooling off rule during heated arguments before revisiting sensitive topics.",
-      "Remember that Sagittarius communicates love in their own authentic dialect.",
-      "Celebrate your differences as unique strengths rather than flaws to be corrected."
+      "Adopt Linda Goodman's cooling-off principle during heated arguments before revisiting sensitive topics.",
+      "Remember that Sagittarius communicates love in their own authentic elemental dialect.",
+      "Celebrate your differences as complementary superpowers rather than personal flaws."
     ],
     "celebrityCouples": "Celebrated Pisces & Sagittarius cosmic pairs",
     "genderAdvice": {
-      "male_female": "When a Pisces man and a Sagittarius woman unite, balancing his Mars/solar leadership with her emotional sanctuary fosters lasting harmony.",
-      "female_male": "When a Pisces woman and a Sagittarius man unite, celebrating her creative initiative while valuing his steadfast protection builds an unbreakable bond.",
-      "same_sex": "In a union between two souls with Pisces and Sagittarius energies, open communication and honoring personal autonomy keeps the romance deeply alive."
+      "male_female": "In Linda Goodman's Love Signs analysis of the Pisces Man with the Sagittarius Woman (4-10 Vibration): He expresses his masculine planetary energy through Neptune & Jupiter, while she responds with Jupiter grace. Success blooms when he honors her emotional sanctuary and she champions his purposeful ambitions.",
+      "female_male": "In Linda Goodman's Love Signs analysis of the Pisces Woman with the Sagittarius Man (4-10 Vibration): She brings Pisces's radiant initiative to the union, while he offers Sagittarius's steadfast anchor. When she trusts his protective strength and he respects her autonomy, their bond becomes unbreakable.",
+      "same_sex": "In Linda Goodman's cosmic synastry (4-10 Vibration): Two souls united under Pisces and Sagittarius celestial energies find harmony when honoring personal autonomy, balancing giving with receiving, and allowing their elemental natures to enrich each other."
     }
   },
   "pisces_capricorn": {
     "sign1": "pisces",
     "sign2": "capricorn",
-    "overallScore": 86,
+    "overallScore": 88,
     "colorCategory": "green",
     "shadeLabel": "Harmonious Union",
-    "aspectName": "Sextile (Harmonious Elemental Flow)",
-    "headline": "Pisces & Capricorn: Stimulating Synergy & Easy Friendship",
-    "summary": "Your elements naturally complement each other (Fire invigorates Air, or Water nourishes Earth). Communication flows effortlessly, laughter comes easily, and mutual respect flourishes.",
+    "aspectName": "3-11 Sun Sign Pattern (Karmic Friends & Sympathetic Lovers)",
+    "vibrationCode": "3-11",
+    "lindaVibration": {
+      "code": "3-11",
+      "title": "3-11 Sun Sign Pattern (Karmic Friends & Sympathetic Lovers)",
+      "theme": "Enduring Camaraderie, Easy Forgiveness & High Devotion",
+      "summary": "Linda Goodman considered the 3-11 vibration one of the happiest and most enduring in the cosmos. Your signs form a natural sextile of friendship. Even through intense misunderstandings, 3-11 lovers remain steadfast allies, quick to forgive and eager to laugh.",
+      "karmicLesson": "Nurturing lifelong loyalty, humanitarian generosity, and effortless mutual forgiveness."
+    },
+    "headline": "Pisces & Capricorn: Enduring Camaraderie, Easy Forgiveness & High Devotion",
+    "summary": "Linda Goodman considered the 3-11 vibration one of the happiest and most enduring in the cosmos. Your signs form a natural sextile of friendship. Even through intense misunderstandings, 3-11 lovers remain steadfast allies, quick to forgive and eager to laugh.",
     "parameters": {
-      "emotional": 88,
-      "communication": 86,
-      "romance": 88,
-      "trust": 91,
-      "stability": 92,
-      "lifestyle": 86
+      "emotional": 90,
+      "communication": 88,
+      "romance": 90,
+      "trust": 93,
+      "stability": 94,
+      "lifestyle": 88
     },
     "elementSynergy": {
       "title": "Earth & Water (Fertile Nurturing)",
-      "text": "Water softens Earth with empathy and emotion; Earth provides Water with steady shores of stability. A classic recipe for enduring married happiness."
+      "text": "Water softens Earth with tender emotional empathy; Earth provides Water with comforting shores of physical stability. A classic recipe for a thriving, enduring marriage."
     },
     "modalitySynergy": "Mutable + Cardinal: A balanced dynamic where one partner initiates, stabilizes, or provides adaptable perspective to the other.",
     "strengths": [
@@ -6697,31 +7869,39 @@ const ZODIAC_PAIRS = {
     ],
     "celebrityCouples": "Celebrated Pisces & Capricorn cosmic pairs",
     "genderAdvice": {
-      "male_female": "When a Pisces man and a Capricorn woman unite, balancing his Mars/solar leadership with her emotional sanctuary fosters lasting harmony.",
-      "female_male": "When a Pisces woman and a Capricorn man unite, celebrating her creative initiative while valuing his steadfast protection builds an unbreakable bond.",
-      "same_sex": "In a union between two souls with Pisces and Capricorn energies, open communication and honoring personal autonomy keeps the romance deeply alive."
+      "male_female": "In Linda Goodman's Love Signs analysis of the Pisces Man with the Capricorn Woman (3-11 Vibration): He expresses his masculine planetary energy through Neptune & Jupiter, while she responds with Saturn grace. Success blooms when he honors her emotional sanctuary and she champions his purposeful ambitions.",
+      "female_male": "In Linda Goodman's Love Signs analysis of the Pisces Woman with the Capricorn Man (3-11 Vibration): She brings Pisces's radiant initiative to the union, while he offers Capricorn's steadfast anchor. When she trusts his protective strength and he respects her autonomy, their bond becomes unbreakable.",
+      "same_sex": "In Linda Goodman's cosmic synastry (3-11 Vibration): Two souls united under Pisces and Capricorn celestial energies find harmony when honoring personal autonomy, balancing giving with receiving, and allowing their elemental natures to enrich each other."
     }
   },
   "pisces_aquarius": {
     "sign1": "pisces",
     "sign2": "aquarius",
-    "overallScore": 62,
+    "overallScore": 64,
     "colorCategory": "amber",
     "shadeLabel": "Dynamic Potential",
-    "aspectName": "Semisextile (Neighboring Contrast)",
-    "headline": "Pisces & Aquarius: Complementary Growth & Mutual Learning",
-    "summary": "As neighboring signs, you operate from contrasting elemental perspectives. This match creates a learning journey where each partner expands the other's horizons if patience is practiced.",
+    "aspectName": "2-12 Sun Sign Pattern (The Karmic Teacher & Pupil)",
+    "vibrationCode": "2-12",
+    "lindaVibration": {
+      "code": "2-12",
+      "title": "2-12 Sun Sign Pattern (The Karmic Teacher & Pupil)",
+      "theme": "Karmic Learning, Compassion & Gentle Tutoring",
+      "summary": "According to Linda Goodman, the 2-12 vibration signifies that one sign has spiritually passed through the other's grade in the cosmic school. There is a deep, unspoken bond of patience, protection, and gentle tutoring. Tolerating different pacing unlocks profound mutual growth.",
+      "karmicLesson": "Bridging contrasting elemental perspectives through patient compassion and secret mutual admiration."
+    },
+    "headline": "Pisces & Aquarius: Karmic Learning, Compassion & Gentle Tutoring",
+    "summary": "According to Linda Goodman, the 2-12 vibration signifies that one sign has spiritually passed through the other's grade in the cosmic school. There is a deep, unspoken bond of patience, protection, and gentle tutoring. Tolerating different pacing unlocks profound mutual growth.",
     "parameters": {
-      "emotional": 54,
-      "communication": 57,
-      "romance": 59,
-      "trust": 62,
-      "stability": 64,
-      "lifestyle": 62
+      "emotional": 56,
+      "communication": 59,
+      "romance": 61,
+      "trust": 64,
+      "stability": 66,
+      "lifestyle": 64
     },
     "elementSynergy": {
       "title": "Air & Water (Wind & Waves)",
-      "text": "Air analyzes experiences intellectually while Water experiences them through deep emotion. Finding balance creates profound holistic insight."
+      "text": "Air analyzes experiences intellectually while Water perceives them through psychic emotion. Honoring each other's distinct perception creates rich spiritual growth."
     },
     "modalitySynergy": "Mutable + Fixed: A balanced dynamic where one partner initiates, stabilizes, or provides adaptable perspective to the other.",
     "strengths": [
@@ -6734,15 +7914,15 @@ const ZODIAC_PAIRS = {
       "Occasional friction over lifestyle pacing or decision-making speed."
     ],
     "tips": [
-      "Adopt the 24-hour cooling off rule during heated arguments before revisiting sensitive topics.",
-      "Remember that Aquarius communicates love in their own authentic dialect.",
-      "Celebrate your differences as unique strengths rather than flaws to be corrected."
+      "Adopt Linda Goodman's cooling-off principle during heated arguments before revisiting sensitive topics.",
+      "Remember that Aquarius communicates love in their own authentic elemental dialect.",
+      "Celebrate your differences as complementary superpowers rather than personal flaws."
     ],
     "celebrityCouples": "Celebrated Pisces & Aquarius cosmic pairs",
     "genderAdvice": {
-      "male_female": "When a Pisces man and a Aquarius woman unite, balancing his Mars/solar leadership with her emotional sanctuary fosters lasting harmony.",
-      "female_male": "When a Pisces woman and a Aquarius man unite, celebrating her creative initiative while valuing his steadfast protection builds an unbreakable bond.",
-      "same_sex": "In a union between two souls with Pisces and Aquarius energies, open communication and honoring personal autonomy keeps the romance deeply alive."
+      "male_female": "In Linda Goodman's Love Signs analysis of the Pisces Man with the Aquarius Woman (2-12 Vibration): He expresses his masculine planetary energy through Neptune & Jupiter, while she responds with Uranus & Saturn grace. Success blooms when he honors her emotional sanctuary and she champions his purposeful ambitions.",
+      "female_male": "In Linda Goodman's Love Signs analysis of the Pisces Woman with the Aquarius Man (2-12 Vibration): She brings Pisces's radiant initiative to the union, while he offers Aquarius's steadfast anchor. When she trusts his protective strength and he respects her autonomy, their bond becomes unbreakable.",
+      "same_sex": "In Linda Goodman's cosmic synastry (2-12 Vibration): Two souls united under Pisces and Aquarius celestial energies find harmony when honoring personal autonomy, balancing giving with receiving, and allowing their elemental natures to enrich each other."
     }
   },
   "pisces_pisces": {
@@ -6751,9 +7931,17 @@ const ZODIAC_PAIRS = {
     "overallScore": 82,
     "colorCategory": "green",
     "shadeLabel": "Harmonious Union",
-    "aspectName": "Conjunction (Mirror Alignment)",
-    "headline": "Pisces & Pisces: Deep Mirror Empathy & Shared Instincts",
-    "summary": "Sharing the exact same sun sign gives you an instinctual understanding of each other's drives and vulnerabilities. You understand each other's moods intuitively, though you must guard against magnifying shared blind spots.",
+    "aspectName": "1-1 Sun Sign Pattern (The Cosmic Mirror)",
+    "vibrationCode": "1-1",
+    "lindaVibration": {
+      "code": "1-1",
+      "title": "1-1 Sun Sign Pattern (The Cosmic Mirror)",
+      "theme": "Mirror Empathy & Double Ego Reflection",
+      "summary": "In Linda Goodman's Love Signs, the 1-1 vibration is like gazing directly into an astrological mirror. You recognize each other's hidden virtues and deepest faults instantly. This creates profound telepathic empathy, but both partners must guard against magnifying identical blind spots.",
+      "karmicLesson": "Cultivating emotional humility and learning self-acceptance through observing your own nature reflected in your mate."
+    },
+    "headline": "Pisces & Pisces: Mirror Empathy & Double Ego Reflection",
+    "summary": "In Linda Goodman's Love Signs, the 1-1 vibration is like gazing directly into an astrological mirror. You recognize each other's hidden virtues and deepest faults instantly. This creates profound telepathic empathy, but both partners must guard against magnifying identical blind spots.",
     "parameters": {
       "emotional": 86,
       "communication": 82,
@@ -6763,10 +7951,10 @@ const ZODIAC_PAIRS = {
       "lifestyle": 85
     },
     "elementSynergy": {
-      "title": "Double Water (Oceanic Soul Bond)",
-      "text": "Intuitive, deeply emotional, and almost telepathic understanding. You hold space for each other's deepest vulnerabilities and dreams."
+      "title": "Double Water (Oceanic Soul Resonance)",
+      "text": "Linda Goodman described two Water signs as deep telepathic soulmates. You sense each other's moods intuitively without words, creating a sacred emotional sanctuary."
     },
-    "modalitySynergy": "Both Mutable: High flexibility, continuous laughter, and easy adaptability. Anchor your connection with structured routines.",
+    "modalitySynergy": "Both Mutable (Adaptable): Continuous mental agility, laughter, and easy flexibility. Anchor your connection with grounding domestic routines.",
     "strengths": [
       "Natural understanding: Pisces and Pisces instinctively comprehend each other's core motivations.",
       "Complimentary emotional rhythms that make daily life and domestic partnership feel comforting and safe.",
@@ -6783,14 +7971,72 @@ const ZODIAC_PAIRS = {
     ],
     "celebrityCouples": "Celebrated Pisces & Pisces cosmic pairs",
     "genderAdvice": {
-      "male_female": "When a Pisces man and a Pisces woman unite, balancing his Mars/solar leadership with her emotional sanctuary fosters lasting harmony.",
-      "female_male": "When a Pisces woman and a Pisces man unite, celebrating her creative initiative while valuing his steadfast protection builds an unbreakable bond.",
-      "same_sex": "In a union between two souls with Pisces and Pisces energies, open communication and honoring personal autonomy keeps the romance deeply alive."
+      "male_female": "In Linda Goodman's Love Signs analysis of the Pisces Man with the Pisces Woman (1-1 Vibration): He expresses his masculine planetary energy through Neptune & Jupiter, while she responds with Neptune & Jupiter grace. Success blooms when he honors her emotional sanctuary and she champions his purposeful ambitions.",
+      "female_male": "In Linda Goodman's Love Signs analysis of the Pisces Woman with the Pisces Man (1-1 Vibration): She brings Pisces's radiant initiative to the union, while he offers Pisces's steadfast anchor. When she trusts his protective strength and he respects her autonomy, their bond becomes unbreakable.",
+      "same_sex": "In Linda Goodman's cosmic synastry (1-1 Vibration): Two souls united under Pisces and Pisces celestial energies find harmony when honoring personal autonomy, balancing giving with receiving, and allowing their elemental natures to enrich each other."
     }
   }
 };
 
-// Map for quick sign lookup by id
+const LINDA_GOODMAN_VIBRATIONS = {
+  "0": {
+    "code": "1-1",
+    "name": "1-1 Sun Sign Pattern (The Cosmic Mirror)",
+    "baseScore": 82,
+    "theme": "Mirror Empathy & Double Ego Reflection",
+    "description": "In Linda Goodman's Love Signs, the 1-1 vibration is like gazing directly into an astrological mirror. You recognize each other's hidden virtues and deepest faults instantly. This creates profound telepathic empathy, but both partners must guard against magnifying identical blind spots.",
+    "karmicLesson": "Cultivating emotional humility and learning self-acceptance through observing your own nature reflected in your mate."
+  },
+  "1": {
+    "code": "2-12",
+    "name": "2-12 Sun Sign Pattern (The Karmic Teacher & Pupil)",
+    "baseScore": 64,
+    "theme": "Karmic Learning, Compassion & Gentle Tutoring",
+    "description": "According to Linda Goodman, the 2-12 vibration signifies that one sign has spiritually passed through the other's grade in the cosmic school. There is a deep, unspoken bond of patience, protection, and gentle tutoring. Tolerating different pacing unlocks profound mutual growth.",
+    "karmicLesson": "Bridging contrasting elemental perspectives through patient compassion and secret mutual admiration."
+  },
+  "2": {
+    "code": "3-11",
+    "name": "3-11 Sun Sign Pattern (Karmic Friends & Sympathetic Lovers)",
+    "baseScore": 88,
+    "theme": "Enduring Camaraderie, Easy Forgiveness & High Devotion",
+    "description": "Linda Goodman considered the 3-11 vibration one of the happiest and most enduring in the cosmos. Your signs form a natural sextile of friendship. Even through intense misunderstandings, 3-11 lovers remain steadfast allies, quick to forgive and eager to laugh.",
+    "karmicLesson": "Nurturing lifelong loyalty, humanitarian generosity, and effortless mutual forgiveness."
+  },
+  "3": {
+    "code": "4-10",
+    "name": "4-10 Sun Sign Pattern (The Karmic Challenge & Crucible)",
+    "baseScore": 54,
+    "theme": "Passionate Friction, Dramatic Chemistry & Soul Crucible",
+    "description": "Linda Goodman described the 4-10 square vibration as the classic crucible of soul growth. Sharing the same modality but differing elements produces magnetic physical attraction paired with clashes of will. If ego yields to love, this union builds invincible diamond strength.",
+    "karmicLesson": "Transcending stubborn pride and mastering the noble art of sacrificial compromise."
+  },
+  "4": {
+    "code": "5-9",
+    "name": "5-9 Sun Sign Pattern (The Divine Cosmic Blessing)",
+    "baseScore": 95,
+    "theme": "Golden Trine, Soulmate Telepathy & Natural Sympathy",
+    "description": "Linda Goodman's most celebrated synastry pattern! Sharing the same sacred element (Fire, Earth, Air, or Water) brings instant soul recognition. You forgive each other almost effortlessly, inspire each other's dreams, and enjoy an almost telepathic understanding.",
+    "karmicLesson": "Preserving sacred gratitude and avoiding taking your effortless soul harmony for granted."
+  },
+  "5": {
+    "code": "6-8",
+    "name": "6-8 Sun Sign Pattern (Karmic Mystery & Devoted Service)",
+    "baseScore": 48,
+    "theme": "Enigmatic Fascination, Hypnotic Pull & Karmic Duty",
+    "description": "According to Linda Goodman, the 6-8 quincunx vibration is cloaked in hypnotic fascination and karmic debt. One partner feels drawn to serve, protect, or nurture the other, generating deep emotional or physical magnetism that requires profound patience to untangle.",
+    "karmicLesson": "Practicing unconditional love free from selfish demands, embracing differences that cannot be logically explained."
+  },
+  "6": {
+    "code": "7-7",
+    "name": "7-7 Sun Sign Pattern (Polar Magnetism & Cosmic Complements)",
+    "baseScore": 82,
+    "theme": "Opposites Attract, Celestial Electricity & Yin-Yang Balance",
+    "description": "Sitting 180\u00b0 opposite on the zodiac wheel, Linda Goodman saw the 7-7 vibration as two halves of a single soul. What one lacks, the other possesses in abundance. It generates high romantic voltage: either a magnificent lifelong union or an explosive standoff.",
+    "karmicLesson": "Finding wholeness through merging opposite qualities into a unified, harmonious whole."
+  }
+};
+
 const ZODIAC_MAP = ZODIAC_SIGNS.reduce((acc, sign) => {
   acc[sign.id] = sign;
   return acc;
@@ -6798,8 +8044,6 @@ const ZODIAC_MAP = ZODIAC_SIGNS.reduce((acc, sign) => {
 
 /**
  * Determine Sun Sign from Date of Birth (Month: 1-12, Day: 1-31)
- * @param {string|Date} dobInput - 'YYYY-MM-DD' or Date object
- * @returns {object} Zodiac sign object
  */
 function getZodiacSignFromDOB(dobInput) {
   if (!dobInput) return null;
@@ -6841,9 +8085,6 @@ function getZodiacSignFromDOB(dobInput) {
 
 /**
  * Get Compatibility Data between two Zodiac Sign IDs
- * @param {string} signId1 
- * @param {string} signId2 
- * @returns {object} Compatibility profile
  */
 function getPairCompatibility(signId1, signId2) {
   if (!signId1 || !signId2) return null;
@@ -6853,15 +8094,12 @@ function getPairCompatibility(signId1, signId2) {
   if (ZODIAC_PAIRS[key]) {
     return ZODIAC_PAIRS[key];
   }
-  // Fallback to reciprocal key if necessary
   const altKey = `${s2}_${s1}`;
   return ZODIAC_PAIRS[altKey] || null;
 }
 
 /**
  * Returns Color Classification Details for a given score (0-100)
- * @param {number} score 
- * @returns {object} Color token, classes, label, and hex codes
  */
 function getColorShade(score) {
   if (score >= 75) {
@@ -6906,11 +8144,11 @@ function getColorShade(score) {
   }
 }
 
-// Export for browser window and Node.js environments
 if (typeof module !== 'undefined' && module.exports) {
   module.exports = {
     ZODIAC_SIGNS,
     ZODIAC_PAIRS,
+    LINDA_GOODMAN_VIBRATIONS,
     ZODIAC_MAP,
     getZodiacSignFromDOB,
     getPairCompatibility,

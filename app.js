@@ -275,6 +275,16 @@ function renderCoupleHero(s1, s2, pairData, colorShade, p1Name, p2Name) {
   summaryText.textContent = pairData.summary;
   celebText.textContent = pairData.celebrityCouples;
 
+  // Linda Goodman Vibration Badge & Karmic Lesson
+  const vibrationText = document.getElementById('couple-vibration-text');
+  const karmicLesson = document.getElementById('couple-karmic-lesson');
+  if (vibrationText && pairData.lindaVibration) {
+    vibrationText.textContent = `${pairData.lindaVibration.title}`;
+  }
+  if (karmicLesson && pairData.lindaVibration) {
+    karmicLesson.textContent = pairData.lindaVibration.karmicLesson;
+  }
+
   // Update Shade Badge
   shadeBadge.className = `inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full text-xs font-black uppercase tracking-wider ${colorShade.badgeClass}`;
   shadeEmoji.textContent = colorShade.emoji;
@@ -446,7 +456,12 @@ function renderCoupleNarratives(pairData, p1Gender, p2Gender) {
   if (elemText) elemText.textContent = pairData.elementSynergy.text;
   if (modalityText) modalityText.textContent = pairData.modalitySynergy;
 
-  // Gender Advice
+  // Gender Advice (Linda Goodman Love Signs)
+  const genderTitle = document.getElementById('couple-gender-title');
+  if (genderTitle && state.couples.p1.sign && state.couples.p2.sign) {
+    genderTitle.textContent = `Linda Goodman's Love Signs: ${state.couples.p1.sign.name} & ${state.couples.p2.sign.name} Dynamic`;
+  }
+
   if (genderAdvice) {
     if (p1Gender === 'male' && p2Gender === 'female') {
       genderAdvice.textContent = pairData.genderAdvice.male_female;
@@ -795,6 +810,15 @@ function renderSingleCards() {
           </span>
         </div>
 
+        <!-- Linda Goodman Vibration Tag -->
+        <div class="flex items-center justify-between text-[11px] px-2.5 py-1 rounded-lg bg-amber-950/20 border border-amber-500/30 text-amber-300">
+          <span class="font-bold flex items-center space-x-1">
+            <i data-lucide="book-open" class="w-3 h-3 text-amber-400"></i>
+            <span>${pairData.vibrationCode} Vibration:</span>
+          </span>
+          <span class="text-[10px] text-slate-300 truncate ml-1 font-medium">${pairData.lindaVibration ? pairData.lindaVibration.title.split('(')[1].replace(')', '') : 'Karmic Synastry'}</span>
+        </div>
+
         <!-- Parameter Mini Bars -->
         <div class="space-y-1.5 pt-1">
           <div class="grid grid-cols-5 gap-1 text-[10px] text-slate-400 font-mono text-center">
@@ -857,10 +881,28 @@ function openSignModal(targetSignId) {
 
   // Build Modal Body
   modalBody.innerHTML = `
-    <!-- Executive Summary -->
-    <div class="bg-slate-900/80 border border-slate-800 rounded-2xl p-4 sm:p-5 space-y-2">
-      <h4 class="text-xs font-bold uppercase tracking-wider text-cosmic-300">Cosmic Synthesis</h4>
-      <p class="text-sm text-slate-200 leading-relaxed">${pairData.summary}</p>
+    <!-- Linda Goodman Love Signs Synastry Box -->
+    <div class="bg-amber-950/25 border border-amber-500/40 rounded-2xl p-4 sm:p-5 space-y-2">
+      <div class="flex items-center justify-between">
+        <h4 class="text-xs font-bold uppercase tracking-wider text-amber-300 flex items-center space-x-1.5">
+          <i data-lucide="book-open" class="w-4 h-4 text-amber-400"></i>
+          <span>Linda Goodman's Love Signs: ${pairData.vibrationCode} Vibration</span>
+        </h4>
+        <span class="text-[10px] font-bold px-2 py-0.5 rounded bg-amber-500/20 text-amber-200 border border-amber-500/30">Karmic Synastry</span>
+      </div>
+      <p class="text-xs text-slate-200 leading-relaxed">${pairData.lindaVibration ? pairData.lindaVibration.summary : pairData.summary}</p>
+      <div class="pt-2 border-t border-amber-500/20 text-xs text-amber-200">
+        <strong class="text-amber-300">Karmic Lesson:</strong> ${pairData.lindaVibration ? pairData.lindaVibration.karmicLesson : ''}
+      </div>
+    </div>
+
+    <!-- Linda Goodman's Secret Key to Their Heart -->
+    <div class="bg-purple-950/30 border border-purple-500/30 rounded-2xl p-4 space-y-1.5">
+      <h5 class="text-xs font-bold text-purple-300 flex items-center space-x-1.5">
+        <i data-lucide="key" class="w-4 h-4 text-amber-400"></i>
+        <span>Linda Goodman's Secret to Winning a ${targetSign.name}'s Heart</span>
+      </h5>
+      <p class="text-xs text-slate-300 leading-relaxed">${targetSign.lindaGoodmanSecret || ''}</p>
     </div>
 
     <!-- 6 Parameters Breakdown -->
@@ -936,12 +978,23 @@ function closeModal() {
   if (modal) modal.classList.add('hidden');
 }
 
-// Close modal on click outside
+function openLindaVibrationsModal() {
+  const modal = document.getElementById('linda-vibrations-modal');
+  if (modal) modal.classList.remove('hidden');
+  if (window.lucide) window.lucide.createIcons();
+}
+
+function closeLindaVibrationsModal() {
+  const modal = document.getElementById('linda-vibrations-modal');
+  if (modal) modal.classList.add('hidden');
+}
+
+// Close modals on click outside
 window.addEventListener('click', (e) => {
-  const modal = document.getElementById('sign-detail-modal');
-  if (e.target === modal) {
-    closeModal();
-  }
+  const modal1 = document.getElementById('sign-detail-modal');
+  const modal2 = document.getElementById('linda-vibrations-modal');
+  if (e.target === modal1) closeModal();
+  if (e.target === modal2) closeLindaVibrationsModal();
 });
 
 // ============================================================================
@@ -979,14 +1032,22 @@ function renderEncyclopedia() {
         ${sign.overview}
       </p>
 
-      <div class="space-y-2 pt-2 border-t border-slate-800/80 text-xs">
-        <div>
-          <strong class="text-pink-300">In Love:</strong>
-          <span class="text-slate-300">${sign.inLove}</span>
+      <!-- Linda Goodman Archetypes -->
+      <div class="bg-amber-950/20 border border-amber-500/30 rounded-2xl p-3.5 space-y-2 text-xs">
+        <div class="flex items-center space-x-1.5 text-amber-300 font-bold">
+          <i data-lucide="book-open" class="w-3.5 h-3.5 text-amber-400"></i>
+          <span>Linda Goodman's Sun Signs Insights:</span>
         </div>
         <div>
-          <strong class="text-amber-300">In Marriage:</strong>
-          <span class="text-slate-300">${sign.marriageStyle}</span>
+          <strong class="text-blue-300">The ${sign.name} Man:</strong>
+          <span class="text-slate-300">${sign.lindaGoodmanMale}</span>
+        </div>
+        <div>
+          <strong class="text-pink-300">The ${sign.name} Woman:</strong>
+          <span class="text-slate-300">${sign.lindaGoodmanFemale}</span>
+        </div>
+        <div class="pt-1 border-t border-amber-500/20 text-[11px] text-amber-200">
+          <strong class="text-amber-400">Secret to Their Heart:</strong> ${sign.lindaGoodmanSecret}
         </div>
       </div>
 

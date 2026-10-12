@@ -1,6 +1,8 @@
 """
 Generator for zodiac-data.js
-Creates rich astrological data for the 12 sun signs and 144 combination pairings.
+Calibrated with Linda Goodman's 'Love Signs' (1978) & 'Sun Signs' (1968).
+Integrates Linda Goodman's Seven Karmic Sun Sign Vibrations:
+1-1, 2-12, 3-11, 4-10, 5-9, 6-8, and 7-7.
 """
 
 import json
@@ -28,7 +30,10 @@ SIGNS = [
         "marriageStyle": "Dynamic, loyal, and energetic. Thrives when both partners share joint adventures, celebrate mutual triumphs, and maintain healthy personal freedom.",
         "strengths": ["Bold initiative & honesty", "Infectious optimism", "Passionate protector of loved ones"],
         "shadows": ["Can be quick-tempered", "Impatience with slow pace", "Sometimes overlooks subtle emotional cues"],
-        "idealPartners": ["Leo", "Sagittarius", "Gemini", "Aquarius"]
+        "idealPartners": ["Leo", "Sagittarius", "Gemini", "Aquarius"],
+        "lindaGoodmanMale": "The Aries Man is the gallant knight in shining armor. He demands total devotion and romantic belief in his ideals. Never wound his proud masculine ego; support his crusades, and he will defend you against the whole world.",
+        "lindaGoodmanFemale": "The Aries Woman can run a corporation and fix a carburetor, but secretly longs to be swept off her feet by a partner strong enough to match her fiery spirit without ever trying to cage her wings.",
+        "lindaGoodmanSecret": "Never be sluggish, deceptive, or overly critical. Champion their dreams with genuine enthusiasm."
     },
     {
         "id": "taurus",
@@ -51,7 +56,10 @@ SIGNS = [
         "marriageStyle": "The unshakeable bedrock of the household. Exceptionally loyal, dedicated to home comforts, financial prudence, and building a peaceful sanctuary.",
         "strengths": ["Unwavering loyalty & reliability", "Warm, comforting presence", "Mastery of financial and domestic harmony"],
         "shadows": ["Resistant to sudden change", "Can hold onto grievances", "Possessiveness when insecure"],
-        "idealPartners": ["Virgo", "Capricorn", "Cancer", "Pisces"]
+        "idealPartners": ["Virgo", "Capricorn", "Cancer", "Pisces"],
+        "lindaGoodmanMale": "The Taurus Man is the steady oak tree in life's storm. Deliberate, quietly humorous, and devoted to family security. He will never abandon you for fickle thrills if you make his home a sanctuary of comfort and delicious meals.",
+        "lindaGoodmanFemale": "The Taurus Woman is the quintessential Earth Mother. She possesses immense emotional endurance, hates artificial pretense, and creates a cozy haven filled with fragrant flowers, soft linens, and unshakeable fidelity.",
+        "lindaGoodmanSecret": "Never push or rush them. Respect their need for contemplation and physical comfort."
     },
     {
         "id": "gemini",
@@ -74,7 +82,10 @@ SIGNS = [
         "marriageStyle": "A youthful, stimulating partnership. Gemini needs a best friend and confidant with whom they can exchange books, travel, and laugh every single day.",
         "strengths": ["Brilliant communication", "Playful & youthful spirit", "Effortless adaptability to circumstances"],
         "shadows": ["Can seem emotionally restless", "Overthinking feelings", "Difficulty settling into heavy routines"],
-        "idealPartners": ["Libra", "Aquarius", "Aries", "Leo"]
+        "idealPartners": ["Libra", "Aquarius", "Aries", "Leo"],
+        "lindaGoodmanMale": "The Gemini Man is Peter Pan with silver wings on his tongue. Forever youthful, versatile, and mentally agile. If you can change with his changing moods and engage his restless intellect, he will never leave your side.",
+        "lindaGoodmanFemale": "The Gemini Woman is a dozen fascinating women wrapped into one captivating bundle. She is a witty companion, an astute conversationalist, and a playful soul who needs intellectual air to breathe freely.",
+        "lindaGoodmanSecret": "Keep the conversation alive and interesting. Never smother them with monotonous routine."
     },
     {
         "id": "cancer",
@@ -97,7 +108,10 @@ SIGNS = [
         "marriageStyle": "The sacred keeper of home and hearth. Dedicated to family unity, emotional intimacy, warm kitchens, and generational bonds.",
         "strengths": ["Deep emotional empathy", "Fierce loyalty to partner and family", "Intuitive understanding of unspoken needs"],
         "shadows": ["Mood swings aligned with lunar cycles", "Can retreat into shell when hurt", "Cautious to forgive perceived slights"],
-        "idealPartners": ["Scorpio", "Pisces", "Taurus", "Virgo"]
+        "idealPartners": ["Scorpio", "Pisces", "Taurus", "Virgo"],
+        "lindaGoodmanMale": "The Cancer Man hides a vulnerable poet's soul beneath a hard crustacean shell. Deeply devoted to his mother and family, financially prudent, and sentimental. He will hold onto love with unyielding lunar tenacity.",
+        "lindaGoodmanFemale": "The Cancer Woman is the Moon maiden: enchantingly gentle, deeply protective, and rich with empathetic intuition. Treat her tender heart with reverence, and her loyalty will outlast the stars themselves.",
+        "lindaGoodmanSecret": "Reassure them often of your love and security. Never mock their sensitivities or family treasures."
     },
     {
         "id": "leo",
@@ -116,11 +130,14 @@ SIGNS = [
         "gemstone": "Peridot, Amber & Golden Topaz",
         "keywords": ["Generous", "Magnetic", "Charismatic", "Loyal", "Warm-hearted", "Proud"],
         "overview": "Leo is the radiant monarch and warm-hearted champion of the zodiac. Governed by the Sun itself, Leo radiates solar warmth, boundless generosity, theatrical flair, and unwavering loyalty.",
-        "inLove": "Grand, generous, and proud. Leo treats their partner like a king or queen, showering them with gifts, public admiration, and intense romantic devotion.",
+        "inLove": "Grand, generous, and proud. Leo treats their partner like royalty, showering them with gifts, public admiration, and intense romantic devotion.",
         "marriageStyle": "Chivalrous and supportive. Brings celebration, joy, social elegance, and steadfast protection to the family union.",
         "strengths": ["Tremendous generosity of spirit", "Charismatic and uplifting energy", "Unflinching loyalty through adversity"],
         "shadows": ["Prone to pride and hurt ego", "Needs continuous validation", "Can be dramatic during disagreements"],
-        "idealPartners": ["Aries", "Sagittarius", "Gemini", "Libra"]
+        "idealPartners": ["Aries", "Sagittarius", "Gemini", "Libra"],
+        "lindaGoodmanMale": "The Leo Man is the king of beasts: generous, noble, chivalrous, and proud. Stroke his magnificent mane with praise and respect, and he will pour the riches of his solar warmth at your feet.",
+        "lindaGoodmanFemale": "The Leo Woman is the golden queen: proud, radiant, and intensely loyal. She demands courting fit for royalty. Treat her with chivalry and dignity, and she will shine light upon your entire life.",
+        "lindaGoodmanSecret": "Praise them sincerely in public and private. Never diminish their dignity or wound their pride."
     },
     {
         "id": "virgo",
@@ -143,7 +160,10 @@ SIGNS = [
         "marriageStyle": "The master organizer of daily life. Ensures the home is orderly, healthy, fiscally sound, and emotionally grounded.",
         "strengths": ["Unmatched attentiveness and care", "Practical problem-solver in crisis", "Fiercely dependable and honest"],
         "shadows": ["Over-critical of self and partner", "Tendency to worry or overanalyze", "Hesitation to show vulnerability early on"],
-        "idealPartners": ["Taurus", "Capricorn", "Cancer", "Scorpio"]
+        "idealPartners": ["Taurus", "Capricorn", "Cancer", "Scorpio"],
+        "lindaGoodmanMale": "The Virgo Man is the pragmatic gentleman. He may not shower you with dramatic theatrical poetry, but he will ensure your car is serviced, your health is protected, and your life is quietly and reliably anchored.",
+        "lindaGoodmanFemale": "The Virgo Woman possesses a pristine, clear-eyed intellect and gentle modesty. Her devotion is expressed through thoughtful care, immaculate integrity, and steadfast support through sickness and health.",
+        "lindaGoodmanSecret": "Value their quiet acts of service and keep your promises. Practice cleanliness and punctuality."
     },
     {
         "id": "libra",
@@ -166,7 +186,10 @@ SIGNS = [
         "marriageStyle": "The quintessential co-pilot. Dedicated to equality, thoughtful compromises, shared social circles, and aesthetic marital harmony.",
         "strengths": ["Graceful diplomat and peacemaker", "Naturally attuned to partner's needs", "Creates an aesthetically beautiful life"],
         "shadows": ["Conflict avoidance leading to suppression", "Indecisiveness on practical matters", "Can over-prioritize pleasing others"],
-        "idealPartners": ["Gemini", "Aquarius", "Leo", "Sagittarius"]
+        "idealPartners": ["Gemini", "Aquarius", "Leo", "Sagittarius"],
+        "lindaGoodmanMale": "The Libra Man is Venus's charming strategist. He seeks complete harmony, fair play, and aesthetic partnership. He weighs every decision with careful deliberation and blossoms when his home is serene and elegant.",
+        "lindaGoodmanFemale": "The Libra Woman blends velvet softness with razor-sharp logic. She is a dedicated companion who looks magnificent by your side and provides brilliant counsel for your joint ambitions.",
+        "lindaGoodmanSecret": "Maintain peaceful surroundings and soft tones. Never yell or create harsh, vulgar disharmony."
     },
     {
         "id": "scorpio",
@@ -189,7 +212,10 @@ SIGNS = [
         "marriageStyle": "An impenetrable emotional fortress. Scorpio defends their family with immense passion and bonds at a profound soul level.",
         "strengths": ["Fierce, unbreakable loyalty", "Deep intuitive psychological insight", "Transformative support in difficult times"],
         "shadows": ["Guarded until absolute trust is earned", "Possessive or jealous tendencies", "Difficulty letting go of past hurts"],
-        "idealPartners": ["Cancer", "Pisces", "Virgo", "Capricorn"]
+        "idealPartners": ["Cancer", "Pisces", "Virgo", "Capricorn"],
+        "lindaGoodmanMale": "The Scorpio Man possesses piercing hypnotic eyes and an impenetrable inner fortress. His love is all-or-nothing, fierce, and transformative. Give him absolute honesty and unflinching loyalty, and he will love you beyond eternity.",
+        "lindaGoodmanFemale": "The Scorpio Woman is an enigmatic enchantress of unmatched depth. She sees straight through superficial facades. Her devotion is monumental; once committed, she is an invincible fortress beside her mate.",
+        "lindaGoodmanSecret": "Be entirely truthful and transparent. Never flirt with others to make them jealous."
     },
     {
         "id": "sagittarius",
@@ -212,7 +238,10 @@ SIGNS = [
         "marriageStyle": "An expansive, exciting partnership. Flourishes when both partners grow continuously, explore cultures, and avoid suffocating micro-management.",
         "strengths": ["Contagious optimism and humor", "Honest and transparent intentions", "Expansive worldview and generosity"],
         "shadows": ["Can be blunt or tactless in speech", "Restless with repetitive domesticity", "Commitment hesitation if feeling confined"],
-        "idealPartners": ["Aries", "Leo", "Libra", "Aquarius"]
+        "idealPartners": ["Aries", "Leo", "Libra", "Aquarius"],
+        "lindaGoodmanMale": "The Sagittarius Man is Jupiter's joyful archer. Honest, generous, and endlessly idealistic. He speaks candidly without malice. Give him broad horizons and trust his integrity, and he will make life a grand adventure.",
+        "lindaGoodmanFemale": "The Sagittarius Woman is the spirited explorer: candid, fiercely honest, warm, and playful. She values intellectual camaraderie and open skies. Never smother her with possessiveness, and she will be your joyful companion forever.",
+        "lindaGoodmanSecret": "Allow them physical and mental freedom. Laugh with them and never cage their enthusiasm."
     },
     {
         "id": "capricorn",
@@ -235,7 +264,10 @@ SIGNS = [
         "marriageStyle": "The bedrock of enduring success. Committed to financial stability, generational wealth, mutual respect, and family legacy.",
         "strengths": ["Unmatched resilience and work ethic", "Rock-solid reliability in all storms", "Quietly witty and deeply respectful"],
         "shadows": ["Can become work-obsessed", "Guarded with emotional vulnerability", "Rigid expectations of daily routine"],
-        "idealPartners": ["Taurus", "Virgo", "Scorpio", "Pisces"]
+        "idealPartners": ["Taurus", "Virgo", "Scorpio", "Pisces"],
+        "lindaGoodmanMale": "The Capricorn Man is Saturn's master builder. Reserved on the outside, but deeply sentimental underneath. He ages in reverse, growing warmer and happier with each passing decade. He builds a dynasty of security for his family.",
+        "lindaGoodmanFemale": "The Capricorn Woman is a lady of substance, quiet dignity, and formidable competence. She seeks enduring family honor and security. Value her ambitions and treat her with gentle courtesy, and she will be an unyielding rock of devotion.",
+        "lindaGoodmanSecret": "Respect their family and long-term career ambitions. Provide quiet stability, not fickle drama."
     },
     {
         "id": "aquarius",
@@ -258,7 +290,10 @@ SIGNS = [
         "marriageStyle": "An egalitarian alliance of best friends. Marriage is built on deep mutual respect, shared humanitarian goals, and intellectual freedom.",
         "strengths": ["Deeply respectful of individuality", "Progressive, forward-thinking partner", "Unshakable loyalty to core ideals"],
         "shadows": ["Emotional detachment during heated moments", "Stubborn adherence to theories", "Uncomfortable with dramatic displays"],
-        "idealPartners": ["Gemini", "Libra", "Aries", "Sagittarius"]
+        "idealPartners": ["Gemini", "Libra", "Aries", "Sagittarius"],
+        "lindaGoodmanMale": "The Aquarius Man is the lightning bolt of tomorrow. Free-spirited, unpredictable, and a friend to humanity. He cannot be forced into conventional molds, but if you love his mind and respect his space, he will be your devoted companion.",
+        "lindaGoodmanFemale": "The Aquarius Woman is an unconventional butterfly. Fascinating, open-minded, and authentic. She loves without possessive chains and needs a partner who is first and foremost her truest intellectual confidant.",
+        "lindaGoodmanSecret": "Never cage them with jealousy or petty suspicions. Appeal to their intellect and sense of fairness."
     },
     {
         "id": "pisces",
@@ -281,69 +316,84 @@ SIGNS = [
         "marriageStyle": "A sacred and tender sanctuary. Fills the home with kindness, music, artistic beauty, emotional safety, and spiritual connection.",
         "strengths": ["Boundless empathy and forgiveness", "Deep romantic and spiritual intuition", "Devoted and gentle partner in times of grief"],
         "shadows": ["Can lose healthy boundaries", "Escapism when reality feels harsh", "Idealizing partners beyond reality"],
-        "idealPartners": ["Cancer", "Scorpio", "Taurus", "Capricorn"]
+        "idealPartners": ["Cancer", "Scorpio", "Taurus", "Capricorn"],
+        "lindaGoodmanMale": "The Pisces Man is Neptune's gentle poet. Highly intuitive, compassionate, and richly imaginative. He needs a partner who provides warm, grounding encouragement without crushing his delicate creative dreams.",
+        "lindaGoodmanFemale": "The Pisces Woman is the mystical mermaid. Soft, tender, and deeply sympathetic. She makes her mate feel cherished, understood, and protective. In her quiet presence, worldly troubles melt away.",
+        "lindaGoodmanSecret": "Treat their dreams with gentle care. Provide grounding support without cynicism or harsh rebukes."
     }
 ]
 
 SIGN_MAP = {s["id"]: s for s in SIGNS}
 SIGN_IDS = [s["id"] for s in SIGNS]
 
-# Astrological Aspect Model
-# Distances:
-# 0: Conjunction (Same Sign) -> ~80-84%
-# 1: Semisextile (30°) -> ~58-66%
-# 2: Sextile (60° - Fire/Air or Earth/Water) -> ~82-90%
-# 3: Square (90° - Cardinal/Cardinal, Fixed/Fixed, Mutable/Mutable) -> ~46-58%
-# 4: Trine (120° - Same Element) -> ~90-97%
-# 5: Quincunx (150° - Awkward aspect) -> ~42-52%
-# 6: Opposition (180° - Polar Opposites) -> ~76-86%
+# Linda Goodman's Seven Karmic Sun Sign Vibrations (from Linda Goodman's Love Signs)
+# 0: 1-1 Vibration (Same Sign)
+# 1: 2-12 Vibration (Adjacent Signs / 30°)
+# 2: 3-11 Vibration (Sextile / 60°)
+# 3: 4-10 Vibration (Square / 90°)
+# 4: 5-9 Vibration (Trine / 120°)
+# 5: 6-8 Vibration (Inconjunct / Quincunx / 150°)
+# 6: 7-7 Vibration (Opposition / 180°)
 
-ASPECT_PROFILES = {
+LINDA_GOODMAN_VIBRATIONS = {
     0: {
-        "aspect": "Conjunction (Mirror Alignment)",
+        "code": "1-1",
+        "name": "1-1 Sun Sign Pattern (The Cosmic Mirror)",
         "baseScore": 82,
-        "theme": "Deep Mirror Empathy & Shared Instincts",
-        "description": "Sharing the exact same sun sign gives you an instinctual understanding of each other's drives and vulnerabilities. You understand each other's moods intuitively, though you must guard against magnifying shared blind spots."
+        "theme": "Mirror Empathy & Double Ego Reflection",
+        "description": "In Linda Goodman's Love Signs, the 1-1 vibration is like gazing directly into an astrological mirror. You recognize each other's hidden virtues and deepest faults instantly. This creates profound telepathic empathy, but both partners must guard against magnifying identical blind spots.",
+        "karmicLesson": "Cultivating emotional humility and learning self-acceptance through observing your own nature reflected in your mate."
     },
     1: {
-        "aspect": "Semisextile (Neighboring Contrast)",
-        "baseScore": 62,
-        "theme": "Complementary Growth & Mutual Learning",
-        "description": "As neighboring signs, you operate from contrasting elemental perspectives. This match creates a learning journey where each partner expands the other's horizons if patience is practiced."
+        "code": "2-12",
+        "name": "2-12 Sun Sign Pattern (The Karmic Teacher & Pupil)",
+        "baseScore": 64,
+        "theme": "Karmic Learning, Compassion & Gentle Tutoring",
+        "description": "According to Linda Goodman, the 2-12 vibration signifies that one sign has spiritually passed through the other's grade in the cosmic school. There is a deep, unspoken bond of patience, protection, and gentle tutoring. Tolerating different pacing unlocks profound mutual growth.",
+        "karmicLesson": "Bridging contrasting elemental perspectives through patient compassion and secret mutual admiration."
     },
     2: {
-        "aspect": "Sextile (Harmonious Elemental Flow)",
-        "baseScore": 86,
-        "theme": "Stimulating Synergy & Easy Friendship",
-        "description": "Your elements naturally complement each other (Fire invigorates Air, or Water nourishes Earth). Communication flows effortlessly, laughter comes easily, and mutual respect flourishes."
+        "code": "3-11",
+        "name": "3-11 Sun Sign Pattern (Karmic Friends & Sympathetic Lovers)",
+        "baseScore": 88,
+        "theme": "Enduring Camaraderie, Easy Forgiveness & High Devotion",
+        "description": "Linda Goodman considered the 3-11 vibration one of the happiest and most enduring in the cosmos. Your signs form a natural sextile of friendship. Even through intense misunderstandings, 3-11 lovers remain steadfast allies, quick to forgive and eager to laugh.",
+        "karmicLesson": "Nurturing lifelong loyalty, humanitarian generosity, and effortless mutual forgiveness."
     },
     3: {
-        "aspect": "Square (Passionate Friction & Dynamic Growth)",
-        "baseScore": 52,
-        "theme": "Electrifying Spark with Creative Challenge",
-        "description": "Signs at a 90° square share the same modality but clash elementally. This generates high attraction, intense emotional chemistry, and spirited debates that demand conscious diplomacy and mutual compromise."
+        "code": "4-10",
+        "name": "4-10 Sun Sign Pattern (The Karmic Challenge & Crucible)",
+        "baseScore": 54,
+        "theme": "Passionate Friction, Dramatic Chemistry & Soul Crucible",
+        "description": "Linda Goodman described the 4-10 square vibration as the classic crucible of soul growth. Sharing the same modality but differing elements produces magnetic physical attraction paired with clashes of will. If ego yields to love, this union builds invincible diamond strength.",
+        "karmicLesson": "Transcending stubborn pride and mastering the noble art of sacrificial compromise."
     },
     4: {
-        "aspect": "Trine (Divine Soulmate Element)",
-        "baseScore": 94,
-        "theme": "Effortless Harmony & Natural Soul Resonance",
-        "description": "Sharing the same element (Fire-Fire, Earth-Earth, Air-Air, Water-Water) creates an instinctive, harmonious flow. You breathe the same spiritual air, understand each other's pacing, and feel deeply at home together."
+        "code": "5-9",
+        "name": "5-9 Sun Sign Pattern (The Divine Cosmic Blessing)",
+        "baseScore": 95,
+        "theme": "Golden Trine, Soulmate Telepathy & Natural Sympathy",
+        "description": "Linda Goodman's most celebrated synastry pattern! Sharing the same sacred element (Fire, Earth, Air, or Water) brings instant soul recognition. You forgive each other almost effortlessly, inspire each other's dreams, and enjoy an almost telepathic understanding.",
+        "karmicLesson": "Preserving sacred gratitude and avoiding taking your effortless soul harmony for granted."
     },
     5: {
-        "aspect": "Quincunx (Mysterious Intrigue & Karmic Adjustment)",
-        "baseScore": 46,
-        "theme": "Enigmatic Attraction Demanding Patience",
-        "description": "Separated by five signs, you have little in common astrologically, which creates an intriguing magnetic mystery. Succeeding together requires appreciating your partner's entirely unique perspective on life."
+        "code": "6-8",
+        "name": "6-8 Sun Sign Pattern (Karmic Mystery & Devoted Service)",
+        "baseScore": 48,
+        "theme": "Enigmatic Fascination, Hypnotic Pull & Karmic Duty",
+        "description": "According to Linda Goodman, the 6-8 quincunx vibration is cloaked in hypnotic fascination and karmic debt. One partner feels drawn to serve, protect, or nurture the other, generating deep emotional or physical magnetism that requires profound patience to untangle.",
+        "karmicLesson": "Practicing unconditional love free from selfish demands, embracing differences that cannot be logically explained."
     },
     6: {
-        "aspect": "Opposition (Cosmic Magnetism & Polar Balance)",
-        "baseScore": 80,
-        "theme": "Magnetic Attraction & Yin-Yang Balance",
-        "description": "Sitting 180° across the zodiac wheel, you are polar opposites. What one lacks, the other possesses in abundance. The chemistry is electric, offering the potential to form an unbeatable yin-and-yang partnership."
+        "code": "7-7",
+        "name": "7-7 Sun Sign Pattern (Polar Magnetism & Cosmic Complements)",
+        "baseScore": 82,
+        "theme": "Opposites Attract, Celestial Electricity & Yin-Yang Balance",
+        "description": "Sitting 180° opposite on the zodiac wheel, Linda Goodman saw the 7-7 vibration as two halves of a single soul. What one lacks, the other possesses in abundance. It generates high romantic voltage: either a magnificent lifelong union or an explosive standoff.",
+        "karmicLesson": "Finding wholeness through merging opposite qualities into a unified, harmonious whole."
     }
 }
 
-# Famous celebrity couples database for iconic pairs
 FAMOUS_COUPLES = {
     ("leo", "sagittarius"): "Barack Obama (Leo) & Michelle Obama (Capricorn/Sagittarius cusp) / Jennifer Lopez & Ben Affleck",
     ("leo", "aries"): "Sarah Jessica Parker (Aries) & Matthew Broderick (Aries) / Kourtney Kardashian (Aries) & Travis Barker (Scorpio)",
@@ -368,60 +418,45 @@ def generate_pairs():
         for j, s2 in enumerate(SIGNS):
             id2 = s2["id"]
             
-            # calculate circular distance
             raw_dist = abs(i - j)
             circ_dist = min(raw_dist, 12 - raw_dist)
             
-            aspect_info = ASPECT_PROFILES[circ_dist]
-            base_score = aspect_info["baseScore"]
+            vibration = LINDA_GOODMAN_VIBRATIONS[circ_dist]
+            base_score = vibration["baseScore"]
             
-            # Specific nuance fine-tuning for legendary pairs
+            # Refinements for classic Linda Goodman legendary pairs
             score_adj = 0
             if (id1, id2) in [("cancer", "scorpio"), ("scorpio", "cancer")]:
-                score_adj = 3  # Water trine soulmates
+                score_adj = 3
             elif (id1, id2) in [("taurus", "virgo"), ("virgo", "taurus")]:
-                score_adj = 2  # Earth trine rock solid
+                score_adj = 2
             elif (id1, id2) in [("aries", "sagittarius"), ("sagittarius", "aries")]:
-                score_adj = 3  # Fire adventure powerhouse
+                score_adj = 3
             elif (id1, id2) in [("gemini", "libra"), ("libra", "gemini")]:
-                score_adj = 2  # Air intellectual brilliance
+                score_adj = 2
             elif (id1, id2) in [("cancer", "capricorn"), ("capricorn", "cancer")]:
-                score_adj = 4  # Cardinal opposition powerhouse (William & Kate)
+                score_adj = 4
             elif (id1, id2) in [("scorpio", "virgo"), ("virgo", "scorpio")]:
-                score_adj = 5  # Earth + Water sextile (Ryan & Blake)
+                score_adj = 4
             elif (id1, id2) in [("leo", "aries"), ("aries", "leo")]:
                 score_adj = 2
             elif (id1, id2) in [("taurus", "scorpio"), ("scorpio", "taurus")]:
-                score_adj = 3  # Fixed polarity passion
+                score_adj = 3
             elif (id1, id2) in [("aries", "scorpio"), ("scorpio", "aries")]:
-                score_adj = 4  # Mars co-ruled chemistry
-            elif (id1, id2) in [("sagittarius", "pisces"), ("pisces", "sagittarius")]:
-                score_adj = 3  # Jupiter co-ruled spiritual kinship
+                score_adj = 3
                 
             overall_score = max(38, min(98, base_score + score_adj))
             
-            # Determine color shade
             if overall_score >= 75:
                 color_cat = "green"
                 shade_label = "Harmonious Union"
-                badge_bg = "emerald"
             elif overall_score >= 50:
                 color_cat = "amber"
                 shade_label = "Dynamic Potential"
-                badge_bg = "amber"
             else:
                 color_cat = "red"
                 shade_label = "Growth Challenge"
-                badge_bg = "rose"
                 
-            # Compute the 6 Parameters
-            # 1. Emotional
-            # 2. Communication
-            # 3. Romance & Chemistry
-            # 4. Trust & Values
-            # 5. Stability & Marriage
-            # 6. Lifestyle & Harmony
-            
             elem1, elem2 = s1["element"], s2["element"]
             mod1, mod2 = s1["modality"], s2["modality"]
             
@@ -433,7 +468,7 @@ def generate_pairs():
                     emotional = min(96, overall_score + 2)
                 elif (elem1 == "Water" and elem2 == "Fire") or (elem1 == "Fire" and elem2 == "Water"):
                     emotional = max(40, overall_score - 10)
-                else: # Water + Air
+                else:
                     emotional = max(42, overall_score - 8)
             elif elem1 == elem2:
                 emotional = overall_score
@@ -456,7 +491,7 @@ def generate_pairs():
             # Romance & Chemistry
             if (elem1 == "Fire" and elem2 == "Fire") or (elem1 == "Fire" and elem2 == "Air") or (elem1 == "Air" and elem2 == "Fire"):
                 romance = min(98, overall_score + 6)
-            elif circ_dist == 6: # Opposites have extreme chemistry
+            elif circ_dist == 6:
                 romance = min(96, overall_score + 8)
             elif (elem1 == "Water" and elem2 == "Earth") or (elem1 == "Earth" and elem2 == "Water"):
                 romance = min(92, overall_score + 2)
@@ -491,7 +526,6 @@ def generate_pairs():
             else:
                 lifestyle = overall_score
                 
-            # Clamp all parameters strictly between 35 and 99
             parameters = {
                 "emotional": max(35, min(99, int(emotional))),
                 "communication": max(35, min(99, int(comm))),
@@ -501,17 +535,15 @@ def generate_pairs():
                 "lifestyle": max(35, min(99, int(lifestyle)))
             }
             
-            # Elemental synergy description
             element_synergy = get_element_synergy(elem1, elem2)
             modality_synergy = get_modality_synergy(mod1, mod2)
-            
-            # Generate custom strengths & challenges
             strengths, challenges, tips = get_relationship_advice(s1, s2, circ_dist, overall_score)
-            
-            # Celebrity couple example
             celeb = FAMOUS_COUPLES.get((id1, id2)) or FAMOUS_COUPLES.get((id2, id1)) or f"Celebrated {s1['name']} & {s2['name']} cosmic pairs"
             
-            headline = f"{s1['name']} & {s2['name']}: {aspect_info['theme']}"
+            # Linda Goodman Love Signs Gender Narratives
+            linda_gender_dynamics = get_linda_goodman_gender_dynamics(s1, s2, vibration)
+            
+            headline = f"{s1['name']} & {s2['name']}: {vibration['theme']}"
             
             pair_key = f"{id1}_{id2}"
             pairs[pair_key] = {
@@ -520,9 +552,17 @@ def generate_pairs():
                 "overallScore": overall_score,
                 "colorCategory": color_cat,
                 "shadeLabel": shade_label,
-                "aspectName": aspect_info["aspect"],
+                "aspectName": vibration["name"],
+                "vibrationCode": vibration["code"],
+                "lindaVibration": {
+                    "code": vibration["code"],
+                    "title": vibration["name"],
+                    "theme": vibration["theme"],
+                    "summary": vibration["description"],
+                    "karmicLesson": vibration["karmicLesson"],
+                },
                 "headline": headline,
-                "summary": aspect_info["description"],
+                "summary": vibration["description"],
                 "parameters": parameters,
                 "elementSynergy": element_synergy,
                 "modalitySynergy": modality_synergy,
@@ -530,7 +570,7 @@ def generate_pairs():
                 "challenges": challenges,
                 "tips": tips,
                 "celebrityCouples": celeb,
-                "genderAdvice": get_gender_advice(s1, s2)
+                "genderAdvice": linda_gender_dynamics
             }
             
     return pairs
@@ -540,43 +580,43 @@ def get_element_synergy(e1, e2):
     mapping = {
         ("Fire", "Fire"): {
             "title": "Double Fire (Electric Blaze)",
-            "text": "Intense passion, shared ambition, and instant adrenaline. You fuel each other's dreams, but must ensure competitive sparks don't burn down emotional bridges."
+            "text": "As Linda Goodman observed, two Fire signs create immediate enthusiasm and dramatic warmth. You champion each other's boldness, but must take care that competitive sparks don't burn down tender feelings."
         },
         ("Earth", "Earth"): {
-            "title": "Double Earth (Unshakeable Foundation)",
-            "text": "Deep practical grounding, financial prudence, and rock-solid loyalty. You build lasting wealth and a cozy empire together."
+            "title": "Double Earth (Unshakeable Bedrock)",
+            "text": "Linda Goodman praised double Earth as the rock of domestic security. You share common respect for practical honesty, financial prudence, and building a cozy, enduring haven."
         },
         ("Air", "Air"): {
             "title": "Double Air (Mental Telepathy)",
-            "text": "Incredible intellectual banter, endless laughter, and shared curiosity. A partnership where minds connect on a sparkling wavelength."
+            "text": "In Love Signs, two Air signs generate brilliant conversational agility and intellectual freedom. Your minds connect on a sparkling frequency filled with books, ideas, and laughter."
         },
         ("Water", "Water"): {
-            "title": "Double Water (Oceanic Soul Bond)",
-            "text": "Intuitive, deeply emotional, and almost telepathic understanding. You hold space for each other's deepest vulnerabilities and dreams."
+            "title": "Double Water (Oceanic Soul Resonance)",
+            "text": "Linda Goodman described two Water signs as deep telepathic soulmates. You sense each other's moods intuitively without words, creating a sacred emotional sanctuary."
         },
         ("Air", "Fire"): {
-            "title": "Fire & Air (Inspirational Catalyst)",
-            "text": "Air fuels Fire's passion, while Fire brings warmth and bold action to Air's inventive ideas. An exciting, socially vibrant union."
+            "title": "Fire & Air (Inspirational Breeze)",
+            "text": "Air fans Fire's flames into glorious creative radiance, while Fire warms Air's visionary ideals into bold reality. An exciting, intellectually vibrant union."
         },
         ("Earth", "Water"): {
             "title": "Earth & Water (Fertile Nurturing)",
-            "text": "Water softens Earth with empathy and emotion; Earth provides Water with steady shores of stability. A classic recipe for enduring married happiness."
+            "text": "Water softens Earth with tender emotional empathy; Earth provides Water with comforting shores of physical stability. A classic recipe for a thriving, enduring marriage."
         },
         ("Fire", "Water"): {
-            "title": "Fire & Water (Steam & Intense Chemistry)",
-            "text": "Extremely passionate and emotionally turbulent. Fire inspires Water to take bold leaps; Water teaches Fire the beauty of tender emotional depth."
+            "title": "Fire & Water (Steam & Intense Passion)",
+            "text": "Extremely passionate and emotionally turbulent. Fire inspires Water to take brave leaps; Water teaches Fire the beauty of quiet emotional vulnerability."
         },
         ("Air", "Earth"): {
             "title": "Earth & Air (Pragmatic Strategy)",
-            "text": "Earth brings tangible discipline and organization; Air brings innovative ideas and sparkling conversational agility."
+            "text": "Earth brings tangible structure and sensible order; Air introduces inventive concepts and conversational sparkle. Mutual appreciation bridges different tempos."
         },
         ("Earth", "Fire"): {
             "title": "Fire & Earth (Hearthstone Fire)",
-            "text": "Fire provides creative energy and visionary boldness; Earth builds the practical structures to turn those visions into reality."
+            "text": "Fire provides creative courage and solar warmth; Earth builds the practical structures to turn those visions into lasting wealth and security."
         },
         ("Air", "Water"): {
             "title": "Air & Water (Wind & Waves)",
-            "text": "Air analyzes experiences intellectually while Water experiences them through deep emotion. Finding balance creates profound holistic insight."
+            "text": "Air analyzes experiences intellectually while Water perceives them through psychic emotion. Honoring each other's distinct perception creates rich spiritual growth."
         }
     }
     return mapping.get(pair, {
@@ -588,21 +628,16 @@ def get_modality_synergy(m1, m2):
     pair = tuple(sorted([m1, m2]))
     if m1 == m2:
         if m1 == "Cardinal":
-            return "Both Cardinal: Two visionary leaders who love initiating projects. Take turns steering to prevent power struggles."
+            return "Both Cardinal (Initiators): Two natural leaders. Linda Goodman advised taking turns leading joint projects to eliminate power struggles."
         elif m1 == "Fixed":
-            return "Both Fixed: Unshakable loyalty and steadfast commitment. Practice active compromise to prevent stubborn standoffs."
-        else: # Mutable
-            return "Both Mutable: High flexibility, continuous laughter, and easy adaptability. Anchor your connection with structured routines."
+            return "Both Fixed (Stabilizers): Unshakeable loyalty and rock-solid fidelity. Linda Goodman urged practicing gentle flexibility to resolve stubborn standoffs."
+        else:
+            return "Both Mutable (Adaptable): Continuous mental agility, laughter, and easy flexibility. Anchor your connection with grounding domestic routines."
     else:
         return f"{m1} + {m2}: A balanced dynamic where one partner initiates, stabilizes, or provides adaptable perspective to the other."
 
 def get_relationship_advice(s1, s2, circ_dist, score):
-    strengths = []
-    challenges = []
-    tips = []
-    
     name1, name2 = s1["name"], s2["name"]
-    
     if score >= 75:
         strengths = [
             f"Natural understanding: {name1} and {name2} instinctively comprehend each other's core motivations.",
@@ -629,18 +664,18 @@ def get_relationship_advice(s1, s2, circ_dist, score):
             "Occasional friction over lifestyle pacing or decision-making speed."
         ]
         tips = [
-            "Adopt the 24-hour cooling off rule during heated arguments before revisiting sensitive topics.",
-            f"Remember that {name2} communicates love in their own authentic dialect.",
-            "Celebrate your differences as unique strengths rather than flaws to be corrected."
+            "Adopt Linda Goodman's cooling-off principle during heated arguments before revisiting sensitive topics.",
+            f"Remember that {name2} communicates love in their own authentic elemental dialect.",
+            "Celebrate your differences as complementary superpowers rather than personal flaws."
         ]
     else:
         strengths = [
-            "Powerful karmic pull that pushes both individuals to mature emotionally.",
+            "Powerful karmic pull that pushes both souls to mature emotionally and spiritually.",
             "Unforgettable chemistry and passion born from sheer elemental contrast.",
             "Opportunity to develop immense patience, empathy, and unconditional love."
         ]
         challenges = [
-            f"Fundamental contrast in priorities: {name1}'s instinctual approach may confuse {name2}.",
+            f"Fundamental contrast in priorities: {name1}'s instinctual approach may baffle {name2}.",
             "Tendency to misinterpret your partner's need for space or emotional expression."
         ]
         tips = [
@@ -648,32 +683,33 @@ def get_relationship_advice(s1, s2, circ_dist, score):
             "Establish crystal-clear agreements regarding personal boundaries, finances, and private time.",
             "Focus on the deep qualities you originally fell in love with during trying moments."
         ]
-        
     return strengths, challenges, tips
 
-def get_gender_advice(s1, s2):
+def get_linda_goodman_gender_dynamics(s1, s2, vibration):
+    n1, n2 = s1["name"], s2["name"]
+    code = vibration["code"]
     return {
-        "male_female": f"When a {s1['name']} man and a {s2['name']} woman unite, balancing his Mars/solar leadership with her emotional sanctuary fosters lasting harmony.",
-        "female_male": f"When a {s1['name']} woman and a {s2['name']} man unite, celebrating her creative initiative while valuing his steadfast protection builds an unbreakable bond.",
-        "same_sex": f"In a union between two souls with {s1['name']} and {s2['name']} energies, open communication and honoring personal autonomy keeps the romance deeply alive."
+        "male_female": f"In Linda Goodman's Love Signs analysis of the {n1} Man with the {n2} Woman ({code} Vibration): He expresses his masculine planetary energy through {s1['ruler']}, while she responds with {s2['ruler']} grace. Success blooms when he honors her emotional sanctuary and she champions his purposeful ambitions.",
+        "female_male": f"In Linda Goodman's Love Signs analysis of the {n1} Woman with the {n2} Man ({code} Vibration): She brings {s1['name']}'s radiant initiative to the union, while he offers {s2['name']}'s steadfast anchor. When she trusts his protective strength and he respects her autonomy, their bond becomes unbreakable.",
+        "same_sex": f"In Linda Goodman's cosmic synastry ({code} Vibration): Two souls united under {n1} and {n2} celestial energies find harmony when honoring personal autonomy, balancing giving with receiving, and allowing their elemental natures to enrich each other."
     }
 
 def main():
     pairs = generate_pairs()
-    
     output_path = r"c:\Anil Google Projects\zodiac-compatibility\zodiac-data.js"
     
     js_content = f"""/**
  * Zodiac Compatibility Engine & Knowledge Base
+ * Calibrated with Linda Goodman's 'Love Signs' (1978) & 'Sun Signs' (1968)
  * Built for Anil Dutta - ZodiacMatch AI
- * Tropical Sun Sign Calculation & Comprehensive 144-Pair Matrix
  */
 
 const ZODIAC_SIGNS = {json.dumps(SIGNS, indent=2)};
 
 const ZODIAC_PAIRS = {json.dumps(pairs, indent=2)};
 
-// Map for quick sign lookup by id
+const LINDA_GOODMAN_VIBRATIONS = {json.dumps(LINDA_GOODMAN_VIBRATIONS, indent=2)};
+
 const ZODIAC_MAP = ZODIAC_SIGNS.reduce((acc, sign) => {{
   acc[sign.id] = sign;
   return acc;
@@ -681,8 +717,6 @@ const ZODIAC_MAP = ZODIAC_SIGNS.reduce((acc, sign) => {{
 
 /**
  * Determine Sun Sign from Date of Birth (Month: 1-12, Day: 1-31)
- * @param {{string|Date}} dobInput - 'YYYY-MM-DD' or Date object
- * @returns {{object}} Zodiac sign object
  */
 function getZodiacSignFromDOB(dobInput) {{
   if (!dobInput) return null;
@@ -724,9 +758,6 @@ function getZodiacSignFromDOB(dobInput) {{
 
 /**
  * Get Compatibility Data between two Zodiac Sign IDs
- * @param {{string}} signId1 
- * @param {{string}} signId2 
- * @returns {{object}} Compatibility profile
  */
 function getPairCompatibility(signId1, signId2) {{
   if (!signId1 || !signId2) return null;
@@ -736,15 +767,12 @@ function getPairCompatibility(signId1, signId2) {{
   if (ZODIAC_PAIRS[key]) {{
     return ZODIAC_PAIRS[key];
   }}
-  // Fallback to reciprocal key if necessary
   const altKey = `${{s2}}_${{s1}}`;
   return ZODIAC_PAIRS[altKey] || null;
 }}
 
 /**
  * Returns Color Classification Details for a given score (0-100)
- * @param {{number}} score 
- * @returns {{object}} Color token, classes, label, and hex codes
  */
 function getColorShade(score) {{
   if (score >= 75) {{
@@ -789,11 +817,11 @@ function getColorShade(score) {{
   }}
 }}
 
-// Export for browser window and Node.js environments
 if (typeof module !== 'undefined' && module.exports) {{
   module.exports = {{
     ZODIAC_SIGNS,
     ZODIAC_PAIRS,
+    LINDA_GOODMAN_VIBRATIONS,
     ZODIAC_MAP,
     getZodiacSignFromDOB,
     getPairCompatibility,
@@ -804,7 +832,7 @@ if (typeof module !== 'undefined' && module.exports) {{
     with open(output_path, "w", encoding="utf-8") as f:
         f.write(js_content)
         
-    print(f"Generated zodiac-data.js successfully! Length: {len(js_content)} bytes")
+    print(f"Generated Linda Goodman calibrated zodiac-data.js successfully! Length: {len(js_content)} bytes")
     print(f"Total signs: {len(SIGNS)}, Total pairs: {len(pairs)}")
 
 if __name__ == "__main__":

@@ -104,4 +104,26 @@ assert.strictEqual(getColorShade(30).category, 'red');
 console.log('✅ Test 5: Color shade categorization thresholds verified (Green >=75%, Amber 50-74%, Red <50%).');
 passedTests++;
 
+// Test 6: Linda Goodman Seven Karmic Vibrations Verification
+const { LINDA_GOODMAN_VIBRATIONS } = require('./zodiac-data.js');
+assert.strictEqual(Object.keys(LINDA_GOODMAN_VIBRATIONS).length, 7, 'Must have exactly 7 Linda Goodman vibrations');
+
+const validCodes = new Set(['1-1', '2-12', '3-11', '4-10', '5-9', '6-8', '7-7']);
+pairKeys.forEach(key => {
+  const pair = ZODIAC_PAIRS[key];
+  assert.ok(validCodes.has(pair.vibrationCode), `Pair ${key} must have valid Linda Goodman vibration code, got ${pair.vibrationCode}`);
+  assert.ok(pair.lindaVibration && pair.lindaVibration.karmicLesson, `Pair ${key} must have Linda Goodman karmic lesson`);
+});
+console.log('✅ Test 6: All 144 pairs verified for Linda Goodman\'s Seven Karmic Vibrations & Lessons.');
+passedTests++;
+
+// Test 7: Linda Goodman Sun Signs Male & Female Archetypes
+ZODIAC_SIGNS.forEach(sign => {
+  assert.ok(sign.lindaGoodmanMale && sign.lindaGoodmanMale.length > 20, `Sign ${sign.id} missing Linda Goodman male archetype`);
+  assert.ok(sign.lindaGoodmanFemale && sign.lindaGoodmanFemale.length > 20, `Sign ${sign.id} missing Linda Goodman female archetype`);
+  assert.ok(sign.lindaGoodmanSecret && sign.lindaGoodmanSecret.length > 10, `Sign ${sign.id} missing Linda Goodman secret key`);
+});
+console.log('✅ Test 7: All 12 signs verified with Linda Goodman\'s Male, Female, and Secret Key lore.');
+passedTests++;
+
 console.log(`\n🎉 ALL ${passedTests} TEST SUITES PASSED FLAWLESSLY!`);
