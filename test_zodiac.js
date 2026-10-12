@@ -126,4 +126,31 @@ ZODIAC_SIGNS.forEach(sign => {
 console.log('✅ Test 7: All 12 signs verified with Linda Goodman\'s Male, Female, and Secret Key lore.');
 passedTests++;
 
+// Test 8: Comprehensive DD/MM/YYYY Parsing Verification
+const dateCases = [
+  { input: '14/08/1992', expected: 'leo' },
+  { input: '04/12/1990', expected: 'sagittarius' },
+  { input: '12/07/1994', expected: 'cancer' },
+  { input: '29/02/2000', expected: 'pisces' }, // leap day
+  { input: '01/01/1985', expected: 'capricorn' },
+  { input: '21/03/1995', expected: 'aries' },
+  { input: '20/04/1991', expected: 'taurus' },
+  { input: '21/05/1989', expected: 'gemini' },
+  { input: '23/09/1993', expected: 'libra' },
+  { input: '23/10/1987', expected: 'scorpio' },
+  { input: '22/12/1980', expected: 'capricorn' },
+  { input: '20/01/1996', expected: 'aquarius' },
+  { input: '14/08', expected: 'leo' }, // partial DD/MM
+  { input: '14-08-1992', expected: 'leo' }, // dashed DD-MM-YYYY
+  { input: '14081992', expected: 'leo' } // 8 raw digits
+];
+
+dateCases.forEach(({ input, expected }) => {
+  const res = getZodiacSignFromDOB(input);
+  assert.ok(res, `Failed to parse date: ${input}`);
+  assert.strictEqual(res.id, expected, `Expected ${expected} for ${input}, got ${res.id}`);
+});
+console.log('✅ Test 8: Comprehensive DD/MM/YYYY date format parser verified across 15 cases (including leap days and partial inputs).');
+passedTests++;
+
 console.log(`\n🎉 ALL ${passedTests} TEST SUITES PASSED FLAWLESSLY!`);

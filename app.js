@@ -7,14 +7,14 @@
 const state = {
   currentTab: 'couples',
   couples: {
-    p1: { name: 'You', dob: '1992-08-14', gender: 'female', sign: null },
-    p2: { name: 'Partner', dob: '1990-12-04', gender: 'male', sign: null },
+    p1: { name: 'You', dob: '14/08/1992', gender: 'female', sign: null },
+    p2: { name: 'Partner', dob: '04/12/1990', gender: 'male', sign: null },
     pairData: null,
     radarChart: null
   },
   singles: {
     name: '',
-    dob: '1994-07-12',
+    dob: '12/07/1994',
     gender: 'female',
     seeking: 'male',
     sign: null,
@@ -130,6 +130,46 @@ function switchMainTab(tab) {
 // ============================================================================
 // MODE 1: COUPLE & MARRIED COMPATIBILITY LOGIC
 // ============================================================================
+
+/**
+ * Auto-format keystrokes into DD/MM/YYYY and detect zodiac sign in real-time
+ */
+function handleDOBInput(e, partnerKey) {
+  const input = e.target;
+  let val = input.value;
+
+  // Allow backspace deletion without force-inserting slashes
+  if (e && e.inputType === 'deleteContentBackward') {
+    if (val.endsWith('/')) {
+      input.value = val.slice(0, -1);
+    }
+    return;
+  }
+
+  // Extract digits only (max 8 digits for DDMMYYYY)
+  const digits = val.replace(/\D/g, '').slice(0, 8);
+  let formatted = '';
+  if (digits.length > 4) {
+    formatted = digits.slice(0, 2) + '/' + digits.slice(2, 4) + '/' + digits.slice(4);
+  } else if (digits.length > 2) {
+    formatted = digits.slice(0, 2) + '/' + digits.slice(2);
+  } else {
+    formatted = digits;
+  }
+
+  input.value = formatted;
+
+  // Real-time detection: if day and month are present (5+ chars e.g. "14/08")
+  if (formatted.length >= 5) {
+    onDOBChange(partnerKey, formatted.length === 10);
+  }
+}
+
+function onDOBBlur(partnerKey) {
+  const input = document.getElementById(`${partnerKey}-dob`);
+  if (!input || !input.value) return;
+  onDOBChange(partnerKey, true);
+}
 
 /**
  * Handle DOB input change for Partner 1 or Partner 2
@@ -308,7 +348,7 @@ function renderCoupleHero(s1, s2, pairData, colorShade, p1Name, p2Name) {
 }
 
 /**
- * Render 6 Parameters Grid with Color Bars
+ * Render 6 Parameters Grid with Color Bars (Compact Above-The-Fold Layout)
  */
 function renderCoupleParameters(params) {
   const container = document.getElementById('couple-parameters-container');
@@ -326,34 +366,34 @@ function renderCoupleParameters(params) {
     const descText = score >= 75 ? meta.highDesc : score >= 50 ? meta.midDesc : meta.lowDesc;
 
     const card = document.createElement('div');
-    card.className = `glass-panel rounded-2xl p-5 space-y-3 border transition hover:border-slate-700 ${shade.borderClass}`;
+    card.className = `bg-slate-900/80 rounded-xl p-2 sm:p-2.5 space-y-1.5 border transition hover:border-slate-700 ${shade.borderClass}`;
 
     card.innerHTML = `
       <div class="flex items-center justify-between">
-        <div class="flex items-center space-x-2">
-          <div class="w-8 h-8 rounded-lg bg-slate-800 flex items-center justify-center text-cosmic-400">
-            <i data-lucide="${meta.icon}" class="w-4 h-4"></i>
+        <div class="flex items-center space-x-1.5 min-w-0">
+          <div class="w-5 h-5 rounded-md bg-slate-800 flex items-center justify-center text-cosmic-400 flex-shrink-0">
+            <i data-lucide="${meta.icon}" class="w-3 h-3"></i>
           </div>
-          <span class="text-xs font-bold text-white">${meta.title}</span>
+          <span class="text-[10px] sm:text-[11px] font-bold text-white truncate">${meta.title}</span>
         </div>
-        <span class="font-mono font-bold text-sm ${shade.textClass}">${score}%</span>
+        <span class="font-mono font-bold text-xs ${shade.textClass} flex-shrink-0 ml-1">${score}%</span>
       </div>
 
       <!-- Progress Meter Bar -->
-      <div class="w-full h-2 rounded-full bg-slate-800 overflow-hidden">
+      <div class="w-full h-1.5 rounded-full bg-slate-800 overflow-hidden">
         <div class="h-full rounded-full transition-all duration-700 bg-gradient-to-r ${shade.gradient}" 
              style="width: ${score}%;"></div>
       </div>
 
-      <div class="flex items-center justify-between text-[11px] text-slate-400">
+      <div class="flex items-center justify-between text-[10px] text-slate-400">
         <span class="inline-flex items-center space-x-1">
           <span>${shade.emoji}</span>
           <span class="font-semibold ${shade.textClass}">${score >= 75 ? 'Harmonious' : score >= 50 ? 'Moderate' : 'Challenging'}</span>
         </span>
-        <span class="font-mono text-[10px] text-slate-500">${score}/100</span>
+        <span class="font-mono text-[9px] text-slate-500">${score}/100</span>
       </div>
 
-      <p class="text-[11px] text-slate-300 leading-relaxed pt-1 border-t border-slate-800/80">
+      <p class="text-[10px] text-slate-400 leading-snug pt-1 border-t border-slate-800/80 line-clamp-2">
         ${descText}
       </p>
     `;
@@ -511,11 +551,11 @@ function renderCoupleNarratives(pairData, p1Gender, p2Gender) {
  */
 function loadSampleCouple(presetKey) {
   const presets = {
-    leo_sag: { p1Dob: '1992-08-14', p2Dob: '1990-12-04', p1Gender: 'female', p2Gender: 'male', p1Name: 'Leo Partner', p2Name: 'Sagittarius Partner' },
-    cancer_cap: { p1Dob: '1982-06-21', p2Dob: '1982-01-09', p1Gender: 'male', p2Gender: 'female', p1Name: 'William (Cancer)', p2Name: 'Kate (Capricorn)' },
-    scorpio_virgo: { p1Dob: '1976-10-23', p2Dob: '1987-08-25', p1Gender: 'male', p2Gender: 'female', p1Name: 'Ryan (Scorpio)', p2Name: 'Blake (Virgo)' },
-    aries_cancer: { p1Dob: '1993-04-05', p2Dob: '1994-07-10', p1Gender: 'male', p2Gender: 'female', p1Name: 'Aries Partner', p2Name: 'Cancer Partner' },
-    gemini_scorpio: { p1Dob: '1991-06-05', p2Dob: '1992-11-12', p1Gender: 'female', p2Gender: 'male', p1Name: 'Gemini Partner', p2Name: 'Scorpio Partner' }
+    leo_sag: { p1Dob: '14/08/1992', p2Dob: '04/12/1990', p1Gender: 'female', p2Gender: 'male', p1Name: 'Leo Partner', p2Name: 'Sagittarius Partner' },
+    cancer_cap: { p1Dob: '21/06/1982', p2Dob: '09/01/1982', p1Gender: 'male', p2Gender: 'female', p1Name: 'William (Cancer)', p2Name: 'Kate (Capricorn)' },
+    scorpio_virgo: { p1Dob: '23/10/1976', p2Dob: '25/08/1987', p1Gender: 'male', p2Gender: 'female', p1Name: 'Ryan (Scorpio)', p2Name: 'Blake (Virgo)' },
+    aries_cancer: { p1Dob: '05/04/1993', p2Dob: '10/07/1994', p1Gender: 'male', p2Gender: 'female', p1Name: 'Aries Partner', p2Name: 'Cancer Partner' },
+    gemini_scorpio: { p1Dob: '05/06/1991', p2Dob: '12/11/1992', p1Gender: 'female', p2Gender: 'male', p1Name: 'Gemini Partner', p2Name: 'Scorpio Partner' }
   };
 
   const p = presets[presetKey];
@@ -571,6 +611,43 @@ Calculated via ZodiacMatch AI (Anil Dutta)`;
 // ============================================================================
 // MODE 2: SINGLES / UNMARRIED COMPATIBILITY LOGIC
 // ============================================================================
+
+/**
+ * Auto-format keystrokes into DD/MM/YYYY for single profile
+ */
+function handleSingleDOBInput(e) {
+  const input = e.target;
+  let val = input.value;
+
+  if (e && e.inputType === 'deleteContentBackward') {
+    if (val.endsWith('/')) {
+      input.value = val.slice(0, -1);
+    }
+    return;
+  }
+
+  const digits = val.replace(/\D/g, '').slice(0, 8);
+  let formatted = '';
+  if (digits.length > 4) {
+    formatted = digits.slice(0, 2) + '/' + digits.slice(2, 4) + '/' + digits.slice(4);
+  } else if (digits.length > 2) {
+    formatted = digits.slice(0, 2) + '/' + digits.slice(2);
+  } else {
+    formatted = digits;
+  }
+
+  input.value = formatted;
+
+  if (formatted.length >= 5) {
+    onSingleProfileChange(false);
+  }
+}
+
+function onSingleDOBBlur() {
+  const input = document.getElementById('single-dob');
+  if (!input || !input.value) return;
+  onSingleProfileChange(false);
+}
 
 /**
  * Handle Single User profile changes

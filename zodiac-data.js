@@ -8050,10 +8050,31 @@ function getZodiacSignFromDOB(dobInput) {
   
   let month, day;
   if (typeof dobInput === 'string') {
-    const parts = dobInput.split('-');
-    if (parts.length >= 3) {
-      month = parseInt(parts[1], 10);
-      day = parseInt(parts[2], 10);
+    const clean = dobInput.trim();
+    if (clean.includes('/')) {
+      // Primary: DD/MM/YYYY format
+      const parts = clean.split('/');
+      if (parts.length >= 2) {
+        day = parseInt(parts[0], 10);
+        month = parseInt(parts[1], 10);
+      }
+    } else if (clean.includes('-')) {
+      const parts = clean.split('-');
+      if (parts.length >= 3) {
+        if (parts[0].length === 4) {
+          // YYYY-MM-DD
+          month = parseInt(parts[1], 10);
+          day = parseInt(parts[2], 10);
+        } else {
+          // DD-MM-YYYY
+          day = parseInt(parts[0], 10);
+          month = parseInt(parts[1], 10);
+        }
+      }
+    } else if (clean.length === 8 && /^\d+$/.test(clean)) {
+      // DDMMYYYY raw digits
+      day = parseInt(clean.substring(0, 2), 10);
+      month = parseInt(clean.substring(2, 4), 10);
     } else {
       const d = new Date(dobInput);
       month = d.getUTCMonth() + 1;
@@ -8064,7 +8085,7 @@ function getZodiacSignFromDOB(dobInput) {
     day = dobInput.getUTCDate();
   }
 
-  if (isNaN(month) || isNaN(day)) return null;
+  if (isNaN(month) || isNaN(day) || month < 1 || month > 12 || day < 1 || day > 31) return null;
 
   // Astrological Boundaries (Tropical Western Zodiac)
   if ((month === 3 && day >= 21) || (month === 4 && day <= 19)) return ZODIAC_MAP['aries'];
